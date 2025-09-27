@@ -1,0 +1,33 @@
+{
+  "board_settings": {
+    "ui": {
+      "board_settings_header": {
+        "header": "Ustawienia tablicy",
+        "delete_board": "Usuń tablicę",
+        "title": "Uwaga!",
+        "annotation": "Usunięcie tablicy spowoduje trwałe usunięcie wszystkich kart. Czy na pewno chcesz kontynuować?",
+        "save": "Zapisz",
+        "cancel": "Anuluj",
+        "leave": "Wyjść z ustawień"
+      },
+      "stage_name_hint": "Maksymalnie {{length}} znaków"
+    },
+    "entity_type_board_settings_page": {
+      "automation_new": "Automatyzacja 2.0",
+      "bpmn_2_0": "BPMN 2.0",
+      "bpmn_2_0_soon": "BPMN 2.0 (Wkrótce...)",
+      "warning_title": "Nie możesz usunąć ostatniej tablicy",
+      "warning_annotation": "Jeśli chcesz usunąć tę tablicę, najpierw utwórz nową."
+    },
+    "task_board_settings_page": {
+      "warning_title": "Nie możesz usunąć tablicy systemowej",
+      "warning_annotation": "Ta tablica jest systemowa i nie może zostać usunięta."
+    },
+    "delete_stage_warning_modal": {
+      "warning_title": "Czy na pewno chcesz usunąć ten etap?",
+      "warning_annotation": "Wybierz etap, do którego chcesz przenieść istniejące elementy.",
+      "delete": "Usuń",
+      "placeholder": "Etap do przeniesienia"
+    }
+  }
+}

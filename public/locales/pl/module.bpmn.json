@@ -1,0 +1,174 @@
+{
+  "bpmn": {
+    "hooks": {
+      "use_get_service_task_options": {
+        "actions": {
+          "task_create": "Utwórz Zadanie",
+          "activity_create": "Utwórz Aktywność",
+          "entity_stage_change": "Zmień Etap",
+          "entity_linked_stage_change": "Zmień etap w połączonej karcie",
+          "entity_responsible_change": "Zmień Odpowiedzialnego",
+          "email_send": "Wyślij Email",
+          "entity_create": "Utwórz Kartę",
+          "chat_send_amwork": "Wyślij Wiadomość na Czat",
+          "chat_send_external": "Wyślij Wiadomość na Zewnętrzny Czat",
+          "http_call": "Wyślij żądanie HTTP"
+        }
+      },
+      "use_bpmn_automations_columns": {
+        "name": "Nazwa",
+        "created_by": "Utworzone Przez",
+        "active": "Aktywne",
+        "delete": "Usuń",
+        "status": "Status"
+      },
+      "use_get_workspace_event_options": {
+        "events": {
+          "create": "Wydarzenie Utworzenia Karty",
+          "change_responsible": "Wydarzenie Zmiany Właściciela",
+          "change_stage": "Wydarzenie Zmiany Etapu"
+        }
+      }
+    },
+    "pages": {
+      "bpmn_automations_page": {
+        "automation_process_schema_error_warning": {
+          "continue": "Kontynuuj",
+          "title": "Nie udało się aktywować procesu \"{{name}}\"",
+          "annotation": "Walidacja schematu BPMN nie powiodła się. Sprawdź proces i spróbuj ponownie."
+        },
+        "service_task_popup_template": {
+          "task_name": "Nazwa Zadania Serwisowego",
+          "placeholders": {
+            "task_name": "Nazwa"
+          }
+        },
+        "workspace_sequence_flow_popup": {
+          "module": "Wybierz Moduł",
+          "module_hint": "Wybierz moduł, w którym muszą być spełnione określone warunki",
+          "stage": "Wybierz Etap",
+          "sequence_flow": "Przepływ Sekwencji",
+          "flow_name": "Nazwa Przepływu",
+          "conditions": "Warunki",
+          "placeholders": {
+            "flow_name": "Nazwa"
+          }
+        },
+        "create_automation_process_modal": {
+          "create": "Utwórz",
+          "title": "Utwórz Nowy Proces Automatyzacji",
+          "name": "Nazwa Automatyzacji",
+          "new_process": "Nowy Proces #{{number}}",
+          "placeholders": {
+            "name": "Nazwa"
+          }
+        },
+        "bpmn_automations_processes_modeler": {
+          "add_conditions": "Dodaj warunki...",
+          "center_view": "Widok Środkowy",
+          "pallete": {
+            "create_workspace_parallel_gateway": "Utwórz Bramę Paralelną",
+            "create_workspace_start_event": "Utwórz Zdarzenie Początkowe",
+            "create_workspace_end_event": "Utwórz Zdarzenie Końcowe",
+            "create_workspace_exclusive_gateway": "Utwórz Bramę Wyłączną",
+            "create_workspace_data_object": "Utwórz Obiekt Danych",
+            "create_workspace_data_store": "Utwórz Magazyn Danych",
+            "create_workspace_participant_expanded": "Utwórz Rozszerzonego Uczestnika",
+            "create_workspace_group": "Utwórz Grupę"
+          },
+          "color_picker": {
+            "default_color": "Kolor Domyślny",
+            "blue_color": "Kolor Niebieski",
+            "orange_color": "Kolor Pomarańczowy",
+            "green_color": "Kolor Zielony",
+            "red_color": "Kolor Czerwony",
+            "purple_color": "Kolor Fioletowy"
+          },
+          "context_pad": {
+            "delay": "Dodaj Opóźnienie",
+            "append_end_event": "Dołącz Zdarzenie Końcowe",
+            "append_gateway": "Dołącz Bramę",
+            "append_text_annotation": "Dołącz Adnotację Tekstową",
+            "replace": "Zastąp",
+            "delete": "Usuń",
+            "set_color": "Ustaw Kolor",
+            "connect": "Połącz",
+            "task_create": "Utwórz Zadanie",
+            "activity_create": "Utwórz Aktywność",
+            "entity_stage_change": "Zmień Etap",
+            "entity_linked_stage_change": "Zmień etap w połączonej karcie",
+            "entity_responsible_change": "Zmień Odpowiedzialnego",
+            "email_send": "Wyślij Email",
+            "entity_create": "Utwórz Kartę",
+            "chat_send_amwork": "Wyślij Wiadomość na Czat",
+            "chat_send_external": "Wyślij Wiadomość na Zewnętrzny Czat",
+            "http_call": "Wyślij żądanie HTTP"
+          },
+          "toggle_default_context_pad_entry": "Przełącz Domyślny Warunek Przepływu",
+          "open_minimap": "Otwórz Mini-mapa",
+          "close_minimap": "Zamknij Mini-mapa",
+          "activate_hand_tool": "Aktywuj Narzędzie Ręczne",
+          "activate_lasso_tool": "Aktywuj Narzędzie Lasso",
+          "active_create_remove_space_tool": "Aktywuj Narzędzie Tworzenia/Usuwania Przestrzeni",
+          "activate_global_connect_tool": "Aktywuj Narzędzie Globalnego Połączenia",
+          "process_controls": {
+            "save_and_run": "Zapisz i Uruchom",
+            "save_draft": "Zapisz Szkic",
+            "start_process": "Rozpocznij Proces",
+            "stop_process": "Zatrzymaj Proces",
+            "cancel": "Anuluj"
+          },
+          "create_workspace_start_event": "Utwórz Zdarzenie Początkowe",
+          "create_workspace_delay_event": "Utwórz Zdarzenie Opóźnienia",
+          "create_workspace_service_task": "Utwórz Zadanie Serwisowe"
+        },
+        "workspace_delay_event_popup": {
+          "delay": "Opóźnienie",
+          "delay_label": "Opóźnienie *",
+          "delay_name": "Nazwa Opóźnienia",
+          "placeholders": {
+            "delay_name": "Nazwa"
+          }
+        },
+        "delete_bpmn_automation_warning_modal": {
+          "title": "Czy na pewno chcesz usunąć Automatyzację BPMN \"{{name}}\"?",
+          "annotation": "Tej operacji nie można cofnąć."
+        },
+        "create_workspace_service_task_menu": {
+          "workspace_service_tasks": "Zadania Serwisowe"
+        },
+        "create_workspace_start_event_menu": {
+          "workspace_events": "Zdarzenia"
+        },
+        "workspace_start_event_popup": {
+          "event_name": "Nazwa Zdarzenia",
+          "event_type": "Wybierz Typ Zdarzenia *",
+          "module": "Wybierz Moduł *",
+          "module_hint": "Wybierz moduł, w którym zdarzenie zostanie uruchomione",
+          "placeholders": {
+            "event_name": "Nazwa"
+          }
+        },
+        "bpmn_automations_settings_header": {
+          "create_bpmn_automation": "Utwórz Automatyzację BPMN",
+          "bpmn_automations": "Automatyzacje BPMN 2.0",
+          "back": "Wstecz"
+        },
+        "bpmn_automations_table": {
+          "no_bpmn_automations_block": {
+            "annotation1": "Nie masz jeszcze procesów",
+            "annotation2": "Użyj przycisku",
+            "annotation3": "aby dodać automatyzację."
+          }
+        },
+        "bpmn_splashscreen": {
+          "heading": "Profesjonalna automatyzacja BPM",
+          "price_ru": "za 99 ₽/miesiąc za użytkownika, przy płatności rocznej",
+          "price_us": "za $1/miesiąc za użytkownika, przy płatności rocznej",
+          "form_button": "Złóż wniosek",
+          "form_header": "Aktywuj automatyzację BPM"
+        }
+      }
+    }
+  }
+}

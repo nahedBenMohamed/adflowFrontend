@@ -1,0 +1,432 @@
+{
+  "reporting": {
+    "templates": {
+      "components": {
+        "report_table": {
+          "empty": "Aucune donnée disponible pour cette période"
+        },
+        "report_settings_drawer": {
+          "table_settings": "Paramètres du tableau",
+          "display_columns": "Afficher les colonnes"
+        }
+      },
+      "comparative_report_template": {
+        "placeholders": {
+          "users": "Utilisateurs",
+          "pipeline": "Pipelines de vente",
+          "month": "Sélectionner le mois",
+          "year": "Sélectionner l'année"
+        }
+      },
+      "general_report_template": {
+        "apply_filter": "Appliquer le filtre",
+        "reset": "Réinitialiser",
+        "stages": {
+          "all": "Toutes les étapes",
+          "open": "Étapes ouvertes",
+          "lost": "Étapes perdues",
+          "won": "Étapes gagnées"
+        },
+        "placeholders": {
+          "users": "Utilisateurs",
+          "pipeline": "Pipelines de vente",
+          "stage": "Étapes",
+          "warehouse": "Entrepôts",
+          "category": "Catégories",
+          "field_or_responsible": "Champ ou Responsable"
+        }
+      },
+      "calls_report_template": {
+        "directions": {
+          "all": "Tous les appels",
+          "incoming": "Appels entrants",
+          "outgoing": "Appels sortants"
+        },
+        "placeholders": {
+          "users": "Utilisateurs",
+          "pipeline": "Pipelines de vente",
+          "directions": "Type d'appel",
+          "duration": "Durée de l'appel",
+          "only_missed": "Appels manqués uniquement"
+        }
+      }
+    },
+    "hooks": {
+      "use_get_products_general_report_columns": {
+        "name": "Nom",
+        "sold": "Total vendu",
+        "shipped": "Expédié",
+        "open": "Affaires ouvertes",
+        "lost": "Affaires perdues",
+        "all": "Total des affaires",
+        "average_products": "Moyenne de produits par affaire",
+        "average_budget": "Valeur moyenne des affaires gagnées",
+        "average_term": "Durée moyenne de l'affaire"
+      },
+      "use_calls_history_report_columns": {
+        "timestamps": "Date de l'appel",
+        "type": "Appelant et destinataire",
+        "result": "Durée de l'appel et lecture",
+        "unknown": "Numéro inconnu",
+        "caller": "Appelant",
+        "callee": "Destinataire"
+      },
+      "use_get_general_report_columns": {
+        "result": "Résultat",
+        "all": "Tous",
+        "open": "Ouverts",
+        "expired": "Expirés",
+        "completed": "Terminés",
+        "won": "Gagnés",
+        "lost": "Perdus",
+        "groups": "Groupes",
+        "users": "Utilisateurs",
+        "cards": "Cartes (Leads)",
+        "tasks": "Tâches",
+        "activities": "Activités",
+        "average_check": "Panier moyen",
+        "average_term": "Durée moyenne (jours)",
+        "switch_on": "Allumé",
+        "switch_off": "Éteint",
+        "calls": "Appels",
+        "total": "Total des appels",
+        "average": "Moyenne des appels",
+        "incoming": "Appels entrants",
+        "incoming_average": "Moyenne des appels entrants",
+        "outgoing": "Appels sortants",
+        "outgoing_average": "Moyenne des appels sortants",
+        "missed": "Appels manqués",
+        "min": "min",
+        "undefined_client": "Programmation des rendez-vous sans une affaire"
+      },
+      "use_get_projects_report_columns": {
+        "hours": "h",
+        "min": "min",
+        "users": "Utilisateurs",
+        "opened": "Tâches ouvertes",
+        "done": "Tâches terminées",
+        "overdue": "Tâches en retard",
+        "planned": "Temps planifié",
+        "completion_percent": "Pourcentage de réalisation du projet",
+        "project_name": "Nom du projet",
+        "stage": "État du projet"
+      },
+      "use_get_customer_report_columns": {
+        "name": "Nom",
+        "sold": "Total vendu",
+        "products_quantity": "Quantité de produits",
+        "opened": "En cours (affaires ouvertes)",
+        "lost": "Affaires perdues",
+        "all": "Total des affaires (ouvertes et fermées)",
+        "average_quantity": "Moyenne des achats (affaires)",
+        "average_budget": "Budget moyen des affaires gagnées",
+        "average_duration": "Durée moyenne des affaires gagnées (jours)"
+      },
+      "use_get_schedule_report_columns": {
+        "groups": "Groupes",
+        "users": "Utilisateurs",
+        "sold": "Total vendu",
+        "total": "Total des rendez-vous",
+        "scheduled": "Planifiés",
+        "confirmed": "Confirmés",
+        "completed": "Terminés",
+        "cancelled": "Annulés"
+      },
+      "use_get_comparative_report_columns": {
+        "all": "Tous",
+        "open": "Ouverts",
+        "won": "Gagnés",
+        "lost": "Perdus",
+        "week": "Semaine {{number}}",
+        "quarter": "Trimestre {{number}}",
+        "users": "Utilisateurs",
+        "days": {
+          "monday": "Lundi",
+          "tuesday": "Mardi",
+          "wednesday": "Mercredi",
+          "thursday": "Jeudi",
+          "friday": "Vendredi",
+          "saturday": "Samedi",
+          "sunday": "Dimanche"
+        },
+        "months": {
+          "january": "Janvier",
+          "february": "Février",
+          "march": "Mars",
+          "april": "Avril",
+          "may": "Mai",
+          "june": "Juin",
+          "july": "Juillet",
+          "august": "Août",
+          "september": "Septembre",
+          "october": "Octobre",
+          "november": "Novembre",
+          "december": "Décembre"
+        }
+      }
+    },
+    "pages": {
+      "reports_page": {
+        "components": {
+          "row_title_cell": {
+            "total": "Total",
+            "without_group": "Sans groupe",
+            "empty_user": "Aucun utilisateur affecté"
+          },
+          "row_event_cell": {
+            "to": "à"
+          },
+          "reports_navigation_sidebar": {
+            "total": "Total",
+            "export_xlsx": "Exporter XLSX",
+            "export_table": "Exporté depuis {{company}} le {{date}}",
+            "unfold_filters_menu": "Déplier le menu des filtres",
+            "fold_filters_menu": "Replier le menu des filtres",
+            "hide_sidebar": "Cacher la barre latérale",
+            "show_sidebar": "Afficher la barre latérale",
+            "schedules": "Visites",
+            "title": {
+              "universal": "Rapports",
+              "project": "Rapports de projets",
+              "deal": "Rapports d'affaires"
+            },
+            "general_report": "Rapport général",
+            "comparison_of_periods": "Comparaison des périodes",
+            "telephony": "Appels",
+            "schedule": "Visites",
+            "projects": "Projets",
+            "users": "Par utilisateurs",
+            "rating": "Par classement",
+            "groups": "Par groupes",
+            "days": "Par jours",
+            "weeks": "Par semaines",
+            "months": "Par mois",
+            "quarters": "Par trimestres",
+            "years": "Par années",
+            "callsUsers": "Par utilisateurs",
+            "callsGroups": "Par départements",
+            "callHistory": "Rapport de l'historique des appels",
+            "scheduleClient": "Par clients",
+            "scheduleDepartment": "Par groupes",
+            "scheduleOwner": "Par planificateurs",
+            "schedulePerformer": "Par spécialistes",
+            "customer_reports": "Contacts et entreprises",
+            "customerContact": "Par contacts",
+            "customerCompany": "Par entreprises",
+            "customerContactCompany": "Par contacts et entreprises",
+            "products": "Produits",
+            "productsCategories": "Par catégories",
+            "productsUsers": "Par utilisateurs"
+          }
+        }
+      },
+      "dashboard_page": {
+        "filter": {
+          "placeholders": {
+            "select_users": "Utilisateurs",
+            "select_sales_pipeline": "Pipelines de vente",
+            "all": "Tous",
+            "all_active": "Tous actifs",
+            "open": "Ouverts",
+            "open_active": "Ouvert et actif",
+            "closed": "Fermés",
+            "created": "Créé"
+          },
+          "dashboard_type_tooltip": {
+            "all": {
+              "text": "Ce rapport inclut toutes les affaires existant pendant la période, quelle que soit leur activité. Il comprend :",
+              "list_1": "✓ Affaires créées pendant la période.",
+              "list_2": "✓ Affaires clôturées (gagnées ou perdues) pendant la période.",
+              "list_3": "✓ Affaires existantes avant la période et restées ouvertes.",
+              "list_4": "✗ N'exclut pas les affaires sans activité (sans mouvement dans le pipeline)."
+            },
+            "all_active": {
+              "text": "Ce rapport inclut uniquement les affaires ayant changé de phase au moins une fois pendant la période. Il comprend :",
+              "list_1": "✓ Affaires créées avant la période mais ayant bougé dans le pipeline.",
+              "list_2": "✓ Affaires créées pendant la période si elles ont bougé.",
+              "list_3": "✓ Affaires clôturées pendant la période si elles ont changé de phase avant clôture.",
+              "list_4": "✗ Exclut les affaires sans activité (sans changement de phase)."
+            },
+            "open": {
+              "text": "Ce rapport inclut les affaires non clôturées (ni gagnées ni perdues) à la fin de la période. Il comprend :",
+              "list_1": "✓ Affaires créées avant la période et toujours ouvertes.",
+              "list_2": "✓ Affaires créées pendant la période et non clôturées à la fin.",
+              "list_3": "✗ N'inclut pas les affaires clôturées."
+            },
+            "open_active": {
+              "text": "Ce rapport inclut uniquement les affaires ouvertes avec une activité (changement de phase) pendant la période. Il comprend :",
+              "list_1": "✓ Affaires ouvertes ayant changé de phase.",
+              "list_2": "✓ Nouvelles affaires ayant bougé dans le pipeline.",
+              "list_3": "✗ Exclut les affaires ouvertes sans mouvement.",
+              "list_4": "✗ Exclut les affaires clôturées."
+            },
+            "closed": {
+              "text": "Ce rapport inclut uniquement les affaires clôturées (gagnées ou perdues) pendant la période. Il comprend :",
+              "list_1": "✓ Affaires créées avant et clôturées pendant la période.",
+              "list_2": "✓ Affaires créées et clôturées pendant la période.",
+              "list_3": "✗ Exclut toutes les affaires ouvertes."
+            },
+            "created": {
+              "text": "Ce rapport inclut toutes les affaires créées pendant la période, quel que soit leur statut actuel. Il comprend :",
+              "list_1": "✓ Affaires créées pendant la période et restées ouvertes.",
+              "list_2": "✓ Affaires créées et clôturées pendant la période.",
+              "list_3": "✗ N'inclut pas les affaires créées avant la période."
+            }
+          }
+        },
+        "days": {
+          "one_day": "jour",
+          "several_days": ["jours", "jours", "jours"]
+        },
+        "auto_update_select": {
+          "auto_update": "Mise à jour automatique",
+          "modes": {
+            "never": "Jamais",
+            "minute": "1 minute",
+            "ten_minutes": "10 minutes",
+            "thirty_minutes": "30 minutes",
+            "hour": "1 heure"
+          }
+        },
+        "sales_goal_chart": {
+          "title_for_sales": "Objectif de ventes",
+          "title": "Objectif",
+          "hint": "Objectif de ventes",
+          "settings_tip": "Paramètres",
+          "plug_text_for_sales": "Définir les objectifs",
+          "plug_text": "Configurer un objectif"
+        },
+        "traffic_light_report": {
+          "title": "Rapport de feu de signalisation",
+          "subtitle": "Réalisation du plan d'aujourd'hui",
+          "hint": {
+            "line1": "Le rapport 'feu de signalisation' est un outil qui montre comment le département des ventes respecte le plan de vente du jour.",
+            "line2": "La formule pour calculer la réalisation du plan de vente du jour est la suivante :",
+            "line3": "Pourcentage de réalisation = (Ventes réelles divisées par Plan pour le jour actuel) × 100 %, où :",
+            "list": {
+              "point1": "Les ventes réelles sont le montant que vous avez déjà vendu jusqu'à présent.",
+              "point2": "Le plan pour le jour actuel fait partie du plan de vente général du mois, calculé pour le jour actuel."
+            },
+            "line4": "Exemple de calcul :",
+            "line5": "Supposons que votre plan de vente pour le mois soit de 10 000 $. Aujourd'hui est le jour 10, ce qui signifie qu'environ 1/3 du mois est écoulé. Votre plan pour aujourd'hui est :",
+            "line6": "Plan pour le jour actuel = (10 000 $ divisé par 30 jours) × 10 jours = 3 333,33 $",
+            "line7": "Vous avez vendu des produits pour 3 000 $.",
+            "line8": "Votre pourcentage de réalisation du plan est :",
+            "line9": "Pourcentage de réalisation = (3 000 $ divisé par 3 333,33 $) × 100 % ≈ 90 %",
+            "line10": "Ainsi, votre plan est réalisé à 90 %, et dans le rapport 'feu de signalisation' vous verrez la couleur verte, car la réalisation du plan se passe bien."
+          },
+          "plug_text": "Définir les objectifs"
+        },
+        "top_sellers": {
+          "title_for_sales": "Top 5 des contributeurs",
+          "title": "Top 5 des leaders",
+          "subtitle_for_sales": "Leaders des ventes",
+          "hint": "Top 5 des leaders des ventes",
+          "others": "Autres",
+          "plug_text": "Lorsque vous commencerez à utiliser {{company}}, les statistiques des 5 principaux leaders des ventes apparaîtront ici",
+          "plug_text_for_orders": "Une fois que vous commencerez à utiliser {{company}}, les statistiques des 5 principaux leaders des utilisateurs apparaîtront ici",
+          "plug_text_for_candidates": "Une fois que vous commencerez à utiliser {{company}}, les statistiques des 5 principaux leaders des utilisateurs apparaîtront ici"
+        },
+        "analytics": {
+          "total_leads": "Total des leads",
+          "total_orders": "Total des commandes",
+          "total_candidates": "Total des candidats",
+          "new_leads": "Nouveaux leads",
+          "new_orders": "Nouvelles commandes",
+          "new_candidates": "Nouveaux candidats",
+          "won_leads": "Gagnés",
+          "completed_orders": "Terminés",
+          "hired_candidates": "Candidats embauchés",
+          "lost_leads": "Perdus",
+          "failed_orders": "Échoués",
+          "rejected_candidates": "Candidats rejetés",
+          "total_tasks": "Total des tâches",
+          "completed_tasks": "Tâches terminées",
+          "expired_tasks": "Tâches en retard",
+          "no_tasks": "Leads : Sans tâches",
+          "cards_no_tasks": "Cartes : Sans tâches",
+          "total_activities": "Total des activités",
+          "completed_activities": "Activités terminées",
+          "expired_activities": "Activités en retard",
+          "no_activities": "Leads : Sans activités",
+          "cards_no_activities": "Cartes : Sans activités"
+        },
+        "rating": {
+          "title": "Classement",
+          "hint": "Classement"
+        },
+        "leads_status_chart": {
+          "title": "Résumé de l'état des leads :",
+          "title_for_orders": "Indicateurs de l'état des commandes :",
+          "title_for_candidates": "Indicateurs de l'état des candidats :",
+          "subtitle": "Ouverts, Perdus, Gagnés",
+          "subtitle_for_orders": "Ouverts, Échoués, Terminés",
+          "subtitle_for_candidates": "Ouverts, Candidats rejetés, Candidats embauchés",
+          "hint": "Résumé de l'état des leads",
+          "won": "Gagnés",
+          "completed": "Terminés",
+          "hired_candidates": "Candidats embauchés",
+          "lost": "Perdus",
+          "failed": "Échoués",
+          "rejected_candidates": "Candidats rejetés",
+          "opened": "Ouverts"
+        },
+        "sales_pipeline_indicators": {
+          "title": "Pipeline de conversion",
+          "total_sales": "Total des gains",
+          "conversion": "Conversion des gains",
+          "average_amount": "Montant moyen",
+          "average_term": "Durée moyenne",
+          "days": ["jour", "jours", "jours"]
+        },
+        "switch": {
+          "deals_count": "Nombre d'affaires",
+          "orders_count": "Nombre de commandes",
+          "sales_value": "Valeur des ventes",
+          "orders_value": "Valeur des commandes"
+        }
+      },
+      "goal_settings_page": {
+        "title": "Paramètres des objectifs",
+        "total": "Total",
+        "back_button": "Tableau de bord",
+        "users_select": "Utilisateurs",
+        "period_type": {
+          "month": "Mois",
+          "quarter": "Trimestre"
+        },
+        "change_period_modal": {
+          "title": "Attention !",
+          "annotation": "Changer la période entraînera la perte des objectifs que vous avez précédemment définis. Êtes-vous sûr de vouloir continuer ?",
+          "approve": "Oui",
+          "cancel": "Non"
+        },
+        "periods": {
+          "months": {
+            "january": "Janvier",
+            "february": "Février",
+            "march": "Mars",
+            "april": "Avril",
+            "may": "Mai",
+            "june": "Juin",
+            "july": "Juillet",
+            "august": "Août",
+            "september": "Septembre",
+            "october": "Octobre",
+            "november": "Novembre",
+            "december": "Décembre"
+          },
+          "quarters": {
+            "quarter1": "Trimestre 1",
+            "quarter2": "Trimestre 2",
+            "quarter3": "Trimestre 3",
+            "quarter4": "Trimestre 4"
+          }
+        },
+        "form_header_amount": "Montant",
+        "form_header_quantity": "Transactions",
+        "button_save": "Enregistrer"
+      }
+    }
+  }
+}

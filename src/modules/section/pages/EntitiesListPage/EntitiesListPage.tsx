@@ -1,0 +1,251 @@
+import { SettingsStore, appStore, entityTypeStore, iconStore, routes } from '@/app';
+import { authStore } from '@/modules/auth';
+import {
+  CommonQueryParams,
+  DefaultHeader,
+  EntitiesAndBoardsPicker,
+  EntityApiUtil,
+  EntityCategory,
+  LeftNavTemplate,
+  ListTabIcon,
+  ModuleNameSkeleton,
+  Subheader,
+  TutorialProductType,
+  UriCodingUtil,
+  WholePageLoaderWithLogo,
+  useTitle,
+  useTypedParams,
+  type DefaultHeaderModuleIconProps,
+  type EntityType,
+  type Optional,
+} from '@/shared';
+import { useDisclosure } from '@mantine/hooks';
+import { when } from 'mobx';
+import { observer } from 'mobx-react-lite';
+import { useCallback, useEffect, useMemo, useState } from 'react';
+import { useTranslation } from 'react-i18next';
+import { useLocation, useSearchParams } from 'react-router-dom';
+import {
+  AutomationNewTabIcon,
+  ENTITY_CARDS_FILTER_SETTINGS_KEY,
+  EntitiesFilterButton,
+  EntitiesList,
+  SearchBlock,
+  SectionHeaderControls,
+  SectionHeaderControlsSkeleton,
+  SectionSettingsButton,
+  type EntityBoardCardFilter,
+  type EntityCardsFilterSettings,
+} from '../../shared';
+import { EntitiesFilterStore, EntitiesListPageStore } from '../../store';
+import { CardsTotalBlock } from '../EntitiesPage/components';
+
+const CONTACT_OR_COMPANY = [EntityCategory.COMPANY, EntityCategory.CONTACT];
+
+const EntitiesListPage = observer(() => {
+  const { entityTypeId: etId, boardId } = useTypedParams<{
+    entityTypeId: number;
+    boardId: Optional<number>;
+  }>();
+
+  const { t } = useTranslation('component.section', {
+    keyPrefix: 'section.section_header_with_boards',
+  });
+
+  const [pageTitle, setPageTitle] = useState<string>();
+
+  useTitle({ dynamicTitle: pageTitle });
+
+  const { pathname, search } = useLocation();
+  const currentPageEncodedUrl = UriCodingUtil.encode(`${pathname}${search}`);
+
+  const entitiesListPageStore = useMemo(() => new EntitiesListPageStore(etId), [etId]);
+
+  const { meta } = entitiesListPageStore;
+  const { totalCount } = meta;
+
+  const [searchParams, setSearchParams] = useSearchParams();
+
+  let pageFromParams = searchParams.get(CommonQueryParams.PAGE);
+  let currentPage = pageFromParams ? Number(pageFromParams) : 1;
+
+  const [settingsOpened, { toggle: toggleSettings, close: closeSettings }] = useDisclosure(false);
+
+  const entitiesFilterStore = useMemo(() => new EntitiesFilterStore(), []);
+  const { filter: entitiesFilter, setFilter } = entitiesFilterStore;
+
+  const { settings } = useMemo(
+    () =>
+      SettingsStore.getSettingsStore<{
+        filters: EntityCardsFilterSettings[];
+      }>(ENTITY_CARDS_FILTER_SETTINGS_KEY),
+    []
+  );
+  const savedFilter = useMemo<Optional<EntityBoardCardFilter>>(
+    () => settings.filters?.find(f => f.entityTypeId === etId)?.filter,
+    [etId, settings]
+  );
+
+  useEffect(() => {
+    setFilter(savedFilter ?? {});
+  }, [savedFilter, setFilter]);
+
+  useEffect(() => {
+    when(
+      () => appStore.isLoaded,
+      () => {
+        const et = entityTypeStore.getById(etId);
+
+        setPageTitle(et.section.name);
+      }
+    );
+  }, [etId]);
+
+  useEffect(() => {
+    setSearchParams({ [CommonQueryParams.PAGE]: String(currentPage) });
+  }, [currentPage, setSearchParams]);
+
+  const loadData = useCallback(
+    async (filter: EntityBoardCardFilter): Promise<void> => {
+      setFilter(filter);
+
+      if (currentPage !== 1) {
+        setSearchParams(prev => {
+          prev.set(CommonQueryParams.PAGE, String(1));
+
+          return prev;
+        });
+
+        return;
+      }
+
+      await entitiesListPageStore.loadData({ filter, page: currentPage });
+    },
+    [currentPage, entitiesListPageStore, setFilter, setSearchParams]
+  );
+
+  const handleChangePage = useCallback(
+    (page: number) => {
+      setSearchParams(prev => {
+        prev.set(CommonQueryParams.PAGE, String(page));
+
+        return prev;
+      });
+    },
+    [setSearchParams]
+  );
+
+  const tableSettingsProps = useMemo(
+    () => ({
+      opened: settingsOpened,
+      toggle: toggleSettings,
+    }),
+    [settingsOpened, toggleSettings]
+  );
+
+  const getModuleIconProps = useCallback<(et: EntityType) => DefaultHeaderModuleIconProps>(
+    et => ({
+      icon: iconStore.getByName(et.section.icon).icon,
+      color: iconStore.getEntityColorByEntityCategory(et.entityCategory),
+    }),
+    []
+  );
+
+  const isAdmin = authStore.isAdmin();
+
+  const tabs = useMemo(
+    () =>
+      isAdmin
+        ? [
+            {
+              title: t('list'),
+              Icon: <ListTabIcon />,
+              href: routes.listSectionBase(etId),
+            },
+            {
+              title: t('automation'),
+              Icon: <AutomationNewTabIcon />,
+              href: routes.listSectionAutomation(etId),
+            },
+          ]
+        : [],
+    [etId, isAdmin, t]
+  );
+
+  if (!appStore.isLoaded)
+    return (
+      <LeftNavTemplate
+        Header={
+          <DefaultHeader Controls={<SectionHeaderControlsSkeleton />}>
+            <ModuleNameSkeleton />
+          </DefaultHeader>
+        }
+      >
+        <WholePageLoaderWithLogo ensureHeader />
+      </LeftNavTemplate>
+    );
+
+  const et = entityTypeStore.getById(etId);
+
+  return (
+    <LeftNavTemplate
+      contentMarginTop="var(--header-with-subheader-height)"
+      Header={
+        <DefaultHeader
+          objectId={etId}
+          moduleName={et.section.name}
+          moduleIconProps={getModuleIconProps(et)}
+          productType={TutorialProductType.ENTITY_TYPE}
+          Controls={<SectionHeaderControls et={et} />}
+          CentralContent={
+            <SearchBlock entityTypeId={et.id} searchEntities={EntityApiUtil.searchEntities} />
+          }
+        >
+          {CONTACT_OR_COMPANY.includes(et.entityCategory) && (
+            <EntitiesAndBoardsPicker et={et} activeBoardId={boardId} tab={null} />
+          )}
+        </DefaultHeader>
+      }
+    >
+      <Subheader
+        tabs={tabs}
+        Controls={
+          <>
+            <CardsTotalBlock totalCount={totalCount} etCategory={et.entityCategory} />
+
+            <EntitiesFilterButton
+              entityTypeId={etId}
+              filter={entitiesFilter}
+              boardId={boardId ?? null}
+              loadData={loadData}
+            />
+
+            <SectionSettingsButton
+              entityType={et}
+              boardId={boardId ?? null}
+              hideSettings={!authStore.isAdmin()}
+              currentPageEncodedUrl={currentPageEncodedUrl}
+              tableSettingsProps={tableSettingsProps}
+            />
+          </>
+        }
+      />
+
+      <EntitiesList
+        et={et}
+        totalCount={totalCount}
+        filter={entitiesFilter}
+        currentPage={currentPage}
+        savedFilter={savedFilter}
+        settingsOpened={settingsOpened}
+        currentPageEncodedUrl={currentPageEncodedUrl}
+        entitiesListPageStore={entitiesListPageStore}
+        onPageChange={handleChangePage}
+        handleCloseSettings={closeSettings}
+      />
+    </LeftNavTemplate>
+  );
+});
+
+EntitiesListPage.displayName = 'EntitiesListPage';
+export { EntitiesListPage };

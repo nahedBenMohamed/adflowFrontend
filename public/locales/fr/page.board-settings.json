@@ -1,0 +1,33 @@
+{
+  "board_settings": {
+    "ui": {
+      "board_settings_header": {
+        "header": "Paramètres du tableau",
+        "delete_board": "Supprimer le tableau",
+        "title": "Attention !",
+        "annotation": "La suppression du tableau entraînera la perte définitive de toutes les cartes. Êtes-vous sûr de vouloir continuer ?",
+        "save": "Enregistrer",
+        "cancel": "Annuler",
+        "leave": "Quitter les paramètres"
+      },
+      "stage_name_hint": "Maximum {{length}} caractères"
+    },
+    "entity_type_board_settings_page": {
+      "automation_new": "Automatisation 2.0",
+      "bpmn_2_0": "BPMN 2.0",
+      "bpmn_2_0_soon": "BPMN 2.0 (Bientôt...)",
+      "warning_title": "Vous ne pouvez pas supprimer le dernier tableau",
+      "warning_annotation": "Si vous souhaitez supprimer ce tableau, veuillez en créer un nouveau d'abord."
+    },
+    "task_board_settings_page": {
+      "warning_title": "Vous ne pouvez pas supprimer le tableau système",
+      "warning_annotation": "Ce tableau est un tableau système et ne peut pas être supprimé."
+    },
+    "delete_stage_warning_modal": {
+      "warning_title": "Êtes-vous sûr de vouloir supprimer cette étape ?",
+      "warning_annotation": "Choisissez une étape vers laquelle vous souhaitez transférer les éléments existants.",
+      "delete": "Supprimer",
+      "placeholder": "L'étape pour transférer"
+    }
+  }
+}

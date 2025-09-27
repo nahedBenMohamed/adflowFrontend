@@ -1,0 +1,17 @@
+export enum ModuleCategory {
+  CRM = 'crm',
+  PROJECT_MANAGEMENT = 'project_management',
+  PRODUCTION = 'production',
+  PRODUCT_MANAGEMENT_FOR_SALES = 'product_management_for_sales',
+  PRODUCT_MANAGEMENT_RENTALS = 'product_management_rentals',
+  SCHEDULER = 'scheduler',
+  SUPPLIER_MANAGEMENT = 'supplier_management',
+  CONTRACTOR_MANAGEMENT = 'contractor_management',
+  HR_MANAGEMENT = 'hr_management',
+  CONTACT = 'contact',
+  COMPANY = 'company',
+  UNIVERSAL_MODULE = 'universal_module',
+  PARTNER_MANAGEMENT = 'partner_management',
+  FINANCES = 'finances',
+  MARKETING = 'marketing',
+}

@@ -1,0 +1,242 @@
+{
+  "telephony": {
+    "pages": {
+      "calls_configuring_scenarios_page": {
+        "title": "Configuración del funcionamiento del IVR en el módulo CRM",
+        "failed_to_reach": "Inalcanzable",
+        "creates_manually": "El usuario crea manualmente una tarjeta de contacto y de negocio al recibir una llamada entrante",
+        "creates_manually_hint": "Cuando entra una llamada de un número desconocido, aparece una ventana para la llamada entrante para el usuario. El usuario puede responder la llamada y, si considera que esta llamada es una oportunidad de negocio, puede crear una tarjeta de contacto o ambas, una tarjeta de contacto y de negocio, con solo dos clics durante la conversación. Este método es preferible a generar tarjetas automáticamente ya que podrías recibir llamadas no solo de clientes potenciales, sino de varios otros negocios. Este enfoque ayuda a evitar la creación de tarjetas de contacto y de negocio innecesarias.",
+        "components": {
+          "configuring_scenarios_header_controls": {
+            "cancel": "Cancelar",
+            "save_scenarios": "Guardar escenarios",
+            "failed_to_reach": "Inalcanzable"
+          },
+          "entity_scenario_radio_group": {
+            "automatically_create": "Crear automáticamente",
+            "contact_or_company": "Contacto o Empresa",
+            "deal": "Negocio",
+            "select_contact_or_company_first": "Seleccionar contacto o empresa primero",
+            "deal_pipeline": "Pipeline de ventas",
+            "select_deal_first": "Seleccionar negocio primero",
+            "placeholders": {
+              "select_deal": "Seleccionar negocio",
+              "select_pipeline": "Seleccionar pipeline"
+            }
+          },
+          "incoming_calls_block": {
+            "incoming_calls": "Llamadas entrantes"
+          },
+          "incoming_known_missing_scenario_block": {
+            "missed_from_known_number": "Llamada perdida de un número conocido"
+          },
+          "incoming_unknown_missing_scenario_block": {
+            "missed_call_from_unknown_number": "Llamada perdida de un número desconocido",
+            "auto_create": "Crear automáticamente",
+            "contact_or_company": "Contacto o Empresa",
+            "responsible": "Responsable",
+            "select_contact_or_company_first": "Seleccionar contacto o empresa primero",
+            "deal_pipeline": "Pipeline de negocio",
+            "select_deal_first": "Seleccionar negocio primero",
+            "placeholders": {
+              "select_responsible": "Seleccionar responsable",
+              "select_deal": "Seleccionar negocio",
+              "select_pipeline": "Seleccionar pipeline"
+            }
+          },
+          "incoming_unknown_scenario_block": {
+            "call_from_unknown_number": "De un número desconocido"
+          },
+          "task_and_activities_scenario_group": {
+            "task": "Tarea",
+            "select_contact_or_company_first": "Seleccionar contacto o empresa primero",
+            "title": "Crear automáticamente una tarea o actividad",
+            "do_not_create": "No crear",
+            "activity": "Actividad",
+            "activity_type": "Tipo de actividad",
+            "complete": "Completar dentro de",
+            "description": "Descripción",
+            "task_title": "Título de la tarea",
+            "minutes": "minutos",
+            "placeholders": {
+              "activity_description": "Descripción de la actividad",
+              "task_description": "Descripción de la tarea",
+              "title": "Título"
+            }
+          },
+          "outgoing_calls_block": {
+            "outgoing_calls": "Llamadas salientes",
+            "failed_to_reach": "Inalcanzable"
+          },
+          "outgoing_unanswered_scenario_block": {
+            "failed_to_reach": "Inalcanzable",
+            "unanswered_outgoing_calls": "Llamadas salientes no contestadas",
+            "create_note": "Crear una nota en la historia del contacto/negocio",
+            "placeholders": {
+              "note_content": "Contenido de la nota"
+            }
+          },
+          "outgoing_unknown_scenario_block": {
+            "call_to_unknown_number": "A número desconocido",
+            "creates_manually": "El usuario crea manualmente una tarjeta de contacto y de negocio al realizar una llamada saliente"
+          }
+        }
+      },
+      "calls_sip_registrations_page": {
+        "provider": "Proveedor",
+        "removed_or_detached": "Eliminado o desvinculado",
+        "removed_or_detached_hint": "Esta inscripción SIP ya no está disponible porque fue eliminada o desvinculada en la plataforma de Voximplant. Para continuar usando esta inscripción SIP, debes volver a vincularla a tu aplicación o eliminarla y crear una nueva. Contacta al soporte {{mail}} para obtener más información.",
+        "users": "Usuarios",
+        "users_hint": "Selecciona los usuarios que tendrán acceso a este registro SIP",
+        "default_name": "Registro SIP #{{number}}",
+        "name": "Nombre de registro *",
+        "title_annotation": "Puedes encontrar las instrucciones de registro SIP en la sección \"Integraciones\" haciendo clic en el botón \"Instalar\" en el grupo \"Telefonía y PBX\".",
+        "link_to_vx_portal": "Enlace a la Portal de Voximplant",
+        "providers": {
+          "uis": "UIS",
+          "zadarma": "Zadarma",
+          "mango_office": "Mango Office",
+          "beeline": "Beeline",
+          "mts": "MTS",
+          "mgts": "MGTS",
+          "tele2": "Tele2",
+          "megafon": "Megafon",
+          "rostelecom": "Rostelecom",
+          "unknown": "Desconocido"
+        },
+        "annotation": "Al crear un registro SIP desde su cuenta de Voximplant, se cobrará inmediatamente la tarifa mensual. Consulte el importe en el portal de Voximplant. La creación puede tardar unos minutos.",
+        "last_updated": "Última actualización: {{lastUpdated}}",
+        "delete_warning": {
+          "title": "¿Está seguro de que desea eliminar este registro SIP?",
+          "annotation": "Esta acción no se puede deshacer. Podrá restaurar el registro SIP solo creando uno nuevo."
+        },
+        "registration_successful": "Registro exitoso",
+        "error_annotation": "Asegúrate de haber ingresado las credenciales correctas o verifica tu cuenta de Voximplant para obtener más detalles.",
+        "empty": "Aún no hay registros SIP",
+        "save_error": "No se pudo guardar el registro. Por favor, asegúrese de que todos los datos ingresados sean correctos.",
+        "add": "Agregar",
+        "title": "Registros SIP",
+        "edit_sip_registration": "Editar Registro SIP",
+        "add_sip_registration": "Agregar Registro SIP",
+        "proxy": "Proxy *",
+        "sip_user_name": "Nombre de usuario SIP *",
+        "password": "Contraseña",
+        "outbound_proxy": "Proxy saliente",
+        "auth_user": "Usuario de autenticación",
+        "auth_user_hint": "Generalmente es el mismo que el nombre de usuario.",
+        "placeholders": {
+          "all_users": "Todos los usuarios",
+          "name": "Nuevo registro SIP",
+          "proxy": "sip.provider.org",
+          "sip_user_name": "user_name",
+          "password": "********",
+          "outbound_proxy": "outbound.provider.org",
+          "auth_user": "auth_user_name"
+        }
+      },
+      "calls_settings_users_page": {
+        "empty": "No has añadido aún ningún usuario",
+        "users": "Usuarios",
+        "add_user": "Agregar Usuario",
+        "remove_user": "Eliminar usuario",
+        "active": "Activo",
+        "create": "Crear",
+        "open_sip_settings": "Abrir Configuración SIP",
+        "continue": "Continuar",
+        "sip_settings_title": "Configuración SIP – {{userName}}",
+        "sensitive_warning": "Esta es información sensible, asegúrate de no compartirla con terceros. Pasa el cursor sobre la contraseña para revelarla.",
+        "user_name": "Nombre de Usuario",
+        "domain": "Dominio",
+        "password": "Contraseña",
+        "remove_warning_title": "¿Eliminar a {{userName}}?",
+        "remove_warning_annotation": "Esta acción no se puede deshacer. Solo podrás restaurar al usuario creando uno nuevo.",
+        "remove": "Eliminar"
+      },
+      "calls_settings_account_page": {
+        "synchronise_with_vx": "Sincronizar con Voximplant",
+        "delete_warning_modal": {
+          "title": "¿Está seguro de que desea eliminar el número de teléfono {{phoneNumber}}?",
+          "annotation": "Esta acción no se puede deshacer."
+        },
+        "unknown": "Desconocido",
+        "region": "Región",
+        "phone_number": "Número de teléfono",
+        "users": "Usuarios",
+        "state": "Estado",
+        "connect_phone_number": "Conectar",
+        "disconnect_phone_number": "Desconectar",
+        "delete_phone_number": "Eliminar",
+        "phone_numbers": "Números de teléfono",
+        "phone_numbers_annotation1": "Conecte todos los números de teléfono de Voximplant disponibles a su cuenta.",
+        "phone_numbers_annotation2": "Puede agregar operadores activos en la columna de usuarios para que puedan acceder al número conectado.",
+        "phone_numbers_annotation3": "ℹ️ Al eliminar o desvincular un número directamente en la aplicación Voximplant, no olvides eliminarlo de la lista de números o presionar el botón de sincronización que aparecerá en este caso.",
+        "connect_all_available_phone_numbers": "Conectar todos los números disponibles",
+        "empty_phone_numbers": "No hay números de teléfono disponibles o conectados",
+        "placeholders": {
+          "all_users": "Todos los usuarios"
+        },
+        "connect_telephony_title": "Conecta la telefonía y obtén más oportunidades con {{company}}",
+        "connect_telephony_warning": "Tenga en cuenta: Al hacer clic en el botón, se creará automáticamente una cuenta de Voximplant vinculada a {{company}}. No se registre manualmente, ya que esa cuenta no estará asociada con {{company}}.",
+        "connect": "Conectar Telefonía",
+        "account": "Cuenta",
+        "voximplant_balance": "Saldo de Voximplant <i>(Próximamente...)</i>",
+        "recharge": "Recargar",
+        "subscription_fee": "Cuota de suscripción <i>(Próximamente...)</i>",
+        "available_numbers": "Números disponibles: {{amount}}",
+        "account_is_not_approved": "Cuenta no aprobada",
+        "not_approved_annotation": "Sin confirmar tu cuenta, no podrás usar los números de teléfono conectados.",
+        "approve": "Aprobar"
+      }
+    },
+    "components": {
+      "telephony_button": {
+        "telephony": "Telefonía",
+        "not_connected": "Conéctate a la telefonía para habilitar la funcionalidad de llamadas."
+      },
+      "telephony_modal": {
+        "connect_to_transfer": "Debe conectarse primero a la llamada para transferirla",
+        "no_operators_to_transfer_call_to": "No hay operadores para transferir la llamada a",
+        "coming_soon": "Próximamente...",
+        "unknown_number": "Número desconocido",
+        "amwork_calls": "Llamadas de {{company}}",
+        "active_call_control": {
+          "cancel": "Cancelar",
+          "transfer": "Transferir",
+          "add_to_call": "Agregar a la llamada",
+          "end_call": "Finalizar llamada",
+          "calling": "llamando",
+          "mute": "Silenciar",
+          "unmute": "Activar sonido"
+        },
+        "incoming_call_control": {
+          "transfer": "Transferir",
+          "add_to_call": "Agregar a la llamada",
+          "accept": "Aceptar",
+          "incoming_call": "llamada entrante",
+          "mute": "Silenciar",
+          "unmute": "Activar sonido",
+          "end_call": "Finalizar llamada",
+          "decline": "Rechazar"
+        },
+        "outgoing_call_initializer": {
+          "outgoing_number": "Número de salida",
+          "no_available_phone_numbers": "No hay números disponibles",
+          "keys": "Teclas",
+          "recent": "Recientes",
+          "outgoing": "Llamada saliente",
+          "incoming": "Llamada entrante",
+          "yesterday": "Ayer",
+          "today": "Hoy",
+          "no_calls": "Sin llamadas"
+        },
+        "call_control_template": {
+          "call_from": "Llamada de: {{number}}",
+          "create": "Crear",
+          "placeholders": {
+            "select_card": "Seleccionar tarjeta"
+          }
+        }
+      }
+    }
+  }
+}

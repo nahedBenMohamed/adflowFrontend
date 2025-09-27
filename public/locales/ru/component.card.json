@@ -1,0 +1,344 @@
+{
+  "card": {
+    "status": {
+      "active": "Действующая",
+      "liquidating": "Ликвидируется",
+      "liquidated": "Ликвидирована",
+      "bankrupt": "Банкротство",
+      "reorganizing": "В процессе присоединения к другому юрлицу, с последующей ликвидацией"
+    },
+    "type": {
+      "legal": "Юридическое лицо",
+      "individual": "Индивидуальный предприниматель"
+    },
+    "branch_type": {
+      "main": "Головная организация",
+      "branch": "Филиал"
+    },
+    "opf": {
+      "bank": "Банк",
+      "bank_branch": "Филиал банка",
+      "nko": "Небанковская кредитная организация (НКО)",
+      "nko_branch": "Филиал НКО",
+      "rkc": "Расчетно-кассовый центр",
+      "cbr": "Управление ЦБ РФ (март 2021)",
+      "treasury": "Управление Казначейства (март 2021)",
+      "other": "Другой"
+    },
+    "days": ["день", "дня", "дней"],
+    "creation_date": "Создано",
+    "in_work": "В работе",
+    "shipping_date": "Отгружено",
+    "closing_date": "Закрыто",
+    "open_chat": "Открыть чат",
+    "analytics": "Аналитика",
+    "card_focus": "Фокусирование (выделяет карточку на доске и в списке)",
+    "field_formula_circular_dependency_warning": {
+      "warning_title": "Невозможно сохранить изменения",
+      "warning_annotation": "Вы пытаетесь обновить поле формулы \"{{fieldName}}\" с использованием другой формулы, которая создает циклическую зависимость (одна формула зависит от другой формулы, которая зависит от нее). Пожалуйста, обновите настройки формулы, чтобы разрешить циклическую зависимость и попробуйте снова.",
+      "cancel_changes": "Отменить изменения",
+      "continue": "Продолжить"
+    },
+    "field_used_in_formula_warning": {
+      "warning_title": "Невозможно сохранить изменения",
+      "warning_annotation": "Вы пытаетесь удалить поле \"{{fieldName}}\", которое используется в формуле. Сначала удалите его из формулы и попробуйте снова.",
+      "cancel_changes": "Отменить изменения",
+      "continue": "Продолжить"
+    },
+    "mutation_warning": {
+      "title": {
+        "change_stage": "Невозможно изменить этап",
+        "save_changes": "Невозможно сохранить изменения"
+      },
+      "annotation": "Некоторые обязательные поля не заполнены. Пожалуйста, заполните их и повторите попытку.",
+      "continue": "Продолжить"
+    },
+    "change_linked_responsibles_modal": {
+      "header": "Изменение ответственного",
+      "annotation": "Выберите связанные карточки, в которых вы также хотите изменить ответственного пользователя",
+      "change_responsible_in_chats": "Добавить ответственного в чаты карточек",
+      "chats_hint": "Новый ответственный пользователь будет добавлен в чаты связанных карточек, в которых он еще не присутствует."
+    },
+    "owner": "Ответственный",
+    "delete_warning_title": "Вы действительно хотите удалить карточку?",
+    "delete_warning_caption": "Это действие не может быть отменено.",
+    "files": "Файлы",
+    "from_card_or_linked_entities": "Из карточки или связанных карточек",
+    "recent": "Недавние",
+    "change_board": "Изменить доску",
+    "placeholders": {
+      "name": "Введите имя..."
+    },
+    "ui": {
+      "requisites_codes": {
+        "ie_name": "Имя ИП",
+        "ie_surname": "Фамилия ИП",
+        "ie_patronymic": "Отчество ИП",
+        "org_name": "Наименование компании",
+        "org_tin": "ИНН организации",
+        "org_trrc": "КПП организации",
+        "org_psrn": "ОГРН",
+        "org_type": "Тип организации",
+        "org_full_name": "Полное наименование",
+        "org_short_name": "Краткое наименование",
+        "org_management_name": "Имя руководителя",
+        "org_management_post": "Пост руководителя",
+        "org_management_start_date": "Дата вступления в должность руководителя",
+        "org_branch_count": "Количество филиалов",
+        "org_branch_type": "Тип подразделения",
+        "org_address": "Адрес организации",
+        "org_reg_date": "Дата регистрации",
+        "org_liquidation_date": "Дата ликвидации",
+        "org_status": "Статус организации",
+        "stat_okato": "ОКАТО",
+        "stat_oktmo": "ОКТМО",
+        "stat_okpo": "ОКПО",
+        "stat_okogu": "ОКОГУ",
+        "stat_okfs": "ОКФС",
+        "stat_okved": "ОКВЭД",
+        "org_extra_employee_count": "Среднесписочная численность работников",
+        "org_extra_founders": "Учредители компании",
+        "org_extra_managers": "Руководители компании",
+        "org_extra_capital": "Уставной капитал",
+        "org_extra_licenses": "Лицензии",
+        "org_extra_phones": "Телефоны",
+        "org_extra_emails": "Адреса электронной почты",
+        "bank_name": "Наименование банка",
+        "bank_bic": "БИК ЦБ РФ",
+        "bank_swift": "SWIFT",
+        "bank_tin": "ИНН банка",
+        "bank_trrc": "КПП банка",
+        "bank_correspondent_acc": "Корреспондентский счет ЦБ РФ",
+        "bank_payment_city": "Город для платежного поручения",
+        "bank_opf_type": "Тип кредитной организации",
+        "bank_checking_account": "Расчетный счет"
+      },
+      "analytics": "Аналитика",
+      "requisites": "Реквизиты",
+      "card_page_header": {
+        "overview": "Обзор",
+        "products": "Продукты",
+        "create_new_order": "Создать новый заказ",
+        "orders": "Заказы",
+        "board": "Доска",
+        "list": "Список",
+        "calendar": "Календарь",
+        "timeline": "Гант",
+        "relocate_card_button": "Переместить",
+        "order_denied": "У вас нет разрешения на создание заказа. Обратитесь к администратору учетной записи для получения доступа."
+      },
+      "actions_dropdown": {
+        "delete_entity": "Удалить карточку",
+        "fine_tune": "Тонкая настройка"
+      },
+      "mini_card": {
+        "enter_name": "Введите имя {{name}}",
+        "unpin": "Открепить",
+        "owner": "Ответственный",
+        "stage": "Статус",
+        "placeholders": {
+          "select_stage": "Выберите статус"
+        },
+        "fields": {
+          "value": "Бюджет",
+          "participants": "Участники",
+          "start_date": "Дата начала",
+          "end_date": "Дата окончания",
+          "description": "Описание"
+        }
+      },
+      "stages": {
+        "disabled_while_adding": "Смена статуса будет доступна после создания карточки"
+      },
+      "feed": {
+        "unknown": "Неизвестный 👤",
+        "readonly": "Вы не можете добавлять элементы к этой карточке",
+        "disabled_while_adding": "Добавление элементов к карточке будет доступно после создания карточки",
+        "notes": "Примечания",
+        "activities": "Активности",
+        "tasks": "Задачи",
+        "amwork_messenger": "{{company}} мессенджер",
+        "documents": "Документы",
+        "create_chat": "Создать чат с командой",
+        "create_documents_tab": "Создать документы",
+        "add_visit": "Назначить встречу",
+        "share_documents": "Поделитесь сгенерированными документами",
+        "empty": "Здесь пока ничего нет",
+        "add_activity": {
+          "placeholder": "Описание активности"
+        },
+        "add_note": {
+          "add_note": "Добавить заметку"
+        },
+        "add_task_modal": {
+          "dates_error": "Дата окончания должна быть позже даты начала.",
+          "tab": "Добавить задачу",
+          "task_name": "Название задачи *",
+          "planned_time": "Планируемое время",
+          "board_name": "Название доски",
+          "assignee": "Исполнитель",
+          "start_date": "Дата начала",
+          "end_date": "Дата окончания",
+          "description": "Описание",
+          "subtasks": "Подзадачи",
+          "placeholder": "Добавить заголовок...",
+          "add_board": "Добавить доску",
+          "save": "Сохранить",
+          "new_task": "Новая задача",
+          "repeating_task": {
+            "title": "Повтор задачи",
+            "hint": "Установите количество и интервал повторных задач, если это необходимо. Повторные задачи будут созданы с такими же настройками. Если у задачи указано время начала или время конца, задачи будут поставлены с указанным интервалом с учетом рабочих дней.",
+            "count": "Количество",
+            "interval": "Интервал",
+            "interval_disabled_tooltip": "Установите время начала или окончания задачи",
+            "intervals": {
+              "none": "Без интервала",
+              "day": "Каждый день",
+              "week": "Раз в неделю",
+              "month": "Раз в месяц"
+            }
+          },
+          "placeholders": {
+            "board": "Выберите доску",
+            "subtask": "Новая подзадача"
+          }
+        },
+        "filter": {
+          "all": "Все",
+          "tasks": "Задачи",
+          "activities": "Активности",
+          "notes": "Заметки",
+          "mail": "Почта",
+          "files": "Файлы",
+          "calls": "Звонки"
+        },
+        "create_documents": {
+          "order": "Заказ-{{number}}",
+          "documents": "Документы",
+          "create_documents": "Создать документы",
+          "create_new_documents": "Создать новые документы",
+          "select_all": "Выбрать все",
+          "clear_selection": "Снять выделение",
+          "send_by_email": "Отправить по почте",
+          "add_template": "Добавить шаблон",
+          "invalid_template_title": "Ошибка в шаблоне документа",
+          "invalid_template_annotation": "Невозможно сгенерировать документ по данному шаблону, так как в шаблоне есть синтаксические ошибки. Обновите шаблон или выберите другой для генерации документа.",
+          "hints": {
+            "cancel": "Отмена",
+            "generate": "Сгенерировать",
+            "generate_anyway": "Все равно сгенерировать",
+            "docx_format": "Формат DOCX",
+            "pdf_format": "Формат PDF",
+            "no_documents_title": "Шаблоны отсутствуют",
+            "no_documents_annotation": "Для этой карточки нет доступных шаблонов документов. Создайте новый или измените существующий в разделе Документы на странице Настройки.",
+            "creating_documents_title": "Создание ваших документов",
+            "creating_documents_annotation": "Это может занять некоторое время, но после этого вы сможете отправить почтой или загрузить документы.",
+            "select_template_title": "Выбрать шаблон",
+            "select_template_annotation": "Чтобы выбрать шаблон, откройте выпадающий список и выберите нужный файл.",
+            "format_title": "Формат",
+            "issues_identified": "Выявлено несколько проблем",
+            "invalid_tags_annotation": "Некоторые коды недействительны или связаны с пустым полем:",
+            "format_annotation": "Выберите формат(-ы), в котором(-ых) вы хотите создать документ."
+          },
+          "placeholders": {
+            "select_order": "Выбрать заказ",
+            "select_template": "Выбрать шаблон",
+            "invalid_tags_annotation": "Некоторые коды недействительны или связаны с пустым полем:"
+          }
+        },
+        "activity_block": {
+          "creator": "Ответственный",
+          "start_date": "Дата",
+          "plan_time": "Время"
+        },
+        "creator_tag": {
+          "task_setter_at_time": "{{taskSetter}} в {{time}}"
+        },
+        "files_block": {
+          "unknown_file": "Неизвестный файл",
+          "downloaded_file": "{{companyName}} – Скачанный файл",
+          "attachment": "вложение",
+          "attachments": "вложения",
+          "download_all": "Скачать все"
+        },
+        "note_block": {
+          "block_title": "Примечание",
+          "creation_date": "Дата создания",
+          "message": "Сообщение",
+          "to_recipient": "к {{recipient}}"
+        },
+        "task_block": {
+          "creator": "Ответственный",
+          "start_date": "Дата начала",
+          "end_date": "Дата окончания",
+          "no_due_date": "Нет даты выполнения"
+        },
+        "mail_block": {
+          "sender": "Отправитель",
+          "recipient": "Получатель",
+          "date": "Дата",
+          "seen": "Прочитано"
+        },
+        "document_block": {
+          "creation_date": "Дата создания",
+          "docs": "Документы",
+          "annotation": "{{creator}} создал(-а) {{documentName}} {{date}}"
+        },
+        "call_block": {
+          "start_date": "Дата",
+          "who_called": "Оператор",
+          "who_got_call": "Кому звонили",
+          "did_not_get_through": "Не дозвонились",
+          "time": {
+            "d": "д",
+            "h": "ч",
+            "m": "м",
+            "s": "с"
+          },
+          "status": {
+            "missed_call": "Пропущенный звонок",
+            "incoming_call": "Входящий звонок",
+            "outgoing_call": "Исходящий звонок"
+          },
+          "comment": "Комментарий"
+        },
+        "common": {
+          "author": "Автор",
+          "reporter": "Постановщик",
+          "created_at": "{{day}} в {{time}}",
+          "result": "Результат",
+          "functional_options": {
+            "edit": "Редактировать",
+            "delete": "Удалить"
+          },
+          "item_tag": {
+            "tasks": {
+              "resolved": "Задача выполнена",
+              "expired": "Задача просрочена",
+              "future": "Предстоящая задача",
+              "today": "Задача на сегодня"
+            },
+            "activities": {
+              "resolved": "Активность выполнена",
+              "expired": "Активность просрочена",
+              "future": "Предстоящая активность",
+              "today": "Активность на сегодня"
+            }
+          },
+          "activity_type_picker": {
+            "add_new_type": "Добавить новый тип",
+            "warn_title": "Вы действительно хотите удалить этот тип активности?",
+            "warn_annotation": "Вы не сможете больше создать активность этого типа.",
+            "placeholders": {
+              "select_activity_type": "Выберите тип активности"
+            }
+          },
+          "user_picker": {
+            "add": "Добавить",
+            "placeholder": "Выберите пользователя"
+          }
+        }
+      }
+    }
+  }
+}

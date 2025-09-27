@@ -1,0 +1,368 @@
+{
+  "automation": {
+    "modals": {
+      "add_activity_automation_modal": {
+        "current_responsible_user": "Utilisateur responsable actuel",
+        "activity_default_name": " Activité #{{id}}",
+        "title_add": "Ajouter une automatisation de création d'activité",
+        "title_update": "Mettre à jour l'automatisation de création d'activité",
+        "create_activity": "Créer une activité *",
+        "responsible_user": "Utilisateur responsable *",
+        "due_date": "Date d'échéance",
+        "defer_start": "Date de début",
+        "activity_type": "Type d'activité *",
+        "description": "Description",
+        "current_responsible_user_hint": "Sélectionnez l'utilisateur responsable de l'activité. L'utilisateur actuellement responsable est celui assigné à la carte où l'activité sera créée.",
+        "placeholders": {
+          "select_activity_type": "Sélectionner le type d'activité"
+        }
+      },
+      "add_task_automation_modal": {
+        "task_default_name": "Tâche #{{id}}",
+        "title_add": "Ajouter une automatisation de création de tâche",
+        "title_update": "Mettre à jour l'automatisation de création de tâche",
+        "create_task": "Créer une tâche *",
+        "due_date": "Date d'échéance",
+        "defer_start": "Date de début",
+        "responsible_user": "Utilisateur responsable *",
+        "name_and_description": "Nom * et description",
+        "current_responsible_user": "Utilisateur responsable actuel",
+        "current_responsible_user_hint": "Sélectionnez l'utilisateur responsable de la tâche. L'utilisateur actuellement responsable est celui assigné à la carte où la tâche sera créée.",
+        "placeholders": {
+          "task_name": "Nom de la tâche",
+          "select_user": "Sélectionner un utilisateur"
+        }
+      },
+      "change_responsible_automation_modal": {
+        "change_responsible_default_name": "Responsable #{{id}}",
+        "title_add": "Ajouter une automatisation de changement de responsable",
+        "title_update": "Mettre à jour l'automatisation de changement de responsable",
+        "responsible_user": "Changer l'utilisateur responsable en *",
+        "placeholders": {
+          "select_responsible_user": "Sélectionnez le nouvel responsable"
+        }
+      },
+      "change_stage_automation_modal": {
+        "change_stage_default_name": "Étape #{{id}}",
+        "title_add": "Ajouter une automatisation de changement d'étape",
+        "title_update": "Mettre à jour l'automatisation de changement d'étape",
+        "change_stage": "Changer d'étape *",
+        "cards_copies": "Copies de cartes",
+        "stage": "Pipeline de vente et étape *",
+        "automation_copy": {
+          "move_label": "Ne pas créer une copie de l'affaire en changeant son état",
+          "copy_original_label": "Créer une copie de l'affaire et déplacer l'affaire originale au nouvel état en changeant son état",
+          "copy_new_label": "Créer une copie de l'affaire en changeant son état, mais laisser l'affaire originale dans son état actuel.",
+          "hint": "Lorsque cette option est activée, le système créera automatiquement une copie de la carte dans son état actuel à chaque changement d'état automatique. Cela est essentiel pour une précision dans les rapports et les métriques de planification des ventes, en particulier lorsque le changement d'état est associé à des états finaux du système comme 'Terminé avec succès' ou 'Terminé sans succès'."
+        },
+        "placeholders": {
+          "select_stage": "Sélectionner l'étape"
+        }
+      },
+      "change_linked_stage_automation_modal": {
+        "change_stage_default_name": "Étape #{{id}}",
+        "title_add": "Ajouter une automatisation de changement d'étape",
+        "title_update": "Mettre à jour l'automatisation de changement d'étape",
+        "change_stage": "Changer d'étape *",
+        "cards_copies": "Copies de cartes",
+        "entity_type": "Module *",
+        "stage": "Pipeline de vente et étape *",
+        "no_stages": "Le module sélectionné n'a pas de statut. Sélectionnez un autre module pour créer l'automatisation.",
+        "automation_copy": {
+          "move_label": "Ne pas créer une copie de l'affaire en changeant son état",
+          "copy_original_label": "Créer une copie de l'affaire et déplacer l'affaire originale au nouvel état en changeant son état",
+          "copy_new_label": "Créer une copie de l'affaire en changeant son état, mais laisser l'affaire originale dans son état actuel.",
+          "hint": "Lorsque cette option est activée, le système créera automatiquement une copie de la carte dans son état actuel à chaque changement d'état automatique. Cela est essentiel pour une précision dans les rapports et les métriques de planification des ventes, en particulier lorsque le changement d'état est associé à des états finaux du système comme 'Terminé avec succès' ou 'Terminé sans succès'."
+        },
+        "placeholders": {
+          "select_stage": "Sélectionner l'étape"
+        }
+      },
+      "send_email_automation_modal": {
+        "configure_mailbox_limits": "Configurer les limites de boîte aux lettres",
+        "max_number_of_emails_per_day": "Nombre maximal d'emails par jour",
+        "send_email_default_name": "Email #{{id}}",
+        "title_add": "Ajouter une automatisation d'email",
+        "title_update": "Mettre à jour l'automatisation d'email",
+        "title_hint": "Les messages électroniques ne seront envoyés qu'aux cartes de contact qui ont un champ email rempli.",
+        "email_text": "Texte de l'email *",
+        "recipient_name": "- Nom du destinataire",
+        "recipient_name_hint": "Vous pouvez définir l'espace réservé {{contact_name}} dans le texte de l'email, et il sera remplacé par le nom du contact de la carte.",
+        "user_name": "- Nom de l'utilisateur",
+        "user_phone": "- Téléphone de l'utilisateur",
+        "send_with_html": "Envoyer l'email avec le format HTML",
+        "sender_email": "Email de l'expéditeur *",
+        "sender_name": "Nom de l'expéditeur *",
+        "send": "Envoyer",
+        "emails_per_day": "emails par jour",
+        "emails_per_day_hint": "Le paramètre de limite d'emails est nécessaire pour éviter d'être bloqué par le fournisseur de service de messagerie. Chaque service de messagerie fixe ses propres limites pour l'envoi de messages. Par exemple, la version de base de Google Workspace permet d'envoyer 500 messages par jour depuis une boîte aux lettres.",
+        "mailing_parameters": "Paramètres d'envoi *",
+        "options": {
+          "addresses": "Adresses d'envoi *",
+          "all_addresses": "Envoyer à toutes les cartes et toutes les adresses e-mail",
+          "fine_tune_addresses": "Configurer...",
+          "main_entity": "Envoyer à la carte principale",
+          "main_entity_hint": "Choisissez d'envoyer le mail à toutes les adresses de la carte principale ou seulement à la première.",
+          "main_entity_all": "à toutes les adresses",
+          "main_entity_only_first": "uniquement à la première adresse",
+          "contact": "Envoyer à la carte de contact",
+          "contact_hint": "Choisissez d'envoyer le mail à toutes les cartes de type 'Contact' ou seulement à la première, ainsi qu'à toutes les adresses de la carte ou seulement à la première.",
+          "contact_all_entities_all_values": "à toutes les adresses dans toutes les cartes de contacts",
+          "contact_all_entities_first_value": "uniquement à la première adresse dans toutes les cartes de contacts",
+          "contact_first_entity_all_values": "à toutes les adresses uniquement dans la première carte de contact",
+          "contact_first_entity_first_value": "uniquement à la première adresse dans la première carte de contact",
+          "company": "Envoyer à la carte d'entreprise",
+          "company_hint": "Choisissez d'envoyer le mail à toutes les cartes de type 'Entreprise' ou seulement à la première, ainsi qu'à toutes les adresses de la carte ou seulement à la première.",
+          "company_all_entities_all_values": "à toutes les adresses dans toutes les cartes d'entreprises",
+          "company_all_entities_first_value": "uniquement à la première adresse dans toutes les cartes d'entreprises",
+          "company_first_entity_all_values": "à toutes les adresses uniquement dans la première carte d'entreprise",
+          "company_first_entity_first_value": "uniquement à la première adresse dans la première carte d'entreprise"
+        },
+        "placeholders": {
+          "title": "Entrer le titre",
+          "email_text": "Entrer le texte de l'email",
+          "email_markup": "Entrer le format HTML",
+          "select_email_address": "Sélectionner une adresse email",
+          "select_user": "Sélectionner un utilisateur"
+        }
+      },
+      "create_entity_automation_modal": {
+        "create_entity_default_name": "Carte #{{id}}",
+        "title_add": "Créer une automatisation de carte associée",
+        "title_update": "Mettre à jour l'automatisation de carte associée",
+        "create_card": "Créer une carte associée *",
+        "select_entity_type": "Module",
+        "select_entity_type_hint": "Sélectionnez le module dans lequel la carte sera créée. Pour éviter les cycles, vous ne pouvez pas créer de carte dans le module actuel.",
+        "select_stage": "Tableau ou pipeline de vente et statut",
+        "responsible_user": "Utilisateur responsable",
+        "responsible_user_hint": "Sélectionnez l'utilisateur responsable de la tâche. L'utilisateur responsable actuel est celui qui gère la carte où la tâche sera créée.",
+        "current_responsible_user": "Utilisateur responsable actuel",
+        "entity_name": "Nom de la carte",
+        "placeholders": {
+          "select_entity_type": "Sélectionnez un module",
+          "entity_name": "Entrez le nom de la carte"
+        }
+      },
+      "send_internal_chat_automation_modal": {
+        "send_internal_chat_default_name": "Chat #{{id}}",
+        "title_add": "Créer une automatisation d'envoi de message dans le chat",
+        "title_update": "Mettre à jour l'automatisation d'envoi de message dans le chat",
+        "sender": "Expéditeur",
+        "responsible_user_hint": "Sélectionnez l'expéditeur du message. L'utilisateur responsable actuel est le responsable de la carte à partir de laquelle l'automatisation a été créée.",
+        "current_responsible_user": "Utilisateur responsable actuel",
+        "recipients": "Destinataires",
+        "message": "Texte du message",
+        "placeholders": {
+          "recipients": "Sélectionnez des utilisateurs",
+          "message": "Saisissez le message"
+        }
+      },
+      "send_external_chat_automation_modal": {
+        "send_external_chat_default_name": "Chat externe #{{id}}",
+        "title_add": "Créer une automatisation d'envoi de chat externe",
+        "title_update": "Mettre à jour l'automatisation d'envoi de chat externe",
+        "sender": "Expéditeur *",
+        "responsible_user_hint": "Sélectionnez l'expéditeur du message. L'utilisateur responsable actuel est celui assigné à la fiche d'où l'automatisation est créée.",
+        "current_responsible_user": "Utilisateur responsable actuel",
+        "provider": "Fournisseur de chat *",
+        "message": "Message *",
+        "send_to_chats": "Envoyer aux chats des fiches",
+        "send_to_phone_numbers": "Envoyer aux numéros de téléphone",
+        "add_phone_number": "Ajouter un numéro",
+        "hint_chats": "Le message sera envoyé à tous les chats externes des fiches de ce module selon les paramètres choisis",
+        "hint_phone_numbers": "Le message sera envoyé aux numéros sélectionnés",
+        "phone_numbers_disabled": "L'envoi par numéros de téléphone est uniquement disponible pour les fournisseurs Whatsapp et Telegram",
+        "placeholders": {
+          "message": "Saisissez un message"
+        },
+        "errors": {
+          "phone": "Le numéro de téléphone est manquant"
+        },
+        "options": {
+          "addresses": "Chats de destination *",
+          "all_addresses": "Envoyer à toutes les fiches et tous les chats externes",
+          "fine_tune_addresses": "Configurer...",
+          "main_entity": "Envoyer à la fiche principale",
+          "main_entity_hint": "Choisissez d'envoyer le message à tous les chats de la fiche principale ou uniquement au premier.",
+          "main_entity_all": "à tous les chats",
+          "main_entity_only_first": "uniquement au premier chat",
+          "contact": "Envoyer à la fiche de contact",
+          "contact_hint": "Choisissez d'envoyer le message à toutes les fiches de type « Contact » ou uniquement à la première, et d'envoyer à tous les chats de la fiche ou uniquement au premier.",
+          "contact_all_entities_all_values": "à tous les chats dans toutes les fiches de contact",
+          "contact_all_entities_first_value": "uniquement au premier chat dans toutes les fiches de contact",
+          "contact_first_entity_all_values": "à tous les chats dans la première fiche de contact",
+          "contact_first_entity_first_value": "uniquement au premier chat dans la première fiche de contact",
+          "company": "Envoyer à la fiche de société",
+          "company_hint": "Choisissez d'envoyer le message à toutes les fiches de type « Société » ou uniquement à la première, et d'envoyer à tous les chats de la fiche ou uniquement au premier.",
+          "company_all_entities_all_values": "à tous les chats dans toutes les fiches de société",
+          "company_all_entities_first_value": "uniquement au premier chat dans toutes les fiches de société",
+          "company_first_entity_all_values": "à tous les chats dans la première fiche de société",
+          "company_first_entity_first_value": "uniquement au premier chat dans la première fiche de société"
+        }
+      },
+      "request_http_automation_modal": {
+        "http_request_default_name": "Requête HTTP #{{id}}",
+        "title_add": "Créer une automatisation de requête HTTP",
+        "title_update": "Mettre à jour l'automatisation de requête HTTP",
+        "http_request": "Paramètres de la requête HTTP",
+        "url": "URL *",
+        "method": "Méthode *",
+        "headers": "En-têtes",
+        "params": "Paramètres de requête"
+      },
+      "automation_modal_template": {
+        "apply_trigger_hint": "Lorsque cette option est sélectionnée, l'automatisation sera appliquée à toutes les cartes existantes dans ce statut. Sinon, elle ne s'appliquera qu'aux nouvelles cartes entrant dans ce statut. Cette action peut être effectuée à chaque enregistrement de l'automatisation.",
+        "apply_trigger_hint_list": "Lorsque cette option est sélectionnée, l'automatisation sera appliquée à toutes les cartes existantes. Sinon, elle ne s'appliquera qu'aux nouvelles cartes. Cette action peut être effectuée à chaque enregistrement de l'automatisation.",
+        "automation_name": "Nom de l'automatisation *",
+        "trigger": "Déclencheur *",
+        "conditions": "Conditions",
+        "delay": "Délai",
+        "delay_one_stage_title": "Retard lié au statut",
+        "delay_one_stage_hint": "L’automatisation s’exécute uniquement si la carte reste à ce statut jusqu’à la fin du retard. En cas de changement, elle ne se déclenche pas.",
+        "delay_all_stages_title": "Retard sans lien avec le statut",
+        "delay_all_stages_hint": "L’automatisation s’exécute après le retard, même si la carte change de statut.",
+        "enable": "Activer l'automatisation",
+        "enable_annotation": "Vous pouvez activer et désactiver l'automatisation",
+        "apply_trigger": "Appliquer le déclencheur aux objets actuels dans l'étape",
+        "apply_trigger_list": "Appliquer le déclencheur aux objets actuels",
+        "delete_automation": "Supprimer l'automatisation",
+        "on": "ACTIVÉ",
+        "placeholders": {
+          "name": "Nom"
+        }
+      },
+      "delete_automation_modal": {
+        "title": "Voulez-vous vraiment supprimer cette automatisation?",
+        "annotation": "Cette action ne peut pas être annulée"
+      },
+      "common": {
+        "use_get_chats_template_options": {
+          "recipient_name": "- Nom du destinataire",
+          "recipient_name_hint": "Vous pouvez définir l'espace réservé {{contact_name}} dans le texte du message de chat, et il sera remplacé par le nom du contact de la carte."
+        },
+        "trigger_select": {
+          "exact_time_of_automation": "Heure exacte de l'automatisation",
+          "exact_time": "Heure exacte: {{day}} à {{time}}",
+          "when_transitioning": "Lors de la transition ou de la création",
+          "at_the_transition": "Lors de la transition à l'étape",
+          "when_creating": "Lors de la création dans l'étape",
+          "when_creating_list": "Lors de la création",
+          "when_responsible_changes": "Lorsque l'utilisateur responsable change",
+          "placeholder": "Sélectionner le déclencheur"
+        },
+        "conditions_block": {
+          "field": "Champ *",
+          "condition": "Condition *",
+          "entity_type_field_filter_string": {
+            "is_empty": "Est vide",
+            "is_not_empty": "N'est pas vide",
+            "contains": "Contient...",
+            "placeholders": {
+              "value": "Valeur"
+            }
+          },
+          "entity_type_field_filter_number": {
+            "placeholders": {
+              "from": "De",
+              "to": "À"
+            }
+          },
+          "entity_type_field_filter_boolean": {
+            "switch_on": "Allumer",
+            "switch_off": "Éteindre"
+          },
+          "fields_conditions": "Conditions de champ",
+          "add_field_condition": "Ajouter une condition de champ",
+          "responsible_users": "Utilisateurs responsables",
+          "responsible": "Responsable",
+          "budget": "Budget",
+          "value": "Valeur",
+          "from": "de",
+          "to": "à",
+          "placeholders": {
+            "selected_participants": "Participants sélectionnés",
+            "selected_options": "Options sélectionnées",
+            "add_condition": "Ajouter une condition",
+            "select_responsible": "Sélectionner les responsables"
+          }
+        },
+        "description_block": {
+          "placeholders": {
+            "description": "Description"
+          }
+        },
+        "due_date_select": {
+          "due_date": "Date d'échéance",
+          "options": {
+            "during_this_week": "Durant cette semaine",
+            "in_3_days": "Dans 3 jours",
+            "in_a_day": "Dans un jour",
+            "end_of_the_day": "Fin de journée",
+            "at_the_time_of_creation": "Au moment de la création"
+          }
+        },
+        "defer_start_select": {
+          "defer_start": "Date de début",
+          "options": {
+            "in_an_hour": "Dans une heure",
+            "in_a_day": "Dans un jour",
+            "in_3_days": "Dans 3 jours"
+          }
+        },
+        "delay_select": {
+          "no_delay": "Sans Délai",
+          "5_minutes": "5 minutes",
+          "10_minutes": "10 minutes",
+          "15_minutes": "15 minutes",
+          "30_minutes": "30 minutes",
+          "1_hour": "1 heure"
+        },
+        "template_list": {
+          "name": "Nom",
+          "owner": "Responsable",
+          "tooltip": "Les codes de champ seront remplacés par les valeurs correspondantes de la fiche",
+          "show_templates": "Afficher les codes de champ",
+          "hide_templates": "Masquer les codes de champ"
+        }
+      }
+    },
+    "external_providers_select": {
+      "add_new_provider": "Ajouter un fournisseur",
+      "no_available_providers": "Aucun fournisseur disponible"
+    },
+    "sidebar": {
+      "title": "Automatisation",
+      "create_task": "Tâche",
+      "task_create": "Tâche",
+      "create_activity": "Activité",
+      "activity_create": "Activité",
+      "change_stage": "Changer d'étape",
+      "entity_stage_change": "Changer d'étape",
+      "entity_linked_stage_change": "Changer d'étape dans la carte liée",
+      "entity_responsible_change": "Changer de responsable",
+      "send_email": "Email",
+      "email_send": "Email",
+      "chat_send_amwork": "Message dans le chat",
+      "chat_send_external": "Message dans le chat externe",
+      "entity_create": "Carte associée",
+      "http_call": "Requête HTTP",
+      "automation": "Automatisation"
+    },
+    "block": {
+      "create_task": "Tâche",
+      "task_create": "Tâche",
+      "create_activity": "Activité",
+      "activity_create": "Activité",
+      "change_stage": "Changer d'étape",
+      "entity_stage_change": "Changer d'étape",
+      "entity_linked_stage_change": "Changer d'étape liée",
+      "entity_responsible_change": "Responsable",
+      "send_email": "Email",
+      "email_send": "Email",
+      "entity_create": "Carte",
+      "chat_send_amwork": "Chat",
+      "chat_send_external": "Chat externe",
+      "http_call": "Requête HTTP"
+    }
+  }
+}

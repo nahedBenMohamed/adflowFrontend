@@ -1,0 +1,24 @@
+{
+  "login": {
+    "login_form": {
+      "title": "Log in to your account",
+      "login": "Log in",
+      "invalid": "Invalid credentials",
+      "or": "Or",
+      "caption": "No account yet?",
+      "sign_up": "Sign up",
+      "forgot_your_password": "Forgot your password?",
+      "placeholders": {
+        "login": "E-mail",
+        "password": "Password"
+      },
+      "invalid_email_error": "Invalid email format",
+      "invalid_password_error": "Password is required"
+    },
+    "left_block": {
+      "title": "Welcome",
+      "annotation": "Great work, with pleasure!",
+      "image_alt": "{{company}} no-code constructor, make your own unique CRM"
+    }
+  }
+}

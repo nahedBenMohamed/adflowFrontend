@@ -1,0 +1,13 @@
+em-emoji-picker {
+  height: 320px;
+
+  --border-radius: var(--border-radius-block);
+  --category-icon-size: 20px;
+  --font-family: var(--system-font-families);
+  --duration: var(--transition-duration);
+  --easing: var(--transition-timing-function);
+
+  --rgb-accent: var(--button-text-graphite-primary-text-rgb);
+  --rgb-background: var(--primary-statuses-white-0-rgb);
+  --rgb-color: var(--button-text-graphite-priory-text-rgb);
+}

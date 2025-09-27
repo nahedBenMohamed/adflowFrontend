@@ -1,0 +1,9 @@
+{
+  "field_groups_store": {
+    "requisites": "Requisitos",
+    "analytics": "Analista",
+    "errors": {
+      "create_at_least_one_field": "Por favor, crea al menos un campo en cada grupo"
+    }
+  }
+}

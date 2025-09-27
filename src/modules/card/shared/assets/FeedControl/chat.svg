@@ -1,0 +1,9 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" clip-rule="evenodd"
+    d="M16 8C16 12.4183 12.4183 16 8 16C6.62639 16 5.33365 15.6538 4.20424 15.0439L1.34723 15.798C0.976688 15.8958 0.638393 15.5575 0.736192 15.1869L1.42855 12.5637C0.527971 11.2694 0 9.69634 0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8Z"
+    fill="#ACB4C3" />
+  <rect class='chat-rect' width="10" height="10" transform="translate(3.16943 3.5)" fill="#ACB4C3" />
+  <rect x="4.41943" y="5.375" width="7.5" height="0.625" rx="0.3125" fill="white" />
+  <rect x="4.41943" y="7.875" width="7.5" height="0.625" rx="0.3125" fill="white" />
+  <rect x="4.41943" y="10.375" width="3.75" height="0.625" rx="0.3125" fill="white" />
+</svg>

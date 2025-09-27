@@ -1,0 +1,19 @@
+{
+  "error_page": {
+    "title": "Quelque chose s'est mal passé",
+    "annotation": "Nous sommes désolés, mais quelque chose s'est mal passé. Nous avons été informés de ce problème et nous allons l'examiner sous peu. Veuillez aller à la page d'accueil ou essayer de recharger la page.",
+    "show_error": "Afficher le message d'erreur",
+    "home": "Page d'accueil",
+    "reload": "Recharger la page"
+  },
+  "forbidden_page": {
+    "title": "L'accès à cette page est interdit.",
+    "back": "Retourner",
+    "home": "Page d'accueil"
+  },
+  "not_found_page": {
+    "title": "Cette page est introuvable.",
+    "home": "Page d'accueil",
+    "back": "Retourner"
+  }
+}

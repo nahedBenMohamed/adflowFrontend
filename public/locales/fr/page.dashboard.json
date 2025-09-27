@@ -1,0 +1,18 @@
+{
+  "dashboard_page": {
+    "top_sellers": {
+      "title": "Classement",
+      "hint": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    "analytics": {
+      "total_entities": "Total",
+      "won_entities": "Gagné",
+      "lost_entities": "Perdu",
+      "new_entities": "Nouveau",
+      "total_tasks": "Total des tâches",
+      "completed_tasks": "Tâches terminées",
+      "expired_tasks": "Tâches expirées",
+      "no_tasks": "Aucune tâche"
+    }
+  }
+}

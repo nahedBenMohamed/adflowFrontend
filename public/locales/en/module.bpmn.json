@@ -1,0 +1,174 @@
+{
+  "bpmn": {
+    "hooks": {
+      "use_get_service_task_options": {
+        "actions": {
+          "task_create": "Create Task",
+          "activity_create": "Create Activity",
+          "entity_stage_change": "Change Stage",
+          "entity_linked_stage_change": "Change Stage in Linked Card",
+          "entity_responsible_change": "Change Responsible",
+          "email_send": "Send Email",
+          "entity_create": "Create Card",
+          "chat_send_amwork": "Send Message to Chat",
+          "chat_send_external": "Send Message to External Chat",
+          "http_call": "Send HTTP Request"
+        }
+      },
+      "use_bpmn_automations_columns": {
+        "name": "Name",
+        "created_by": "Created By",
+        "active": "Active",
+        "delete": "Delete",
+        "status": "Status"
+      },
+      "use_get_workspace_event_options": {
+        "events": {
+          "create": "Card Created Event",
+          "change_responsible": "Owner Changed Event",
+          "change_stage": "Stage Changed Event"
+        }
+      }
+    },
+    "pages": {
+      "bpmn_automations_page": {
+        "automation_process_schema_error_warning": {
+          "continue": "Continue",
+          "title": "Failed to start process \"{{name}}\"",
+          "annotation": "BPMN schema validation failed. Please check your process and try again."
+        },
+        "service_task_popup_template": {
+          "task_name": "Service Task Name",
+          "placeholders": {
+            "task_name": "Name"
+          }
+        },
+        "workspace_sequence_flow_popup": {
+          "module": "Select Module",
+          "module_hint": "Select module where specified conditions should be met",
+          "stage": "Select Stage",
+          "sequence_flow": "Sequence Flow",
+          "flow_name": "Flow Name",
+          "conditions": "Conditions",
+          "placeholders": {
+            "flow_name": "Name"
+          }
+        },
+        "create_automation_process_modal": {
+          "create": "Create",
+          "title": "Create New Automation Process",
+          "name": "Automation Name",
+          "new_process": "New Process #{{number}}",
+          "placeholders": {
+            "name": "Name"
+          }
+        },
+        "bpmn_automations_processes_modeler": {
+          "add_conditions": "Add Conditions...",
+          "center_view": "Center View",
+          "pallete": {
+            "create_workspace_parallel_gateway": "Create Parallel Gateway",
+            "create_workspace_start_event": "Create Start Event",
+            "create_workspace_end_event": "Create End Event",
+            "create_workspace_exclusive_gateway": "Create Exclusive Gateway",
+            "create_workspace_data_object": "Create Data Object",
+            "create_workspace_data_store": "Create Data Store",
+            "create_workspace_participant_expanded": "Create Expanded Participant",
+            "create_workspace_group": "Create Group"
+          },
+          "color_picker": {
+            "default_color": "Default Color",
+            "blue_color": "Blue Color",
+            "orange_color": "Orange Color",
+            "green_color": "Green Color",
+            "red_color": "Red Color",
+            "purple_color": "Purple Color"
+          },
+          "context_pad": {
+            "delay": "Append Delay",
+            "append_end_event": "Append End Event",
+            "append_gateway": "Append Gateway",
+            "append_text_annotation": "Append Text Annotation",
+            "replace": "Replace",
+            "delete": "Delete",
+            "set_color": "Set Color",
+            "connect": "Connect",
+            "task_create": "Create Task",
+            "activity_create": "Create Activity",
+            "entity_stage_change": "Change Stage",
+            "entity_linked_stage_change": "Change Stage in Linked Card",
+            "entity_responsible_change": "Change Responsible",
+            "email_send": "Send Email",
+            "entity_create": "Create Card",
+            "chat_send_amwork": "Send Message to Chat",
+            "chat_send_external": "Send Message to External Chat",
+            "http_call": "Send HTTP Request"
+          },
+          "toggle_default_context_pad_entry": "Toggle Flow Default Condition",
+          "open_minimap": "Open Minimap",
+          "close_minimap": "Close Minimap",
+          "activate_hand_tool": "Activate Hand Tool",
+          "activate_lasso_tool": "Activate Lasso Tool",
+          "active_create_remove_space_tool": "Activate Create/Remove Space Tool",
+          "activate_global_connect_tool": "Activate Global Connect Tool",
+          "process_controls": {
+            "save_and_run": "Save and Run",
+            "save_draft": "Save Draft",
+            "start_process": "Start Process",
+            "stop_process": "Stop Process",
+            "cancel": "Cancel"
+          },
+          "create_workspace_start_event": "Create Start Event",
+          "create_workspace_delay_event": "Create Delay Event",
+          "create_workspace_service_task": "Create Service Task"
+        },
+        "workspace_delay_event_popup": {
+          "delay": "Delay",
+          "delay_label": "Delay *",
+          "delay_name": "Delay Name",
+          "placeholders": {
+            "delay_name": "Name"
+          }
+        },
+        "delete_bpmn_automation_warning_modal": {
+          "title": "Are you sure you want to delete \"{{name}}\" BPMN Automation?",
+          "annotation": "This action cannot be undone."
+        },
+        "create_workspace_service_task_menu": {
+          "workspace_service_tasks": "Service Tasks"
+        },
+        "create_workspace_start_event_menu": {
+          "workspace_events": "Events"
+        },
+        "workspace_start_event_popup": {
+          "event_name": "Event Name",
+          "event_type": "Select Event Type *",
+          "module": "Select Module *",
+          "module_hint": "Select module where event will be triggered",
+          "placeholders": {
+            "event_name": "Name"
+          }
+        },
+        "bpmn_automations_settings_header": {
+          "create_bpmn_automation": "Create BPMN Automation",
+          "bpmn_automations": "BPMN 2.0 Automations",
+          "back": "Back"
+        },
+        "bpmn_automations_table": {
+          "no_bpmn_automations_block": {
+            "annotation1": "You have no processes yet",
+            "annotation2": "Use the",
+            "annotation3": "button to add an automation."
+          }
+        },
+        "bpmn_splashscreen": {
+          "heading": "Professional BPM Automation",
+          "price_ru": "for 99 ₽ per user per month, billed annually",
+          "price_us": "for $1 per user per month, billed annually",
+          "form_button": "Request Access",
+          "form_header": "Enable BPM Automation"
+        }
+      }
+    }
+  }
+}

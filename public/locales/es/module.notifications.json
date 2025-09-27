@@ -1,0 +1,79 @@
+{
+  "notifications": {
+    "tags": {
+      "task_new": "Nueva tarea",
+      "task_overdue": "Tarea",
+      "task_before_start": "Tarea",
+      "task_overdue_employee": "Tarea",
+      "activity_new": "Nueva actividad",
+      "activity_overdue": "Actividad",
+      "activity_before_start": "Actividad",
+      "activity_overdue_employee": "Actividad",
+      "task_comment_new": "Nuevo comentario",
+      "chat_message_new": "Nuevo mensaje",
+      "mail_new": "Nuevo correo",
+      "entity_note_new": "Nueva nota",
+      "entity_new": "Nuevo {{entityTypeName}}",
+      "entity_responsible_change": "Nuevo responsable {{entityTypeName}}",
+      "entity_import_completed": "Importación",
+      "yesterday": "Ayer a las {{time}}",
+      "date": "{{date}} a las {{time}}"
+    },
+    "components": {
+      "delay_select": {
+        "no_delay": "Sin retraso",
+        "5_minutes": "5 minutos",
+        "10_minutes": "10 minutos",
+        "15_minutes": "15 minutos",
+        "30_minutes": "30 minutos",
+        "1_hour": "1 hora"
+      },
+      "notifications_panel": {
+        "mute_notifications": "Silenciar sonido de notificaciones",
+        "unmute_notifications": "Activar sonido de notificaciones",
+        "no_notifications": "Aún no tienes notificaciones",
+        "ui": {
+          "block_header_annotation": {
+            "overdue": "Atrasado",
+            "overdue_employee": "{{employee}} está atrasado",
+            "after_time": "Después de {{time}}",
+            "from_employee": "de {{employee}}",
+            "system_notice": "Aviso del sistema",
+            "message": "Mensaje",
+            "yesterday": "Ayer a las {{time}}",
+            "date": "{{date}} a las {{time}}"
+          },
+          "notification_settings": {
+            "title": "Notificaciones"
+          },
+          "notification_settings_modal": {
+            "title": "Configuración de Notificaciones",
+            "enable_popup": "Notificaciones emergentes",
+            "new": "Nuevo",
+            "new_mail": "Nuevo Correo",
+            "new_chat_message": "Nuevo Mensaje de Chat",
+            "new_note": "Nueva Nota",
+            "entity_responsible_change": "Cambio de Responsable de Entidad",
+            "entity_import_complete": "Importación de Entidad Completa",
+            "new_task_comment": "Nuevo Comentario en Tarea",
+            "unknown": "Desconocido",
+            "new_task": "Nueva Tarea",
+            "overdue_task": "Tarea Atrasada",
+            "before_task_start": "Antes del inicio de una Tarea",
+            "overdue_task_employee": "Tarea Atrasada para Empleado(s)",
+            "new_activity": "Nueva Actividad",
+            "overdue_activity": "Actividad Atrasada",
+            "before_activity_start": "Antes del inicio de una Actividad",
+            "overdue_activity_employee": "Actividad Atrasada para Empleado(s)",
+            "placeholders": {
+              "select": "Seleccionar"
+            }
+          },
+          "read_all_button": {
+            "read_all": "Leer todas"
+          }
+        }
+      }
+    }
+  }
+}

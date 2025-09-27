@@ -1,0 +1,12 @@
+export { ReactComponent as AutomationBpmnTabIcon } from './automation_bpmn_tab.svg';
+export { ReactComponent as AutomationNewTabIcon } from './automation_new_tab.svg';
+export { ReactComponent as CloseIcon } from './close.svg';
+export { ReactComponent as DeleteIcon } from './delete.svg';
+export { ReactComponent as DownloadExampleIcon } from './download_example.svg';
+export { ReactComponent as DragIndicator } from './drag_indicator.svg';
+export { ReactComponent as ExcelIcon } from './excel.svg';
+export { ReactComponent as ImportIcon } from './import.svg';
+export { ReactComponent as ManageAccountsIcon } from './manage_accounts.svg';
+export { ReactComponent as ChangeResponsibleIcon } from './responsible.svg';
+export { ReactComponent as ChangeStageIcon } from './stage.svg';
+export { ReactComponent as UploadIcon } from './upload.svg';

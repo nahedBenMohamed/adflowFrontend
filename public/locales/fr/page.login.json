@@ -1,0 +1,24 @@
+{
+  "login": {
+    "login_form": {
+      "title": "Connectez-vous à votre compte",
+      "login": "Se connecter",
+      "invalid": "Identifiants invalides",
+      "or": "Ou",
+      "caption": "Pas encore de compte ?",
+      "sign_up": "S'inscrire",
+      "forgot_your_password": "Mot de passe oublié ?",
+      "placeholders": {
+        "login": "E-mail",
+        "password": "Mot de passe"
+      },
+      "invalid_email_error": "Format d'email invalide",
+      "invalid_password_error": "Mot de passe requis"
+    },
+    "left_block": {
+      "title": "Bienvenue",
+      "annotation": "Du bon travail, avec plaisir !",
+      "image_alt": "{{company}} constructeur sans code, créez votre propre CRM unique"
+    }
+  }
+}

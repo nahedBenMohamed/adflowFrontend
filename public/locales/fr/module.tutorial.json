@@ -1,0 +1,55 @@
+{
+  "tutorial": {
+    "tutorial_drawer": {
+      "title": "Base de connaissances",
+      "empty": "Il n'y a encore rien ici.",
+      "create_tutorial_group_block": {
+        "create_group": "Créer un groupe",
+        "save": "Enregistrer",
+        "cancel": "Annuler"
+      },
+      "create_tutorial_item_block": {
+        "create_link": "Créer un lien",
+        "save": "Enregistrer",
+        "cancel": "Annuler"
+      },
+      "tutorial_edit_group_item_form": {
+        "placeholders": {
+          "name": "Nom",
+          "link": "Lien",
+          "all": "Tous"
+        }
+      },
+      "tutorial_edit_group_items_forms": {
+        "name": "Nom",
+        "link": "Lien",
+        "users": "Utilisateurs",
+        "products": "Produits",
+        "products_hint": "Sélectionnez les produits où ce lien sera affiché. Par exemple, si les tâches sont sélectionnées, le lien ne sera affiché que dans la section des tâches."
+      },
+      "tutorial_group_name_block": {
+        "placeholders": {
+          "group_name": "Nom du groupe"
+        }
+      },
+      "hooks": {
+        "use_get_tutorial_products_options": {
+          "product_types": {
+            "builder": "Constructeur",
+            "task": "Tâches",
+            "mail": "Mail",
+            "multi_messenger": "Multi Messenger",
+            "settings": "Paramètres"
+          }
+        },
+        "use_get_tutorial_products_groups": {
+          "groups": {
+            "entity_type": "Modules",
+            "products_section": "Produits",
+            "scheduler": "Calendriers"
+          }
+        }
+      }
+    }
+  }
+}

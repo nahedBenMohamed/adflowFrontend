@@ -1,0 +1,122 @@
+{
+  "fields": {
+    "formula_warning": "Zmiana formuły spowoduje ponowne obliczenie wartości w tym polu. Aby zachować bieżące dane, rozważ utworzenie nowego pola.",
+    "project_fields_block": {
+      "owner": "Odpowiedzialny",
+      "value": "Wartość",
+      "participants": "Uczestnicy",
+      "start_date": "Data rozpoczęcia",
+      "end_date": "Data zakończenia",
+      "description": "Opis",
+      "placeholders": {
+        "participants": "Dodaj uczestników"
+      }
+    },
+    "field_value": {
+      "ogrn": "OGRN",
+      "tin": "TIN",
+      "trrc": "TRRC",
+      "already_have_an_active_call": "Masz już aktywną połączenie",
+      "recent": "Ostatnie",
+      "no_available_phone_numbers": "Nie ma dostępnych numerów telefonu",
+      "value_field_formula_calculation": "To pole jest obecnie obliczone przez formule, nie może być edytowane reaktywne. Wartość: {{value}}.",
+      "readonly": "To pole jest tylko do odczytu",
+      "important_field": "Ważne pole",
+      "mandatory_field": "Pole obowiązkowe",
+      "important_field_completed": "Ważne pole wypełnione",
+      "mandatory_field_completed": "Pole obowiązkowe wypełnione",
+      "local_time": "Przybliżony lokalny czas stolicy kraju numeru telefonu",
+      "connect_telephony": "Podłącz do telefonii, aby włączyć funkcjonalność połączeń.",
+      "chat_unavailable": "Wygląda na to, że nie masz dostępu do tego czatu. Skontaktuj się z administratorem, aby się połączyć."
+    },
+    "components": {
+      "field_formula_settings_button": {
+        "no_available_fields_for_formula": "Brak pól budżetu, liczbowego lub formułę",
+        "save_first": "Tę formułę można skonfigurować w karcie",
+        "customize": "Dostosowywanie formuły: {{fieldName}}",
+        "formula_hint": "To pole jest przeznaczone do wprowadzania formuły. Formuła może zawierać poniższe wartości, a także inne pola liczbowe i formuły, w tym pola z innych modułów funkcjonalnych. Kliknij żądaną wartość lub wybierz pole.",
+        "field": "Pole",
+        "close": "Zamknij"
+      },
+      "field_settings_modal": {
+        "number": "Liczba",
+        "currency": "Waluta",
+        "format_title": "Wybierz format wyświetlania dla tego pole",
+        "ordinary_field": "Zwykłe pole",
+        "save_first": "To pole można skonfigurować dopiero po zapisaniu w karcie",
+        "important_field": "Ważne pole",
+        "important_field_hint": "Możesz oznaczyć pole jako ważne, wtedy będzie miało ikonę żarówki przypominającą o konieczności wypełnienia. Po wypełnieniu będzie wyświetlać zielony znacznik. Jeśli pole musi być obowiązkowe i zapobiegać przejściu do następnego etapu bez jego wypełnienia, wybierz funkcję „pole obowiązkowe”.",
+        "select_pipeline_and_statuses": "Wybierz lejek sprzedażowy i statusy",
+        "mandatory_field": "Pole obowiązkowe",
+        "mandatory_field_hint": "Możesz ustawić pole jako obowiązkowe do wypełnienia. W takim przypadku użytkownicy nie będą mogli przejść do następnego statusu w lejku sprzedażowym. Wybierz wymagany lejek sprzedażowy i status, od którego pole musi być wypełnione.",
+        "user_exclusion": "Wykluczenie użytkownika",
+        "user_exclusion_hint": "Możesz wykluczyć niektórych użytkowników, którzy będą mogli nie wypełniać tego pola. Może to być konieczne dla administratorów.",
+        "editing_restriction": "Ograniczenie edycji",
+        "editing_restriction_hint": "Możesz zabronić wybranym użytkownikom edytowania tego pola. Będą mogli je widzieć, ale nie będą mogli go edytować.",
+        "select_users": "Wybierz użytkowników",
+        "hide_field": "Ukryj pole dla użytkowników",
+        "hide_field_hint": "Możesz ukryć to pole przed wybranymi użytkownikami; będzie dla nich niedostępne.",
+        "field_visibility_in_pipeline": "Ukryj pole w lejku",
+        "field_visibility_in_pipeline_hint": "Możesz dostosować widoczność pola dla każdego lejka i etapu. Poniżej możesz wybrać, na których etapach i w których lejkach pole będzie ukryte.",
+        "customize": "Dostosowywanie pola: {{fieldName}}"
+      },
+      "edit_fields": {
+        "add_bank_requisites": "Dodaj dane bankowe",
+        "add_org_requisites": "Dodaj dane organizacji i przedsiębiorców",
+        "add_org_stat_codes": "Dodaj kody statystyczne organizacji i przedsiębiorców",
+        "add_additional_org_requisites": "Dodaj dodatkowe pola dla organizacji i przedsiębiorców",
+        "add_field": "Dodaj pole",
+        "add_utm_fields": "Dodaj pola UTM",
+        "add_ga_fields": "Dodaj pola Google Analytics",
+        "add_ym_fields": "Dodaj pola Yandex.Metrica",
+        "add_fb_fields": "Dodaj pola Facebook Analytics",
+        "select_options": {
+          "max_length": "Maksymalnie {{length}} znaków",
+          "add_option": "Dodaj opcję",
+          "cancel": "Anuluj",
+          "add": "Dodaj",
+          "no_options": "Brak opcji",
+          "placeholders": {
+            "search": "Szukaj...",
+            "option": "Opcja"
+          }
+        }
+      },
+      "field_form_group": {
+        "max_length": "Maksymalnie {{length}} znaków",
+        "text": "Tekst",
+        "number": "Liczba",
+        "multitext": "Wielotekst",
+        "select": "Wybierz",
+        "multiselect": "Wielokrotny wybór",
+        "switch": "Przełącznik",
+        "formula": "Formuła",
+        "phone": "Telefon",
+        "email": "E-mail",
+        "value": "Wartość",
+        "date": "Data",
+        "link": "Link",
+        "file": "Plik",
+        "richtext": "Sformatowany tekst",
+        "participant": "Uczestnik",
+        "participants": "Uczestnicy",
+        "colored_select": "Kolorowy wybór",
+        "colored_multiselect": "Kolorowy wielokrotny wybór",
+        "checked_multiselect": "Lista kontrolna",
+        "checklist": "Wielotekst z polami wyboru",
+        "field_name": "Nazwa pola",
+        "analytics_field": "Pole analityczne"
+      },
+      "show_fields": {
+        "no_fields": "Brak pól"
+      },
+      "show_files": {
+        "empty": "Brak plików",
+        "attach": "Dołącz pliki"
+      },
+      "file_field_value_comp": {
+        "attach_files": "Dołącz pliki"
+      }
+    }
+  }
+}

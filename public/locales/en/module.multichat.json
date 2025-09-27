@@ -1,0 +1,71 @@
+{
+  "multichat": {
+    "amwork_messenger": "{{company}} Messenger",
+    "components": {
+      "multichat_control": {
+        "not_found": "Not found",
+        "chats": "Chats",
+        "messages": "Messages",
+        "users": "Users",
+        "owner": "Owner",
+        "supervisor": "Supervisor",
+        "no_chats_yet": "No chats yet",
+        "create_card": "Create a Card",
+        "link_card": "Link a Card",
+        "card": "Card",
+        "ui": {
+          "deleted_user": "Deleted User 👻",
+          "multichat_control_header": {
+            "title": "{{company}} Multi Messenger"
+          },
+          "create_amwork_chat_button": {
+            "label": "New {{company}} chat",
+            "modals": {
+              "select_contact_title": "Select one user or a group of users",
+              "continue": "Continue",
+              "customize_chat": "Customize chat",
+              "placeholders": {
+                "group_name": "Group name"
+              }
+            }
+          },
+          "chats_header_providers_tabs": {
+            "all_chats": "All Chats"
+          },
+          "chat_message_context_menu": {
+            "reply": "Reply",
+            "copy": "Copy text",
+            "edit": "Edit",
+            "delete": "Delete"
+          },
+          "chat_message_reply_block": {
+            "editing_message": "Editing message"
+          },
+          "send_chat_message_block": {
+            "placeholders": {
+              "message": "Message"
+            }
+          },
+          "no_selected_chat_plug": {
+            "title": "Select a chat to start messaging"
+          },
+          "chats_panel_block": {
+            "you": "You"
+          },
+          "send_chat_message_with_files_modal": {
+            "send_files": "Send files"
+          },
+          "chat_message_item": {
+            "you": "You"
+          },
+          "chat_controls_menu": {
+            "mark_as_read": "Mark as Read",
+            "delete_chat": "Delete Chat",
+            "delete_warning_title": "Are you sure you want to delete this chat?",
+            "delete_warning_annotation": "All messages will be removed. This action cannot be undone."
+          }
+        }
+      }
+    }
+  }
+}

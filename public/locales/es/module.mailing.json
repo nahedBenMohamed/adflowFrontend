@@ -1,0 +1,234 @@
+{
+  "mailing": {
+    "unknown_file": "Archivo desconocido",
+    "modals": {
+      "send_email_modal": {
+        "to": "Para:",
+        "copy": "Copia:",
+        "hidden_copy": "Copia oculta:",
+        "from": "De:",
+        "subject": "Asunto:",
+        "attachment": "adjunto",
+        "attachments": "adjuntos",
+        "delete_all": "Eliminar todo",
+        "send": "Enviar",
+        "error": "¡No se pudo enviar el mensaje! Por favor, inténtelo de nuevo más tarde.",
+        "send_with_html": "Enviar correo con formato HTML",
+        "send_with_html_hint": "Seleccione esta opción si desea enviar un correo con formato HTML. Esto es útil si desea optar por no usar las funciones de formato predeterminadas de {{company}}.",
+        "components": {
+          "changes_not_saved_modal": {
+            "title": "Los cambios no están guardados",
+            "annotation": "¿Continuar editando?",
+            "approve": "Eliminar borrador"
+          },
+          "invalid_email_address_modal": {
+            "title": "El correo \"{{email}}\" no parece ser una dirección válida",
+            "annotation": "Verifique la dirección y vuelva a intentarlo.",
+            "approve": "Enviar de todos modos"
+          },
+          "send_email_settings_dropdown": {
+            "show_copy": "Mostrar campo de dirección de Copia",
+            "show_hidden_copy": "Mostrar campo de dirección de Copia oculta"
+          },
+          "editors": {
+            "email_signature_editor": {
+              "placeholder": "Agregar firma",
+              "no_signature": "Sin firma"
+            },
+            "email_text_editor": {
+              "placeholders": {
+                "new_message": "Nuevo mensaje",
+                "enter_html_markup": "Ingrese formato HTML"
+              }
+            }
+          }
+        }
+      }
+    },
+    "pages": {
+      "mailing_settings_page": {
+        "soon": "Próximamente...",
+        "add_button": "Agregar Buzón",
+        "mail_templates": "Plantillas de Correo",
+        "templates_caption": "Puede crear plantillas de correo que se pueden enviar a un cliente. Después de agregar la plantilla, puede acceder al envío de correos.",
+        "setup_signature": "Configurar una firma",
+        "add_template": "Agregar plantilla",
+        "components": {
+          "mailbox_item": {
+            "draft_text": "Borrador",
+            "draft_hint": "La conexión del buzón no está terminada. Por favor, ingrese los ajustes faltantes.",
+            "inactive_text": "Inactivo",
+            "inactive_hint": "El buzón está inactivo. {{error}}.",
+            "sync_text": "Sincronización",
+            "sync_hint": "El buzón se está sincronizando. Por favor, espere.",
+            "active_text": "Activo"
+          }
+        },
+        "modals": {
+          "delete_mailbox_modal": {
+            "delete": "Eliminar",
+            "title": "¿Realmente desea eliminar este buzón?",
+            "save_correspondence_annotation": "¿Guardar el historial de correspondencia para este correo?",
+            "save_correspondence": "Guardar historial de correspondencia para este correo"
+          },
+          "mailbox_address_modal": {
+            "continue": "Continuar",
+            "title": "Conectar buzón",
+            "placeholder": "Su correo electrónico",
+            "caption1": "Conecte un buzón corporativo con acceso compartido, que recibe solicitudes de clientes, o un buzón personal de uno de sus empleados.",
+            "caption2": "Los correos enviados a este buzón se adjuntarán automáticamente a los contactos. Puede crear un negocio directamente desde la lista de correos.",
+            "caption3": "Si tiene problemas para conectar, intente habilitar el acceso para su cliente de correo.",
+            "cancel": "Cancelar",
+            "google_caption1": "El uso y la transferencia de información recibida de las API de Google por parte de {{company}} a cualquier otra aplicación se adherirá a",
+            "google_policy_link": "la Política de Datos del Usuario de los Servicios API de Google",
+            "google_caption2": ", incluyendo los requisitos de Uso Limitado."
+          },
+          "mailbox_provider_modal": {
+            "title": "Elija proveedor",
+            "caption": "Seleccione su proveedor de correo electrónico a continuación. Si no ve su servicio de correo en la lista, presione Manual y configure su buzón manualmente.",
+            "manual": "Manual"
+          },
+          "update_mailbox_modal": {
+            "max_number_of_emails_per_day": "Número máximo de correos electrónicos por día",
+            "emails_per_day": "correos electrónicos por día",
+            "emails_per_day_hint": "El parámetro de límite de correos electrónicos es necesario para evitar ser bloqueado por el proveedor del servicio de correo. Cada servicio de correo establece sus propios límites para el envío de mensajes. Por ejemplo, la versión básica de Google Workspace permite enviar 500 mensajes por día desde un buzón.",
+            "email_readonly_title": "No puede editar la dirección de un buzón ya creado",
+            "title_connect": "Conectar buzón",
+            "title_edit": "Editar buzón de correo",
+            "encryption": "Cifrado",
+            "owner": "Seleccionar el propietario del correo",
+            "for_whom_available": "Seleccionar para quién está disponible el correo",
+            "synchronize": "Sincronizar correos de los últimos 7 días",
+            "create_entities_annotation": "Configura las opciones a continuación para crear automáticamente una ficha al recibir un correo de un nuevo contacto.",
+            "create_entities_label": "Crear ficha con correo entrante",
+            "delete": "Eliminar buzón",
+            "reconnect": "Recolectar buzón",
+            "placeholders": {
+              "password": "Contraseña",
+              "imap": "Servidor IMAP",
+              "port": "Puerto",
+              "smtp": "Servidor SMTP",
+              "owner": "Seleccionar propietario"
+            }
+          },
+          "mailbox_signature_modal": {
+            "title": "Firmas",
+            "mailbox_signature_editor": {
+              "available_in_mailboxes": "Disponible en correos:",
+              "delete": "Eliminar",
+              "save": "Guardar",
+              "warning_title": "Eliminar firma",
+              "warning_annotation": "¿Está seguro de que desea eliminar esta firma?",
+              "save_as_html": "Guardar como formato HTML",
+              "save_as_html_hint": "Seleccione esta opción si desea guardar la firma como formato HTML. Esto es útil si desea optar por no usar las funciones de formato predeterminadas de {{company}}.",
+              "placeholders": {
+                "signature_name": "Nombre de la firma",
+                "your_signature": "Su firma",
+                "select_mailboxes": "Seleccionar buzones"
+              }
+            }
+          }
+        }
+      },
+      "mailing_page": {
+        "title": "Correo Electrónico y Mensajero",
+        "no_email": "Aún no hay correos",
+        "components": {
+          "section": {
+            "inbox": "Bandeja de entrada",
+            "sent": "Enviados",
+            "spam": "Spam",
+            "trash": "Papelera",
+            "draft": "Borrador",
+            "flagged": "Marcados",
+            "archive": "Archivo",
+            "all": "Todo el correo",
+            "mailbox": "Buzón {{number}}"
+          },
+          "message_panel": {
+            "no_messages": "No hay mensajes",
+            "demo_message_subject": "✉️ {{company}}: Solución de Correo Corporativo",
+            "demo_message_snippet": "Estimado Cliente, Presentamos una solución revolucionaria de correo corporativo que sin duda captará su atención."
+          },
+          "attachments_block": {
+            "attachment": "adjunto",
+            "attachments": "adjuntos",
+            "download_all": "Descargar todo"
+          },
+          "reply_controls": {
+            "reply": "Responder",
+            "reply_all": "Responder a todos",
+            "forward": "Reenviar"
+          },
+          "create_message_button": {
+            "title": "Nuevo mensaje"
+          },
+          "no_mailboxes_panel_block": {
+            "title": "Haga clic en el botón de abajo para agregar su buzón."
+          },
+          "thread": {
+            "unknown": "Desconocido 👤",
+            "no_selected_message": "No hay mensaje seleccionado",
+            "from": "De",
+            "subject": "Asunto",
+            "reply": "Responder",
+            "reply_all": "Responder a todos",
+            "forward": "Reenviar",
+            "add_task": "Agregar Tarea",
+            "add_contact": "Agregar contacto",
+            "spam": "Spam",
+            "unspam": "No es spam",
+            "move_to_inbox": "Mover a la bandeja de entrada",
+            "trash": "Papelera",
+            "close": "Cerrar",
+            "unseen": "No visto",
+            "user": "Usuario",
+            "date": "{{day}} a las {{time}}",
+            "amwork_workspace": "Espacio de trabajo de {{company}}",
+            "demo_message_title": "✉️ {{company}}: Solución de Correo Corporativo",
+            "demo_message_snippet": "Estimado Cliente, presentamos una solución revolucionaria de correo corporativo que sin duda captará su atención. Descubra nuevas posibilidades y eleve su comunicación corporativa a un nuevo nivel con la integración del correo en el espacio de trabajo de {{company}}.",
+            "dear_customer": "Estimado Cliente,",
+            "demo_message_intro": "Presentamos una solución revolucionaria de correo corporativo que sin duda captará su atención. Descubra nuevas posibilidades y eleve su comunicación corporativa a un nuevo nivel con la integración del correo en el espacio de trabajo de {{company}}. Conecte cualquier buzón corporativo o personal, y disfrute no solo de las funciones familiares del correo electrónico, sino también de una multitud de herramientas adicionales. Cree tareas, leads, proyectos y más directamente desde un correo, manteniendo el control total sobre todas las interacciones con clientes, socios y proyectos. Envíe mensajes fácilmente desde tarjetas de leads, negocios, socios o proyectos, y se guardarán automáticamente en la tarjeta correspondiente. De esta manera, puede leer y analizar fácilmente el historial de correspondencia para un negocio o proyecto específico. Trabaje de manera más efectiva en equipo otorgando acceso a un buzón compartido y gestionando las comunicaciones junto con sus colegas. ¡Descubra nuevos horizontes con {{company}} y aumente la productividad de su negocio!",
+            "email_functionality": "📬 Funcionalidad del correo:",
+            "email_functionality_ul": "<ul style=\"margin-bottom: 8px;\"><li>Integración API con Gmail</li><li>Integración IMAP</li><li>Integración de correos de los últimos 7 días para buzones recién añadidos</li><li>Correos entrantes y salientes</li><li>Agrupación de correos en hilos/cadenas por remitente</li><li>Capacidad de crear una tarea desde un correo</li><li>Capacidad de crear un contacto desde un correo</li><li>Creación automática de leads desde correos</li><li>Adjuntar correos entrantes y salientes al historial/alimentación de una tarjeta</li><li>Adjuntar correos entrantes y salientes al historial/alimentación de una tarjeta</li><li>Capacidad de escribir un correo desde una tarjeta</li><li>Creación de carpetas personalizadas</li><li>Uso de múltiples buzones</li><li>Gestión colaborativa de buzones</li><li>Visualización de correos en formato HTML</li><li>Gestión colaborativa de buzones</li><li>Búsqueda de correos</li><li>Spam</li><li>Elementos eliminados</li><li>Borradores</li><li>Creación de firmas</li><li>Destinatarios en copia</li><li>Destinatarios en copia oculta</li><li>Adjuntos de archivos</li></ul>",
+            "reach_out": "Si tiene alguna pregunta, no dude en comunicarse con nosotros –",
+            "sincerely_amwork": "Atentamente, su equipo de {{company}}."
+          },
+          "modals": {
+            "create_contact_modal": {
+              "create": "Crear",
+              "title": "Crear tarjetas de un correo",
+              "create_contact": "Crear contacto para el correo",
+              "create_lead": "Crear lead para el correo",
+              "open_entity": "Abrir entidad recién creada",
+              "placeholders": {
+                "where_contact": "Seleccione dónde crear nuevo contacto",
+                "where_lead": "Seleccione dónde crear nuevo lead",
+                "board_for_lead": "Seleccione tablero para nuevo lead"
+              }
+            },
+            "link_contact_modal": {
+              "link": "Vincular",
+              "title": "Vincular tarjeta",
+              "select_module": "Seleccionar módulo",
+              "search_card": "Seleccionar tarjeta",
+              "open_entity": "Abrir tarjeta vinculada",
+              "placeholders": {
+                "module": "Módulo...",
+                "search_card": "Buscar por nombre..."
+              }
+            }
+          }
+        },
+        "hooks": {
+          "use_message_controls": {
+            "unknown": "Desconocido 👤",
+            "reply_to": "Responder a",
+            "reply_all": "Responder a todos",
+            "forward": "Reenviar"
+          }
+        }
+      }
+    }
+  }
+}

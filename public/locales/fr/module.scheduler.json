@@ -1,0 +1,219 @@
+{
+  "scheduler": {
+    "pages": {
+      "scheduler_board_view_page": {
+        "create_appointment": "Créer une réunion",
+        "stats_footer": {
+          "assigned": {
+            "label": "Assigné",
+            "hint": "Visites non confirmées"
+          },
+          "confirmed": {
+            "label": "Confirmé",
+            "hint": "Visites confirmées"
+          },
+          "completed": {
+            "label": "Terminée",
+            "hint": "Visites achevées"
+          },
+          "not_took_place": {
+            "label": "Non réalisée",
+            "hint": "Visites passées non marquées comme réalisées"
+          },
+          "not_scheduled": {
+            "label": "Sans prochain rendez-vous",
+            "hint": "Visites sans date de rendez-vous futur"
+          },
+          "newbies": {
+            "label": "Première visite",
+            "hint": "Nouveaux visiteurs"
+          },
+          "total": {
+            "label": "Total",
+            "hint": "Nombre total de visites"
+          }
+        }
+      },
+      "appointment_card_list_page": {
+        "visit_date": "Date de visite"
+      },
+      "scheduler_schedule_view_page": {
+        "sync": "Synchroniser",
+        "report_settings": "Paramètres de rapport",
+        "module_settings": "Paramètres du module",
+        "stats_settings": "Paramètres statistiques",
+        "settings": "Paramètres",
+        "report": "Rapport",
+        "overview": "Calendrier",
+        "responsible": "Responsable",
+        "stage": "Étape",
+        "not_provided": "Non fourni",
+        "statuses": {
+          "scheduled": "Planifié",
+          "confirmed": "Confirmé",
+          "completed": "Terminé",
+          "cancelled": "Annulé"
+        },
+        "created": "Créé",
+        "visit": "Réunion {{number}}",
+        "description": "Description",
+        "email": "Email",
+        "phone": "Téléphone",
+        "price": "Prix",
+        "quantity": "Quantité",
+        "discount": "Remise",
+        "new_event": "Nouvelle Réunion",
+        "create_appointment": "Créer une réunion",
+        "tooltips": {
+          "reports_denied": "Vous n'êtes pas autorisé à afficher les rapports. Contactez l'administrateur du compte pour y accéder."
+        },
+        "placeholders": {
+          "search_visits": "Rechercher des réunions"
+        },
+        "hooks": {
+          "use_appointments_history_services_columns": {
+            "name": "Nom",
+            "price": "Prix",
+            "quantity": "Quantité",
+            "discount": "Remise",
+            "amount": "Montant"
+          },
+          "use_appointments_history_columns": {
+            "date": "Date",
+            "time": "Heure",
+            "performer": "Intervenant",
+            "services": "Services",
+            "total": "Total",
+            "status": "Statut"
+          },
+          "use_appointment_service_block_columns": {
+            "discount": "Remise",
+            "quantity": "Quantité",
+            "amount": "Montant"
+          }
+        },
+        "ui": {
+          "add_appointment_modal": {
+            "error": "Impossible de créer la réunion. Cela peut être dû soit à une tentative de créer une réunion qui chevauche une réunion existante, soit à une date de fin antérieure à la date de début.",
+            "visits_history_empty": "Historique des réunions est vide",
+            "no_planned_visits": "Aucune réunion prévue",
+            "save_changes": "Enregistrer les modifications",
+            "planned_visit_title": "{{date}} de {{startTime}} à {{endTime}}",
+            "general_information": "Informations générales",
+            "planned_visits": "Réunions prévues",
+            "visits_history": "Historique des réunions",
+            "title": "Titre",
+            "visit": "Réunion #{{number}}",
+            "edit_visit": "Modifier la réunion – {{name}}",
+            "new_visit": "Planifier une réunion",
+            "visit_parameters": "Paramètres de la réunion",
+            "status": "Statut",
+            "scheduler": "Planificateur de réunions",
+            "select_users_group": "Sélectionner un groupe d'utilisateurs",
+            "select_user": "Sélectionner un utilisateur",
+            "description": "Description",
+            "from": "De :",
+            "to": "À :",
+            "date_and_time": "Date & Heure",
+            "addition_of_services": "Ajout de services",
+            "add_service": "Ajouter un service",
+            "no_services": "Aucun service",
+            "warning_title": "Modifications non enregistrées",
+            "warning_annotation": "Êtes-vous sûr de vouloir fermer cette fenêtre ? Toutes les modifications seront perdues.",
+            "close": "Fermer",
+            "delete": "Supprimer",
+            "count": "Total des réunions",
+            "last_visit": "Dernière réunion",
+            "completed_count": [
+              "{{count}} réunion a eu lieu",
+              "{{count}} réunions ont eu lieu",
+              "{{count}} réunions ont eu lieu"
+            ],
+            "placeholders": {
+              "select_time_period": "Période de temps",
+              "title": "Titre de la réunion",
+              "entity_name": "Nom de l'entité",
+              "search_services": "Rechercher des services à ajouter",
+              "user": "Utilisateur",
+              "users_group": "Groupe d'utilisateurs",
+              "appointment_notes": "Note de réunion"
+            },
+            "repeating_appointments_block": {
+              "header": "Visites Répétées",
+              "hint": "Configurez l'intervalle et le nombre de rendez-vous répétés si nécessaire. Les rendez-vous seront programmés pour les jours ouvrables spécifiés dans les paramètres.",
+              "interval": "Intervalle",
+              "count": "Nombre",
+              "intervals": {
+                "none": "Ne pas répéter",
+                "day": "Chaque jour",
+                "week": "Une fois par semaine",
+                "month": "Une fois par mois"
+              },
+              "dates_display": {
+                "one_visit": "La visite répétée est prévue le {{date}} à {{time}}",
+                "visits_list": "Les visites répétées sont prévues pour {{dates}} à {{time}}",
+                "and": " et ",
+                "visits_interval_day": "Les visites répétées sont prévues chaque jour du {{from}} au {{to}} à {{time}}",
+                "visits_interval_week": "Les visites répétées sont prévues une fois par semaine du {{from}} au {{to}} à {{time}}",
+                "visits_interval_month": "Les visites répétées sont prévues une fois par mois du {{from}} au {{to}} à {{time}}"
+              },
+              "list": {
+                "title": "Réunions récurrentes",
+                "hint": "Sélectionnez les dates des réunions récurrentes si nécessaire.",
+                "dates_select": "Dates des réunions",
+                "add_new_appointment": "Ajouter une réunion",
+                "new_appointment": "Nouvelle réunion",
+                "placeholders": {
+                  "dates_select": "Sélectionnez des dates"
+                }
+              }
+            },
+            "batch_cancel": {
+              "cancel_all": "Annuler tout",
+              "warning_title": "Voulez-vous vraiment annuler tous les rendez-vous prévus ?",
+              "warning_annotation": [
+                "{{count}} rendez-vous sera annulé.",
+                "{{count}} rendez-vous seront annulés.",
+                "{{count}} rendez-vous seront annulés."
+              ],
+              "back": "Retour",
+              "cancel": "Annuler"
+            },
+            "duplicate_warning_modal": {
+              "move": "Déplacer",
+              "same_time_title": "Un rendez-vous est déjà prévu à cette heure",
+              "same_day_title": "Un rendez-vous est déjà prévu ce jour-là",
+              "same_time_annotation": "Il est interdit de créer des doublons le même jour dans ce calendrier. Modifiez le rendez-vous existant ou changez la date de celui-ci.",
+              "same_day_annotation": "Il est interdit de créer des doublons le même jour dans ce calendrier. Voulez-vous déplacer le rendez-vous prévu à {{time}} ?"
+            },
+            "intersect_warning_modal": {
+              "title": "Chevauchement de rendez-vous",
+              "annotation": "Le rendez-vous chevauche un créneau déjà planifié dans ce calendrier. Choisissez un autre horaire ou modifiez le responsable."
+            }
+          },
+          "stats_settings_drawer": {
+            "title": "Paramètres des statistiques",
+            "description": "Valeurs des statistiques affichées",
+            "stats": {
+              "assigned": "Assigné",
+              "confirmed": "Confirmé",
+              "completed": "Terminée",
+              "not_took_place": "Non réalisée",
+              "not_scheduled": "Sans prochain rendez-vous",
+              "newbies": "Première visite",
+              "total": "Total"
+            }
+          },
+          "local_time_warning": {
+            "local_correction": [
+              "Correction d'heure locale: {{hours}} heure",
+              "Correction d'heure locale: {{hours}} heures",
+              "Correction d'heure locale: {{hours}} heures"
+            ],
+            "hint": "Vous n'êtes pas dans le fuseau horaire spécifié dans les paramètres système, de sorte que les heures de travail dans le calendrier et les heures de réunion sont décalées du nombre d'heures spécifié. Si vous pensez qu'il s'agit d'une erreur, changez le fuseau horaire dans les paramètres ou contactez l'assistance."
+          }
+        }
+      }
+    }
+  }
+}

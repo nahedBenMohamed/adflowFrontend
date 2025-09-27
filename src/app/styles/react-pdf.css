@@ -1,0 +1,4 @@
+:root {
+  --rpv-core__page-layer-box-shadow: 0 1px 2px 1px #d0daeb, 0 0 2px 0 #eef4fe;
+  --rpv-core__inner-page-background-color: var(--primary-statuses-white-0);
+}

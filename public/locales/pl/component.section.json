@@ -1,0 +1,190 @@
+{
+  "section": {
+    "section_header_with_boards": {
+      "board": "Tablica",
+      "list": "Lista",
+      "dashboard": "Pulpit",
+      "reports": "Raporty",
+      "timeline": "Gantt",
+      "automation": "Automatyzacja",
+      "bpmn_2_0": "BPMN 2.0",
+      "bpmn_2_0_soon": "BPMN 2.0 (Wkrótce...)",
+      "tooltips": {
+        "reports_denied": "Nie masz uprawnień do przeglądania raportów. Skontaktuj się z administratorem konta, aby uzyskać dostęp."
+      }
+    },
+    "empty_projects_block": {
+      "annotation": "Nie masz jeszcze żadnych projektów lub nie znaleziono nic z wybranymi filtrami."
+    },
+    "common": {
+      "add_card": "Dodaj kartę",
+      "new_stage": "Nowy Etap",
+      "create_button_tooltip": {
+        "universal": "Dodaj kartę",
+        "partner": "Dodaj partnera",
+        "deal": "Dodaj transakcję",
+        "contact": "Dodaj kontakt",
+        "company": "Dodaj firmę",
+        "supplier": "Dodaj dostawcę",
+        "contractor": "Dodaj kontrahenta",
+        "hr": "Dodaj kandydata",
+        "project": "Dodaj projekt"
+      },
+      "cards_total": {
+        "universal": ["Karty", "Karty", "Kart"],
+        "partner": ["Partnerzy", "Partnerzy", "Partnerów"],
+        "customer": ["Klienci", "Klienci", "Klientów"],
+        "deal": ["Karty", "Karty", "Kart"],
+        "contact": ["Kontakty", "Kontakty", "Kontaktów"],
+        "company": ["Firmy", "Firmy", "Firm"],
+        "supplier": ["Dostawcy", "Dostawcy", "Dostawców"],
+        "contractor": ["Kontrahenci", "Kontrahenci", "Kontrahentów"],
+        "hr": ["Kandydaci", "Kandydaci", "Kandydatów"],
+        "project": ["Projekty", "Projekty", "Projektów"]
+      },
+      "filter_button": {
+        "ui": {
+          "filter_drawer": {
+            "closed_at": "Data zamknięcia",
+            "just_my_cards": "Tylko moje karty",
+            "sorting": "Sortowanie",
+            "creation_date": "Data utworzenia",
+            "owners": "Odpowiedzialne",
+            "stages": "Etapy",
+            "tasks": "Zadania",
+            "placeholders": {
+              "selected_options": "Wybrane opcje",
+              "search_by_card_name": "Szukaj po nazwie karty"
+            },
+            "sorting_options": {
+              "manual": "Ręcznie",
+              "created_asc": "Utworzono: od najstarszych do najnowszych",
+              "created_desc": "Utworzono: od najnowszych do najstarszych",
+              "name_asc": "Tytuł: rosnąco",
+              "name_desc": "Tytuł: malejąco"
+            },
+            "tasks_options": {
+              "all": "Wszystkie karty",
+              "with_task": "Z zadaniami",
+              "without_task": "Bez zadań",
+              "overdue_task": "Z zaległymi zadaniami",
+              "today_task": "Z zadaniami na dziś"
+            },
+            "field_filter_string": {
+              "is_empty": "Jest pusty",
+              "is_not_empty": "Nie jest pusty",
+              "contains": "Zawiera...",
+              "placeholders": {
+                "value": "Wartość"
+              }
+            },
+            "field_filter_exists": {
+              "is_empty": "Jest pusty",
+              "is_not_empty": "Nie jest pusty"
+            }
+          },
+          "date_period_picker": {
+            "date_period_segmented_control": {
+              "period": "Okres",
+              "period_hint": "Dla wybranego okresu",
+              "from": "Od",
+              "from_hint": "Od wybranej daty",
+              "to": "Do",
+              "to_hint": "Przed wybraną datą"
+            },
+            "placeholders": {
+              "select_period": "Wybierz okres"
+            }
+          },
+          "field_filter_items": {
+            "field_filter_boolean": {
+              "switch_on": "Włącz",
+              "switch_off": "Wyłącz"
+            },
+            "field_filter_number": {
+              "from": "Od",
+              "to": "Do"
+            }
+          }
+        }
+      },
+      "settings_button": {
+        "module_settings": "Ustawienia modułu",
+        "settings": "Ustawienia",
+        "import": "Importuj",
+        "get_import_template": "Pobierz szablon importu",
+        "board_settings": "Ustawienia tablicy",
+        "table_settings": "Ustawienia tabeli",
+        "upload_file": "Prześlij plik",
+        "sales_pipeline_settings": "Ustawienia lejka sprzedażowego",
+        "request_setup": "Zamów konfigurację {{company}}",
+        "import_entities_modal": {
+          "title": "Import z Excel",
+          "annotation": "Aby zaimportować swoją bazę danych do {{company}}, wykonaj kilka prostych kroków:",
+          "perform_import": "Wykonaj import",
+          "setting_up_file_to_import": {
+            "title": "Przygotowanie pliku do importu",
+            "step1": "Pobierz przykładowy plik szablonu;",
+            "step2": "Wprowadź swoje dane do tabeli, która odpowiada strukturze pól {{company}};",
+            "step3": "Po zakończeniu ustawień dopasowania kolumn możesz zapisać ustawienia jako szablon importu."
+          },
+          "import_file": {
+            "title": "Importuj plik",
+            "step1": "Kliknij \"Prześlij plik\";",
+            "step2": "W otwartym oknie wybierz wcześniej wypełniony szablon;",
+            "step3": "Po pobraniu kliknij przycisk \"Wykonaj import\"."
+          }
+        },
+        "import_in_background_info_modal": {
+          "title": "Import z Excel",
+          "content": "Proces importu jest obecnie uruchomiony w tle. Możesz kontynuować pracę w {{company}} jak zwykle, a my powiadomimy Cię po zakończeniu procesu.",
+          "ok": "Ok"
+        }
+      },
+      "search_box": {
+        "nothing_found": "Nic nie znaleziono",
+        "placeholder": "Szukaj..."
+      },
+      "section_table_settings_sidebar": {
+        "table_settings": "Ustawienia tabeli",
+        "display_columns": "Wyświetl kolumny"
+      }
+    },
+    "section_table": {
+      "hidden": "Ukryte",
+      "hidden_hint": "Nie możesz wyświetlić ani uzyskać dostępu do tego pola, ponieważ zostało ono ukryte w ustawieniach pól modułu przez administratora konta.",
+      "empty": "Nie dodałeś jeszcze żadnych kart",
+      "all_columns_hidden": "Wszystkie kolumny są ukryte w ustawieniach tabeli",
+      "name": "Nazwa",
+      "owner": "Odpowiedzialny",
+      "stage": "Etap",
+      "date_created": "Data utworzenia",
+      "value": "Wartość",
+      "participants": "Uczestnicy",
+      "start_date": "Data rozpoczęcia",
+      "end_date": "Data zakończenia",
+      "description": "Opis",
+      "placeholders": {
+        "participants": "Dodaj uczestników"
+      },
+      "select_all": {
+        "title": "Masowy wybór",
+        "description": "Zastosuj do wszystkich kart ({{count}}) czy tylko do bieżącej strony?",
+        "all_elements": "Do wszystkich kart",
+        "for_page": "Tylko dla aktywnej strony"
+      },
+      "batch_actions": {
+        "cards_selected": "Wybrane karty: {{count}}",
+        "change_responsible": "Zmień odpowiedzialnego",
+        "change_stage": "Zmień etap",
+        "delete": "Usuń",
+        "change_stage_annotation": "Wybierz nowy etap dla wybranych kart. Tej operacji nie można cofnąć.",
+        "change_responsible_annotation": "Wybierz nowego odpowiedzialnego użytkownika dla wybranych kart.",
+        "action_cannot_be_undone": "Tej operacji nie można cofnąć.",
+        "delete_warning_title": "Usuń wybrane karty",
+        "delete_warning_annotation": "Czy na pewno chcesz usunąć wybrane karty? Tej operacji nie można cofnąć.",
+        "select_linked_entities_annotation": "Zmień odpowiedzialnego w powiązanych kartach"
+      }
+    }
+  }
+}

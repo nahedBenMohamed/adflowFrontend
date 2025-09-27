@@ -1,0 +1,13 @@
+export { ReactComponent as DocumentIcon } from './document.svg';
+export { ReactComponent as DownloadIcon } from './download.svg';
+export { ReactComponent as FacebookMessengerProviderIcon } from './facebook_messenger_provider_indicator.svg';
+export { ReactComponent as FullscreenIcon } from './fullscreen.svg';
+export { ReactComponent as ImageIcon } from './image.svg';
+export { ReactComponent as MultichatIcon } from './multichat_button.svg';
+export { ReactComponent as ReadIcon } from './read.svg';
+export { ReactComponent as ReadChatMessageIcon } from './read_chat_message.svg';
+export { ReactComponent as ReplyIcon } from './reply.svg';
+export { ReactComponent as SendIcon } from './send.svg';
+export { ReactComponent as UnreadIcon } from './unread.svg';
+export { ReactComponent as UnreadChatMessageIcon } from './unread_chat_message.svg';
+export { ReactComponent as WhatsAppProviderIcon } from './whatsapp_provider_indicator.svg';

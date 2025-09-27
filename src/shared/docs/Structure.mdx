@@ -1,0 +1,289 @@
+# Frontend structure
+
+<br />
+
+## Terminology
+
+1. **Public api** – `index.tsx` file, which specifies what we can import from this directory;
+2. **Module** – a directory in `/modules` directory, which contains all the logic related to some _feature_ of the app. For example, `/products`, `/builder`, `/some-module`;
+3. **Shared** – a directory in `/shared` directory, which contains all the _shared logic_ between modules. Ideally, we should be able to use `/shared` directory in another project without any changes;
+4. **Slice** – a subdirectory in `/shared` or `/module/module-name` directory. For example, `/shared/assets`, `/module-name/hooks`;
+5. **Sub-slice** – a subdirectory in `/shared/lib` directory. For example, `/shared/lib/helpers`, `/shared/lib/hooks`.
+
+<br />
+
+## Basic concepts
+
+- Modules from can only import files from `/shared` directory, one module can not import files from another module.
+- Each module, slice and sub-slice has a **public api** – `index.tsx` , which exports all the public components, hooks, models, and others. Normally, this should look like this:
+
+```tsx
+// /api/index.tsx
+
+export { ApiService } from './ApiService';
+export type { ApiType } from './ApiType';
+export { AuthService } from './AuthService';
+
+// /models/index.tsx
+
+export { Product } from './Product';
+export { User } from './User';
+
+// /module/index.tsx
+
+export * from './api';
+export { User } from './models';
+```
+
+- Each component in `/components` or hoc in `/hoc` directory should have its **own** directory:
+
+```mathematica
+components
+├── Component1
+│   └── Component1.tsx
+├── Component2
+│   └── Component2.tsx
+└── Component3
+    └── Component3.tsx
+```
+
+<br />
+
+## /shared
+
+`/shared` directory contains all the **shared code** between modules.
+
+It has the following structure of **slices**:
+
+- `/assets` – icons, docs, images, etc;
+- `/hoc` – higher order components;
+- `/docs` – documentation, does not have public api;
+- `/lib` – shared logic.
+
+<br />
+
+### /shared/lib
+
+`/lib` **slice** contains all the **shared logic** between modules. It has the following **sub-slices**:
+
+- `/helpers` – helpers, generateRandomString, getCurrentDate, etc;
+- `/hooks` - hooks, useDebounce, usePrevious, etc;
+- `/models` - models, Product, User, etc;
+- `/services` - services, AuthService, ProductService, etc;
+- `/types` - types, NullableObject, etc;
+- `/components` - some common components, Button, Input, etc;
+- `/mixins` - mixins, some _mixins_ for `styled-components`, etc.
+
+```mathematica
+shared
+├── index.tsx
+├── hoc
+│   ├── withPage.tsx
+│   └── withRole.tsx
+├── assets
+│   ├── icons
+│   └── images
+├── docs
+│   ├── api.mdx
+│   └── components.mdx
+└── lib
+    ├── helpers
+    ├── hooks
+    ├── models
+    ├── services
+    ├── types
+    ├── templates
+    ├── mixins
+    └── components
+        └── index.tsx
+```
+
+`/components`, `/models`, `/utils` or `/helpers` directories may have various grouping **subdirectories** for easier files maintenance and readability, for example:
+
+```mathematica
+models
+├── Entity
+│   ├── Entity.ts
+│   └── EntityShortInfo.ts
+├── User
+│   ├── User.ts
+│   └── UserRole.ts
+├── EntityType.ts
+└── index.tsx
+```
+
+<br />
+
+#### /mixins
+
+`/mixins` directory contains all the _mixins_ for `styled-components`. Each _mixin_ should have `.mixin` in its name (so it's easier to identify them):
+
+```mathematica
+mixins
+├── Truncate.mixin.ts
+├── HideScrollbar.mixin.ts
+└── index.tsx
+```
+
+<br />
+
+## /modules
+
+`/modules` directory contains all the _modules_ of the app. Each module has its **own directory**, it must have _snake-case_ name, for example – `/products`, `/builder`, `/some-module`.
+
+Each module can contain:
+
+- `/api` – api logic;
+- `/assets` – icons, docs, images, etc;
+- `/pages` – pages logic;
+- `/store` – local _MobX_ stores;
+- `/shared` - same as global `/shared` directory;
+- `/context` - some local _React_ contexts;
+- `/templates` - templates, ProductTemplate, etc;
+- `/events` - events, communication with sockets, etc.
+
+```mathematica
+modules
+├── products
+│   ├── api
+│   ├── context
+│   ├── assets
+│   ├── pages
+│   ├── store
+│   ├── templates
+|   ├── events
+│   ├── shared
+│   └── index.tsx
+└── builder
+```
+
+<br />
+### /api
+
+`/api` directory contains all the _api logic_ of the module. It has the following structure:
+
+- ModuleApuRoutes.ts – _api routes_ of the module;
+- ModuleQueryKeys.ts – *query keys* of the module (if we use `react-query` inside);
+- `/dtos` – data transfer objects, ProductDto, UserDto, etc, may have grouping directories inside for better readability;
+- `/SomeApi` – api logic which must be represent in `SomeApi.ts` helper class, may have `/helpers` (for queries mutations and cache invalidation) and `/queries` (for queries) inside, should have its own `index.tsx`.
+
+```mathematica
+api
+├── index.tsx
+├── ModuleApiRoutes.ts
+├── ModuleQueryKeys.ts
+├── dtos
+│   ├── index.tsx
+│   ├── User
+│   │   ├── UserDto.ts
+│   │   └── UserShortInfoDto.ts
+│   └── ProductDto.ts
+├── SomeApi
+│   ├── index.tsx
+│   ├── helpers
+│   │   ├── useInvalidateQueryCache.ts
+│   │   └── addUserToCache.ts
+│   ├── queries
+│   │   ├── useGetUser.ts
+│   │   ├── useGetUsers.ts
+│   │   └── useUpdateUser.ts
+│   └── SomeApi.ts
+└── index.tsx
+```
+
+<br />
+
+## /app
+
+`/app` directory contains all the app specific logic – _routes_, _global styles_ and _global stores_. It can import files from `/shared` directory and from `/modules` directory. It is an **entry point** of the app.
+
+`/app` directory contains:
+
+- `/store` - global MobX stores;
+- `/styles` - app specific global styles;
+- `/routes` - app specific routes, AppRouter.tsx;
+- `/config` – configuration files;
+- `App.tsx` - app entry point.
+
+Entry point of the `/styles` directory – `main.css`.
+
+```mathematica
+app
+├── App.tsx
+├── config
+│   ├── i18n
+│   └── index.tsx
+├── routes
+│   └── AppRouter.tsx
+├── store
+│   ├── AuthStore.ts
+│   └── index.tsx
+└── styles
+    └── main.css
+```
+
+<br />
+
+## /declarations
+
+`/declarations` directory contains all global _.d.ts_ declarations.
+
+```mathematica
+declarations
+├── react-app-env.d.ts
+├── styled.d.ts
+└── vite-env.d.ts
+```
+
+<br />
+
+## Imports convention
+
+When we are importing something which belongs to the same module – we should use **relative imports**:
+
+```tsx
+// /modules/products/pages/ProductPage.tsx
+
+// import { Product } from '../models';
+// import { ProductService } from '../services';
+```
+
+When we are importing something which belongs to another module – we should use **absolute imports** via `@` alias:
+
+```tsx
+// /modules/products/pages/ProductPage.tsx
+
+// import { User } from '@/shared';
+// import { AuthService } from '@/modules/auth';
+```
+
+<br />
+
+## Miscellaneous
+
+- Within the `/components` directory, each component can have its own `/components` subdirectory, and these subdirectories can further contain their own **nested subdirectories** within them. For example:
+
+```mathematica
+components
+├── Component1
+│   ├── Component1.tsx
+│   └── components
+│       ├── Component1Button
+│       │   └── Component1Button.tsx
+│       └── Component1Input
+│           └── Component1Input.tsx
+├── Component2
+│   └── Component2.tsx
+└── Component3
+    └── Component3.tsx
+```
+
+<br />
+
+## Namings
+
+Global directories naming are must be in **snake-case**:
+
+- directory
+- some-directory
+- some-global-directory

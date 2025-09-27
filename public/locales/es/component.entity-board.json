@@ -1,0 +1,23 @@
+{
+  "entity_board": {
+    "ui": {
+      "project_entity_card_item": {
+        "start_date": "Fecha de Inicio",
+        "end_date": "Fecha de Fin",
+        "titles": {
+          "not_resolved": "Tareas no resueltas",
+          "upcoming": "Próximas tareas",
+          "overdue": "Tareas vencidas",
+          "today": "Tareas de hoy",
+          "resolved": "Tareas resueltas"
+        }
+      },
+      "common_entity_card": {
+        "no_tasks": "Sin tareas",
+        "task_today": "Tarea de hoy",
+        "overdue_task": "Tarea vencida",
+        "upcoming_task": "Próxima tarea"
+      }
+    }
+  }
+}

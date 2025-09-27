@@ -1,0 +1,867 @@
+{
+  "builder": {
+    "components": {
+      "common": {
+        "next": "Next",
+        "back": "Back",
+        "save": "Save",
+        "workspace_builder": "Workspace Builder",
+        "your_workspace": "Your Workspace",
+        "no_links": "No available modules to link."
+      }
+    },
+    "pages": {
+      "site_form_builder_page": {
+        "steps": {
+          "save_and_leave": "Save and Leave",
+          "default_title": "Web Form",
+          "default_form_title": "Contact Us",
+          "default_consent_text": "We use cookies to improve our website. Cookies provide a more personalized experience for you and web analytics for us. Read more in our Privacy Policy.",
+          "default_consent_link_text": "Privacy Policy",
+          "default_gratitude_header": "Thank You!",
+          "default_gratitude_text": "Our managers will contact you during business hours.",
+          "default_form_button_text": "Submit",
+          "default_client_button_text": "Open Form",
+          "common_error": "Please fill out all required fields.",
+          "step1": {
+            "title": "Step 1",
+            "description": "Basic Settings",
+            "error": "Please fill out all required fields in the first step."
+          },
+          "step2": {
+            "title": "Step 2",
+            "description": "Form Fields",
+            "error": "Please fill out all required fields in the second step."
+          },
+          "step3": {
+            "title": "Step 3",
+            "description": "Data Policy and Thank You Page",
+            "consent_error": "Please fill out all required fields in the 'Privacy Policy' section in the third step."
+          },
+          "step4": {
+            "title": "Step 4",
+            "description": "Form Design"
+          },
+          "step5": {
+            "title": "Step 5",
+            "description": "Form Installation Script"
+          }
+        },
+        "site_form_builder_step1": {
+          "title": "Step 1. Form Setup",
+          "title_input_name": "Enter form name",
+          "choose_main_card": "Choose the main card that will be created after submitting the form",
+          "choose_linked_cards": "Choose the linked cards that will be created after submitting the form",
+          "linked_entities_select": "Select which modules to create cards in after form submission from your site",
+          "choose_board_annotation": "Select the board where the card will be created",
+          "card_settings": "Configure card creation",
+          "responsible_user": "Responsible user",
+          "check_duplicates": "Prevent duplicates",
+          "check_duplicates_hint": "If enabled, submitting the form with an existing email or phone number will link to the existing card instead of creating a new one.",
+          "yes": "Yes",
+          "placeholders": {
+            "title_input": "Form name",
+            "responsible_select": "Responsible",
+            "board": "Board"
+          }
+        },
+        "site_form_builder_step2": {
+          "sidebar": {
+            "title": "Form Elements",
+            "header_title": "Form Header",
+            "header_hint": "Only one allowed.",
+            "delimiter_title": "Separator",
+            "delimiter_hint": "Line to separate different parts of the form.",
+            "field_attributes": {
+              "title": "Field Attributes",
+              "hint": "Title displayed above the field, description inside it.",
+              "label_name": "Title",
+              "placeholder_name": "Description"
+            },
+            "card_name_block": {
+              "card_title": "Card Name",
+              "company_title": "Company Name",
+              "contact_title": "Full Name",
+              "card_text": "Name",
+              "company_text": "Name",
+              "contact_text": "Full Name"
+            },
+            "field_elements": {
+              "no_available_fields": "No available fields",
+              "email": "Email",
+              "phone": "Phone",
+              "short_text": "Short Text",
+              "long_text": "Long Text",
+              "number": "Number",
+              "value": "Value",
+              "date": "Date",
+              "select": "Select",
+              "multiselect": "Multiselect",
+              "colored_select": "Colored select",
+              "colored_multiselect": "Colored multiselect",
+              "link": "Link",
+              "file": "File",
+              "switch": "Switch"
+            }
+          },
+          "tree": {
+            "element_name": {
+              "placeholder": "Enter form title"
+            },
+            "entity_field_element": {
+              "placeholder": "Enter field description",
+              "template": {
+                "company_name": "Name",
+                "contact_name": "Full Name",
+                "card_name": "Card Name",
+                "short_text": "Short Text",
+                "long_text": "Long Text",
+                "field": "Field",
+                "delimiter": "Separator",
+                "file": "File",
+                "schedule": "Select Calendar",
+                "schedule_performer": "Select Performer",
+                "schedule_date": "Select Date",
+                "schedule_time": "Select Time",
+                "placeholder": "Enter field name",
+                "required": "Required Field",
+                "validation": "Field Validation",
+                "field_type": "Field Type:",
+                "linked_with": "Linked with Module:"
+              }
+            }
+          }
+        },
+        "site_form_builder_step3": {
+          "show_in_form_control": {
+            "yes": "Yes"
+          },
+          "consent_block": {
+            "title": "Data Processing Policy",
+            "controls": {
+              "show_consent_title": "Show Privacy Policy",
+              "text_title": "Privacy Policy Text",
+              "text_hint": "Text will be displayed at the end of the form.",
+              "link_text_title": "Link Text",
+              "link_text_hint": "Text displayed on the link",
+              "link_title": "Link",
+              "link_hint": "Enter the URL of the Privacy Policy in the format https://example.com/.",
+              "consent_by_default_title": "Checkbox checked by default",
+              "placeholders": {
+                "text": "Privacy Policy Text",
+                "link_text": "Enter link text",
+                "link": "Enter link"
+              }
+            },
+            "skeleton": {
+              "button_text": "Submit"
+            }
+          },
+          "gratitude_block": {
+            "title": "Thank You Page",
+            "show_gratitude_title": "Show Thank You Page",
+            "gratitude_text": "Thank You Text",
+            "placeholders": {
+              "header": "Enter title",
+              "text": "Enter thank you text"
+            }
+          }
+        },
+        "site_form_builder_step4": {
+          "sidebar": {
+            "custom_css_block": {
+              "custom_css": "Custom CSS",
+              "enable_custom_css": "Enable Custom CSS",
+              "placeholders": {
+                "custom_css": "Custom CSS rules"
+              }
+            },
+            "advanced_settings": "Advanced Settings",
+            "modal_overlay_customization_block": {
+              "modal_overlay": "Popup Overlay",
+              "overlay_display": "Display Overlay",
+              "background_color": "Background Color",
+              "opacity": "Opacity"
+            },
+            "switch_label": "Enable",
+            "title": "Form Design",
+            "description": "The changes take effect after saving.",
+            "powered_by_logo_block": {
+              "title": "{{company}} Logo",
+              "switch_label": "Enable"
+            },
+            "header_customization_block": {
+              "title": "Header",
+              "text_color": "Text Color",
+              "text_align_title": "Alignment",
+              "text_align_left": "Left",
+              "text_align_center": "Center",
+              "text_align_right": "Right"
+            },
+            "fields_customization_block": {
+              "title": "Fields",
+              "background_color": "Background Color",
+              "title_color": "Title Color",
+              "text_color": "Field Text Color"
+            },
+            "form_button_customization_block": {
+              "title": "Button",
+              "background_color": "Button Color",
+              "text_color": "Text Color",
+              "border": "Corner Radius",
+              "border_rounded": "Rounded",
+              "border_squared": "Squared",
+              "size": "Button Size",
+              "small": "Small",
+              "medium": "Medium",
+              "large": "Large",
+              "text_input": "Button Text",
+              "hint": "Submit button located at the end of the form",
+              "placeholders": {
+                "text_input": "Submit"
+              }
+            },
+            "client_button_customization_block": {
+              "title": "Website Button",
+              "background_color": "Button Color",
+              "text_color": "Button Text Color",
+              "border": "Corners",
+              "border_rounded": "Rounded",
+              "border_squared": "Square",
+              "size": "Button Size",
+              "small": "Small",
+              "medium": "Medium",
+              "large": "Large",
+              "text_input": "Button Text",
+              "hint": "Button that opens popup window with the form",
+              "placeholders": {
+                "text_input": "Open"
+              }
+            },
+            "form_layout_customization_block": {
+              "title": "Form",
+              "view_title": "View",
+              "view_built_in": "Embedded",
+              "view_modal": "Popup",
+              "position_title": "Form Position",
+              "position_left": "Left",
+              "position_center": "Center",
+              "position_right": "Right",
+              "border_radius_title": "Border Radius",
+              "border_rounded": "Rounded",
+              "border_none": "None",
+              "orientation_title": "Orientation",
+              "orientation_horizontal": "Horizontal",
+              "orientation_vertical": "Vertical",
+              "max_width": "Max Width",
+              "max_height": "Max Height",
+              "background_color": "Background Color"
+            },
+            "size_customization_element_template": {
+              "switch_label": "Enable",
+              "placeholders": {
+                "input": "Enter value"
+              }
+            }
+          },
+          "preview": {
+            "iframe_title": "{{companyName}} – Form Preview",
+            "error": "Error while loading preview",
+            "open_in_a_new_tab": "Open in a new tab",
+            "open_preview": "Open preview",
+            "phone": "Phone",
+            "tablet": "Tablet",
+            "computer": "Computer",
+            "form": "Form",
+            "gratitude": "Thank you page",
+            "button": "Button"
+          }
+        },
+        "site_form_builder_step5": {
+          "title": "Step 5. Copy the form script for your site",
+          "copy_form_code": "Copy form script",
+          "form_code": "Form script",
+          "multiform_mode": "Multi-Form Compatibility Mode",
+          "multiform_mode_hint": "Enable this mode if the page where you plan to insert the form already has another form created with our builder. This setting helps avoid display conflicts.",
+          "form_will_be_mounted_here": "The form will be embedded here",
+          "public_link_title": "Public Form Page",
+          "public_link_annotation": "Use the link below to access the public page for your form. If you don't need to embed it on your website, share this page with your users so they can fill it out. The form is ready to use and will automatically update when changes are made.",
+          "instruction_title": "Instructions for integrating the form on your site",
+          "view_form": "View form",
+          "static_site_integration_title": "Integration on static sites and sites created through builders",
+          "first_point": {
+            "title": "1. Adding a Form via CSS Class",
+            "annotation": "Assign the class <code>{{mountClass}}</code> to the elements on your site where you want to embed the form. Insert the form code copied above into the <code><head/></code> tag or at the very end of the <code><body/></code> tag. The form will appear inside the elements with the specified class. If the element already has content, the form will be added at the end of that content. If you choose to display the form as a popup, a button will be embedded in the specified location. Clicking this button will open a <b>popup</b> with the form. This is the <b>preferred</b> method for embedding forms on your site."
+          },
+          "second_point": {
+            "title": "2. Adding a Form without CSS Classes",
+            "annotation": "If you cannot assign a class to the elements, insert the <b>form code</b> in the place on your site where you want it to appear. The form code can be embedded in <b>any location</b> on your site. In this case, the form will be displayed where the code is inserted. This method allows embedding only <b>one</b> form per page."
+          },
+          "ssr_integration_title": "Integration on SSR sites (e.g., created with Next.js, Astro, etc.)",
+          "ssr_integration_annotation": "To avoid issues with <b>hydration</b> (loading scripts into HTML markup), it is recommended to use the method of specifying the class <code>workspace-form-builder-mount-container</code> for the element where you want to embed the form (described in more detail in <b>point 2</b> above). In this case, the form script should preferably be placed in the <code><head/></code> tag.",
+          "analytics": {
+            "title": "Tracking Events and Goals",
+            "annotation": "The form supports sending events and goals to analytics systems. If your site has Google Analytics or Yandex.Metrika installed, you can track user interactions with the form. To do this, configure events or goals in your analytics system and link them to the identifiers listed in the table.",
+            "table_title": "Tracked Events",
+            "event_title": "Name",
+            "event_id": "Goal ID",
+            "form_view": "Form View",
+            "form_start": "Form Start",
+            "field_fill": "Fill “{{field}}” field",
+            "form_submit": "Form Submit"
+          }
+        }
+      },
+      "headless_site_form_builder_page": {
+        "steps": {
+          "save_and_leave": "Save and Exit",
+          "default_title": "Website Form for API Integration",
+          "common_error": "Please fill in all required fields.",
+          "step1": {
+            "title": "Step 1",
+            "description": "Basic Setup",
+            "error": "Please complete all required fields in Step 1."
+          },
+          "step2": {
+            "title": "Step 2",
+            "description": "Form Fields"
+          },
+          "step3": {
+            "title": "Step 3",
+            "description": "Form Integration Guide"
+          }
+        },
+        "site_form_builder_step3": {
+          "title": "Step 3. Integrate the Form with Your Website",
+          "json_integration_title": "Sending Data in JSON Format",
+          "api_integration_instruction": "This method is suitable if you process forms on your own server. To send user data from your form to {{company}}, make a request with the parameters listed below. Include the user data in the request body in JSON format. An example request body is provided below.",
+          "api_integration_request_annotation": "Method: <code>POST</code>\nHeader: <code>Content-Type: application/json</code>\nURL: <code>{{endpoint}}</code>",
+          "request_parameters_title": "Request Parameters",
+          "request_body_title": "Request Body",
+          "field_value_explanation": "In the value field, include the data entered by the user. Formats for each field are described below.",
+          "field_value_title": "Field Values",
+          "field_value": "Field value for {{label}}",
+          "response_title": "Response Format",
+          "response_explanation": "If the form is submitted successfully, the server returns an HTTP status code 201.",
+          "formdata_integration_title": "Sending Data in FormData Format",
+          "formdata_integration_instruction": "This method is suitable for sending forms from websites built with tools like Tilda. Data is sent in x-www-form-urlencoded format. To send data correctly, simply provide the webhook URL below and assign variables to the fields.",
+          "formdata_webhook_url": "Webhook URL",
+          "formdata_fields_title": "Field Variables",
+          "formdata_fields_explanation": "Each form field must have a name (variable) to map it to the correct field in the system. In this case, field variables are their numeric IDs. To send data correctly, assign each form field the variable specified in the table below.",
+          "fields_table": {
+            "field_title": "Field Name",
+            "field_format": "Field Format",
+            "field_example": "Example",
+            "field_id": "Variable (Field ID)",
+            "format": {
+              "text": "String enclosed in quotes",
+              "link": "String without spaces enclosed in quotes",
+              "phone": "String without spaces enclosed in quotes",
+              "email": "String without spaces enclosed in quotes",
+              "value": "String enclosed in quotes",
+              "select": "Numeric ID of the selected value",
+              "switch": "Boolean value without quotes",
+              "number": "Number without quotes",
+              "multiselect": "Array of numeric IDs for selected values",
+              "date": "Date string in ISO 8601 format enclosed in quotes"
+            },
+            "example": {
+              "text": "\"User-entered value\"",
+              "link": "\"https://example.com\"",
+              "phone": "\"12345678910\"",
+              "email": "\"form@example.com\"",
+              "value": "\"User-entered value\"",
+              "select": "34",
+              "switch": "true",
+              "number": "42",
+              "multiselect": "[26, 27]",
+              "date": "\"2024-12-31T00:00:00\""
+            }
+          }
+        }
+      },
+      "online_booking_site_form_builder_page": {
+        "steps": {
+          "save_and_leave": "Save & Exit",
+          "default_title": "Online Booking Form",
+          "default_form_title": "Online Booking",
+          "default_consent_text": "We use cookies to improve your experience and analyze website traffic. Learn more in our Privacy Policy.",
+          "default_consent_link_text": "Privacy Policy",
+          "default_gratitude_header": "Thank You!",
+          "default_gratitude_text": "Our team will contact you to confirm your booking.",
+          "default_form_button_text": "Submit",
+          "default_client_button_text": "Open Form",
+          "schedule_field_title": "Calendar",
+          "schedule_field_placeholder": "Select a calendar...",
+          "schedule_performer_field_title": "Performer",
+          "schedule_performer_field_placeholder": "Select a performer...",
+          "schedule_date_field_title": "Booking Date",
+          "schedule_date_field_placeholder": "Select a date...",
+          "schedule_time_field_title": "Booking Time",
+          "schedule_time_field_placeholder": "Select a time...",
+          "common_error": "Please fill in all required fields.",
+          "step1": {
+            "title": "Step 1",
+            "description": "Basic Setup",
+            "error": "Please complete all required fields in Step 1."
+          },
+          "step2": {
+            "title": "Step 2",
+            "description": "Form Fields",
+            "error": "Please complete all required fields in Step 2."
+          },
+          "step3": {
+            "title": "Step 3",
+            "description": "Privacy Policy & Confirmation Page",
+            "consent_error": "Please complete all required fields in the Privacy Policy section."
+          },
+          "step4": {
+            "title": "Step 4",
+            "description": "Form Design"
+          },
+          "step5": {
+            "title": "Step 5",
+            "description": "Embed Script"
+          }
+        },
+        "online_booking_site_form_builder_step1": {
+          "title": "Step 1. Form Setup",
+          "title_input_name": "Enter Form Name",
+          "choose_schedulers": "Select schedulers for booking entries",
+          "choose_linked_cards": "Select linked records to create after booking",
+          "linked_entities_select": "Choose modules for record creation after form submission",
+          "choose_board_annotation": "Select a board for record creation",
+          "no_schedules": "No schedulers created yet. To set up an online booking form, create an “Appointment Scheduling” module and configure online booking settings.",
+          "no_linked_cards": "No available modules for linked cards. To create a link, select a scheduler with an associated module. If multiple calendars are selected, ensure they all link to the same module.",
+          "limit_days_name": "Booking days limit",
+          "card_settings": "Configure card creation",
+          "responsible_user": "Responsible user",
+          "check_duplicates": "Prevent duplicates",
+          "check_duplicates_hint": "If enabled, submitting the form with an existing email or phone number will link to the existing card instead of creating a new one.",
+          "yes": "Yes",
+          "placeholders": {
+            "title_input": "Form Name",
+            "responsible_select": "Owner",
+            "board": "Board",
+            "limit_days": "From 1 to 730"
+          }
+        }
+      },
+      "workspace_editor_page": {
+        "edit": "Edit",
+        "delete": "Delete",
+        "warn_title": "Warning!",
+        "warn_annotation": "Deleting the module will permanently delete all associated data. Are you sure you want to proceed?",
+        "open_module": "Open module",
+        "entity_type_field_used_in_formula_warning_modal": {
+          "title": "Failed to delete this module",
+          "annotation": "Some fields in this module are linked to a formula in another module. Please update the formula settings and try again.",
+          "continue": "Continue"
+        }
+      },
+      "scheduler_builder_page": {
+        "steps": {
+          "save_error": "Specify module name and select at least one user on the first step.",
+          "step1": {
+            "label": "1st step",
+            "description": "Setup a new module"
+          },
+          "step2": {
+            "label": "2nd step",
+            "description": "Link scheduler to other module in your workspace"
+          },
+          "step3": {
+            "label": "3rd step",
+            "description": "Integrate scheduler to products module in your workspace"
+          },
+          "default_title": "Meeting Scheduler"
+        },
+        "scheduler_builder_step1": {
+          "title": "Personalize the module",
+          "name_the_module": "Name the Module",
+          "name_the_module_hint": "This name will be displayed in the left sidebar. You will be able to change it in the future.",
+          "choose_icon": "Choose an icon for the left sidebar",
+          "choose_icon_hint": "This icon will be displayed in the left sidebar. You will be able to change it in the future.",
+          "for_users": "For users",
+          "for_user_groups": "For user groups",
+          "view_type": "Select the type of Meeting Schedule",
+          "view_type_hint": "Select the type of view – Side Time View (Vertical Time View) or Top Time View (Horizontal Time View).",
+          "schedule": "Side Time View",
+          "schedule_img_alt": "{{company}} – Schedule interface preview",
+          "board": "Top Time View",
+          "board_img_alt": "{{company}} – Board interface preview",
+          "enter_the_interval": "Enter the interval",
+          "maximum_number_of_records": "Maximum number of records",
+          "error": "Please fill in all the required fields.",
+          "change_anyway": "Change anyway",
+          "warning_title": "Are you sure you want to change this parameter?",
+          "warning_annotation": "All existing appointments will be deleted.",
+          "for_whom": "Select users or user groups",
+          "for_whom_hint": "Select scheduler view type – for users or user group.",
+          "no_duration": "No",
+          "minutes": "minutes",
+          "schedule_params_title": "Schedule & Online Booking",
+          "schedule_params_hint": "Set up availability and meeting parameters for the calendar. They will be used to display the schedule and manage online bookings.",
+          "time_buffer_before": "Buffer time before meeting",
+          "time_buffer_after": "Buffer time after meeting",
+          "intervals_source": "Use availability from",
+          "performers_intervals": "users",
+          "scheduler_intervals": "this scheduler",
+          "placeholders": {
+            "interval": "Interval",
+            "unlimited": "Unlimited",
+            "module_name": "Module name"
+          },
+          "change_type_warning": {
+            "title": "Warning!",
+            "annotation": "Changing the calendar type will permanently delete all visit records. Are you sure you want to proceed?",
+            "approve": "Confirm"
+          },
+          "change_performers_warning": {
+            "title": "Warning!",
+            "annotation": "Removing a performer from the calendar will permanently delete all of their visit records. Are you sure you want to proceed?",
+            "approve": "Confirm"
+          }
+        },
+        "scheduler_builder_step2": {
+          "title": "Link to other module",
+          "do_not_link": "Do not link to other module",
+          "duplicate_title": "Block Duplicate Meetings",
+          "duplicate_hint": "When enabled, this setting prevents scheduling multiple meetings for the same linked card on the same day."
+        },
+        "scheduler_builder_step3": {
+          "title": "Integrate with products module",
+          "do_not_integrate": "Do not integrate with products module"
+        }
+      },
+      "products_section_builder_page": {
+        "delay_select": {
+          "no_return": "Do not return",
+          "no_return_minified": "Do not",
+          "24_hours": "24 hours",
+          "24_hours_minified": "24h",
+          "48_hours": "48 hours",
+          "48_hours_minified": "48h",
+          "72_hours": "72 hours",
+          "72_hours_minified": "72h",
+          "7_days": "7 days",
+          "7_days_minified": "7d",
+          "10_days": "10 days",
+          "10_days_minified": "10d",
+          "14_days": "14 days",
+          "14_days_minified": "14d",
+          "28_days": "28 days",
+          "28_days_minified": "28d",
+          "30_days": "30 days",
+          "30_days_minified": "30d"
+        },
+        "steps": {
+          "save_common_error": "Failed to save. Some steps are missing required information.",
+          "save_warehouses_error": "You need to create at least one warehouse to continue. Alternatively, you can disable warehouses.",
+          "step1": {
+            "label": "1st step",
+            "description": "Setup a new module"
+          },
+          "step2": {
+            "label": "2nd step",
+            "description": "Create product categories (product groups)"
+          },
+          "step3": {
+            "label": "3rd step",
+            "description": "Setup warehouses for you products"
+          },
+          "step4": {
+            "rentals": {
+              "label": "4th step",
+              "description": "Configure schedule settings for your rental products"
+            },
+            "sales": {
+              "label": "4th step",
+              "description": "Link to other modules in your workspace"
+            }
+          },
+          "step5": {
+            "label": "5th step",
+            "description": "Link to other modules in your workspace"
+          },
+          "default_titles": {
+            "sale": "Warehouse & Product Management",
+            "rental": "Rental Management"
+          }
+        },
+        "product_section_builder_step1": {
+          "title": "Personalize the module",
+          "name_the_section": "Name the Module",
+          "name_the_section_hint": "This name will be displayed in the left sidebar. You will be able to change it in the future.",
+          "choose_icon": "Choose an icon for the left sidebar",
+          "choose_icon_hint": "This icon will be displayed in the left sidebar. You will be able to change it in the future.",
+          "error": "Module name must be specified.",
+          "placeholders": {
+            "section_name": "Module name"
+          }
+        },
+        "product_section_builder_step3": {
+          "cancel_after_label": "Set the period for automatic release of item reservations in orders",
+          "cancel_after_hint": "You can configure the automatic cancellation of item reservations in orders. This helps prevent inaccurate inventory levels, which can occur when items are reserved in deals but these deals are not processed or have been canceled.",
+          "update_error": "Failed to save your choice. Try again.",
+          "warehouses_error": "You need to create at least one warehouse to continue. Alternatively, you can disable warehouses.",
+          "enable_warehouses_label": "Enable warehouses",
+          "enable_warehouses_hint": "Enable warehouses to track your products’ stock. If this option is enabled you will need to create at least one warehouse to continue.",
+          "enable_barcodes_label": "Enable barcodes",
+          "enable_barcodes_hint": "Enable barcodes to track your products’ stock. This option will allow you to scan product barcodes.",
+          "on": "ON"
+        },
+        "products_section_builder_link_sections_step": {
+          "title": "Link to other modules",
+          "cards": "Cards",
+          "schedulers": "Schedulers",
+          "do_not_integrate": "Do not integrate with schedulers module"
+        },
+        "products_section_builder_schedule_settings_step": {
+          "title": "Schedule settings",
+          "rental_duration_interval": "Rental duration interval",
+          "rental_duration_interval_hint": "Select the interval for the rental duration.",
+          "start_of_rental_interval": "Start of rental interval",
+          "start_of_rental_interval_hint": "Specify the time when the rental starts.",
+          "twenty_four_hours": "24 hours"
+        }
+      },
+      "et_section_builder_page": {
+        "steps": {
+          "requisites_codes": {
+            "ie_name": "Individual Entrepreneur First Name",
+            "ie_surname": "Individual Entrepreneur Last Name",
+            "ie_patronymic": "Individual Entrepreneur Middle Name",
+            "org_name": "Company Name",
+            "org_tin": "Company TIN",
+            "org_trrc": "Company TRRC",
+            "org_psrn": "PSRN",
+            "org_type": "Company Type",
+            "org_full_name": "Full Company Name",
+            "org_short_name": "Short Company Name",
+            "org_management_name": "Director Name",
+            "org_management_post": "Director Position",
+            "org_management_start_date": "Director Start Date",
+            "org_branch_count": "Branch Count",
+            "org_branch_type": "Branch Type",
+            "org_address": "Company Address",
+            "org_reg_date": "Registration Date",
+            "org_liquidation_date": "Liquidation Date",
+            "org_status": "Company Status",
+            "stat_okato": "OKATO",
+            "stat_oktmo": "OKTMO",
+            "stat_okpo": "OKPO",
+            "stat_okogu": "OKOGU",
+            "stat_okfs": "OKFS",
+            "stat_okved": "OKVED",
+            "org_extra_employee_count": "Average Number of Employees",
+            "org_extra_founders": "Company Founders",
+            "org_extra_managers": "Company Managers",
+            "org_extra_capital": "Authorized Capital",
+            "org_extra_licenses": "Licenses",
+            "org_extra_phones": "Phone Numbers",
+            "org_extra_emails": "Email Addresses",
+            "bank_name": "Bank Name",
+            "bank_bic": "Bank BIC",
+            "bank_swift": "SWIFT",
+            "bank_tin": "Bank TIN",
+            "bank_trrc": "Bank TRRC",
+            "bank_correspondent_acc": "Correspondent Account",
+            "bank_payment_city": "Payment Order City",
+            "bank_opf_type": "Credit Organization Type",
+            "bank_checking_account": "Checking Account"
+          },
+          "save_error": "Failed to save. Some steps are missing required information.",
+          "details": "Details",
+          "analytics": "Analytics",
+          "requisites": "Requisites",
+          "step1": {
+            "label": "1st step",
+            "description": "Setup a new module"
+          },
+          "step2": {
+            "label": "2nd step",
+            "description": "Choose name and create fields for your new card"
+          },
+          "step3": {
+            "label": "3rd step",
+            "description": "Add functionality to the card"
+          },
+          "step4": {
+            "label": "4th step",
+            "description": "Link to other modules in your workspace"
+          },
+          "default_titles": {
+            "builder": "Builder",
+            "project": "Projects and Tasks",
+            "production": "Production",
+            "universal": "Universal Module",
+            "partner": "Partners",
+            "deal": "CRM",
+            "contact": "Contacts",
+            "company": "Companies",
+            "supplier": "Suppliers",
+            "contractor": "Contractors",
+            "hr": "Hiring"
+          }
+        },
+        "tasks_fields_options": {
+          "planned_time": "Estimated Time",
+          "board_name": "Board Name",
+          "assignee": "Assignee",
+          "start_date": "Start Date",
+          "end_date": "End Date",
+          "description": "Description",
+          "subtasks": "Subtasks"
+        },
+        "et_section_builder_step1": {
+          "title": "Personalize the module",
+          "name_the_section": "Name the Module",
+          "name_the_section_hint": "This name will be displayed in the left sidebar. You will be able to change it in the future.",
+          "choose_icon": "Choose an icon for the left sidebar",
+          "choose_icon_hint": "This icon will be displayed in the left sidebar. You will be able to change it in the future.",
+          "type_of_display": "Type of display",
+          "type_of_display_hint": "Select the type of interface – list or board/pipeline or both.",
+          "board": "Board",
+          "board_img_alt": "{{company}} – Board interface preview",
+          "list": "List",
+          "list_img_alt": "{{company}} – List interface preview",
+          "placeholders": {
+            "section_name": "Module name"
+          }
+        },
+        "et_section_builder_step2": {
+          "title": "Configure the parameters of the new card",
+          "name_the_card": "Name the Card",
+          "name_the_card_hint": "Name of the Card.",
+          "fine_tuning": "Card fine tuning",
+          "create_fields": "Create fields for your new card",
+          "create_fields_hint": "Fields are the main informative elements of the card, you can created various groups and types of fields.",
+          "placeholders": {
+            "card_name": "Card name"
+          }
+        },
+        "et_section_builder_step3": {
+          "title": "Add functionality to the card",
+          "error": "Please, select at least one feature.",
+          "features": {
+            "saveFiles": "Files",
+            "tasks": "Tasks",
+            "notes": "Notes",
+            "chat": "Chat",
+            "activities": "Activities",
+            "documents": "Create documents",
+            "products": "Products"
+          }
+        },
+        "et_section_builder_step4": {
+          "title": "Link to other modules",
+          "cards": "Cards",
+          "products": "Products",
+          "schedulers": "Schedulers",
+          "do_not_integrate": "Do not integrate with schedulers module"
+        },
+        "entity_type_used_in_formula_warning_modal": {
+          "title": "Module is used in formula",
+          "annotation": "Unable to unlink module, because it's field is used in formula."
+        }
+      },
+      "builder_journey_picker_page": {
+        "request_bpmn_form_modal": {
+          "error": "There was an issue processing your request. Please ensure all information is correct and try again later.",
+          "send_request": "Submit Request",
+          "header": "BPMN – Leave a Request and We Will Contact You",
+          "full_name": "Full Name *",
+          "phone": "Phone *",
+          "email": "Email *",
+          "comment": "Comment",
+          "placeholders": {
+            "full_name": "John Smith",
+            "comment": "Additional information"
+          },
+          "us_price_full": "Connect BPMN for $1 a month per user!",
+          "ru_price_full": "Connect BPMN for 99₽ a month per user!"
+        },
+        "request_additional_storage_modal": {
+          "error": "An error occurred while submitting your request. Check your information and try again.",
+          "send_request": "Submit Request",
+          "header": "Request for Additional Storage",
+          "full_name": "Full Name *",
+          "phone": "Phone *",
+          "email": "Email *",
+          "comment": "Comment",
+          "placeholders": {
+            "full_name": "John Doe",
+            "comment": "Additional information"
+          },
+          "ten_gb_ru_description": "Get 10 GB of extra storage for 100₽/month!",
+          "ten_gb_us_description": "Get 10 GB of extra storage for $1/month!",
+          "one_hundred_gb_ru_description": "Get 100 GB of extra storage for 500₽/month!",
+          "one_hundred_gb_us_description": "Get 100 GB of extra storage for $5/month!",
+          "one_tb_ru_description": "Get 1 TB of extra storage for 1500₽/month!",
+          "one_tb_us_description": "Get 1 TB of extra storage for $15/month!"
+        },
+        "create_a_new_module": "Create a new module",
+        "module_names": {
+          "bpmn": {
+            "us_price_tag": "$1/Mo.",
+            "ru_price_tag": "99₽/Mo."
+          },
+          "wazzup": "Wazzup",
+          "main_modules": "Select The Functional Module You Want to Create",
+          "additional_modules": "Additional Functional Modules",
+          "marketplace": "Marketplace",
+          "crm": "CRM",
+          "project_management": "Projects and Tasks",
+          "production": "Production",
+          "product_management_for_sales": "Inventory Management",
+          "product_management_rentals": "Lease Management",
+          "scheduler": "Appointment Scheduling",
+          "supplier_management": "Suppliers",
+          "contractor_management": "Contractors",
+          "partner_management": "Partners",
+          "hr_management": "Hiring",
+          "contact": "Contacts",
+          "company": "Companies",
+          "universal_module": "Universal Module",
+          "finances": "Financial Management",
+          "automatisation": "BPMN Automation and Orchestration",
+          "marketing": "Marketing Management",
+          "rentals": "Rentals",
+          "for_sales": "For sales",
+          "soon": "Soon",
+          "chosen": "Selected",
+          "telephony": "PBX telephony",
+          "mailing": "Email Service",
+          "messenger": "Multi Messenger",
+          "documents": "Document Generation",
+          "forms": "Web Forms",
+          "headless_forms": "Web Forms via API",
+          "online_booking": "Online Booking Forms",
+          "website_chat": "Website Chat",
+          "tilda": "Tilda Publishing",
+          "wordpress": "WordPress",
+          "twilio": "Whatsapp Business",
+          "fb_messenger": "Facebook Messenger",
+          "salesforce": "Salesforce",
+          "make": "Make",
+          "apix_drive": "ApiX-Drive",
+          "albato": "Albato",
+          "one_c": "1C",
+          "additional_storage": "Additional Storage",
+          "ten_gb": "10 GB of additional storage",
+          "one_hundred_gb": "100 GB of additional storage",
+          "one_tb": "1 TB of additional storage",
+          "storage": {
+            "ten_gb_ru_price_tag": "100₽/Mo.",
+            "ten_gb_us_price_tag": "$1/Mo.",
+            "one_hundred_gb_ru_price_tag": "500₽/Mo.",
+            "one_hundred_gb_us_price_tag": "$5/Mo.",
+            "one_tb_ru_price_tag": "1500₽/Mo.",
+            "one_tb_us_price_tag": "$15/Mo."
+          }
+        }
+      }
+    }
+  }
+}

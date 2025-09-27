@@ -1,0 +1,24 @@
+{
+  "login": {
+    "login_form": {
+      "title": "Zaloguj się na swoje konto",
+      "login": "Zaloguj się",
+      "invalid": "Nieprawidłowe dane",
+      "or": "Lub",
+      "caption": "Nie masz jeszcze konta?",
+      "sign_up": "Zarejestruj się",
+      "forgot_your_password": "Zapomniałeś hasła?",
+      "placeholders": {
+        "login": "E-mail",
+        "password": "Hasło"
+      },
+      "invalid_email_error": "Nieprawidłowy format e-mail",
+      "invalid_password_error": "Hasło jest wymagane"
+    },
+    "left_block": {
+      "title": "Witamy",
+      "annotation": "Świetna praca, z przyjemnością!",
+      "image_alt": "{{company}} konstruktor bez kodu, stwórz swoje własne unikalne CRM"
+    }
+  }
+}

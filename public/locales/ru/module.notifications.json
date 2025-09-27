@@ -1,0 +1,79 @@
+{
+  "notifications": {
+    "tags": {
+      "task_new": "Новая задача",
+      "task_overdue": "Задача",
+      "task_before_start": "Задача",
+      "task_overdue_employee": "Задача",
+      "activity_new": "Новая активность",
+      "activity_overdue": "Активность",
+      "activity_before_start": "Активность",
+      "activity_overdue_employee": "Активность",
+      "task_comment_new": "Новый комментарий",
+      "chat_message_new": "Новое сообщение",
+      "mail_new": "Новое письмо",
+      "entity_note_new": "Новая заметка",
+      "entity_new": "Новый {{entityTypeName}}",
+      "entity_responsible_change": "Новый ответственный {{entityTypeName}}",
+      "entity_import_completed": "Импорт",
+      "yesterday": "Вчера в {{time}}",
+      "date": "{{date}} в {{time}}"
+    },
+    "components": {
+      "delay_select": {
+        "no_delay": "Без задержки",
+        "5_minutes": "5 минут",
+        "10_minutes": "10 минут",
+        "15_minutes": "15 минут",
+        "30_minutes": "30 минут",
+        "1_hour": "1 час"
+      },
+      "notifications_panel": {
+        "mute_notifications": "Отключить звук уведомлений",
+        "unmute_notifications": "Включить звук уведомлений",
+        "no_notifications": "У вас пока нет уведомлений",
+        "ui": {
+          "block_header_annotation": {
+            "overdue": "Просроченный",
+            "overdue_employee": "{{employee}} просрочил(-а)",
+            "after_time": "После {{time}}",
+            "from_employee": "от {{employee}}",
+            "system_notice": "Системное уведомление",
+            "message": "Сообщение",
+            "yesterday": "Вчера в {{time}}",
+            "date": "{{date}} в {{time}}"
+          },
+          "notification_settings": {
+            "title": "Уведомления"
+          },
+          "notification_settings_modal": {
+            "title": "Настройка уведомлений",
+            "enable_popup": "Всплывающие уведомления",
+            "new": "Новый (-ая)",
+            "new_mail": "Новое письмо",
+            "new_chat_message": "Новое сообщение в чате",
+            "new_note": "Новое примечание",
+            "entity_responsible_change": "Смена ответственного в карточке",
+            "entity_import_complete": "Завершен импорт карточке",
+            "new_task_comment": "Новый комментарий к задаче",
+            "unknown": "Неизвестный тип",
+            "new_task": "Новая задача",
+            "overdue_task": "Просроченная задача",
+            "before_task_start": "Перед началом задачи",
+            "overdue_task_employee": "Просроченная задача для сотрудника(ов)",
+            "new_activity": "Новая активность",
+            "overdue_activity": "Просроченное действие",
+            "before_activity_start": "Перед началом активности",
+            "overdue_activity_employee": "Просроченное действие для сотрудника(ов)",
+            "placeholders": {
+              "select": "Выбрать"
+            }
+          },
+          "read_all_button": {
+            "read_all": "Прочитать все"
+          }
+        }
+      }
+    }
+  }
+}

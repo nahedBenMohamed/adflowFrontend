@@ -1,0 +1,35 @@
+{
+  "board_settings": {
+    "ui": {
+      "board_settings_header": {
+        "create_bpmn_automation": "Create BPMN 2.0 Automation",
+        "bpmn_automations": "BPMN 2.0 Automations",
+        "header": "Board Settings",
+        "delete_board": "Delete board",
+        "title": "Warning!",
+        "annotation": "Deleting the board will permanently delete all cards on it. Are you sure you want to proceed?",
+        "save": "Save",
+        "cancel": "Cancel",
+        "leave": "Leave Settings"
+      },
+      "stage_name_hint": "Maximum {{length}} characters"
+    },
+    "entity_type_board_settings_page": {
+      "automation_new": "Automation 2.0",
+      "bpmn_2_0": "BPMN 2.0",
+      "bpmn_2_0_soon": "BPMN 2.0 (Soon...)",
+      "warning_title": "You can't delete the last board",
+      "warning_annotation": "If you would like to delete this board, please create a new one first."
+    },
+    "task_board_settings_page": {
+      "warning_title": "You can't delete the system board",
+      "warning_annotation": "This board is system and can't be deleted."
+    },
+    "delete_stage_warning_modal": {
+      "warning_title": "Are you sure you want to remove this stage?",
+      "warning_annotation": "Choose a stage where you wish to transfer existing items.",
+      "delete": "Delete",
+      "placeholder": "Stage to transfer"
+    }
+  }
+}

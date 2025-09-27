@@ -1,0 +1,55 @@
+{
+  "tutorial": {
+    "tutorial_drawer": {
+      "title": "Base de Conocimientos",
+      "empty": "Aquí no hay nada todavía.",
+      "create_tutorial_group_block": {
+        "create_group": "Crear grupo",
+        "save": "Guardar",
+        "cancel": "Cancelar"
+      },
+      "create_tutorial_item_block": {
+        "create_link": "Crear enlace",
+        "save": "Guardar",
+        "cancel": "Cancelar"
+      },
+      "tutorial_edit_group_item_form": {
+        "placeholders": {
+          "name": "Nombre",
+          "link": "Enlace",
+          "all": "Todos"
+        }
+      },
+      "tutorial_edit_group_items_forms": {
+        "name": "Nombre",
+        "link": "Enlace",
+        "users": "Usuarios",
+        "products": "Productos",
+        "products_hint": "Selecciona productos donde se mostrará este enlace. Por ejemplo, si se seleccionan tareas, el enlace se mostrará solo en la sección de tareas."
+      },
+      "tutorial_group_name_block": {
+        "placeholders": {
+          "group_name": "Nombre del grupo"
+        }
+      },
+      "hooks": {
+        "use_get_tutorial_products_options": {
+          "product_types": {
+            "builder": "Constructor",
+            "task": "Tareas",
+            "mail": "Correo",
+            "multi_messenger": "Multi Messenger",
+            "settings": "Configuraciones"
+          }
+        },
+        "use_get_tutorial_products_groups": {
+          "groups": {
+            "entity_type": "Módulos",
+            "products_section": "Productos",
+            "scheduler": "Horarios"
+          }
+        }
+      }
+    }
+  }
+}

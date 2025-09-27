@@ -1,0 +1,122 @@
+{
+  "fields": {
+    "formula_warning": "Modifier la formule recalculera la valeur dans ce champ. Pour conserver les données actuelles, envisagez de créer un nouveau champ.",
+    "project_fields_block": {
+      "owner": "Propriétaire",
+      "value": "Valeur",
+      "participants": "Participants",
+      "start_date": "Date de début",
+      "end_date": "Date de fin",
+      "description": "Description",
+      "placeholders": {
+        "participants": "Ajouter des participants"
+      }
+    },
+    "field_value": {
+      "ogrn": "OGRN",
+      "tin": "TIN",
+      "trrc": "TRRC",
+      "already_have_an_active_call": "Vous avez déjà une appel actif",
+      "recent": "Récent",
+      "no_available_phone_numbers": "Aucun numéro disponible",
+      "value_field_formula_calculation": "Ce champ est actuellement calculé par une formule, il ne peut pas être modifié manuellement. Valeur: {{value}}.",
+      "readonly": "Ce champ est en lecture seule",
+      "important_field": "Champ Important",
+      "mandatory_field": "Champ Obligatoire",
+      "important_field_completed": "Champ Important Complété",
+      "mandatory_field_completed": "Champ Obligatoire Complété",
+      "local_time": "Heure locale approximative de la capitale du pays du numéro de téléphone",
+      "connect_telephony": "Connectez la téléphonie pour activer la fonctionnalité d'appels.",
+      "chat_unavailable": "On dirait que vous n'avez pas accès à ce chat. Contactez votre administrateur pour vous connecter."
+    },
+    "components": {
+      "field_formula_settings_button": {
+        "no_available_fields_for_formula": "Aucun champ de budget, de nombre ou de formule disponible",
+        "save_first": "Cette formule peut être configurée sur la fiche",
+        "customize": "Personnaliser la Formule : {{fieldName}}",
+        "formula_hint": "Ce champ est destiné à entrer une formule. La formule peut inclure les valeurs fournies ci-dessous, ainsi que d'autres champs numériques et formules, y compris des champs d'autres modules fonctionnels. Cliquez sur la valeur souhaitée ou sélectionnez le champ.",
+        "field": "Champ",
+        "close": "Fermer"
+      },
+      "field_settings_modal": {
+        "number": "Nombre",
+        "currency": "Devise",
+        "format_title": "Sélectionnez le format d'affichage pour ce champ",
+        "ordinary_field": "Champ Ordinaire",
+        "save_first": "Ce champ ne peut être configuré qu'après l'avoir enregistré sur la fiche",
+        "important_field": "Champ Important",
+        "important_field_hint": "Vous pouvez rendre un champ important, il aura alors une icône d'ampoule jaune comme rappel qu'il doit être complété. Une fois complété, il affichera une coche verte. Si vous avez besoin qu'un champ soit obligatoire et éviter de passer à l'étape suivante sans le compléter, alors sélectionnez la fonction de \"champ obligatoire\".",
+        "select_pipeline_and_statuses": "Sélectionnez Pipeline et États",
+        "mandatory_field": "Champ Obligatoire",
+        "mandatory_field_hint": "Vous pouvez configurer un champ obligatoire pour sa complétion. Dans ce cas, les utilisateurs ne pourront pas passer à l'état suivant dans le pipeline. Sélectionnez le pipeline requis et l'état à partir duquel le champ doit être complété.",
+        "user_exclusion": "Exclusion d'Utilisateurs",
+        "user_exclusion_hint": "Vous pouvez exclure certains utilisateurs qui pourront ne pas compléter ce champ. Cela peut être nécessaire pour les administrateurs.",
+        "editing_restriction": "Restriction d'Édition",
+        "editing_restriction_hint": "Vous pouvez interdire à certains utilisateurs de modifier ce champ. Ils pourront le voir, mais pas le modifier.",
+        "select_users": "Sélectionner les Utilisateurs",
+        "hide_field": "Masquer le Champ pour les Utilisateurs",
+        "hide_field_hint": "Vous pouvez masquer ce champ pour certains utilisateurs; il sera inaccessible pour eux.",
+        "field_visibility_in_pipeline": "Masquer le champ dans le pipeline",
+        "field_visibility_in_pipeline_hint": "Vous pouvez personnaliser la visibilité du champ pour chaque pipeline et étape. Ci-dessous, vous pouvez sélectionner dans quelles étapes et pipelines le champ sera masqué.",
+        "customize": "Personnaliser le Champ : {{fieldName}}"
+      },
+      "edit_fields": {
+        "add_bank_requisites": "Ajouter les coordonnées bancaires",
+        "add_org_requisites": "Ajouter les informations des organisations et entrepreneurs",
+        "add_org_stat_codes": "Ajouter les codes statistiques des organisations et entrepreneurs",
+        "add_additional_org_requisites": "Ajouter des champs supplémentaires pour les organisations et entrepreneurs",
+        "add_field": "Ajouter un champ",
+        "add_utm_fields": "Ajouter des champs UTM",
+        "add_ga_fields": "Ajouter des champs Google Analytics",
+        "add_ym_fields": "Ajouter des champs Yandex.Metrica",
+        "add_fb_fields": "Ajouter des champs Facebook Analytics",
+        "select_options": {
+          "max_length": "Maximum {{length}} caractères",
+          "add_option": "Ajouter une option",
+          "cancel": "Annuler",
+          "add": "Ajouter",
+          "no_options": "Aucune option",
+          "placeholders": {
+            "search": "Rechercher...",
+            "option": "Option"
+          }
+        }
+      },
+      "field_form_group": {
+        "max_length": "Maximum {{length}} caractères",
+        "text": "Texte",
+        "number": "Nombre",
+        "multitext": "Texte multiple",
+        "select": "Sélectionner",
+        "multiselect": "Sélection multiple",
+        "switch": "Interrupteur",
+        "formula": "Formule",
+        "phone": "Téléphone",
+        "email": "Email",
+        "value": "Valeur",
+        "date": "Date",
+        "link": "Lien",
+        "file": "Fichier",
+        "richtext": "Texte formaté",
+        "participant": "Participant",
+        "participants": "Participants",
+        "colored_select": "Sélection de couleur",
+        "colored_multiselect": "Sélection multiple de couleur",
+        "checked_multiselect": "Liste de contrôle",
+        "checklist": "Texte multiple avec cases",
+        "field_name": "Nom du champ",
+        "analytics_field": "Champ d'analyse"
+      },
+      "show_fields": {
+        "no_fields": "Aucun champ"
+      },
+      "show_files": {
+        "empty": "Aucun fichier pour le moment",
+        "attach": "Joindre des fichiers"
+      },
+      "file_field_value_comp": {
+        "attach_files": "Joindre des fichiers"
+      }
+    }
+  }
+}

@@ -1,0 +1,135 @@
+{
+  "tasks_page": {
+    "tasks_page_by_deadline": {
+      "unallocated": "Non attribuées",
+      "overdue": "En retard",
+      "today": "Aujourd'hui",
+      "tomorrow": "Demain",
+      "upcoming": "À venir",
+      "resolved": "Terminé",
+      "board": "Tableau",
+      "calendar": "Calendrier"
+    },
+    "common": {
+      "tasks_page_template": {
+        "create_new": "Créer une nouvelle tâche"
+      },
+      "ui": {
+        "empty_list_block": {
+          "annotation1": "Vous n'avez pas encore de tâches ou rien n'a été trouvé avec les filtres sélectionnés.",
+          "annotation2": "Utilisez le",
+          "annotation3": "bouton pour ajouter une tâche."
+        },
+        "tasks_page_header": {
+          "timeline": "Gantt",
+          "title": "Tâches & Activités",
+          "board": "Tableau",
+          "list": "Liste",
+          "calendar": "Calendrier",
+          "user_select_button": "Partager",
+          "settings_button": {
+            "sync": "Synchroniser",
+            "table_settings": "Paramètres de la table",
+            "settings": "Paramètres",
+            "board_settings": "Paramètres du tableau"
+          },
+          "create_button_tooltip": "Ajouter une tâche"
+        },
+        "tasks_list_settings_drawer": {
+          "table_settings": "Paramètres de la table",
+          "display_columns": "Afficher les colonnes"
+        },
+        "tasks_filter_drawer": {
+          "just_my_tasks": "Seulement mes tâches",
+          "sorting": "Tri",
+          "done": "Terminé",
+          "sorting_options": {
+            "manual": "Manuel",
+            "created_asc": "Créé : du plus ancien au plus récent",
+            "created_desc": "Créé : du plus récent au plus ancien"
+          },
+          "created_at": "Date de création",
+          "start_date": "Date de début",
+          "end_date": "Date de fin",
+          "resolve_date": "Date d'achèvement",
+          "assignee": "Assigné à",
+          "reporter": "Rapporteur",
+          "type": "Type",
+          "stage": "Étape",
+          "groups": "Groupes",
+          "linked_cards": "Cartes liées",
+          "placeholders": {
+            "card_name": "Nom de la carte",
+            "search_by_task_name": "Rechercher par nom de tâche",
+            "search_by_activity_name": "Rechercher par nom d'activité"
+          }
+        }
+      }
+    },
+    "tasks_page_calendar": {
+      "new_event": "Nouvelle tâche",
+      "no_events": "Il n'y a pas de tâches pour cette période.",
+      "all_day": "Toute la journée"
+    },
+    "tasks_page_list": {
+      "all_columns_hidden": "Toutes les colonnes sont cachées dans les paramètres de la table"
+    },
+    "activity_item": {
+      "no_card_access": "Vous ne pouvez pas accéder à cette carte",
+      "drag_disabled": "Vous n'êtes pas autorisé à déplacer cette carte. Contactez l'administrateur du compte pour y accéder."
+    },
+    "tasks_page_timeline": {
+      "annotation": {
+        "minute": ["minute", "minutes", "minutes"],
+        "hour": ["heure", "heures", "heures"],
+        "day": ["jour", "jours", "jours"]
+      },
+      "today": "Aujourd'hui",
+      "view": {
+        "fifteen_minutes": "15 Minutes",
+        "hour": "Heure",
+        "day": "Jour",
+        "week": "Semaine",
+        "month": "Mois",
+        "quarter": "Trimestre",
+        "half_year": "Semestre"
+      },
+      "format": {
+        "major_format": {
+          "fifteen_minutes": "YYYY, MMMM D",
+          "hour": "YYYY, MMMM D",
+          "day": "YYYY, MMMM",
+          "week": "YYYY, MMMM",
+          "month": "YYYY",
+          "quarter": "YYYY",
+          "half_year": "YYYY"
+        },
+        "minor_format": {
+          "fifteen_minutes": "HH:mm",
+          "hour": "HH",
+          "day": "D",
+          "week": "wo [semaine]",
+          "month": "MMMM",
+          "quarter": "[T]Q",
+          "half_year": "YYYY-"
+        }
+      }
+    },
+    "task_item": {
+      "planned_time": "Temps estimé :",
+      "completed": "Terminé",
+      "complete": "Achever",
+      "delete_task": "Supprimer la tâche",
+      "copy_link": "Copier le lien",
+      "drag_disabled": "Vous n'êtes pas autorisé à déplacer cette tâche. Contactez l'administrateur du compte pour y accéder.",
+      "date": "{{date}} à {{time}}"
+    },
+    "time_allocation_card": {
+      "users": "Utilisateurs",
+      "planned_time": "Temps estimé",
+      "total": "Total",
+      "hour": "h",
+      "minute": "m"
+    }
+  }
+}

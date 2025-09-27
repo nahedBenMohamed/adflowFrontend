@@ -1,0 +1,135 @@
+{
+  "tasks_page": {
+    "tasks_page_by_deadline": {
+      "unallocated": "Sin asignar",
+      "overdue": "Atrasado",
+      "today": "Hoy",
+      "tomorrow": "Mañana",
+      "upcoming": "Próximos",
+      "resolved": "Completado",
+      "board": "Tablero",
+      "calendar": "Calendario"
+    },
+    "common": {
+      "tasks_page_template": {
+        "create_new": "Crear nueva tarea"
+      },
+      "ui": {
+        "empty_list_block": {
+          "annotation1": "Aún no tienes tareas o no se encontró nada con los filtros seleccionados.",
+          "annotation2": "Usa el",
+          "annotation3": "botón para añadir una tarea."
+        },
+        "tasks_page_header": {
+          "title": "Tareas y Actividades",
+          "timeline": "Gantt",
+          "board": "Tablero",
+          "list": "Lista",
+          "calendar": "Calendario",
+          "user_select_button": "Compartir",
+          "settings_button": {
+            "sync": "Sincronizar",
+            "table_settings": "Configuración de la tabla",
+            "settings": "Configuraciones",
+            "board_settings": "Configuración del tablero"
+          },
+          "create_button_tooltip": "Añadir tarea"
+        },
+        "tasks_list_settings_drawer": {
+          "table_settings": "Configuración de la tabla",
+          "display_columns": "Mostrar columnas"
+        },
+        "tasks_filter_drawer": {
+          "just_my_tasks": "Solo mis tareas",
+          "sorting": "Ordenar",
+          "done": "Hecho",
+          "sorting_options": {
+            "manual": "Manual",
+            "created_asc": "Creado: de antiguo a nuevo",
+            "created_desc": "Creado: de nuevo a antiguo"
+          },
+          "created_at": "Fecha de creación",
+          "start_date": "Fecha de inicio",
+          "end_date": "Fecha de fin",
+          "resolve_date": "Fecha de finalización",
+          "assignee": "Asignado a",
+          "reporter": "Reportero",
+          "type": "Tipo",
+          "stage": "Etapa",
+          "groups": "Grupos",
+          "linked_cards": "Tarjetas vinculadas",
+          "placeholders": {
+            "card_name": "Nombre de la tarjeta",
+            "search_by_task_name": "Buscar por nombre de tarea",
+            "search_by_activity_name": "Buscar por nombre de actividad"
+          }
+        }
+      }
+    },
+    "tasks_page_calendar": {
+      "new_event": "Nueva tarea",
+      "no_events": "No hay tareas para este periodo.",
+      "all_day": "Todo el día"
+    },
+    "tasks_page_list": {
+      "all_columns_hidden": "Todas las columnas están ocultas en la configuración de la tabla"
+    },
+    "activity_item": {
+      "no_card_access": "No puedes acceder a esta tarjeta",
+      "drag_disabled": "No tiene permiso para mover esta tarjeta. Póngase en contacto con el administrador de la cuenta para obtener acceso."
+    },
+    "tasks_page_timeline": {
+      "annotation": {
+        "minute": ["minuto", "minutos", "minutos"],
+        "hour": ["hora", "horas", "horas"],
+        "day": ["día", "días", "días"]
+      },
+      "today": "Hoy",
+      "view": {
+        "fifteen_minutes": "15 Minutos",
+        "hour": "Hora",
+        "day": "Día",
+        "week": "Semana",
+        "month": "Mes",
+        "quarter": "Trimestre",
+        "half_year": "Medio año"
+      },
+      "format": {
+        "major_format": {
+          "fifteen_minutes": "YYYY, MMMM D",
+          "hour": "YYYY, MMMM D",
+          "day": "YYYY, MMMM",
+          "week": "YYYY, MMMM",
+          "month": "YYYY",
+          "quarter": "YYYY",
+          "half_year": "YYYY"
+        },
+        "minor_format": {
+          "fifteen_minutes": "HH:mm",
+          "hour": "HH",
+          "day": "D",
+          "week": "wo [semana]",
+          "month": "MMMM",
+          "quarter": "[T]Q",
+          "half_year": "YYYY-"
+        }
+      }
+    },
+    "task_item": {
+      "planned_time": "Tiempo estimado:",
+      "completed": "Completado",
+      "complete": "Completar",
+      "delete_task": "Eliminar tarea",
+      "copy_link": "Copiar enlace",
+      "drag_disabled": "No tiene permiso para mover esta tarea. Póngase en contacto con el administrador de la cuenta para obtener acceso.",
+      "date": "{{date}} a las {{time}}"
+    },
+    "time_allocation_card": {
+      "users": "Usuarios",
+      "planned_time": "Tiempo estimado",
+      "total": "Total",
+      "hour": "h",
+      "minute": "m"
+    }
+  }
+}

@@ -1,0 +1,902 @@
+{
+  "settings_page": {
+    "app_sumo_tiers_data": {
+      "feature_1": "Unlimited functional products in the builder",
+      "feature_2": "Unlimited pipeline or board",
+      "feature_3": "Unlimited custom fields",
+      "feature_4": "Automation",
+      "feature_5": "Lifetime access",
+      "storage": "{{storage}} GB Storage per user"
+    },
+    "templates": {
+      "document_creation_fields_page": {
+        "ui": {
+          "system_section": {
+            "name": "System fields",
+            "current_date": "Current date",
+            "document_number": "Document number"
+          },
+          "entity_type_section": {
+            "name": "Name",
+            "owner": "Owner"
+          },
+          "selector": {
+            "words": "Words"
+          }
+        }
+      },
+      "document_templates_page": {
+        "order_fields": {
+          "order": "Order",
+          "order_items": "Order Items",
+          "specific_order_item": "Order Item",
+          "order_number": "Order Number",
+          "order_amount": "Order Amount",
+          "order_currency": "Order Currency",
+          "order_item": {
+            "number": "Number",
+            "name": "Name",
+            "price": "Price",
+            "currency": "Currency",
+            "discount": "Discount",
+            "tax": "Tax",
+            "quantity": "Quantity",
+            "amount": "Amount"
+          },
+          "text_block_1": "You can fill in the document with data about all the products and services of the order in the form of text or a table. You can also add data only for a specific order item.",
+          "text_block_2": "To fill in the document with data about all the order items in text form, you need to generate the required text in the document, and to insert data about order items, you need to use special codes mentioned above.",
+          "text_block_3": "<strong>IMPORTANT</strong>: At the beginning of the order items list block, you need to insert a special code <b>{#order.products}</b>. At the end of the block, you need to insert a special symbol <b>{/}</b>. The text of the block between the symbols <b>{#order.products}</b> and <b>{/}</b> will be repeated in the created document as many times as there are items in the selected order.",
+          "text_example": "Text Example",
+          "text_block_4": "<b>{name}</b> in quantity <b>{quantity}</b> at the price of <b>{price}</b>",
+          "text_block_5": "To fill in the document with data about all the order items in table form, you need to create a table in the template. If necessary, column names can be specified in the table header. The table, in addition to the header, should contain a row with the necessary fields for filling in.",
+          "text_block_6": "<strong>IMPORTANT</strong>: The first cell of the row must contain the code <b>{#order.products}</b> at the very beginning of the cell; the last cell must contain the code <b>{/}</b> at the very end of the cell. These codes are needed to generate the table and will not be displayed in the final document.",
+          "table_example": "Table Example",
+          "text_block_7": "To fill in the document with data about a specific order item, you need to use special symbols.",
+          "text_block_8": "The symbol <b>[0]</b> specifies which order item number will be selected to insert data into the document. Item numbers start from 0 for the first order item."
+        },
+        "no_document_templates": "You don't have any document templates yet.",
+        "can_create_new_there": "To add a template, click the \"Add document template\" button.",
+        "add_document_template": "Add document template",
+        "ui": {
+          "document_template_item": {
+            "available_in_sections": "Available in modules",
+            "creator": "Creator",
+            "access_rights": "Access rights",
+            "warning_title": "Are you sure you want to delete this template",
+            "warning_annotation": "This action cannot be undone.",
+            "placeholders": {
+              "select_sections": "Select modules"
+            }
+          }
+        }
+      }
+    },
+    "billing_page": {
+      "trial_in_progress": "Your trial is live!",
+      "trial_over": "Your trial period is over!",
+      "subscription_over": "Your subscription has ended!",
+      "request_mywork_billing_form_modal": {
+        "error": "There was an issue processing your request. Please ensure all information is correct and try again later.",
+        "send_request": "Submit Request",
+        "header": "Leave a Request and We Will Contact You",
+        "full_name": "Full Name *",
+        "phone": "Phone *",
+        "email": "Email *",
+        "number_of_users": "Number of Users",
+        "comment": "Comment",
+        "placeholders": {
+          "full_name": "John Smith",
+          "comment": "Additional information"
+        }
+      },
+      "for_all": "For all users",
+      "request_billing_modal": {
+        "send": "Send",
+        "title": "Plan \"{{planName}}\" – Contact Form",
+        "name": "Name *",
+        "phone": "Phone *",
+        "email": "Email *",
+        "number_of_users": "Number of users *",
+        "comment": "Comment",
+        "placeholders": {
+          "additional_info": "Additional information"
+        }
+      },
+      "request_button": "Leave request",
+      "feedback_annotation": "You have selected the <b>{{planName}}</b> plan, please leave a request and we will contact you soon.",
+      "free_trial_duration": "Free trial – 14 days",
+      "started_in": "Started in:",
+      "expires_in": "Expires in:",
+      "users_limit": "Users limit:",
+      "renew": "Renew the subscription",
+      "upgrade": "Upgrade",
+      "open_stripe_portal": "Open Stripe portal",
+      "manage_your_subscription": "💸 Manage your subscription on Stripe Customer Portal",
+      "number_of_users": "Number of users",
+      "finish_order": "Finish order",
+      "save_percentage": "Save {{percentage}}",
+      "per_user_month": "per user / month",
+      "select_this_plan": "Select plan",
+      "selected": "Selected",
+      "1_month": "1 month",
+      "12_month": "12 months",
+      "save_up_to": "Save up to {{percent}}%",
+      "total": "Total: {{amount}}",
+      "payment_success": "Payment success! You will receive an email confirmation.",
+      "set_free_plan_warning_modal": {
+        "title": "Important!",
+        "annotation": {
+          "text1": "The user limit of your subscription plan has been exceeded. Additional accounts will be automatically deleted in accordance with the terms of the plan. You can manually delete the necessary accounts",
+          "link": "here",
+          "text2": "Your other system data will remain unaffected."
+        },
+        "approve": "Подтвердить",
+        "cancel": "Отменить"
+      },
+      "lifetime_promo_plans": {
+        "discount": "{{percent}}% Off",
+        "lifetime_subscription": "Lifetime Subscription",
+        "black_text": "",
+        "until": "until",
+        "business_plan": "Starter",
+        "business_plan_description": "Everything you need to manage sales and projects with confidence.",
+        "advanced_plan": "Business",
+        "advanced_plan_description": "Full functionality with automation and advanced settings.",
+        "price_rise_counter": {
+          "months": ["month", "months", "months"],
+          "days": ["day", "days", "days"],
+          "hours": ["hour", "hours", "hours"],
+          "minutes": ["minute", "minutes", "minutes"],
+          "sale_ends": "Offer ends in:"
+        },
+        "lifetime_deal_plan_block": {
+          "lifetime_subscription": "Lifetime Subscription"
+        },
+        "annual_deal_pricing_block": {
+          "annual_subscription": "1 Year Subscription"
+        },
+        "monthly_deal_pricing_block": {
+          "monthly_subscription": "1 Month Subscription",
+          "number_of_users": "Number of users",
+          "per_user": "/mo per user",
+          "minimum_period": "minimum subscription period: 6 months",
+          "buy": "Buy"
+        },
+        "pricing_block_with_users_selector": {
+          "users": ["user", "users", "users"],
+          "lifetime_postfix": " forever",
+          "packages": "User plans",
+          "per_user": "/mo per user",
+          "price_description": "user / month, billed annually",
+          "fix_price": "Fixed price",
+          "big_savings": "Huge savings",
+          "savings": "Savings: ",
+          "buy": "Buy"
+        }
+      }
+    },
+    "edit_groups_page": {
+      "add_new_group": "Add new group",
+      "subgroup": "Subgroup",
+      "delete_warning_title": "Are you sure you want to delete {{name}}?",
+      "delete_warning_annotation1": "All staff from this group",
+      "delete_warning_annotation2": "(and its subgroups if there are any)",
+      "delete_warning_annotation3": "can be conditionally assigned to another group or subgroup.",
+      "add_subgroup": "Add subgroup",
+      "save": "Save",
+      "cancel": "Cancel",
+      "delete": "Delete",
+      "working_time": "Working Time",
+      "to": "to",
+      "placeholders": {
+        "group": "Enter name",
+        "select_group": "Select group",
+        "select_subgroup": "Select subgroup",
+        "new_subgroup": "New subgroup"
+      }
+    },
+    "edit_user_page": {
+      "save": "Save",
+      "save_and_add": "Save and add",
+      "first_name": "First Name *",
+      "first_name_hint": "Maximum {{length}} characters",
+      "last_name": "Last Name *",
+      "last_name_hint": "Maximum {{length}} characters",
+      "email": "Email *",
+      "phone_number": "Phone",
+      "password": "Password *",
+      "group": "Group",
+      "owner": "Owner",
+      "owner_hint": "The owner is the super administrator and owner of the account. The owner cannot be deleted, you cannot take away rights or forbid anything. Only one user can be the owner of an account.",
+      "admin": "Administrator",
+      "admin_hint": "The administrator has unlimited rights to manage and configure the account.",
+      "email_error": "This email is already linked to another {{company}} account. To create the user, please opt for a different email address.",
+      "unknown_error": "An unknown error occurred while editing user. Please check that the fields are filled in correctly and try again.",
+      "position": "Position",
+      "visible_users": "Visible Users",
+      "visible_users_hint": "The users which current user would be able to select from the list",
+      "working_time": "Working Hours",
+      "to": "to",
+      "group_working_time": "Group Working Hours",
+      "group_working_time_hint": "The user will inherit the working hours of the group they belong to. If the group has no working hours set, the company's working hours will be used.",
+      "user_calendar_title": "Online Booking Schedule",
+      "user_calendar_hint": "This schedule defines available time slots for online booking. If no schedule is set, availability will be determined by the calendar.",
+      "delete_user_calendar": "Delete",
+      "add_user_calendar": "Create Schedule",
+      "time_buffer_before": "Buffer Before Meeting",
+      "time_buffer_after": "Buffer After Meeting",
+      "appointment_limit": "Daily Appointment Limit",
+      "schedule": "Schedule",
+      "no_duration": "None",
+      "minutes": "minutes",
+      "placeholders": {
+        "all_users": "All Users",
+        "manager": "Manager",
+        "password": "Come up with a password",
+        "new_password": "New password",
+        "group": "Select Group"
+      },
+      "ui": {
+        "menu_accesses_item": {
+          "title": "Menu Accesses",
+          "denied": "Denied",
+          "responsible": "Responsible",
+          "allowed": "Allowed"
+        },
+        "object_permissions_list": {
+          "tasks": "Tasks",
+          "activities": "Activities"
+        },
+        "object_permissions_item": {
+          "hint": "You can configure permissions for a user. You can configure user permissions to create, view, edit and delete objects in {{title}} section.",
+          "create": "Create",
+          "view": "View",
+          "edit": "Edit",
+          "delete": "Delete",
+          "report": "Report",
+          "dashboard": "Dashboard",
+          "denied": "Denied",
+          "responsible": "Responsible",
+          "subdepartment": "Subgroup",
+          "department": "Group",
+          "allowed": "Allowed"
+        },
+        "products_permissions_item": {
+          "warehouses_title": "Warehouse Access",
+          "warehouses_hint": "Select warehouses that the user can access to create orders, view products, and shipments.",
+          "hint": "You can configure permissions for a user.",
+          "create_product": "Create product",
+          "view_product": "View product",
+          "edit_product": "Edit product",
+          "create_order": "Create order",
+          "shipment": "Shipment",
+          "delete": "Delete",
+          "denied": "Denied",
+          "allowed": "Allowed",
+          "placeholders": {
+            "all_warehouses": "All warehouses"
+          }
+        }
+      }
+    },
+    "general_settings_page": {
+      "enable": "Enable",
+      "contact_duplicates_hint": "Enable this option to warn users when creating a new contact or company with an existing phone number or email address.",
+      "contact_duplicates": "Warn about Contact Duplicates",
+      "date_format": "Date format",
+      "auto": "Automatically",
+      "phone_format": "Phone Format",
+      "international": "International",
+      "free": "Free",
+      "company": "Company",
+      "domain": "Domain Name",
+      "upload_logo": "Upload New Logo",
+      "delete_logo": "Delete Logo",
+      "logo_caption": "The preferred size for the logo is 111px by 22px",
+      "language": "Language",
+      "time_zone": "Time Zone",
+      "working_days": "Working Days",
+      "start_of_week": "Start of the Week",
+      "Monday": "Monday",
+      "Tuesday": "Tuesday",
+      "Wednesday": "Wednesday",
+      "Thursday": "Thursday",
+      "Friday": "Friday",
+      "Saturday": "Saturday",
+      "Sunday": "Sunday",
+      "currency": "Currency",
+      "working_time": "Working Time",
+      "to": "to",
+      "number_format": "Number Format",
+      "currency_select": "Currency Selection",
+      "currencies": {
+        "USD": "US Dollar, USD",
+        "EUR": "Euro, EUR",
+        "GBP": "British Pound, GBP",
+        "JPY": "Japanese Yen, JPY",
+        "CNY": "Chinese Yuan, CNY",
+        "INR": "Indian Rupee, INR",
+        "RUB": "Russian Ruble, RUB",
+        "MXN": "Mexican Peso, MXN",
+        "BRL": "Brazilian Real, BRL",
+        "ZAR": "South African Rand, ZAR",
+        "AUD": "Australian Dollar, AUD",
+        "CAD": "Canadian Dollar, CAD",
+        "AED": "UAE Dirham, AED",
+        "CHF": "Swiss Franc, CHF",
+        "TRY": "Turkish Lira, TRY",
+        "UAH": "Ukrainian Hryvnia, UAH",
+        "KRW": "South Korean Won, KRW",
+        "NZD": "New Zealand Dollar, NZD",
+        "NOK": "Norwegian Krone, NOK",
+        "SEK": "Swedish Krona, SEK",
+        "DKK": "Danish Krone, DKK",
+        "PLN": "Polish Zloty, PLN",
+        "CZK": "Czech Koruna, CZK",
+        "HUF": "Hungarian Forint, HUF",
+        "IDR": "Indonesian Rupiah, IDR",
+        "ILS": "Israeli New Shekel, ILS",
+        "MYR": "Malaysian Ringgit, MYR",
+        "PHP": "Philippine Peso, PHP",
+        "SGD": "Singapore Dollar, SGD",
+        "THB": "Thai Baht, THB",
+        "KZT": "Kazakhstani Tenge, KZT",
+        "CLP": "Chilean Peso, CLP",
+        "CRC": "Costa Rican Colón, CRC",
+        "COP": "Colombian Peso, COP",
+        "BOB": "Bolivian Boliviano, BOB",
+        "HKD": "Hong Kong Dollar, HKD",
+        "SAR": "Saudi Riyal, SAR",
+        "VND": "Vietnamese Dong, VND",
+        "EGP": "Egyptian Pound, EGP",
+        "KWD": "Kuwaiti Dinar, KWD",
+        "PKR": "Pakistani Rupee, PKR",
+        "LKR": "Sri Lankan Rupee, LKR",
+        "BDT": "Bangladeshi Taka, BDT",
+        "NGN": "Nigerian Naira, NGN",
+        "GHS": "Ghanaian Cedi, GHS",
+        "TWD": "New Taiwan Dollar, TWD",
+        "MAD": "Moroccan Dirham, MAD",
+        "ARS": "Argentine Peso, ARS",
+        "PEN": "Peruvian Nuevo Sol, PEN",
+        "UYU": "Uruguayan Peso, UYU",
+        "BGN": "Bulgarian Lev, BGN",
+        "RON": "Romanian Leu, RON",
+        "LBP": "Lebanese Pound, LBP"
+      }
+    },
+    "integrations_page": {
+      "calendars_and_tasks": "Calendars and Tasks",
+      "telephony_integration_guide_international": {
+        "modal_title": "Voximplant Telephony Integration",
+        "continue": "Continue",
+        "title": "Instructions for Integrating Voximplant Telephony",
+        "step1": {
+          "title": "Step 1 – Creating an Account",
+          "item1": "To connect the Voximplant telephony integration, navigate to the \"Settings\" → \"Calls\" → \"Account\" tab and click the \"Connect Telephony\" button.",
+          "item2": "Information about your created Voximplant account will appear on the page. To complete the integration, you will need to confirm the account by clicking the \"Approve\" link at the top of the screen."
+        },
+        "step2": {
+          "title": "Step 2 – Balance Replenishment",
+          "annotation": "Once you open the Voximplant portal, you will need to add funds to your account. It is recommended to add at least $10. This will activate your account, and the funds will be used for purchasing phone numbers and billing call minutes.",
+          "operator_site_and_billing": "Operator site and billing"
+        },
+        "step3": {
+          "title": "Step 3 – Purchasing Numbers and Getting Started",
+          "annotation1": "After completing account activation, you need to provide {{companyName}} support ({{mail}}) with the following details so we can initialize your telephony and prepare it for operation:",
+          "item1": "The city and country for number section",
+          "item2": "Working hours: which days of the week and times are considered working hours, your time zone",
+          "item3": "Greeting text at the beginning of the call during working hours",
+          "item4": "Message text for calls outside working hours",
+          "item5": "Voice option for the message – male or female",
+          "item6": "The required quantity of phone numbers",
+          "annotation2": "After receiving this information, we will process your request as soon as possible."
+        },
+        "step4": {
+          "title": "Step 4 – Connecting Numbers in the {{companyName}}",
+          "annotation1": "Once you have completed account activation and we have purchased the desired numbers for you, you will see them in the \"Settings\" → \"Calls\" → \"Account\" tab. To start working, you need to click the \"Connect\" button next to the desired numbers and select the users who will have access to these numbers.",
+          "annotation2": "Done! Your telephony is all set up and ready for use."
+        },
+        "step5": {
+          "title": "Step 5 – Settings and Additional Information",
+          "annotation1": "In the \"Settings\" → \"Calls\" → \"Users\" tab, you can connect and disconnect system users to telephony, and view SIP data. In the \"Configuring\" tab, you can configure telephony integration scenarios with the CRM module. In the \"SIP Registrations\" tab, you can add and manage SIP registrations of PBX/VPBX.",
+          "annotation2": "Please note that with active use of telephony, it is recommended to periodically refresh the browser tab, as inactive/stale tabs (those opened more than 3 days ago without interaction) may cause you to miss some calls.",
+          "annotation3": "Additionally, you must grant the browser access to the microphone to make outgoing calls.",
+          "grant_chrome_access": "Granting access in Google Chrome",
+          "grant_mozilla_access": "Granting access in Mozilla Firefox",
+          "grant_safari_access": "Granting access in Safari",
+          "annotation4": "Typically, the browser will automatically request the necessary permissions when you attempt to make an outgoing call."
+        }
+      },
+      "providers_sip_registration_items_list": {
+        "sip_registration_guide_modal": {
+          "modal_title": "SIP Registration Connection Guide",
+          "continue": "Continue",
+          "step1": {
+            "title": "Step 1 – Gather Necessary Information",
+            "annotation1": "Before you start connecting the SIP registration, make sure that your account already has an active Voximplant telephony integration. If it is not yet connected, follow the instructions below:",
+            "annotation2": "To connect the SIP registration, you need to know the following SIP information about your PBX/VPBX:",
+            "item1": "Proxy *",
+            "item2": "SIP Username *",
+            "item3": "Password",
+            "item4": "Outbound Proxy",
+            "item5": "Authentication User",
+            "annotation3": "This information can be found in your VPBX personal account or requested directly from the operator."
+          },
+          "step2": {
+            "title": "Step 2 – Connect the Registration",
+            "item1": "Click the \"Continue\" button at the bottom of this window or go to the \"Settings\" tab → \"Calls\" → \"SIP Registrations\" and click the \"Add SIP Registration\" button.",
+            "item2": "Enter all the necessary data and click \"Add\".",
+            "item3": "Note that immediately after creating the registration, a small amount will be charged from your Voximplant account. This will continue to be charged every month for the use of the registration. Detailed information can be found at the link below in the \"Prices\" → \"Features\" → \"SIP Registration\" tab. The link will appear only if you already have a Voximplant account.",
+            "voximplant_billing_rates": "Voximplant Service Rates",
+            "item4": "After successful connection, you will see your integration. It can be edited by simply clicking on it. There is no separate fee for editing.",
+            "item5": "To delete a SIP registration, click the \"Trash\" button at the end of the SIP Registration block in the “SIP Registration” tab.",
+            "annotation": "For other issues related to SIP registrations, contact us at {{mail}}."
+          }
+        },
+        "another_pbx": "Connect another PBX/VPBX",
+        "beeline": "Connect Beeline PBX/VPBX",
+        "mts": "Connect MTS PBX/VPBX",
+        "mgts": "Connect MGTS PBX",
+        "tele2": "Connect Tele2 Corporate PBX",
+        "megafon": "Connect MegaFon PBX/VPBX",
+        "rostelecom": "Connect Rostelecom Office PBX/VPBX",
+        "mango_office": "Connect Mango Office VPBX",
+        "uis": "Connect UIS VPBX",
+        "zadarma": "Connect Zadarma VPBX"
+      },
+      "telephony_and_pbx": "Telephony and PBX",
+      "integrations": "Integrations",
+      "crm": "CRM",
+      "process_automation": "Process Automation",
+      "site_forms": "Web Forms",
+      "messenger": "Socials and Messengers",
+      "continue": "Continue",
+      "save": "Save",
+      "manage_connected_accounts": "Manage connected accounts",
+      "ui": {
+        "google_calendar": {
+          "google_calendar_manage_modal": {
+            "title": "{{company}} Google Calendar Integrations"
+          },
+          "google_calendar_connect_modal": {
+            "do_not_select": "Do Not Select",
+            "integration_name_readonly_hint": "You can not change the name of this integration once it's created.",
+            "save": "Save",
+            "connect_calendar": "Connect calendar",
+            "finish_integration_annotation": "Finish integration set up by filling in all the required fields.",
+            "new_integration": "New integration #{{number}}",
+            "integration_name": "Integration Name *",
+            "calendar": "Google Calendar *",
+            "calendar_hint": "Select specific calendar from your Google Calendar account",
+            "task_board": "Task Board *",
+            "schedule": "Scheduler {{company}} *",
+            "linked_task_boards_annotation": "You can add additional task boards to sync with the selected calendar. Tasks from these boards will be synchronized with Google Calendar.",
+            "linked_schedules_annotation": "You can add additional calendars to sync with the selected calendar. Visits from these calendars will be synchronized with Google Calendar.",
+            "select_all": "Select All",
+            "sync_events": "Synchronize events starting from today",
+            "additional_task_boards": "Additional Task Boards",
+            "additional_schedules": "Additional Schedules",
+            "responsible_user": "Responsible User *",
+            "error_message": "Failed to process Google Calendar code!",
+            "title": "Connect to Google Calendar",
+            "feature": "You will be able to perform a two-way synchronization for your tasks and visits with your Google Calendar",
+            "annotation": "Authorize access to your Google Calendar account.",
+            "placeholders": {
+              "integration_name": "Google Calendar integration",
+              "schedules": "Select schedules",
+              "task_boards": "Select task boards"
+            }
+          },
+          "google_calendar_modal_template": {
+            "title": "{{company}} Google Calendar Integration"
+          },
+          "google_calendar_item": {
+            "description": "Sync your meetings and tasks"
+          }
+        },
+        "common": {
+          "form": {
+            "account_activity": "Account activity",
+            "account_activity_annotation": "You can activate or suspend your account",
+            "available": "Select for whom messenger is available *",
+            "all": "All",
+            "users": "Users",
+            "on": "ON",
+            "no_create": "Do not create",
+            "messenger_leads_title": "Lead creation settings",
+            "messenger_leads_annotation": "Set the parameters below to automatically create a lead when a new contact sends a message.",
+            "create_entities": "Create a lead on incoming message",
+            "create_contact": "Module for contact/company",
+            "create_lead": "Module for deal lead",
+            "lead_stage": "Deal lead status",
+            "lead_name": "Deal lead name",
+            "lead_owner": "Lead owner *",
+            "check_duplicates": "Avoid duplicates",
+            "check_active_lead": "Create a new lead if the current one is inactive",
+            "placeholders": {
+              "select_module": "Select a module",
+              "select_users": "Select users",
+              "select_user": "Select a user",
+              "lead_name": "Enter a name"
+            }
+          },
+          "modals": {
+            "changes_not_saved_warning_modal": {
+              "title": "Are you sure you want to close this window?",
+              "annotation": "All changes will be lost.",
+              "close": "Close"
+            },
+            "integration_account_item": {
+              "delete_warning_title": "Are you sure you want to delete {{title}} account?",
+              "delete_warning_annotation": "All chats and messages related to this communication channel will be deleted. This action cannot be undone.",
+              "active": "Active",
+              "active_hint": "You account is up and running. You can suspend it in the provider settings by clicking the pencil icon.",
+              "inactive": "Inactive",
+              "inactive_hint": "You account is suspended. You can activate it in the provider settings by clicking the pencil icon.",
+              "deleted": "Deleted",
+              "deleted_hint": "You account is deleted.",
+              "draft": "Draft",
+              "draft_hint": "You account is not connected yet."
+            },
+            "integration_accounts_list": {
+              "add_account": "Add account"
+            }
+          }
+        },
+        "integration_item": {
+          "install": "Install",
+          "manage": "Manage"
+        },
+        "messages_per_day_select": {
+          "label": "Daily Message Limit for Automation *",
+          "annotation": "messages per day",
+          "hint": "Maximum number of messages that can be sent daily via automation from this account. This limit is necessary to prevent the account from being blocked by the messenger due to bulk messaging."
+        },
+        "salesforce": {
+          "salesforce_item": {
+            "description": "One workspace for every team"
+          },
+          "salesforce_modal": {
+            "title": "Integration with Salesforce",
+            "connected": "Connected",
+            "not_connected": "Not connected",
+            "disconnect": "Disconnect",
+            "add_integration": "Add integration",
+            "my_domain_name": "My domain name",
+            "app_key": "App consumer key",
+            "app_secret": "App consumer secret",
+            "connect": "Connect",
+            "caption": "Keep using Salesforce for customers, and use {{company}} to manage the rest of your business processes. Drive projects in {{company}}. Manage contractors and suppliers in {{company}}."
+          }
+        },
+        "fb_messenger": {
+          "fb_messenger_manage_modal": {
+            "title": "Facebook Messenger API integration"
+          },
+          "fb_messenger_item": {
+            "title": "Manage Facebook interactions, convert chats to leads"
+          },
+          "fb_messenger_modal_template": {
+            "title": "Facebook Messenger Integration"
+          },
+          "fb_messenger_first_info_modal": {
+            "title": "Get an official Facebook Messenger Business account to start talking to your customers using the {{company}} Multimessenger.",
+            "feature1": "Manage all Facebook Messenger conversations with other channels in one place",
+            "feature2": "Collaborate with your team members on incoming conversations",
+            "feature3": "Easily create new contacts, leads and deals directly from conversations",
+            "feature4": "Use Facebook Messenger message templates to send relevant and timely notifications",
+            "learn_more": "Learn more about how to manage your Facebook Messenger Integration"
+          },
+          "fb_messenger_finish_modal": {
+            "supervisors": "Select users who have access to all client chats",
+            "supervisors_hint": "Select users who will have access to all employee chats with clients. These could be managers or employees who work together with clients.",
+            "save": "Save",
+            "title": "You've already connected your Facebook account to {{company}}",
+            "subtitle": "Finish setting up your account. Change the name and accessibility settings as needed.",
+            "name": "Name *",
+            "responsible_users": "Responsible users for new leads *",
+            "learn_more": "Learn more about how to manage your Facebook Messenger Integration",
+            "placeholders": {
+              "name": "Product name",
+              "select_users": "Select users"
+            }
+          }
+        },
+        "wazzup": {
+          "wazzup_manage_modal": {
+            "title": "{{company}} Wazzup Integration"
+          },
+          "wazzup_item": {
+            "title": "Wazzup Integration in Just 5 Minutes, WhatsApp & Telegram"
+          },
+          "wazzup_modal_template": {
+            "title": "{{company}} Wazzup Integration"
+          },
+          "wazzup_first_info_modal": {
+            "title": "Reach out to your customers directly through {{company}} on social media and messaging platforms.",
+            "feature1": "Sales team members can message via WhatsApp, Telegram using {{company}}",
+            "feature2": "Managers can only see their conversations, while supervisors have access to all chats",
+            "feature3": "Contacts and deals with new clients are automatically generated",
+            "feature4": "All communications are securely stored in {{company}}",
+            "feature5": "Utilize a single number for the entire sales department and set up automated responses",
+            "annotation": "Stay connected with clients wherever you are. With the Wazzup mobile app, you can contact clients on the go, and all your conversations will be saved in {{company}} and accessible from your computer.",
+            "learn_more": "Learn more about Wazzup"
+          },
+          "wazzup_connect_modal": {
+            "save": "Save",
+            "update": "Update",
+            "title": "Authorize your Wazzup account",
+            "subtitle": "Access your Wazzup Account settings and copy the API credentials.",
+            "name": "Name *",
+            "api_key": "API Key *",
+            "channel": "Wazzup channel *",
+            "responsible_users": "Responsible users for new leads *",
+            "supervisors": "Select users who have access to all client chats",
+            "supervisors_hint": "Select users who will have access to all employee chats with clients. These could be managers or employees who work together with clients.",
+            "placeholders": {
+              "api_key": "API key",
+              "name": "Product name",
+              "select_users": "Select users",
+              "channel": "Select Wazzup channel"
+            }
+          }
+        },
+        "whatsapp": {
+          "whatsapp_manage_modal": {
+            "title": "WhatsApp Business API Integration by Twilio"
+          },
+          "whatsapp_item": {
+            "title": "Direct WhatsApp Business Messages through {{company}}"
+          },
+          "whatsapp_modal_template": {
+            "title": "WhatsApp Business API Integration by Twilio"
+          },
+          "whatsapp_first_info_modal": {
+            "title": "Get an official WhatsApp Business account (provided by Twilio) to start talking to your customers using the {{company}} Multimessenger",
+            "feature1": "Manage all WhatsApp conversations with other channels in one place",
+            "feature2": "Collaborate with your team members on incoming conversations",
+            "feature3": "Easily create new contacts, leads and deals directly from conversations",
+            "feature4": "Use WhatsApp message templates to send relevant and timely notifications",
+            "learn_more": "Learn more about WhatsApp Business API by Twilio"
+          },
+          "whatsapp_second_info_modal": {
+            "title": "Things to keep in mind before you continue",
+            "step1": "You should purchase a new phone number in Twilio (or transfer your current phone number from the WhatsApp mobile app or WhatsApp Business app) to create a WhatsApp Business API account.",
+            "link1": "How to move an approved WhatsApp number to Twilio",
+            "step2": "WhatsApp and Twilio may charge you with an additional fee for using the WhatsApp Business API.",
+            "link2": "Learn more about pricing"
+          },
+          "whatsapp_third_info_modal": {
+            "title": "Set up Twilio account with your WhatsApp number",
+            "subtitle": "Twilio needs to approve your WhatsApp number before it can be used in {{company}}. Follow these steps to avoid any unnecessary delays.",
+            "step1": "Set up with",
+            "step2": "Request access from Twilio to enable the phone numbers for WhatsApp:",
+            "step2_1_1": "Make sure you have the phone number provided by Twilio ready to get the number of WhatsApp. Fill out",
+            "step2_1_2": "Twilio Request Access",
+            "step2_1_3": "form with your up-to-date information, including your Facebook Business Manager ID.",
+            "step2_2_1": "Refer to Twilio’s",
+            "step2_2_2": "documentation",
+            "step2_2_3": "for more information.",
+            "step3": "Submit a WhatsApp Sender request in the Twilio console.",
+            "step4_1": "Once you've submitted the Request Access form, you'll receive a pre-approval email from Twilio. Check out this",
+            "step4_2": "reference",
+            "step4_3": "link for the next steps.",
+            "step5": "Allow Twilio to send a message on your behalf in the Facebook Business Manager console."
+          },
+          "whatsapp_connect_modal": {
+            "supervisors": "Select users who have access to all client chats",
+            "supervisors_hint": "Select users who will have access to all employee chats with clients. These could be managers or employees who work together with clients.",
+            "save": "Save",
+            "update": "Update",
+            "title": "Authorize your WhatsApp account by Twilio",
+            "subtitle": "Access your Twilio Account settings and copy the API credentials.",
+            "name": "Name *",
+            "sid": "Account SID *",
+            "auth_token": "Auth token *",
+            "phone": "Authorized WhatsApp number *",
+            "responsible_users": "Responsible users for new leads *",
+            "learn_more": "Learn more about how to set up your WhatsApp account with Twilio",
+            "placeholders": {
+              "name": "Product name",
+              "code": "Product code",
+              "token": "Token",
+              "number": "Number",
+              "select_users": "Select users"
+            }
+          }
+        },
+        "tilda": {
+          "tilda_item": {
+            "description": "Form integration with Tilda"
+          },
+          "tilda_manual_modal": {
+            "close": "Close",
+            "title": "Form Integration with Tilda",
+            "info_title": "Integrate a form from the {{company}} builder with your Tilda site to send submissions directly to the system.",
+            "step_1_title": "Step 1 — Prepare the form",
+            "step_1_description": "In the {{company}} form builder, create a form with API integration. Set up the form in step one and add the required fields in step two.",
+            "form_builder_link": "Form builder with API integration",
+            "step_2_title": "Step 2 — Configuring the form in Tilda",
+            "step_2_item_1": "Go to Site Settings → Forms → Webhook.",
+            "step_2_item_2": "Enter the webhook URL from step 3 of the form builder as the script address.",
+            "step_2_item_3": "Save the changes.",
+            "step_3_title": "Step 3 — Configuring field variables",
+            "step_3_item_1": "For the form you want to integrate, select Webhook as the data receiver.",
+            "step_3_item_2": "Assign variables (identifiers) to form fields from the table in step 3 of the form builder.",
+            "step_3_item_3": "Test the form. If it works correctly, publish the page.",
+            "tilda_manual_link": "Tilda setup guide",
+            "support": "If you experience issues integrating the form, contact support."
+          }
+        },
+        "wordpress": {
+          "wordpress_item": {
+            "description": "Form integration with Wordpress"
+          },
+          "wordpress_manual_modal": {
+            "close": "Close",
+            "title": "Form Integration with Wordpress",
+            "info_title": "Integrate a form from the {{company}} builder with your Wordpress site to send submissions directly to the system.",
+            "step_1_title": "Step 1 — Prepare the form",
+            "step_1_description": "In the {{company}} form builder, create the form for your website. Customize the fields on step 2 and style the form on step 4 if needed.",
+            "form_builder_link": "Form Builder",
+            "step_2_title": "Step 2 — Add the form container",
+            "step_2_item_1": "Open the Wordpress admin panel.",
+            "step_2_item_2": "If possible, back up or duplicate the page to allow for easy rollback.",
+            "step_2_item_3": "If you have an existing form and want to replace it, remove it, leaving an empty block. If there’s no form, add an empty block where you want the form to appear.",
+            "step_2_item_4": "Go to the 'Advanced' menu in the block settings on the right side of the editor and assign the class name <code>workspace-form-builder-mount-container</code>.",
+            "step_3_title": "Step 3 — Add the form code",
+            "step_3_item_1": "Add a 'Custom HTML' block to the page.",
+            "step_3_item_2": "Open the 'Custom HTML' block and paste the code from step 5 in the form builder.",
+            "step_3_item_3": "Test the form. If it works correctly, publish the page.",
+            "wordpress_manual_link": "Wordpress HTML Code Insertion Guide",
+            "additional_steps": "Additional steps",
+            "styling": "You can customize the form’s appearance on step 4 in the form builder. If more customization is needed, enable 'Custom CSS'. Each element has a clear and stable CSS class format, e.g., <code>.workspace-form__TextInput--Input</code>. You can edit the form in the builder even after the page is published, and changes will apply immediately after saving.",
+            "multiform": "You can publish multiple identical forms on a single page. In this case, only one 'Custom HTML' block is needed, but there can be multiple containers. If you need different forms from the builder on the same page, enable 'multi-form compatibility mode' in the builder. Then, insert each form’s code into its respective 'Custom HTML' block. The container’s CSS class will be unique — copy it from the instructions in step 5 of the form builder.",
+            "support": "If you experience issues integrating the form, contact support."
+          }
+        },
+        "albato": {
+          "albato_item": {
+            "description": "Automate complex workflows with Albato"
+          },
+          "albato_manual_modal": {
+            "close": "Close",
+            "header_title": "Integration Guide for {{company}} with Albato",
+            "integration_title": "Use Albato to connect {{company}} with thousands of other apps.",
+            "step_1_title": "Step 1: Create a Workflow in Albato",
+            "albato_website": "Albato Website",
+            "step_1_part_1": "Sign up for Albato if you don’t have an account yet.",
+            "step_1_part_2": "Create a new workflow. Add an action and select Mywork from the service list.",
+            "step_1_part_3": "Choose the desired action from the list.",
+            "step_2_title": "Step 2: Connect Your Mywork Account",
+            "step_2_part_1": "Add a new connection for Mywork.",
+            "step_2_part_2": "Enter your 'API Key,' which can be found in the 'API Access' section of your Mywork account settings.",
+            "step_2_part_3": "Fill in the 'Email' and 'Password' fields with your Mywork account credentials.",
+            "step_2_part_4": "Enter your 'Subdomain,' found in the 'General Settings' section of your Mywork account. Use only the highlighted part without '.mywork.app'.",
+            "api_access_link": "API Access",
+            "step_3_title": "Step 3: Configure Automation Actions",
+            "step_3": "During action setup, you’ll see a form with fields to complete. These fields match the data required for the action (e.g., assignee, task name, or description). You can populate these fields dynamically with data from previous actions or triggers. Some data, like assignees, can be fetched from your Mywork account. If data is missing, click 'Refresh List' to update.",
+            "step_4_title": "Step 4: Testing",
+            "step_4": "Before activating the workflow, test it by clicking the test button. You can review submitted data in the workflow log. For any questions, contact Mywork support."
+          }
+        },
+        "request_integration": {
+          "description": "Request integration development",
+          "request": "Request"
+        }
+      }
+    },
+    "users_settings_page": {
+      "user": "User",
+      "total": "Total",
+      "create_button_tooltip": "Add User",
+      "ui": {
+        "remove_user_modal": {
+          "remove": "Remove",
+          "title": "Are you sure you wish to remove this user?",
+          "annotation": "Transfer ownership in all items of this user with another one.",
+          "placeholder": "Select responsible..."
+        },
+        "user_item": {
+          "remove": "Remove",
+          "user_role": {
+            "owner": "Owner",
+            "admin": "Admin",
+            "user": "User",
+            "partner": "Partner"
+          }
+        }
+      }
+    },
+    "account_api_access_page": {
+      "title": "API Access",
+      "annotation": "You can use the API key to create external integrations with the system. Store this key in a secure place and do not share it with anyone. If the key is compromised, regenerate it.",
+      "create_api_key": "Create API Key",
+      "recreate_api_key": "Regenerate",
+      "warning_title": "API Key Regeneration",
+      "warning_annotation": "The current key will be deleted and replaced with a new one. After regenerating, update the key in all external integrations to ensure they continue working.",
+      "created_at": "Created on {{date}} at {{time}}",
+      "api_tokens_list": {
+        "title": "Authorization Tokens",
+        "annotation": "Create authorization tokens for external integrations. A token replaces the standard login and password authentication. You will see the token only once after creation, so save it securely. If compromised, delete it and generate a new one.",
+        "empty_user_tokens": "No authorization tokens created.",
+        "add_user_token": "Add Token",
+        "copy": "Copy Token",
+        "access_token": "Save this token — you won’t be able to see it again:",
+        "name": "Name",
+        "expires_at": "Expiration Date",
+        "table": {
+          "name": "Name",
+          "created_at": "Created",
+          "expires_at": "Expires",
+          "last_used_at": "Last Used",
+          "never": "Never",
+          "actions": "Actions",
+          "delete": "Delete"
+        }
+      }
+    },
+    "settings_page_template": {
+      "modules_settings": "Modules Settings",
+      "sip_registrations": "SIP Registrations",
+      "title": "Settings",
+      "users": "Users",
+      "general": "General Settings",
+      "email": "Email Settings",
+      "integrations": "Integrations",
+      "billing": "Billing",
+      "api_access": "API Access",
+      "documents": "Documents",
+      "calls": "Calls",
+      "account": "Account",
+      "superadmin": "Admin Panel",
+      "configuring_scenarios": "Configuring",
+      "schemas": "Schemas",
+      "configure_users": "Configuring Users",
+      "groups": "Groups",
+      "document_templates": "Document Templates",
+      "document_creation_fields": "Document Creation Fields"
+    },
+    "add_user_to_plan_modal": {
+      "send": "Send",
+      "title": "To add a user, please contact us",
+      "name": "* Name",
+      "phone": "* Phone",
+      "email": "* Email",
+      "number_of_users": "* Number of users",
+      "placeholder": "Your name"
+    },
+    "request_setup_form": {
+      "button": {
+        "request_setup": "Request Setup",
+        "request_billing_help": "Request Billing Help",
+        "request_integration": "Request Integration Development",
+        "request_telephony": "Request Telephony Setup",
+        "request_api_integration": "Request API Integration"
+      },
+      "modal": {
+        "request_setup": "Request Setup for {{company}}",
+        "request_billing_help": "Request Billing Help for {{company}}",
+        "request_integration": "Request Integration Development",
+        "request_telephony": "Request Telephony Setup",
+        "request_api_integration": "Request API Integration",
+        "full_name": "Full Name *",
+        "phone": "Phone *",
+        "email": "E-mail *",
+        "comment": "Request",
+        "send_request": "Submit",
+        "placeholders": {
+          "full_name": "Enter your full name",
+          "comment": {
+            "request_setup": "Briefly describe your system setup request. We will contact you to assist with implementation.",
+            "request_billing_help": "Briefly describe the issue with your subscription. We will contact you to resolve it.",
+            "request_integration": "Briefly describe your integration development request. We will contact you to discuss the details.",
+            "request_telephony": "Briefly describe your telephony request. We will contact you to assist with setup for your needs.",
+            "request_api_integration": "Briefly describe your API integration request. We will contact you to assist with the integration for your needs."
+          }
+        }
+      }
+    }
+  }
+}

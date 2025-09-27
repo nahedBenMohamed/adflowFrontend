@@ -1,0 +1,867 @@
+{
+  "builder": {
+    "components": {
+      "common": {
+        "next": "Dalej",
+        "back": "Wstecz",
+        "save": "Zapisz",
+        "workspace_builder": "Kreator miejsca pracy",
+        "your_workspace": "Twoje miejsce pracy",
+        "no_links": "Brak dostępnych modułów do połączenia."
+      }
+    },
+    "pages": {
+      "site_form_builder_page": {
+        "steps": {
+          "save_and_leave": "Zapisz i opuść",
+          "default_title": "Formularz na stronę",
+          "default_form_title": "Skontaktuj się z nami",
+          "default_consent_text": "Używamy plików cookie, aby poprawić działanie strony. Pliki cookie pomagają zapewnić bardziej spersonalizowane doświadczenia dla Ciebie i analizy dla nas. Więcej informacji znajdziesz w naszej Polityce prywatności.",
+          "default_consent_link_text": "Polityka prywatności",
+          "default_gratitude_header": "Dziękujemy!",
+          "default_gratitude_text": "Nasi menedżerowie skontaktują się z Tobą w godzinach pracy.",
+          "default_form_button_text": "Wyślij",
+          "default_client_button_text": "Otwórz formularz",
+          "common_error": "Wypełnij wszystkie obowiązkowe pola.",
+          "step1": {
+            "title": "Krok 1",
+            "description": "Podstawowa konfiguracja",
+            "error": "Wypełnij wszystkie obowiązkowe pola w pierwszym kroku."
+          },
+          "step2": {
+            "title": "Krok 2",
+            "description": "Pola formularza",
+            "error": "Wypełnij wszystkie obowiązkowe pola w drugim kroku."
+          },
+          "step3": {
+            "title": "Krok 3",
+            "description": "Polityka prywatności i strona z podziękowaniem",
+            "consent_error": "Wypełnij wszystkie obowiązkowe pola w sekcji 'Polityka prywatności' na trzecim kroku."
+          },
+          "step4": {
+            "title": "Krok 4",
+            "description": "Projekt formularza"
+          },
+          "step5": {
+            "title": "Krok 5",
+            "description": "Skrypt instalacji formularza"
+          }
+        },
+        "site_form_builder_step1": {
+          "title": "Krok 1. Konfiguracja formularza",
+          "title_input_name": "Wpisz nazwę formularza",
+          "choose_main_card": "Wybierz główną kartę, która zostanie utworzona po wysłaniu formularza",
+          "choose_linked_cards": "Wybierz powiązane karty, które zostaną utworzone po wysłaniu formularza",
+          "linked_entities_select": "Wybierz moduły do tworzenia kart po przesłaniu formularza z Twojej strony",
+          "choose_board_annotation": "Wybierz tablicę, na której będzie tworzona karta",
+          "card_settings": "Konfiguracja tworzenia karty",
+          "responsible_user": "Odpowiedzialny użytkownik",
+          "check_duplicates": "Unikaj duplikatów",
+          "check_duplicates_hint": "Jeśli ta opcja jest włączona, przesłanie formularza z istniejącym w systemie e-mailem lub numerem telefonu nie utworzy nowej karty, lecz powiąże istniejącą.",
+          "yes": "Tak",
+          "placeholders": {
+            "title_input": "Nazwa formularza",
+            "responsible_select": "Odpowiedzialny",
+            "board": "Tablica"
+          }
+        },
+        "site_form_builder_step2": {
+          "sidebar": {
+            "title": "Elementy formularza",
+            "header_title": "Nagłówek formularza",
+            "header_hint": "Może być tylko jeden.",
+            "delimiter_title": "Separator",
+            "delimiter_hint": "Linia oddzielająca różne sekcje formularza.",
+            "field_attributes": {
+              "title": "Atrybuty pola",
+              "hint": "Nagłówek jest wyświetlany nad polem, a opis wewnątrz niego.",
+              "label_name": "Nagłówek",
+              "placeholder_name": "Opis"
+            },
+            "card_name_block": {
+              "card_title": "Nazwa karty",
+              "company_title": "Nazwa firmy",
+              "contact_title": "Imię i nazwisko",
+              "card_text": "Nazwa",
+              "company_text": "Nazwa",
+              "contact_text": "Imię i nazwisko"
+            },
+            "field_elements": {
+              "no_available_fields": "Brak dostępnych pól",
+              "email": "E-mail",
+              "phone": "Telefon",
+              "short_text": "Krótki tekst",
+              "long_text": "Długi tekst",
+              "number": "Liczba",
+              "value": "Wartość",
+              "date": "Data",
+              "select": "Wybierz",
+              "multiselect": "Wielokrotny wybór",
+              "colored_select": "Kolorowy wybór",
+              "colored_multiselect": "Kolorowy wielokrotny wybór",
+              "link": "Link",
+              "file": "Plik",
+              "switch": "Przełącznik"
+            }
+          },
+          "tree": {
+            "element_name": {
+              "placeholder": "Wpisz nagłówek formularza"
+            },
+            "entity_field_element": {
+              "placeholder": "Wpisz opis pola",
+              "template": {
+                "company_name": "Nazwa",
+                "contact_name": "Imię i nazwisko",
+                "card_name": "Nazwa karty",
+                "short_text": "Krótki tekst",
+                "long_text": "Długi tekst",
+                "field": "Pole",
+                "delimiter": "Separator",
+                "file": "Plik",
+                "schedule": "Wybór kalendarza",
+                "schedule_performer": "Wybór wykonawcy",
+                "schedule_date": "Wybór daty",
+                "schedule_time": "Wybór godziny",
+                "placeholder": "Wpisz nazwę pola",
+                "required": "Obowiązkowe pole",
+                "validation": "Walidacja pola",
+                "field_type": "Typ pola:",
+                "linked_with": "Powiązane z modułem:"
+              }
+            }
+          }
+        },
+        "site_form_builder_step3": {
+          "show_in_form_control": {
+            "yes": "Tak"
+          },
+          "consent_block": {
+            "title": "Polityka przetwarzania danych osobowych",
+            "controls": {
+              "show_consent_title": "Pokaż politykę prywatności",
+              "text_title": "Tekst polityki prywatności",
+              "text_hint": "Tekst będzie wyświetlany na końcu formularza.",
+              "link_text_title": "Tekst linku",
+              "link_text_hint": "Tekst wyświetlany na linku",
+              "link_title": "Link",
+              "link_hint": "Wpisz URL polityki prywatności w formacie https://example.com/.",
+              "consent_by_default_title": "Checkbox zaznaczony domyślnie",
+              "placeholders": {
+                "text": "Tekst polityki prywatności",
+                "link_text": "Wpisz tekst linku",
+                "link": "Wklej link"
+              }
+            },
+            "skeleton": {
+              "button_text": "Wyślij"
+            }
+          },
+          "gratitude_block": {
+            "title": "Strona z podziękowaniem",
+            "show_gratitude_title": "Pokaż stronę z podziękowaniem",
+            "gratitude_text": "Tekst podziękowania",
+            "placeholders": {
+              "header": "Wpisz nagłówek",
+              "text": "Wpisz tekst podziękowania"
+            }
+          }
+        },
+        "site_form_builder_step4": {
+          "sidebar": {
+            "custom_css_block": {
+              "custom_css": "Niestandardowy CSS",
+              "enable_custom_css": "Włącz niestandardowy CSS",
+              "placeholders": {
+                "custom_css": "Reguły niestandardowego CSS"
+              }
+            },
+            "advanced_settings": "Ustawienia zaawansowane",
+            "modal_overlay_customization_block": {
+              "modal_overlay": "Nakładka modalna",
+              "overlay_display": "Wyświetlanie nakładki",
+              "background_color": "Kolor tła",
+              "opacity": "Nieprzezroczystość"
+            },
+            "switch_label": "Włącz",
+            "title": "Projekt formularza",
+            "description": "Zmiany wchodzą w życie po zapisaniu.",
+            "powered_by_logo_block": {
+              "title": "{{company}} Logo",
+              "switch_label": "Włącz"
+            },
+            "header_customization_block": {
+              "title": "Nagłówek",
+              "text_color": "Kolor tekstu",
+              "text_align_title": "Wyrównanie",
+              "text_align_left": "Do lewej",
+              "text_align_center": "Do środka",
+              "text_align_right": "Do prawej"
+            },
+            "fields_customization_block": {
+              "title": "Pola",
+              "background_color": "Kolor tła",
+              "title_color": "Kolor nagłówka",
+              "text_color": "Kolor tekstu w polach"
+            },
+            "form_button_customization_block": {
+              "title": "Przycisk",
+              "background_color": "Kolor przycisku",
+              "text_color": "Kolor tekstu przycisku",
+              "border": "Zaokrąglenie rogów",
+              "border_rounded": "Zaokrąglone",
+              "border_squared": "Kwadratowe",
+              "size": "Rozmiar przycisku",
+              "small": "Mały",
+              "medium": "Średni",
+              "large": "Duży",
+              "text_input": "Tekst przycisku",
+              "hint": "Przycisk wysyłania, umieszczony na końcu formularza",
+              "placeholders": {
+                "text_input": "Wyślij"
+              }
+            },
+            "client_button_customization_block": {
+              "title": "Przycisk na stronę",
+              "background_color": "Kolor przycisku",
+              "text_color": "Kolor tekstu przycisku",
+              "border": "Krawędzie",
+              "border_rounded": "Zaokrąglone",
+              "border_squared": "Kwadratowe",
+              "size": "Rozmiar przycisku",
+              "small": "Mały",
+              "medium": "Średni",
+              "large": "Duży",
+              "text_input": "Tekst przycisku",
+              "hint": "Przycisk otwierający okno modalne z formularzem",
+              "placeholders": {
+                "text_input": "Otwórz"
+              }
+            },
+            "form_layout_customization_block": {
+              "title": "Formularz",
+              "view_title": "Widok",
+              "view_built_in": "Wbudowany",
+              "view_modal": "Okno modalne",
+              "position_title": "Pozycja formularza",
+              "position_left": "Po lewej",
+              "position_center": "Do środka",
+              "position_right": "Po prawej",
+              "border_radius_title": "Zaokrąglenie krawędzi",
+              "border_rounded": "Zaokrąglone",
+              "border_none": "Bez zaokrągleń",
+              "orientation_title": "Orientacja",
+              "orientation_horizontal": "Pozioma",
+              "orientation_vertical": "Pionowa",
+              "max_width": "Maksymalna szerokość",
+              "max_height": "Maksymalna wysokość",
+              "background_color": "Kolor tła"
+            },
+            "size_customization_element_template": {
+              "switch_label": "Włącz",
+              "placeholders": {
+                "input": "Wpisz wartość"
+              }
+            }
+          },
+          "preview": {
+            "iframe_title": "{{companyName}} – Podgląd formularza",
+            "error": "Błąd podczas ładowania podglądu",
+            "open_in_a_new_tab": "Otwórz w nowej karcie",
+            "open_preview": "Otwórz podgląd",
+            "phone": "Telefon",
+            "tablet": "Tablet",
+            "computer": "Komputer",
+            "form": "Formularz",
+            "gratitude": "Strona podziękowania",
+            "button": "Przycisk"
+          }
+        },
+        "site_form_builder_step5": {
+          "title": "Krok 5. Skopiuj kod formularza na swoją stronę",
+          "copy_form_code": "Skopiuj kod formularza",
+          "form_code": "Kod formularza",
+          "multiform_mode": "Tryb zgodności wielu formularzy",
+          "multiform_mode_hint": "Włącz ten tryb, jeśli na stronie, na którą chcesz wstawić formularz, znajduje się już inny formularz stworzony w naszym kreatorze. Umożliwi to uniknięcie konfliktów wyświetlania.",
+          "form_will_be_mounted_here": "Formularz zostanie osadzony tutaj",
+          "public_link_title": "Publiczna strona formularza",
+          "public_link_annotation": "Użyj poniższego linku, aby przejść do publicznej strony formularza. Jeśli nie musisz osadzać formularza na swojej stronie, udostępnij tę stronę swoim użytkownikom, aby mogli ją wypełnić. Formularz jest gotowy do użycia i aktualizuje się automatycznie po wprowadzeniu zmian.",
+          "instruction_title": "Instrukcje dotyczące integracji formularza na Twojej stronie",
+          "view_form": "Zobacz formularz",
+          "static_site_integration_title": "Integracja na statycznych stronach i stronach tworzonych za pomocą kreatorów",
+          "first_point": {
+            "title": "1. Dodawanie formularza za pomocą klasy CSS",
+            "annotation": "Przypisz klasę <code>{{mountClass}}</code> do elementów na swojej stronie, w których chcesz osadzić formularz. Skopiowany powyżej kod formularza wstaw do tagu <code><head/></code> lub na sam koniec tagu <code><body/></code>. Formularz wyświetli się wewnątrz elementów z określoną klasą. Jeśli element ma już zawartość, formularz pojawi się na końcu tej zawartości. Jeśli wybrałeś wyświetlanie formularza jako okno popup, w określonym miejscu zostanie osadzony przycisk, po kliknięciu którego otworzy się <b>okno popup</b> z formularzem. To jest <b>preferowany</b> sposób osadzania formularza na stronie."
+          },
+          "second_point": {
+            "title": "2. Dodawanie formularza bez klas CSS",
+            "annotation": "Jeśli nie możesz przypisać klasy elementom, wklej <b>kod formularza</b> w miejsce na swojej stronie, gdzie chcesz go wyświetlić. Kod formularza można osadzić w <b>dowolnym miejscu</b> strony. W takim przypadku formularz zostanie wyświetlony w miejscu, gdzie wklejono kod. Tym sposobem można osadzić tylko <b>jeden</b> formularz na stronie."
+          },
+          "ssr_integration_title": "Integracja na stronach z wykorzystaniem SSR (np. tworzonych za pomocą Next.js, Astro itp.)",
+          "ssr_integration_annotation": "Aby uniknąć problemów z <b>hydratacją</b> (ładowaniem skryptów w znaczniku HTML), zaleca się użycie metody określenia klasy <code>workspace-form-builder-mount-container</code> dla elementu, wewnątrz którego chcesz osadzić formularz (opisanej bardziej szczegółowo w <b>punkcie 2</b> powyżej). W takim przypadku skrypt formularza należy umieścić najlepiej w tagu <code><head/></code>.",
+          "analytics": {
+            "title": "Śledzenie zdarzeń i celów analitycznych",
+            "annotation": "Formularz obsługuje wysyłanie zdarzeń i celów do systemów analitycznych. Jeśli na stronie jest zainstalowany Google Analytics lub Yandex.Metrica, możesz śledzić działania użytkowników w formularzu. Aby to zrobić, skonfiguruj zdarzenia lub cele w swoim systemie analitycznym i przypisz je do identyfikatorów wskazanych w tabeli.",
+            "table_title": "Śledzone zdarzenia",
+            "event_title": "Nazwa",
+            "event_id": "ID celu",
+            "form_view": "Wyświetlenie formularza",
+            "form_start": "Rozpoczęcie wypełniania",
+            "field_fill": "Wypełnienie pola “{{field}}”",
+            "form_submit": "Wysłanie formularza"
+          }
+        }
+      },
+      "headless_site_form_builder_page": {
+        "steps": {
+          "save_and_leave": "Zapisz i wyjdź",
+          "default_title": "Formularz na stronę do integracji przez API",
+          "common_error": "Wypełnij wszystkie wymagane pola.",
+          "step1": {
+            "title": "Krok 1",
+            "description": "Podstawowa konfiguracja",
+            "error": "Wypełnij wszystkie wymagane pola w kroku 1."
+          },
+          "step2": {
+            "title": "Krok 2",
+            "description": "Pola formularza"
+          },
+          "step3": {
+            "title": "Krok 3",
+            "description": "Instrukcja integracji formularza"
+          }
+        },
+        "site_form_builder_step3": {
+          "title": "Krok 3. Zintegruj formularz ze stroną",
+          "json_integration_title": "Wysyłanie danych w formacie JSON",
+          "api_integration_instruction": "Ta metoda nadaje się, jeśli przetwarzasz formularze na swoim serwerze. Aby wysłać dane użytkownika z formularza do {{company}}, należy wykonać zapytanie z parametrami wskazanymi poniżej. W treści zapytania przekaż dane użytkownika w formacie JSON. Przykład treści zapytania znajduje się poniżej.",
+          "api_integration_request_annotation": "Metoda: <code>POST</code>\nNagłówek: <code>Content-Type: application/json</code>\nURL: <code>{{endpoint}}</code>",
+          "request_parameters_title": "Parametry zapytania",
+          "request_body_title": "Treść zapytania",
+          "field_value_explanation": "W polu value wpisz wartość wprowadzaną przez użytkownika. Format wartości dla każdego pola znajduje się poniżej.",
+          "field_value_title": "Wartości pól",
+          "field_value": "Wartość pola {{label}}",
+          "response_title": "Format odpowiedzi",
+          "response_explanation": "W przypadku sukcesu serwer zwraca kod HTTP 201.",
+          "formdata_integration_title": "Wysyłanie danych w formacie FormData",
+          "formdata_integration_instruction": "Ta metoda nadaje się do wysyłania formularzy z witryn stworzonych za pomocą narzędzi, takich jak Tilda. Dane są przesyłane w formacie x-www-form-urlencoded. Aby wysyłać dane poprawnie, wystarczy podać poniżej URL webhooka i przypisać zmienne do pól.",
+          "formdata_webhook_url": "URL webhooka",
+          "formdata_fields_title": "Zmienne pól",
+          "formdata_fields_explanation": "Każde pole formularza musi mieć nazwę (zmienną), aby powiązać je z odpowiednim polem w systemie. W tym przypadku zmienne pól to ich numeryczne identyfikatory. Aby dane zostały przesłane poprawnie, przypisz każdemu polu formularza zmienną wskazaną w poniższej tabeli.",
+          "fields_table": {
+            "field_title": "Nazwa pola",
+            "field_format": "Format pola",
+            "field_example": "Przykład",
+            "field_id": "Zmienna (ID pola)",
+            "format": {
+              "text": "Ciąg tekstowy w cudzysłowie",
+              "link": "Ciąg tekstowy bez spacji w cudzysłowie",
+              "phone": "Ciąg tekstowy bez spacji w cudzysłowie",
+              "email": "Ciąg tekstowy bez spacji w cudzysłowie",
+              "value": "Ciąg tekstowy w cudzysłowie",
+              "select": "Numer identyfikujący wybraną przez użytkownika wartość",
+              "switch": "Wartość logiczna bez cudzysłowów",
+              "number": "Liczba bez cudzysłowów",
+              "multiselect": "Tablica numerów identyfikujących wybrane przez użytkownika wartości",
+              "date": "Ciąg z datą w formacie ISO 8601 ujętym w cudzysłów"
+            },
+            "example": {
+              "text": "\"Wartość wprowadzona przez użytkownika\"",
+              "link": "\"https://example.com\"",
+              "phone": "\"12345678910\"",
+              "email": "\"form@example.com\"",
+              "value": "\"Wartość wprowadzona przez użytkownika\"",
+              "select": "34",
+              "switch": "true",
+              "number": "42",
+              "multiselect": "[26, 27]",
+              "date": "\"2024-12-31T00:00:00\""
+            }
+          }
+        }
+      },
+      "online_booking_site_form_builder_page": {
+        "steps": {
+          "save_and_leave": "Zapisz i wyjdź",
+          "default_title": "Formularz rezerwacji online",
+          "default_form_title": "Rezerwacja online",
+          "default_consent_text": "Używamy plików cookie, aby poprawić działanie strony. Zapewniają one spersonalizowane doświadczenie i analizę ruchu. Więcej informacji znajdziesz w naszej Polityce prywatności.",
+          "default_consent_link_text": "Polityka prywatności",
+          "default_gratitude_header": "Dziękujemy!",
+          "default_gratitude_text": "Nasi menedżerowie skontaktują się z Tobą, aby potwierdzić rezerwację.",
+          "default_form_button_text": "Wyślij",
+          "default_client_button_text": "Otwórz formularz",
+          "schedule_field_title": "Kalendarz",
+          "schedule_field_placeholder": "Wybierz kalendarz...",
+          "schedule_performer_field_title": "Wykonawca",
+          "schedule_performer_field_placeholder": "Wybierz wykonawcę...",
+          "schedule_date_field_title": "Data",
+          "schedule_date_field_placeholder": "Wybierz datę...",
+          "schedule_time_field_title": "Godzina",
+          "schedule_time_field_placeholder": "Wybierz godzinę...",
+          "common_error": "Wypełnij wszystkie wymagane pola.",
+          "step1": {
+            "title": "Krok 1",
+            "description": "Podstawowa konfiguracja",
+            "error": "Wypełnij wszystkie wymagane pola w pierwszym kroku."
+          },
+          "step2": {
+            "title": "Krok 2",
+            "description": "Pola formularza",
+            "error": "Wypełnij wszystkie wymagane pola w drugim kroku."
+          },
+          "step3": {
+            "title": "Krok 3",
+            "description": "Polityka prywatności i strona podziękowania",
+            "consent_error": "Wypełnij wszystkie wymagane pola w sekcji „Polityka prywatności” w trzecim kroku."
+          },
+          "step4": {
+            "title": "Krok 4",
+            "description": "Projekt formularza"
+          },
+          "step5": {
+            "title": "Krok 5",
+            "description": "Skrypt instalacyjny formularza"
+          }
+        },
+        "online_booking_site_form_builder_step1": {
+          "title": "Krok 1. Konfiguracja formularza",
+          "title_input_name": "Wpisz nazwę formularza",
+          "choose_schedulers": "Wybierz kalendarze, w których będą tworzone rezerwacje",
+          "choose_linked_cards": "Wybierz powiązane karty tworzone po rezerwacji",
+          "linked_entities_select": "Wybierz moduły, w których utworzyć karty po wysłaniu formularza",
+          "choose_board_annotation": "Wybierz tablicę, na której utworzy się karta",
+          "no_schedules": "Nie utworzyłeś jeszcze żadnego kalendarza wizyt. Aby dodać formularz rezerwacji, utwórz moduł „Kalendarz wizyt” i skonfiguruj w nim rezerwacje online.",
+          "no_linked_cards": "Brak dostępnych modułów do tworzenia powiązanych kart. Aby dodać powiązania, wybierz kalendarz z przypisanym modułem. Jeśli wybrałeś kilka kalendarzy, upewnij się, że są one powiązane z tym samym modułem.",
+          "limit_days_name": "Limit dni na rezerwację",
+          "card_settings": "Konfiguracja tworzenia karty",
+          "responsible_user": "Odpowiedzialny użytkownik",
+          "check_duplicates": "Unikaj duplikatów",
+          "check_duplicates_hint": "Jeśli ta opcja jest włączona, przesłanie formularza z istniejącym w systemie e-mailem lub numerem telefonu nie utworzy nowej karty, lecz powiąże istniejącą.",
+          "yes": "Tak",
+          "placeholders": {
+            "title_input": "Nazwa formularza",
+            "responsible_select": "Odpowiedzialny",
+            "board": "Tablica",
+            "limit_days": "Od 1 do 730"
+          }
+        }
+      },
+      "workspace_editor_page": {
+        "edit": "Edytuj",
+        "delete": "Usuń",
+        "warn_title": "Uwaga!",
+        "warn_annotation": "Usunięcie modułu spowoduje trwałe usunięcie wszystkich powiązanych danych. Czy na pewno chcesz kontynuować?",
+        "open_module": "Otwórz moduł",
+        "entity_type_field_used_in_formula_warning_modal": {
+          "title": "Nie udało się usunąć tego modułu",
+          "annotation": "Niektóre pola w tym module są powiązane z formułą w innym module. Proszę zaktualizować ustawienia formuły i spróbować ponownie.",
+          "continue": "Kontynuuj"
+        }
+      },
+      "scheduler_builder_page": {
+        "steps": {
+          "save_error": "Podaj nazwę modułu i wybierz co najmniej jednego użytkownika w pierwszym kroku.",
+          "step1": {
+            "label": "1. krok",
+            "description": "Skonfiguruj nowy moduł"
+          },
+          "step2": {
+            "label": "2. krok",
+            "description": "Połącz harmonogram z innym modułem w swoim miejscu pracy"
+          },
+          "step3": {
+            "label": "3. krok",
+            "description": "Zintegruj harmonogram z modułem produktów w swoim miejscu pracy"
+          },
+          "default_title": "Harmonogram wizyty"
+        },
+        "scheduler_builder_step1": {
+          "title": "Personalizuj moduł",
+          "name_the_module": "Nazwij moduł",
+          "name_the_module_hint": "Ta nazwa będzie wyświetlana w lewym pasku bocznym. Będziesz mógł ją zmienić w przyszłości.",
+          "choose_icon": "Wybierz ikonę dla lewego paska bocznego",
+          "choose_icon_hint": "Ta ikona będzie wyświetlana w lewym pasku bocznym. Będziesz mógł ją zmienić w przyszłości.",
+          "for_users": "Dla użytkowników",
+          "for_user_groups": "Dla grup użytkowników",
+          "view_type": "Wybierz typ harmonogramu wizyty",
+          "view_type_hint": "Wybierz typ widoku – Widok czasu bocznego (Pionowy widok czasu) lub Widok czasu górnego (Poziomy widok czasu).",
+          "schedule": "Widok czasu bocznego",
+          "schedule_img_alt": "{{company}} – Podgląd interfejsu harmonogramu",
+          "board": "Widok czasu górnego",
+          "board_img_alt": "{{company}} – Podgląd interfejsu tablicy",
+          "enter_the_interval": "Wprowadź interwał",
+          "maximum_number_of_records": "Maksymalna liczba rekordów",
+          "error": "Proszę wypełnić wszystkie wymagane pola.",
+          "change_anyway": "Zmień mimo to",
+          "warning_title": "Czy na pewno chcesz zmienić ten parametr?",
+          "warning_annotation": "Wszystkie istniejące wizyty zostaną usunięte.",
+          "for_whom": "Wybierz użytkowników lub grupy użytkowników",
+          "for_whom_hint": "Wybierz typ widoku harmonogramu – dla użytkowników lub grupy użytkowników.",
+          "no_duration": "Nie",
+          "minutes": "minuty",
+          "schedule_params_title": "Harmonogram i rezerwacje online",
+          "schedule_params_hint": "Skonfiguruj dostępność i parametry spotkań w kalendarzu. Zostaną użyte do wyświetlania harmonogramu i zarządzania rezerwacjami online.",
+          "time_buffer_before": "Przerwa przed spotkaniem",
+          "time_buffer_after": "Przerwa po spotkaniu",
+          "intervals_source": "Użyj dostępności",
+          "performers_intervals": "użytkowników",
+          "scheduler_intervals": "tego kalendarza",
+          "placeholders": {
+            "interval": "Interwał",
+            "unlimited": "Nieograniczony",
+            "module_name": "Nazwa modułu"
+          },
+          "change_type_warning": {
+            "title": "Uwaga!",
+            "annotation": "Zmiana typu kalendarza spowoduje trwałe usunięcie wszystkich zapisów wizyt. Czy na pewno chcesz kontynuować?",
+            "approve": "Potwierdź"
+          },
+          "change_performers_warning": {
+            "title": "Uwaga!",
+            "annotation": "Usunięcie wykonawcy z kalendarza spowoduje trwałe usunięcie wszystkich jego zapisów wizyt. Czy na pewno chcesz kontynuować?",
+            "approve": "Potwierdź"
+          }
+        },
+        "scheduler_builder_step2": {
+          "title": "Połącz z innym modułem",
+          "do_not_link": "Nie łącz z innym modułem",
+          "duplicate_title": "Zablokuj duplikaty wizyt",
+          "duplicate_hint": "Po włączeniu tej opcji w kalendarzu nie będzie można zaplanować kilku spotkań dla tej samej karty w jednym dniu."
+        },
+        "scheduler_builder_step3": {
+          "title": "Zintegruj z modułem produktów",
+          "do_not_integrate": "Nie integruj z modułem produktów"
+        }
+      },
+      "products_section_builder_page": {
+        "delay_select": {
+          "no_return": "Nie zwracaj",
+          "no_return_minified": "Nie",
+          "24_hours": "24 godziny",
+          "24_hours_minified": "24h",
+          "48_hours": "48 godzin",
+          "48_hours_minified": "48h",
+          "72_hours": "72 godziny",
+          "72_hours_minified": "72h",
+          "7_days": "7 dni",
+          "7_days_minified": "7d",
+          "10_days": "10 dni",
+          "10_days_minified": "10d",
+          "14_days": "14 dni",
+          "14_days_minified": "14d",
+          "28_days": "28 dni",
+          "28_days_minified": "28d",
+          "30_days": "30 dni",
+          "30_days_minified": "30d"
+        },
+        "steps": {
+          "save_common_error": "Nie udało się zapisać. Niektóre kroki wymagają uzupełnienia informacji.",
+          "save_warehouses_error": "Musisz utworzyć co najmniej jeden magazyn, aby kontynuować. Alternatywnie, możesz wyłączyć magazyny.",
+          "step1": {
+            "label": "1. krok",
+            "description": "Skonfiguruj nowy moduł"
+          },
+          "step2": {
+            "label": "2. krok",
+            "description": "Utwórz kategorie produktów (grupy produktów)"
+          },
+          "step3": {
+            "label": "3. krok",
+            "description": "Skonfiguruj magazyny dla swoich produktów"
+          },
+          "step4": {
+            "rentals": {
+              "label": "4. krok",
+              "description": "Skonfiguruj ustawienia harmonogramu dla swoich produktów wynajmu"
+            },
+            "sales": {
+              "label": "4. krok",
+              "description": "Połącz z innymi modułami w swoim miejscu pracy"
+            }
+          },
+          "step5": {
+            "label": "5. krok",
+            "description": "Połącz z innymi modułami w swoim miejscu pracy"
+          },
+          "default_titles": {
+            "sale": "Magazyn i zarządzanie produktami",
+            "rental": "Zarządzanie wynajmem"
+          }
+        },
+        "product_section_builder_step1": {
+          "title": "Personalizuj moduł",
+          "name_the_section": "Nazwij moduł",
+          "name_the_section_hint": "Ta nazwa będzie wyświetlana w lewym pasku bocznym. Będziesz mógł ją zmienić w przyszłości.",
+          "choose_icon": "Wybierz ikonę dla lewego paska bocznego",
+          "choose_icon_hint": "Ta ikona będzie wyświetlana w lewym pasku bocznym. Będziesz mógł ją zmienić w przyszłości.",
+          "error": "Nazwa modułu musi być podana.",
+          "placeholders": {
+            "section_name": "Nazwa modułu"
+          }
+        },
+        "product_section_builder_step3": {
+          "cancel_after_label": "Ustaw okres automatycznego zwolnienia rezerwacji pozycji w zamówieniach",
+          "cancel_after_hint": "Możesz skonfigurować automatyczne anulowanie rezerwacji pozycji w zamówieniach. To pomaga zapobiec nieprawidłowym poziomom zapasów, które mogą wystąpić, gdy pozycje są zarezerwowane w transakcjach, ale te transakcje nie są przetwarzane lub zostały anulowane.",
+          "update_error": "Nie udało się zapisać wyboru. Spróbuj ponownie.",
+          "warehouses_error": "Musisz utworzyć co najmniej jeden magazyn, aby kontynuować. Alternatywnie, możesz wyłączyć magazyny.",
+          "enable_warehouses_label": "Włącz magazyny",
+          "enable_warehouses_hint": "Włącz magazyny, aby śledzić stany magazynowe swoich produktów. Jeśli ta opcja jest włączona, będziesz musiał utworzyć co najmniej jeden magazyn, aby kontynuować.",
+          "enable_barcodes_label": "Włącz kody kreskowe",
+          "enable_barcodes_hint": "Włącz kody kreskowe, aby śledzić stany magazynowe swoich produktów. Ta opcja pozwoli Ci skanować kody kreskowe produktów.",
+          "on": "WŁ"
+        },
+        "products_section_builder_link_sections_step": {
+          "title": "Połącz z innymi modułami",
+          "cards": "Karty",
+          "schedulers": "Harmonogramy",
+          "do_not_integrate": "Nie integruj z modułem harmonogramów"
+        },
+        "products_section_builder_schedule_settings_step": {
+          "title": "Ustawienia harmonogramu",
+          "rental_duration_interval": "Interwał czasu wynajmu",
+          "rental_duration_interval_hint": "Wybierz interwał dla czasu wynajmu.",
+          "start_of_rental_interval": "Początek interwału wynajmu",
+          "start_of_rental_interval_hint": "Określ czas, kiedy zaczyna się wynajem.",
+          "twenty_four_hours": "24 godziny"
+        }
+      },
+      "et_section_builder_page": {
+        "steps": {
+          "requisites_codes": {
+            "ie_name": "Imię Przedsiębiorcy Indywidualnego",
+            "ie_surname": "Nazwisko Przedsiębiorcy Indywidualnego",
+            "ie_patronymic": "Drugie Imię Przedsiębiorcy Indywidualnego",
+            "org_name": "Nazwa Firmy",
+            "org_tin": "NIP Firmy",
+            "org_trrc": "KPP Firmy",
+            "org_psrn": "PSRN",
+            "org_type": "Typ Firmy",
+            "org_full_name": "Pełna Nazwa Firmy",
+            "org_short_name": "Krótka Nazwa Firmy",
+            "org_management_name": "Imię Dyrektora",
+            "org_management_post": "Stanowisko Dyrektora",
+            "org_management_start_date": "Data Rozpoczęcia Kadencji Dyrektora",
+            "org_branch_count": "Liczba Oddziałów",
+            "org_branch_type": "Typ Oddziału",
+            "org_address": "Adres Firmy",
+            "org_reg_date": "Data Rejestracji",
+            "org_liquidation_date": "Data Likwidacji",
+            "org_status": "Status Firmy",
+            "stat_okato": "OKATO",
+            "stat_oktmo": "OKTMO",
+            "stat_okpo": "OKPO",
+            "stat_okogu": "OKOGU",
+            "stat_okfs": "OKFS",
+            "stat_okved": "OKVED",
+            "org_extra_employee_count": "Średnia Liczba Pracowników",
+            "org_extra_founders": "Założyciele Firmy",
+            "org_extra_managers": "Kadra Zarządzająca",
+            "org_extra_capital": "Kapitał Zakładowy",
+            "org_extra_licenses": "Licencje",
+            "org_extra_phones": "Numery Telefonów",
+            "org_extra_emails": "Adresy E-mail",
+            "bank_name": "Nazwa Banku",
+            "bank_bic": "BIC Banku",
+            "bank_swift": "SWIFT",
+            "bank_tin": "NIP Banku",
+            "bank_trrc": "KPP Banku",
+            "bank_correspondent_acc": "Konto Korespondencyjne",
+            "bank_payment_city": "Miasto dla Zlecenia Płatniczego",
+            "bank_opf_type": "Typ Instytucji Kredytowej",
+            "bank_checking_account": "Konto Sprawdzenie"
+          },
+          "save_error": "Nie udało się zapisać. Niektóre kroki wymagają uzupełnienia informacji.",
+          "details": "Szczegóły",
+          "analytics": "Analityk",
+          "requisites": "Wymagania",
+          "step1": {
+            "label": "1. krok",
+            "description": "Skonfiguruj nowy moduł"
+          },
+          "step2": {
+            "label": "2. krok",
+            "description": "Wybierz nazwę i utwórz pola dla nowej karty"
+          },
+          "step3": {
+            "label": "3. krok",
+            "description": "Dodaj funkcjonalność do karty"
+          },
+          "step4": {
+            "label": "4. krok",
+            "description": "Połącz z innymi modułami w swoim miejscu pracy"
+          },
+          "default_titles": {
+            "builder": "Kreator",
+            "project": "Projekty i zadania",
+            "production": "Produkcja",
+            "universal": "Moduł uniwersalny",
+            "partner": "Partnerzy",
+            "deal": "CRM",
+            "contact": "Kontakty",
+            "company": "Firmy",
+            "supplier": "Dostawcy",
+            "contractor": "Wykonawcy",
+            "hr": "Rekrutacja"
+          }
+        },
+        "tasks_fields_options": {
+          "planned_time": "Szacowany czas",
+          "board_name": "Nazwa tablicy",
+          "assignee": "Przydzielony",
+          "start_date": "Data rozpoczęcia",
+          "end_date": "Data zakończenia",
+          "description": "Opis",
+          "subtasks": "Podzadania"
+        },
+        "et_section_builder_step1": {
+          "title": "Personalizuj moduł",
+          "name_the_section": "Nazwij moduł",
+          "name_the_section_hint": "Ta nazwa będzie wyświetlana w lewym pasku bocznym. Będziesz mógł ją zmienić w przyszłości.",
+          "choose_icon": "Wybierz ikonę dla lewego paska bocznego",
+          "choose_icon_hint": "Ta ikona będzie wyświetlana w lewym pasku bocznym. Będziesz mógł ją zmienić w przyszłości.",
+          "type_of_display": "Typ wyświetlania",
+          "type_of_display_hint": "Wybierz typ interfejsu – lista lub tablica/lejek lub oba.",
+          "board": "Tablica",
+          "board_img_alt": "{{company}} – Podgląd interfejsu tablicy",
+          "list": "Lista",
+          "list_img_alt": "{{company}} – Podgląd interfejsu listy",
+          "placeholders": {
+            "section_name": "Nazwa modułu"
+          }
+        },
+        "et_section_builder_step2": {
+          "title": "Skonfiguruj parametry nowej karty",
+          "name_the_card": "Nazwij kartę",
+          "name_the_card_hint": "Nazwa karty.",
+          "fine_tuning": "Dopasowanie karty",
+          "create_fields": "Utwórz pola dla nowej karty",
+          "create_fields_hint": "Pola są głównymi elementami informacyjnymi karty, możesz tworzyć różne grupy i typy pól.",
+          "placeholders": {
+            "card_name": "Nazwa karty"
+          }
+        },
+        "et_section_builder_step3": {
+          "title": "Dodaj funkcjonalność do karty",
+          "error": "Proszę wybrać co najmniej jedną funkcję.",
+          "features": {
+            "saveFiles": "Pliki",
+            "tasks": "Zadania",
+            "notes": "Notatki",
+            "chat": "Czat",
+            "activities": "Aktywności",
+            "documents": "Tworzenie dokumentów",
+            "products": "Produkty"
+          }
+        },
+        "et_section_builder_step4": {
+          "title": "Połącz z innymi modułami",
+          "cards": "Karty",
+          "products": "Produkty",
+          "schedulers": "Harmonogramy",
+          "do_not_integrate": "Nie integruj z modułem harmonogramów"
+        },
+        "entity_type_used_in_formula_warning_modal": {
+          "title": "Moduł jest używany we wzorze",
+          "annotation": "Nie można usunąć relacji z modułem, ponieważ jego pole jest używane w formule."
+        }
+      },
+      "builder_journey_picker_page": {
+        "request_bpmn_form_modal": {
+          "error": "Wystąpił błąd podczas przesyłania Twojego żądania. Upewnij się, że wprowadzone informacje są prawidłowe, i spróbuj ponownie.",
+          "send_request": "Wyślij zgłoszenie",
+          "header": "BPMN – Zostaw zgłoszenie, a my się z Tobą skontaktujemy",
+          "full_name": "Pełne imię i nazwisko *",
+          "phone": "Telefon *",
+          "email": "Email *",
+          "comment": "Komentarz",
+          "placeholders": {
+            "full_name": "Jan Kowalski",
+            "comment": "Dodatkowe informacje"
+          },
+          "us_price_full": "Podłącz BPMN za $1 miesiąc na miesiąc!",
+          "ru_price_full": "Podłącz BPMN za 99₽ miesiąc na miesiąc!"
+        },
+        "request_additional_storage_modal": {
+          "error": "Wystąpił błąd podczas wysyłania zgłoszenia. Sprawdź swoje dane i spróbuj ponownie.",
+          "send_request": "Wyślij zgłoszenie",
+          "header": "Dodatkowa przestrzeń – Wyślij zgłoszenie, a skontaktujemy się z Tobą",
+          "full_name": "Imię i nazwisko *",
+          "phone": "Telefon *",
+          "email": "E-mail *",
+          "comment": "Komentarz",
+          "placeholders": {
+            "full_name": "Jan Kowalski",
+            "comment": "Dodatkowe informacje"
+          },
+          "ten_gb_ru_description": "Dodaj 10 GB przestrzeni za 100₽/mies.",
+          "ten_gb_us_description": "Dodaj 10 GB przestrzeni za $1/mies.",
+          "one_hundred_gb_ru_description": "Dodaj 100 GB przestrzeni za 500₽/mies.",
+          "one_hundred_gb_us_description": "Dodaj 100 GB przestrzeni za $5/mies.",
+          "one_tb_ru_description": "Dodaj 1 TB przestrzeni za 1500₽/mies.",
+          "one_tb_us_description": "Dodaj 1 TB przestrzeni za $15/mies."
+        },
+        "create_a_new_module": "Utwórz nowy moduł",
+        "module_names": {
+          "bpmn": {
+            "us_price_tag": "$1/M.",
+            "ru_price_tag": "99₽/M."
+          },
+          "wazzup": "Wazzup",
+          "main_modules": "Wybierz funkcjonalny moduł, który chcesz utworzyć",
+          "additional_modules": "Dodatkowe moduły funkcjonalne",
+          "marketplace": "Rynek",
+          "crm": "CRM",
+          "project_management": "Projekty i zadania",
+          "production": "Produkcja",
+          "product_management_for_sales": "Zarządzanie Zapasami",
+          "product_management_rentals": "Zarządzanie Wynajmem",
+          "scheduler": "Kalendarz wizyt",
+          "supplier_management": "Dostawcy",
+          "contractor_management": "Wykonawcy",
+          "partner_management": "Partnerzy",
+          "hr_management": "Rekrutacja",
+          "contact": "Kontakty",
+          "company": "Firmy",
+          "universal_module": "Moduł Uniwersalny",
+          "finances": "Zarządzanie Finansami",
+          "automatisation": "Automatyzacja i Orkiestracja BPMN",
+          "marketing": "Zarządzanie Marketingiem",
+          "rentals": "Wynajem",
+          "for_sales": "Na sprzedaż",
+          "soon": "Wkrótce",
+          "chosen": "Wybrane",
+          "telephony": "Telefonia VoIP",
+          "mailing": "Serwis e-mail",
+          "messenger": "Multi Messenger",
+          "documents": "Generowanie dokumentów",
+          "forms": "Formularze na stronę",
+          "headless_forms": "Formularze na stronę przez API",
+          "online_booking": "Formularze rezerwacyjne online",
+          "website_chat": "Czaty na stronę",
+          "tilda": "Tilda Publishing",
+          "wordpress": "WordPress",
+          "twilio": "Whatsapp Business",
+          "fb_messenger": "Facebook Messenger",
+          "salesforce": "Salesforce",
+          "make": "Make",
+          "apix_drive": "ApiX-Drive",
+          "albato": "Albato",
+          "one_c": "1C",
+          "additional_storage": "Dodatkowa przestrzeń",
+          "ten_gb": "10 GB dodatkowej przestrzeni",
+          "one_hundred_gb": "100 GB dodatkowej przestrzeni",
+          "one_tb": "1 TB dodatkowej przestrzeni",
+          "storage": {
+            "ten_gb_ru_price_tag": "100₽/M.",
+            "ten_gb_us_price_tag": "$1/M.",
+            "one_hundred_gb_ru_price_tag": "500₽/M.",
+            "one_hundred_gb_us_price_tag": "$5/M.",
+            "one_tb_ru_price_tag": "1500₽/M.",
+            "one_tb_us_price_tag": "$15/M."
+          }
+        }
+      }
+    }
+  }
+}

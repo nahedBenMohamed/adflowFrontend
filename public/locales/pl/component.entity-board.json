@@ -1,0 +1,23 @@
+{
+  "entity_board": {
+    "ui": {
+      "project_entity_card_item": {
+        "start_date": "Data rozpoczęcia",
+        "end_date": "Data zakończenia",
+        "titles": {
+          "not_resolved": "Nieukończone zadania",
+          "upcoming": "Nadchodzące zadania",
+          "overdue": "Przeterminowane zadania",
+          "today": "Dzisiejsze zadania",
+          "resolved": "Ukończone zadania"
+        }
+      },
+      "common_entity_card": {
+        "no_tasks": "Brak zadań",
+        "task_today": "Zadanie na dziś",
+        "overdue_task": "Przeterminowane zadanie",
+        "upcoming_task": "Nadchodzące zadanie"
+      }
+    }
+  }
+}

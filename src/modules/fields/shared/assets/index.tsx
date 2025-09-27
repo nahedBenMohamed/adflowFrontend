@@ -1,0 +1,13 @@
+export { ReactComponent as ClearEntryIcon } from './clear_entry.svg';
+export { ReactComponent as EditFormulaIcon } from './edit_formula.svg';
+export { ReactComponent as EditTextIcon } from './edit_text.svg';
+export { ReactComponent as FieldFilledIcon } from './field_filled.svg';
+export { ReactComponent as ImportantFieldIcon } from './important_field.svg';
+export { ReactComponent as LinkIcon } from './link.svg';
+export { ReactComponent as ListSelectIcon } from './list_select.svg';
+export { ReactComponent as MandatoryFieldIcon } from './mandatory_field.svg';
+export { ReactComponent as PhoneCallIcon } from './phone_call.svg';
+export { ReactComponent as SendEmailIcon } from './send_email.svg';
+export { ReactComponent as TelegramIcon } from './telegram.svg';
+export { ReactComponent as TuneFieldIcon } from './tune_field.svg';
+export { ReactComponent as WhatsAppIcon } from './whats_app.svg';

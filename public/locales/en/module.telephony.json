@@ -1,0 +1,242 @@
+{
+  "telephony": {
+    "pages": {
+      "calls_configuring_scenarios_page": {
+        "title": "Configuring the operation of the IVR in the CRM module",
+        "failed_to_reach": "Unreachable",
+        "creates_manually": "The user manually creates a contact and deal card upon receiving an incoming call",
+        "creates_manually_hint": "When a call comes in from an unknown number, a window for the incoming call appears for the user. The user can answer the call, and if they deem this call as a potential business opportunity, they can create a contact card or both a contact and deal card with just two clicks during the conversation. This method is preferable to automatically generating cards since you might receive calls not just from potential clients, but from various other businesses. This approach helps avoid the creation of unnecessary contact and deal cards.",
+        "components": {
+          "configuring_scenarios_header_controls": {
+            "cancel": "Cancel",
+            "save_scenarios": "Save scenarios",
+            "failed_to_reach": "Unreachable"
+          },
+          "entity_scenario_radio_group": {
+            "automatically_create": "Automatically create",
+            "contact_or_company": "Contact or Company",
+            "deal": "Deal",
+            "select_contact_or_company_first": "Select contact or company first",
+            "deal_pipeline": "Sales pipeline",
+            "select_deal_first": "Select deal first",
+            "placeholders": {
+              "select_deal": "Select deal",
+              "select_pipeline": "Select pipeline"
+            }
+          },
+          "incoming_calls_block": {
+            "incoming_calls": "Incoming calls"
+          },
+          "incoming_known_missing_scenario_block": {
+            "missed_from_known_number": "Missed call from a known number"
+          },
+          "incoming_unknown_missing_scenario_block": {
+            "missed_call_from_unknown_number": "Missed call from an unknown number",
+            "auto_create": "Automatically create",
+            "contact_or_company": "Contact or Company",
+            "responsible": "Responsible",
+            "select_contact_or_company_first": "Select contact or company first",
+            "deal_pipeline": "Deal pipeline",
+            "select_deal_first": "Select deal first",
+            "placeholders": {
+              "select_responsible": "Select responsible",
+              "select_deal": "Select deal",
+              "select_pipeline": "Select pipeline"
+            }
+          },
+          "incoming_unknown_scenario_block": {
+            "call_from_unknown_number": "From an unknown number"
+          },
+          "task_and_activities_scenario_group": {
+            "task": "Task",
+            "select_contact_or_company_first": "Select contact or company first",
+            "title": "Automatically create a task or activity",
+            "do_not_create": "Do not create",
+            "activity": "Activity",
+            "activity_type": "Activity type",
+            "complete": "Complete within",
+            "description": "Description",
+            "task_title": "Task title",
+            "minutes": "minutes",
+            "placeholders": {
+              "activity_description": "Activity description",
+              "task_description": "Task description",
+              "title": "Title"
+            }
+          },
+          "outgoing_calls_block": {
+            "outgoing_calls": "Outgoing calls",
+            "failed_to_reach": "Unreachable"
+          },
+          "outgoing_unanswered_scenario_block": {
+            "failed_to_reach": "Unreachable",
+            "unanswered_outgoing_calls": "Unanswered outgoing calls",
+            "create_note": "Create a note in the contact/deal card history",
+            "placeholders": {
+              "note_content": "Note content"
+            }
+          },
+          "outgoing_unknown_scenario_block": {
+            "call_to_unknown_number": "To unknown number",
+            "creates_manually": "The user manually creates a contact and deal card when making an outgoing call"
+          }
+        }
+      },
+      "calls_sip_registrations_page": {
+        "provider": "Provider",
+        "removed_or_detached": "Removed or detached",
+        "removed_or_detached_hint": "This SIP registration is no longer available because it was removed or detached on Voximplant platform. To continue using this SIP registration, you need to attach it to your application again, or remove it and create a new one. Contact support {{mail}} for more information.",
+        "users": "Users",
+        "users_hint": "Select users who will have access to this SIP registration",
+        "default_name": "SIP Registration #{{number}}",
+        "name": "Registration Name *",
+        "title_annotation": "You can find the SIP registration instructions in the \"Integrations\" section by clicking the \"Install\" button in the \"Telephony and PBX\" group.",
+        "link_to_vx_portal": "Link to Voximplant Portal",
+        "providers": {
+          "uis": "UIS",
+          "zadarma": "Zadarma",
+          "mango_office": "Mango Office",
+          "beeline": "Beeline",
+          "mts": "MTS",
+          "mgts": "MGTS",
+          "tele2": "Tele2",
+          "megafon": "Megafon",
+          "rostelecom": "Rostelecom",
+          "unknown": "Unknown"
+        },
+        "annotation": "When creating a SIP registration, the monthly fee will be charged immediately from your Voximplant account. Check the amount on the Voximplant portal. Creation may take a few minutes.",
+        "last_updated": "Last updated: {{lastUpdated}}",
+        "delete_warning": {
+          "title": "Are you sure you want to delete this SIP registration?",
+          "annotation": "This action can not be undone. You will be able to restore the SIP registration only by creating a new one."
+        },
+        "registration_successful": "Registration successful",
+        "error_annotation": "Make sure you entered the correct credentials or check your Voximplant account for more details.",
+        "empty": "There are no SIP Registrations yet",
+        "save_error": "Registration could not be saved. Please ensure all entered data is correct.",
+        "add": "Add",
+        "title": "SIP Registrations",
+        "edit_sip_registration": "Edit SIP Registration",
+        "add_sip_registration": "Add SIP Registration",
+        "proxy": "Proxy *",
+        "sip_user_name": "SIP User Name *",
+        "password": "Password",
+        "outbound_proxy": "Outbound Proxy",
+        "auth_user": "Auth User",
+        "auth_user_hint": "Usually it is the same as the user name.",
+        "placeholders": {
+          "all_users": "All users",
+          "name": "New SIP Registration",
+          "proxy": "sip.provider.org",
+          "sip_user_name": "user_name",
+          "password": "********",
+          "outbound_proxy": "outbound.provider.org",
+          "auth_user": "auth_user_name"
+        }
+      },
+      "calls_settings_users_page": {
+        "empty": "You have not added any users yet",
+        "users": "Users",
+        "add_user": "Add User",
+        "remove_user": "Remove user",
+        "active": "Active",
+        "create": "Create",
+        "open_sip_settings": "Open SIP Settings",
+        "continue": "Continue",
+        "sip_settings_title": "SIP Settings – {{userName}}",
+        "sensitive_warning": "This is sensitive information, make sure not to share it with third parties. Hover the password to reveal it.",
+        "user_name": "User Name",
+        "domain": "Domain",
+        "password": "Password",
+        "remove_warning_title": "Remove {{userName}}?",
+        "remove_warning_annotation": "This action can not be undone. You will be able to restore the user only by creating a new one.",
+        "remove": "Remove"
+      },
+      "calls_settings_account_page": {
+        "synchronise_with_vx": "Synchronize with Voximplant",
+        "delete_warning_modal": {
+          "title": "Are you sure you want to delete {{phoneNumber}} phone number?",
+          "annotation": "This action can not be undone."
+        },
+        "unknown": "Unknown",
+        "region": "Region",
+        "phone_number": "Phone number",
+        "users": "Users",
+        "state": "State",
+        "connect_phone_number": "Connect",
+        "disconnect_phone_number": "Disconnect",
+        "delete_phone_number": "Delete",
+        "phone_numbers": "Phone Numbers",
+        "phone_numbers_annotation1": "Connect all available Voximplant phone numbers to your account.",
+        "phone_numbers_annotation2": "You can add active operators in the users column so they can access connected number.",
+        "phone_numbers_annotation3": "ℹ️ When deleting or detaching a number directly in the Voximplant application, don't forget to remove it from the list of numbers below or press the synchronization button which will appear in this case.",
+        "connect_all_available_phone_numbers": "Connect all available numbers",
+        "empty_phone_numbers": "No available or connected phone numbers",
+        "placeholders": {
+          "all_users": "All users"
+        },
+        "connect_telephony_title": "Connect Telephony and Unlock More Opportunities with {{company}}",
+        "connect_telephony_warning": "Please note: Clicking the button will automatically create a Voximplant account linked to {{company}}. Do not manually sign up for a separate Voximplant account, as it won't be associated with {{company}}.",
+        "connect": "Connect Telephony",
+        "account": "Account",
+        "voximplant_balance": "Voximplant balance <i>(Soon...)</i>",
+        "recharge": "Recharge",
+        "subscription_fee": "Subscription fee <i>(Soon...)</i>",
+        "available_numbers": "Available Numbers: {{amount}}",
+        "account_is_not_approved": "Account is not approved",
+        "not_approved_annotation": "Without confirming your account, you won't be able to use connected phone numbers.",
+        "approve": "Approve"
+      }
+    },
+    "components": {
+      "telephony_button": {
+        "telephony": "Telephony",
+        "not_connected": "Connect to telephony to enable call functionality."
+      },
+      "telephony_modal": {
+        "connect_to_transfer": "You should connect to the call first to transfer it",
+        "no_operators_to_transfer_call_to": "There are no operators to transfer the call to",
+        "coming_soon": "Coming soon...",
+        "unknown_number": "Unknown number",
+        "amwork_calls": "{{company}} Calls",
+        "active_call_control": {
+          "cancel": "Cancel",
+          "transfer": "Transfer",
+          "add_to_call": "Add to call",
+          "end_call": "End call",
+          "calling": "calling",
+          "mute": "Mute",
+          "unmute": "Unmute"
+        },
+        "incoming_call_control": {
+          "transfer": "Transfer",
+          "add_to_call": "Add to call",
+          "accept": "Accept",
+          "incoming_call": "incoming call",
+          "mute": "Mute",
+          "unmute": "Unmute",
+          "end_call": "End call",
+          "decline": "Decline"
+        },
+        "outgoing_call_initializer": {
+          "outgoing_number": "Your Outgoing Number",
+          "no_available_phone_numbers": "No available phone numbers",
+          "keys": "Keys",
+          "recent": "Recent",
+          "outgoing": "Outgoing call",
+          "incoming": "Incoming call",
+          "yesterday": "Yesterday",
+          "today": "Today",
+          "no_calls": "No calls"
+        },
+        "call_control_template": {
+          "call_from": "Call From: {{number}}",
+          "create": "Create",
+          "placeholders": {
+            "select_card": "Select card"
+          }
+        }
+      }
+    }
+  }
+}

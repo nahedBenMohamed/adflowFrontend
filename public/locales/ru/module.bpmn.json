@@ -1,0 +1,174 @@
+{
+  "bpmn": {
+    "hooks": {
+      "use_get_service_task_options": {
+        "actions": {
+          "task_create": "Создать задачу",
+          "activity_create": "Создать активность",
+          "entity_stage_change": "Изменить этап",
+          "entity_linked_stage_change": "Изменить этап связанной карточки",
+          "entity_responsible_change": "Изменить ответственного",
+          "email_send": "Отправить электронное письмо",
+          "entity_create": "Создать сущность",
+          "chat_send_amwork": "Отправить сообщение в чат",
+          "chat_send_external": "Отправить сообщение во внешний чат",
+          "http_call": "Отправить HTTP-запрос"
+        }
+      },
+      "use_bpmn_automations_columns": {
+        "name": "Название",
+        "created_by": "Создано",
+        "active": "Активный",
+        "delete": "Удалить",
+        "status": "Статус"
+      },
+      "use_get_workspace_event_options": {
+        "events": {
+          "create": "Событие создания карточки",
+          "change_responsible": "Событие смены ответственного",
+          "change_stage": "Событие смены этапа"
+        }
+      }
+    },
+    "pages": {
+      "bpmn_automations_page": {
+        "automation_process_schema_error_warning": {
+          "continue": "Продолжить",
+          "title": "Не удалось запустить процесс \"{{name}}\"",
+          "annotation": "Ошибка проверки схемы BPMN. Проверьте процесс и повторите попытку."
+        },
+        "service_task_popup_template": {
+          "task_name": "Название сервисной задачи",
+          "placeholders": {
+            "task_name": "Название"
+          }
+        },
+        "workspace_sequence_flow_popup": {
+          "module": "Выбрать модуль",
+          "module_hint": "Выберите модуль, где должны быть выполнены указанные условия",
+          "stage": "Выбрать этап",
+          "sequence_flow": "Последовательность",
+          "flow_name": "Название последовательности",
+          "conditions": "Условия",
+          "placeholders": {
+            "flow_name": "Название"
+          }
+        },
+        "create_automation_process_modal": {
+          "create": "Создать",
+          "title": "Создать новый процесс автоматизации",
+          "name": "Название автоматизации",
+          "new_process": "Новый процесс #{{number}}",
+          "placeholders": {
+            "name": "Название"
+          }
+        },
+        "bpmn_automations_processes_modeler": {
+          "add_conditions": "Добавить условия...",
+          "center_view": "Центрировать Вид",
+          "pallete": {
+            "create_workspace_parallel_gateway": "Создать параллельный шлюз",
+            "create_workspace_start_event": "Создать событие начала",
+            "create_workspace_end_event": "Создать событие завершения",
+            "create_workspace_exclusive_gateway": "Создать исключающий шлюз",
+            "create_workspace_data_object": "Создать объект данных",
+            "create_workspace_data_store": "Создать хранилище данных",
+            "create_workspace_participant_expanded": "Создать дорожку процесса",
+            "create_workspace_group": "Создать группу"
+          },
+          "color_picker": {
+            "default_color": "Цвет по умолчанию",
+            "blue_color": "Синий цвет",
+            "orange_color": "Оранжевый цвет",
+            "green_color": "Зеленый цвет",
+            "red_color": "Красный цвет",
+            "purple_color": "Фиолетовый цвет"
+          },
+          "context_pad": {
+            "delay": "Добавить задержку",
+            "append_end_event": "Добавить событие завершения",
+            "append_gateway": "Добавить шлюз",
+            "append_text_annotation": "Добавить текстовую сноску",
+            "replace": "Заменить",
+            "delete": "Удалить",
+            "set_color": "Установить цвет",
+            "connect": "Подключить",
+            "task_create": "Создать задачу",
+            "activity_create": "Создать активность",
+            "entity_stage_change": "Изменить этап",
+            "entity_linked_stage_change": "Изменить этап связанной карточки",
+            "entity_responsible_change": "Изменить ответственного",
+            "email_send": "Отправить электронное письмо",
+            "entity_create": "Создать карточку",
+            "chat_send_amwork": "Отправить сообщение в чат",
+            "chat_send_external": "Отправить сообщение во внешний чат",
+            "http_call": "Отправить HTTP-запрос"
+          },
+          "toggle_default_context_pad_entry": "Сделать условием по умолчанию или обычным условием",
+          "open_minimap": "Открыть мини-карту",
+          "close_minimap": "Закрыть мини-карту",
+          "activate_hand_tool": "Активировать инструмент \"Рука\"",
+          "activate_lasso_tool": "Активировать инструмент \"Лассо\"",
+          "active_create_remove_space_tool": "Активировать инструмент \"Создание/Удаление Пространства\"",
+          "activate_global_connect_tool": "Активировать инструмент \"Глобальное Подключение\"",
+          "process_controls": {
+            "save_and_run": "Сохранить и запустить",
+            "save_draft": "Сохранить черновик",
+            "start_process": "Запустить процесс",
+            "stop_process": "Остановить процесс",
+            "cancel": "Отмена"
+          },
+          "create_workspace_start_event": "Создать событие начала",
+          "create_workspace_delay_event": "Создать событие задержки",
+          "create_workspace_service_task": "Создать сервисную задачу"
+        },
+        "workspace_delay_event_popup": {
+          "delay": "Задержка",
+          "delay_label": "Задержка *",
+          "delay_name": "Название задержки",
+          "placeholders": {
+            "delay_name": "Название"
+          }
+        },
+        "delete_bpmn_automation_warning_modal": {
+          "title": "Вы уверены, что хотите удалить автоматизацию BPMN \"{{name}}\"?",
+          "annotation": "Это действие невозможно отменить."
+        },
+        "create_workspace_service_task_menu": {
+          "workspace_service_tasks": "Сервисные задачи"
+        },
+        "create_workspace_start_event_menu": {
+          "workspace_events": "События"
+        },
+        "workspace_start_event_popup": {
+          "event_name": "Название события",
+          "event_type": "Выберите тип события *",
+          "module": "Выберите модуль *",
+          "module_hint": "Выберите модуль, где будет запущено событие",
+          "placeholders": {
+            "event_name": "Название"
+          }
+        },
+        "bpmn_automations_settings_header": {
+          "create_bpmn_automation": "Создать автоматизацию BPMN",
+          "bpmn_automations": "Автоматизация BPMN 2.0",
+          "back": "Назад"
+        },
+        "bpmn_automations_table": {
+          "no_bpmn_automations_block": {
+            "annotation1": "У вас еще нет процессов",
+            "annotation2": "Используйте",
+            "annotation3": "кнопку для добавления автоматизации."
+          }
+        },
+        "bpmn_splashscreen": {
+          "heading": "Профессиональная BPM-автоматизация",
+          "price_ru": "за 99 ₽/месяц за пользователя, при оплате за год",
+          "price_us": "за $1/месяц за пользователя, при оплате за год",
+          "form_button": "Запросить подключение",
+          "form_header": "Подключить BPM-автоматизацию"
+        }
+      }
+    }
+  }
+}

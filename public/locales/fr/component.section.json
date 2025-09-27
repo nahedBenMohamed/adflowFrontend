@@ -1,0 +1,191 @@
+{
+  "section": {
+    "section_header_with_boards": {
+      "board": "Tableau",
+      "list": "Liste",
+      "dashboard": "Tableau de bord",
+      "reports": "Rapports",
+      "timeline": "Gantt",
+      "automation": "Automatisation",
+      "bpmn_2_0": "BPMN 2.0",
+      "bpmn_2_0_soon": "BPMN 2.0 (Bientôt...)",
+      "tooltips": {
+        "reports_denied": "Vous n'êtes pas autorisé à afficher les rapports. Contactez l'administrateur du compte pour y accéder.",
+        "dashboard_denied": "Vous n'êtes pas autorisé à afficher le tableau de bord. Contactez l'administrateur du compte pour y accéder."
+      }
+    },
+    "empty_projects_block": {
+      "annotation": "Vous n'avez pas encore de projets ou rien n'a été trouvé avec les filtres sélectionnés."
+    },
+    "common": {
+      "add_card": "Ajouter une carte",
+      "new_stage": "Nouvelle Étape",
+      "create_button_tooltip": {
+        "universal": "Ajouter une Carte",
+        "partner": "Ajouter un Partenaire",
+        "deal": "Ajouter une Affaire",
+        "contact": "Ajouter un Contact",
+        "company": "Ajouter une Entreprise",
+        "supplier": "Ajouter un Fournisseur",
+        "contractor": "Ajouter un Sous-traitant",
+        "hr": "Ajouter un Candidat",
+        "project": "Ajouter un Projet"
+      },
+      "cards_total": {
+        "universal": ["Cartes", "Cartes", "Cartes"],
+        "partner": ["Partenaires", "Partenaires", "Partenaires"],
+        "customer": ["Clients", "Clients", "Clients"],
+        "deal": ["Cartes", "Cartes", "Cartes"],
+        "contact": ["Contacts", "Contacts", "Contacts"],
+        "company": ["Entreprises", "Entreprises", "Entreprises"],
+        "supplier": ["Fournisseurs", "Fournisseurs", "Fournisseurs"],
+        "contractor": ["Sous-traitants", "Sous-traitants", "Sous-traitants"],
+        "hr": ["Candidats", "Candidats", "Candidats"],
+        "project": ["Projets", "Projets", "Projets"]
+      },
+      "filter_button": {
+        "ui": {
+          "filter_drawer": {
+            "closed_at": "Date de Clôture",
+            "just_my_cards": "Seulement mes Cartes",
+            "sorting": "Trier",
+            "creation_date": "Date de Création",
+            "owners": "Propriétaires",
+            "stages": "Étapes",
+            "tasks": "Tâches",
+            "placeholders": {
+              "selected_options": "Options sélectionnées",
+              "search_by_card_name": "Rechercher par nom de carte"
+            },
+            "sorting_options": {
+              "manual": "Manuel",
+              "created_asc": "Créé : du plus ancien au plus récent",
+              "created_desc": "Créé : du plus récent au plus ancien",
+              "name_asc": "Titre: ascendant",
+              "name_desc": "Titre: décroissant"
+            },
+            "tasks_options": {
+              "all": "Toutes les cartes",
+              "with_task": "Avec tâches",
+              "without_task": "Sans tâches",
+              "overdue_task": "Avec tâches en retard",
+              "today_task": "Avec tâches du jour"
+            },
+            "field_filter_string": {
+              "is_empty": "Est vide",
+              "is_not_empty": "N'est pas vide",
+              "contains": "Contient...",
+              "placeholders": {
+                "value": "Valeur"
+              }
+            },
+            "field_filter_exists": {
+              "is_empty": "Est vide",
+              "is_not_empty": "N'est pas vide"
+            }
+          },
+          "date_period_picker": {
+            "date_period_segmented_control": {
+              "period": "Période",
+              "period_hint": "Pour une période sélectionnée",
+              "from": "De",
+              "from_hint": "À partir de la date sélectionnée",
+              "to": "À",
+              "to_hint": "Avant la date sélectionnée"
+            },
+            "placeholders": {
+              "select_period": "Sélectionner une période"
+            }
+          },
+          "field_filter_items": {
+            "field_filter_boolean": {
+              "switch_on": "Allumer",
+              "switch_off": "Éteindre"
+            },
+            "field_filter_number": {
+              "from": "De",
+              "to": "À"
+            }
+          }
+        }
+      },
+      "settings_button": {
+        "module_settings": "Paramètres du module",
+        "settings": "Paramètres",
+        "import": "Importer",
+        "get_import_template": "Obtenir le modèle d'importation",
+        "board_settings": "Paramètres du tableau",
+        "table_settings": "Paramètres du tableau",
+        "upload_file": "Télécharger un fichier",
+        "sales_pipeline_settings": "Paramètres du pipeline de vente",
+        "request_setup": "Demander la configuration de {{company}}",
+        "import_entities_modal": {
+          "title": "Importer depuis Excel",
+          "annotation": "Pour importer votre base de données dans {{company}}, suivez quelques étapes simples :",
+          "perform_import": "Réaliser l'importation",
+          "setting_up_file_to_import": {
+            "title": "Configuration d'un fichier à importer",
+            "step1": "Téléchargez un fichier modèle d'exemple;",
+            "step2": "Entrez vos données dans un tableau correspondant à la structure de champs de {{company}};",
+            "step3": "Après avoir terminé les paramètres de correspondance des colonnes, vous pouvez enregistrer les paramètres comme modèle d'importation."
+          },
+          "import_file": {
+            "title": "Importer un fichier",
+            "step1": "Cliquez sur \"Télécharger un fichier\";",
+            "step2": "Dans la fenêtre qui s'ouvre, sélectionnez le modèle préalablement rempli;",
+            "step3": "Après le téléchargement, cliquez sur le bouton \"Réaliser l'importation\"."
+          }
+        },
+        "import_in_background_info_modal": {
+          "title": "Importer depuis Excel",
+          "content": "Le processus d'importation est actuellement en cours d'exécution en arrière-plan. Vous pouvez continuer à travailler dans {{company}} comme d'habitude, et nous vous informerons une fois le processus terminé.",
+          "ok": "Ok"
+        }
+      },
+      "search_box": {
+        "nothing_found": "Rien n'a été trouvé",
+        "placeholder": "Rechercher..."
+      },
+      "section_table_settings_sidebar": {
+        "table_settings": "Paramètres du tableau",
+        "display_columns": "Afficher les colonnes"
+      }
+    },
+    "section_table": {
+      "hidden": "Masqué",
+      "hidden_hint": "Vous ne pouvez pas voir ni accéder à ce champ, car il a été masqué dans les paramètres des champs du module par l'administrateur du compte.",
+      "empty": "Vous n'avez encore ajouté aucune carte",
+      "all_columns_hidden": "Toutes les colonnes sont cachées dans les paramètres du tableau",
+      "name": "Nom",
+      "owner": "Propriétaire",
+      "stage": "Étape",
+      "date_created": "Date de création",
+      "value": "Valeur",
+      "participants": "Participants",
+      "start_date": "Date de début",
+      "end_date": "Date de fin",
+      "description": "Description",
+      "placeholders": {
+        "participants": "Ajouter des participants"
+      },
+      "select_all": {
+        "title": "Sélection de masse",
+        "description": "Appliquer à toutes les cartes ({{count}}) ou seulement pour la page actuelle ?",
+        "all_elements": "Pour toutes les cartes",
+        "for_page": "Seulement pour la page actuelle"
+      },
+      "batch_actions": {
+        "cards_selected": "Cartes sélectionnées : {{count}}",
+        "change_responsible": "Changer de responsable",
+        "change_stage": "Changer d'étape",
+        "delete": "Supprimer",
+        "change_stage_annotation": "Sélectionnez une nouvelle étape pour les cartes sélectionnées. Cette action ne peut pas être annulée.",
+        "change_responsible_annotation": "Sélectionnez un nouveau responsable pour les cartes sélectionnées.",
+        "action_cannot_be_undone": "Cette action ne peut pas être annulée.",
+        "delete_warning_title": "Supprimer les cartes sélectionnées",
+        "delete_warning_annotation": "Êtes-vous sûr de vouloir supprimer les cartes sélectionnées ? Cette action ne peut pas être annulée.",
+        "select_linked_entities_annotation": "Changer de responsable dans les cartes liées"
+      }
+    }
+  }
+}

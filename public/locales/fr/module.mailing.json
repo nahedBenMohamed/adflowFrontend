@@ -1,0 +1,234 @@
+{
+  "mailing": {
+    "unknown_file": "Fichier inconnu",
+    "modals": {
+      "send_email_modal": {
+        "to": "À :",
+        "copy": "Copie :",
+        "hidden_copy": "Copie cachée :",
+        "from": "De :",
+        "subject": "Objet :",
+        "attachment": "pièce jointe",
+        "attachments": "pièces jointes",
+        "delete_all": "Tout supprimer",
+        "send": "Envoyer",
+        "error": "Impossible d'envoyer le message ! Veuillez réessayer plus tard.",
+        "send_with_html": "Envoyer le courrier au format HTML",
+        "send_with_html_hint": "Sélectionnez cette option si vous souhaitez envoyer un courrier au format HTML. Ceci est utile si vous souhaitez ne pas utiliser les fonctions de formatage par défaut de {{company}}.",
+        "components": {
+          "changes_not_saved_modal": {
+            "title": "Les modifications ne sont pas enregistrées",
+            "annotation": "Continuer à modifier ?",
+            "approve": "Supprimer le brouillon"
+          },
+          "invalid_email_address_modal": {
+            "title": "L'email \"{{email}}\" ne semble pas être une adresse valide",
+            "annotation": "Vérifiez l'adresse et réessayez.",
+            "approve": "Envoyer quand même"
+          },
+          "send_email_settings_dropdown": {
+            "show_copy": "Afficher le champ adresse de copie",
+            "show_hidden_copy": "Afficher le champ adresse de copie cachée"
+          },
+          "editors": {
+            "email_signature_editor": {
+              "placeholder": "Ajouter une signature",
+              "no_signature": "Pas de signature"
+            },
+            "email_text_editor": {
+              "placeholders": {
+                "new_message": "Nouveau message",
+                "enter_html_markup": "Entrez le format HTML"
+              }
+            }
+          }
+        }
+      }
+    },
+    "pages": {
+      "mailing_settings_page": {
+        "soon": "Bientôt...",
+        "add_button": "Ajouter Boîte de Réception",
+        "mail_templates": "Modèles de Courrier",
+        "templates_caption": "Vous pouvez créer des modèles de courrier qui peuvent être envoyés à un client. Après avoir ajouté le modèle, vous pouvez accéder à l'envoi de courriers.",
+        "setup_signature": "Configurer une signature",
+        "add_template": "Ajouter un modèle",
+        "components": {
+          "mailbox_item": {
+            "draft_text": "Brouillon",
+            "draft_hint": "La connexion de la boîte de réception n'est pas terminée. Veuillez saisir les paramètres manquants.",
+            "inactive_text": "Inactif",
+            "inactive_hint": "La boîte de réception est inactive. {{error}}.",
+            "sync_text": "Synchronisation",
+            "sync_hint": "La boîte de réception est en cours de synchronisation. Veuillez patienter.",
+            "active_text": "Actif"
+          }
+        },
+        "modals": {
+          "delete_mailbox_modal": {
+            "delete": "Supprimer",
+            "title": "Voulez-vous vraiment supprimer cette boîte de réception ?",
+            "save_correspondence_annotation": "Enregistrer l'historique des correspondances pour cet email ?",
+            "save_correspondence": "Sauvegarder l'historique des correspondances pour cet email"
+          },
+          "mailbox_address_modal": {
+            "continue": "Continuer",
+            "title": "Connecter la boîte de réception",
+            "placeholder": "Votre email",
+            "caption1": "Connectez une boîte de réception d'entreprise avec accès partagé, qui reçoit les demandes des clients, ou une boîte de réception personnelle d'un de vos employés.",
+            "caption2": "Les emails envoyés à cette boîte de réception seront automatiquement attachés aux contacts. Vous pouvez créer une affaire directement depuis la liste de courriers.",
+            "caption3": "Si vous avez des problèmes de connexion, essayez d'activer l'accès pour votre client de messagerie.",
+            "cancel": "Annuler",
+            "google_caption1": "L'utilisation et le transfert d'informations reçues des API Google par {{company}} à toute autre application adhéreront à",
+            "google_policy_link": "la Politique de Données des Utilisateurs des Services API de Google",
+            "google_caption2": ", y compris les exigences d'Utilisation Limitée."
+          },
+          "mailbox_provider_modal": {
+            "title": "Choisir un fournisseur",
+            "caption": "Sélectionnez votre fournisseur de courrier ci-dessous. Si vous ne voyez pas votre service de courrier dans la liste, appuyez sur Manuel et configurez votre boîte de réception manuellement.",
+            "manual": "Manuel"
+          },
+          "update_mailbox_modal": {
+            "max_number_of_emails_per_day": "Nombre maximum d'emails par jour",
+            "emails_per_day": "emails par jour",
+            "emails_per_day_hint": "Le paramètre de limite d'emails est nécessaire pour éviter d'être bloqué par le fournisseur de service de messagerie. Chaque service de messagerie fixe ses propres limites pour l'envoi de messages. Par exemple, la version de base de Google Workspace permet d'envoyer 500 messages par jour depuis une boîte aux lettres.",
+            "email_readonly_title": "Vous ne pouvez pas modifier l'adresse d'une boîte aux lettres déjà créée",
+            "title_connect": "Connecter la boîte de réception",
+            "title_edit": "Modifier la boîte de réception de courrier",
+            "encryption": "Cryptage",
+            "owner": "Sélectionner le propriétaire de l'email",
+            "for_whom_available": "Sélectionner pour qui l'email est disponible",
+            "synchronize": "Synchroniser les emails des 7 derniers jours",
+            "create_entities_annotation": "Configurez les options ci-dessous pour créer automatiquement une fiche lors de la réception d’un e-mail d’un nouveau contact.",
+            "create_entities_label": "Créer une fiche à la réception d’un e-mail",
+            "delete": "Supprimer",
+            "reconnect": "Reconnecter la boîte de réception",
+            "placeholders": {
+              "password": "Mot de passe",
+              "imap": "Serveur IMAP",
+              "port": "Port",
+              "smtp": "Serveur SMTP",
+              "owner": "Sélectionner le propriétaire"
+            }
+          },
+          "mailbox_signature_modal": {
+            "title": "Signatures",
+            "mailbox_signature_editor": {
+              "available_in_mailboxes": "Disponible dans les courriers :",
+              "delete": "Supprimer",
+              "save": "Enregistrer",
+              "warning_title": "Supprimer la signature",
+              "warning_annotation": "Êtes-vous sûr de vouloir supprimer cette signature ?",
+              "save_as_html": "Enregistrer au format HTML",
+              "save_as_html_hint": "Sélectionnez cette option si vous souhaitez enregistrer la signature au format HTML. Ceci est utile si vous souhaitez ne pas utiliser les fonctions de formatage par défaut de {{company}}.",
+              "placeholders": {
+                "signature_name": "Nom de la signature",
+                "your_signature": "Votre signature",
+                "select_mailboxes": "Sélectionner les boîtes de réception"
+              }
+            }
+          }
+        }
+      },
+      "mailing_page": {
+        "title": "Courrier Électronique et Messagerie",
+        "no_email": "Pas encore de courriers",
+        "components": {
+          "section": {
+            "inbox": "Boîte de réception",
+            "sent": "Envoyés",
+            "spam": "Spam",
+            "trash": "Corbeille",
+            "draft": "Brouillon",
+            "flagged": "Marqués",
+            "archive": "Archive",
+            "all": "Tous les mails",
+            "mailbox": "Boîte de réception {{number}}"
+          },
+          "message_panel": {
+            "no_messages": "Aucun message",
+            "demo_message_subject": "✉️ {{company}} : Solution de Courrier d'Entreprise",
+            "demo_message_snippet": "Cher Client, Nous présentons une solution de courrier d'entreprise révolutionnaire qui captera sans aucun doute votre attention."
+          },
+          "attachments_block": {
+            "attachment": "pièce jointe",
+            "attachments": "pièces jointes",
+            "download_all": "Tout télécharger"
+          },
+          "reply_controls": {
+            "reply": "Répondre",
+            "reply_all": "Répondre à tous",
+            "forward": "Transférer"
+          },
+          "create_message_button": {
+            "title": "Nouveau message"
+          },
+          "no_mailboxes_panel_block": {
+            "title": "Cliquez sur le bouton ci-dessous pour ajouter votre boîte de réception."
+          },
+          "thread": {
+            "unknown": "Inconnu 👤",
+            "no_selected_message": "Aucun message sélectionné",
+            "from": "De",
+            "subject": "Objet",
+            "reply": "Répondre",
+            "reply_all": "Répondre à tous",
+            "forward": "Transférer",
+            "add_task": "Ajouter une Tâche",
+            "add_contact": "Ajouter un contact",
+            "spam": "Spam",
+            "unspam": "Non spam",
+            "move_to_inbox": "Déplacer vers la boîte de réception",
+            "trash": "Corbeille",
+            "close": "Fermer",
+            "unseen": "Non vu",
+            "user": "Utilisateur",
+            "date": "{{day}} à {{time}}",
+            "amwork_workspace": "Espace de travail de {{company}}",
+            "demo_message_title": "✉️ {{company}} : Solution de Courrier d'Entreprise",
+            "demo_message_snippet": "Cher Client, nous présentons une solution de courrier d'entreprise révolutionnaire qui captera sans aucun doute votre attention. Découvrez de nouvelles possibilités et élevez votre communication d'entreprise à un nouveau niveau avec l'intégration du courrier dans l'espace de travail de {{company}}.",
+            "dear_customer": "Cher Client,",
+            "demo_message_intro": "Nous présentons une solution de courrier d'entreprise révolutionnaire qui captera sans aucun doute votre attention. Découvrez de nouvelles possibilités et élevez votre communication d'entreprise à un nouveau niveau avec l'intégration du courrier dans l'espace de travail de {{company}}. Connectez toute boîte de réception d'entreprise ou personnelle, et profitez non seulement des fonctions familières du courrier électronique, mais aussi d'une multitude d'outils supplémentaires. Créez des tâches, des prospects, des projets et plus directement depuis un courrier, tout en gardant le contrôle total sur toutes les interactions avec les clients, les partenaires et les projets. Envoyez des messages facilement depuis des fiches de prospects, d'affaires, de partenaires ou de projets, et ils seront automatiquement enregistrés dans la fiche correspondante. De cette manière, vous pouvez lire et analyser facilement l'historique de correspondance pour une affaire ou un projet spécifique. Travaillez plus efficacement en équipe en accordant l'accès à une boîte de réception partagée et en gérant les communications avec vos collègues. Découvrez de nouveaux horizons avec {{company}} et augmentez la productivité de votre entreprise !",
+            "email_functionality": "📬 Fonctionnalité du courrier :",
+            "email_functionality_ul": "<ul style=\"margin-bottom: 8px;\"><li>Intégration API avec Gmail</li><li>Intégration IMAP</li><li>Intégration des courriers des 7 derniers jours pour les boîtes de réception récemment ajoutées</li><li>Courriers entrants et sortants</li><li>Regroupement des courriers en fils/chaînes par expéditeur</li><li>Possibilité de créer une tâche depuis un courrier</li><li>Possibilité de créer un contact depuis un courrier</li><li>Création automatique de prospects depuis les courriers</li><li>Joindre les courriers entrants et sortants à l'historique/flux d'une fiche</li><li>Capacité d'écrire un courrier depuis une fiche</li><li>Création de dossiers personnalisés</li><li>Utilisation de plusieurs boîtes de réception</li><li>Gestion collaborative des boîtes de réception</li><li>Affichage des courriers au format HTML</li><li>Gestion collaborative des boîtes de réception</li><li>Recherche de courriers</li><li>Spam</li><li>Éléments supprimés</li><li>Brouillons</li><li>Création de signatures</li><li>Destinataires en copie</li><li>Destinataires en copie cachée</li><li>Pièces jointes</li></ul>",
+            "reach_out": "Si vous avez des questions, n'hésitez pas à nous contacter –",
+            "sincerely_amwork": "Cordialement, votre équipe {{company}}."
+          },
+          "modals": {
+            "create_contact_modal": {
+              "create": "Créer",
+              "title": "Créer des cartes à partir du courrier",
+              "create_contact": "Créer un contact pour le courrier",
+              "create_lead": "Créer un prospect pour le courrier",
+              "open_entity": "Ouvrir l'entité nouvellement créée",
+              "placeholders": {
+                "where_contact": "Sélectionnez où créer le nouveau contact",
+                "where_lead": "Sélectionnez où créer le nouveau prospect",
+                "board_for_lead": "Sélectionnez le tableau pour le nouveau prospect"
+              }
+            },
+            "link_contact_modal": {
+              "link": "Lier",
+              "title": "Lier une fiche",
+              "select_module": "Sélectionner un module",
+              "search_card": "Sélectionner une fiche",
+              "open_entity": "Ouvrir la fiche liée",
+              "placeholders": {
+                "module": "Module...",
+                "search_card": "Rechercher par nom..."
+              }
+            }
+          }
+        },
+        "hooks": {
+          "use_message_controls": {
+            "unknown": "Inconnu 👤",
+            "reply_to": "Répondre à",
+            "reply_all": "Répondre à tous",
+            "forward": "Transférer"
+          }
+        }
+      }
+    }
+  }
+}

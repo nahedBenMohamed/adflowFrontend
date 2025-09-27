@@ -1,0 +1,234 @@
+{
+  "mailing": {
+    "unknown_file": "Unknown file",
+    "modals": {
+      "send_email_modal": {
+        "to": "To:",
+        "copy": "Copy:",
+        "hidden_copy": "Hidden copy:",
+        "from": "From:",
+        "subject": "Subject:",
+        "attachment": "attachment",
+        "attachments": "attachments",
+        "delete_all": "Delete all",
+        "send": "Send",
+        "error": "Failed to send message! Please try again later.",
+        "send_with_html": "Send email with HTML markup",
+        "send_with_html_hint": "Select this option if you want to send an email with HTML markup. This is useful if you want to opt out of the default {{company}}'s formatting features of the email.",
+        "components": {
+          "changes_not_saved_modal": {
+            "title": "Changes are not saved",
+            "annotation": "Continue editing?",
+            "approve": "Delete draft"
+          },
+          "invalid_email_address_modal": {
+            "title": "Email \"{{email}}\" does not appear to be a valid address",
+            "annotation": "Verify the address and try again.",
+            "approve": "Send anyway"
+          },
+          "send_email_settings_dropdown": {
+            "show_copy": "Show Copy address field",
+            "show_hidden_copy": "Show Hidden Copy address field"
+          },
+          "editors": {
+            "email_signature_editor": {
+              "placeholder": "Add signature",
+              "no_signature": "No signature"
+            },
+            "email_text_editor": {
+              "placeholders": {
+                "new_message": "New message",
+                "enter_html_markup": "Enter HTML markup"
+              }
+            }
+          }
+        }
+      }
+    },
+    "pages": {
+      "mailing_settings_page": {
+        "soon": "Soon...",
+        "add_button": "Add Mailbox",
+        "mail_templates": "Mail Templates",
+        "templates_caption": "You can create email templates that can be used to be send to a client. After adding the template, you can get access to sending emails.",
+        "setup_signature": "Set up a signature",
+        "add_template": "Add template",
+        "components": {
+          "mailbox_item": {
+            "draft_text": "Draft",
+            "draft_hint": "Mailbox connection is not finished. Please, enter missing settings.",
+            "inactive_text": "Inactive",
+            "inactive_hint": "Mailbox is inactive. {{error}}.",
+            "sync_text": "Synchronization",
+            "sync_hint": "Mailbox is being synchronized. Please, wait.",
+            "active_text": "Active"
+          }
+        },
+        "modals": {
+          "delete_mailbox_modal": {
+            "delete": "Delete",
+            "title": "Do you really want to delete this mailbox?",
+            "save_correspondence_annotation": "Save correspondence history for this email?",
+            "save_correspondence": "Save correspondence history"
+          },
+          "mailbox_address_modal": {
+            "continue": "Continue",
+            "title": "Connect mailbox",
+            "placeholder": "Your email",
+            "caption1": "Connect a corporate mailbox with a shared access, which receives requests from customers, or a personal mailbox of one of your employees.",
+            "caption2": "Emails sent to this mailbox will be automatically attached to contacts. You can create a deal directly from the list of emails.",
+            "caption3": "If you're having trouble connecting, try enabling access for your email client.",
+            "cancel": "Cancel",
+            "google_caption1": "{{company}} use and transfer of information received from Google APIs to any other app will adhere to",
+            "google_policy_link": "Google API Services User Data Policy",
+            "google_caption2": ", including the Limited Use requirements."
+          },
+          "mailbox_provider_modal": {
+            "title": "Choose provider",
+            "caption": "Select your email provider below. If you do not see your email service in the list, press Manual and manually configure your mailbox.",
+            "manual": "Manual"
+          },
+          "update_mailbox_modal": {
+            "max_number_of_emails_per_day": "Maximum number of emails per day",
+            "emails_per_day": "emails per day",
+            "emails_per_day_hint": "The email limit parameter is necessary to avoid being banned by the email service provider. Each email service sets its own limits on sending messages. For example, the basic version of Google Workspace allows sending 500 messages per day from one mailbox.",
+            "email_readonly_title": "You cannot edit the address of an already created mailbox",
+            "title_connect": "Connect mailbox",
+            "title_edit": "Edit mailbox settings",
+            "encryption": "Encryption",
+            "owner": "Select the owner of the mail",
+            "for_whom_available": "Select for whom email is available",
+            "synchronize": "Synchronize emails from the last 7 days",
+            "create_entities_annotation": "Configure the options below to automatically create a card when receiving an email from a new contact.",
+            "create_entities_label": "Create card on incoming email",
+            "delete": "Delete mailbox",
+            "reconnect": "Reconnect mailbox",
+            "placeholders": {
+              "password": "Password",
+              "imap": "IMAP server",
+              "port": "Port",
+              "smtp": "SMTP server",
+              "owner": "Select owner"
+            }
+          },
+          "mailbox_signature_modal": {
+            "title": "Signatures",
+            "mailbox_signature_editor": {
+              "available_in_mailboxes": "Available in mailboxes:",
+              "delete": "Delete",
+              "save": "Save",
+              "warning_title": "Delete signature",
+              "warning_annotation": "Are you sure you want to delete this signature?",
+              "save_as_html": "Save as HTML markup",
+              "save_as_html_hint": "Select this option if you want to save the signature as HTML markup. This is useful if you want to opt out of the default {{company}}'s formatting features of the signature.",
+              "placeholders": {
+                "signature_name": "Signature name",
+                "your_signature": "Your signature",
+                "select_mailboxes": "Select mailboxes"
+              }
+            }
+          }
+        }
+      },
+      "mailing_page": {
+        "title": "E-mail and Messenger",
+        "no_email": "No email yet",
+        "components": {
+          "section": {
+            "inbox": "Inbox",
+            "sent": "Sent",
+            "spam": "Spam",
+            "trash": "Trash",
+            "draft": "Draft",
+            "flagged": "Flagged",
+            "archive": "Archive",
+            "all": "All Mail",
+            "mailbox": "Mailbox {{number}}"
+          },
+          "message_panel": {
+            "no_messages": "No messages",
+            "demo_message_subject": "✉️ {{company}}: Corporate Email Solution",
+            "demo_message_snippet": "Dear Customer, Introducing a revolutionary corporate email solution that will undoubtedly capture your attention."
+          },
+          "attachments_block": {
+            "attachment": "attachment",
+            "attachments": "attachments",
+            "download_all": "Download all"
+          },
+          "reply_controls": {
+            "reply": "Reply",
+            "reply_all": "Reply all",
+            "forward": "Forward"
+          },
+          "create_message_button": {
+            "title": "New message"
+          },
+          "no_mailboxes_panel_block": {
+            "title": "Click the button below to add your mailbox."
+          },
+          "thread": {
+            "unknown": "Unknown 👤",
+            "no_selected_message": "No selected message",
+            "from": "From",
+            "subject": "Subject",
+            "reply": "Reply",
+            "reply_all": "Reply all",
+            "forward": "Forward",
+            "add_task": "Add Task",
+            "add_contact": "Add contact",
+            "spam": "Spam",
+            "unspam": "Unspam",
+            "move_to_inbox": "Move to inbox",
+            "trash": "Trash",
+            "close": "Close",
+            "unseen": "Unseen",
+            "user": "User",
+            "date": "{{day}} at {{time}}",
+            "amwork_workspace": "{{company}} Workspace",
+            "demo_message_title": "✉️ {{company}}: Corporate Email Solution",
+            "demo_message_snippet": "Dear Customer, introducing a revolutionary corporate email solution that will undoubtedly capture your attention. Discover new possibilities and elevate your corporate communication to a new level with the integration of email into the {{company}} workspace!",
+            "dear_customer": "Dear Customer,",
+            "demo_message_intro": "Introducing a revolutionary corporate email solution that will undoubtedly capture your attention.Discover new possibilities and elevate your corporate communication to a new level with the integration of email into the {{company}} workspace! Connect any corporate or personal mailbox, and enjoy not only the familiar email functions but also a multitude of additional tools. Create tasks, leads, projects, and more directly from an email, maintaining full control over all interactions with clients, partners, and projects. Effortlessly send messages from lead, deal, partner, or project cards, and they will automatically be saved in the corresponding card. This way, you can easily read and analyze the correspondence history for a specific deal or project. Work more effectively as a team by granting access to a shared mailbox and managing communications together with your colleagues. Unlock new horizons with {{company}} and boost your business productivity!",
+            "email_functionality": "📬 Email functionality:",
+            "email_functionality_ul": "<ul style=\"margin-bottom: 8px;\"><li>API integration with Gmail</li><li>IMAP integration</li><li>Integration of emails from the past 7 days for newly added mailboxes</li><li>Incoming and outgoing emails</li><li>Grouping of emails into threads/chains by sender</li><li>Ability to create a task from an email</li><li>Ability to create a contact from an email</li><li>Automatic lead creation from emails</li><li> Attachment of incoming and outgoing emails to the history/feed of a card</li><li>Attachment of incoming and outgoing emails to the history/feed of a card</li><li>Ability to write an email from a card</li><li>Creation of custom folders</li><li>Use of multiple mailboxes</li><li>Collaborative mailbox management</li><li>Display of emails in HTML format</li><li>Collaborative mailbox management</li><li>Email search</li><li>Spam</li><li>Deleted items</li><li>Drafts</li><li>Creation of signatures</li><li>Carbon copy recipients</li><li>Blind carbon copy recipients</li><li>File attachments</li></ul>",
+            "reach_out": "If you have any questions, feel free to reach out to us –",
+            "sincerely_amwork": "Sincerely, your {{company}} team."
+          },
+          "modals": {
+            "create_contact_modal": {
+              "create": "Create",
+              "title": "Create cards from mail message",
+              "create_contact": "Create contact for mail",
+              "create_lead": "Create lead for mail",
+              "open_entity": "Open newly created entity",
+              "placeholders": {
+                "where_contact": "Select where to create new contact",
+                "where_lead": "Select where to create new lead",
+                "board_for_lead": "Select board for new lead"
+              }
+            },
+            "link_contact_modal": {
+              "link": "Link",
+              "title": "Link Card",
+              "select_module": "Select Module",
+              "search_card": "Select Card",
+              "open_entity": "Open Linked Card",
+              "placeholders": {
+                "module": "Module...",
+                "search_card": "Search by name..."
+              }
+            }
+          }
+        },
+        "hooks": {
+          "use_message_controls": {
+            "unknown": "Unknown 👤",
+            "reply_to": "Reply to",
+            "reply_all": "Reply all",
+            "forward": "Forward"
+          }
+        }
+      }
+    }
+  }
+}

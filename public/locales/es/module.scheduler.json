@@ -1,0 +1,219 @@
+{
+  "scheduler": {
+    "pages": {
+      "scheduler_board_view_page": {
+        "create_appointment": "Crear Reunión",
+        "stats_footer": {
+          "assigned": {
+            "label": "Asignado",
+            "hint": "Visitas no confirmadas"
+          },
+          "confirmed": {
+            "label": "Confirmado",
+            "hint": "Visitas confirmadas"
+          },
+          "completed": {
+            "label": "Completada",
+            "hint": "Visitas realizadas"
+          },
+          "not_took_place": {
+            "label": "No realizada",
+            "hint": "Visitas pasadas no marcadas como realizadas"
+          },
+          "not_scheduled": {
+            "label": "Sin próxima cita",
+            "hint": "Visitas sin fecha de próxima cita"
+          },
+          "newbies": {
+            "label": "Primera visita",
+            "hint": "Visitantes por primera vez"
+          },
+          "total": {
+            "label": "Total",
+            "hint": "Cantidad total de visitas"
+          }
+        }
+      },
+      "appointment_card_list_page": {
+        "visit_date": "Fecha de visita"
+      },
+      "scheduler_schedule_view_page": {
+        "sync": "Sincronizar",
+        "report_settings": "Configuraciones de informes",
+        "module_settings": "Configuraciones del módulo",
+        "stats_settings": "Configuración de estadísticas",
+        "settings": "Configuraciones",
+        "report": "Informe",
+        "overview": "Calendario",
+        "responsible": "Responsable",
+        "stage": "Etapa",
+        "not_provided": "No proporcionado",
+        "statuses": {
+          "scheduled": "Programado",
+          "confirmed": "Confirmado",
+          "completed": "Completado",
+          "cancelled": "Cancelado"
+        },
+        "created": "Creado",
+        "visit": "Reunión {{number}}",
+        "description": "Descripción",
+        "email": "Correo electrónico",
+        "phone": "Teléfono",
+        "price": "Precio",
+        "quantity": "Cantidad",
+        "discount": "Descuento",
+        "new_event": "Nueva Reunión",
+        "create_appointment": "Crear Reunión",
+        "tooltips": {
+          "reports_denied": "No tiene permiso para ver informes. Póngase en contacto con el administrador de la cuenta para obtener acceso."
+        },
+        "placeholders": {
+          "search_visits": "Buscar Reuniones"
+        },
+        "hooks": {
+          "use_appointments_history_services_columns": {
+            "name": "Nombre",
+            "price": "Precio",
+            "quantity": "Cantidad",
+            "discount": "Descuento",
+            "amount": "Monto"
+          },
+          "use_appointments_history_columns": {
+            "date": "Fecha",
+            "time": "Hora",
+            "performer": "Encargado",
+            "services": "Servicios",
+            "total": "Total",
+            "status": "Estado"
+          },
+          "use_appointment_service_block_columns": {
+            "discount": "Descuento",
+            "quantity": "Cantidad",
+            "amount": "Monto"
+          }
+        },
+        "ui": {
+          "add_appointment_modal": {
+            "error": "No se puede crear la reunión. Esto puede deberse a un intento de crear una reunión que se superpone con una existente o a que la fecha de finalización es anterior a la fecha de inicio.",
+            "visits_history_empty": "El historial de reuniones está vacío",
+            "no_planned_visits": "No hay reuniones planificadas",
+            "save_changes": "Guardar cambios",
+            "planned_visit_title": "{{date}} de {{startTime}} a {{endTime}}",
+            "general_information": "Información General",
+            "planned_visits": "Reuniones Planificadas",
+            "visits_history": "Historial de Reuniones",
+            "title": "Título",
+            "visit": "Reunión #{{number}}",
+            "edit_visit": "Editar reunión – {{name}}",
+            "new_visit": "Programar una Reunión",
+            "visit_parameters": "Parámetros de la Reunión",
+            "status": "Estado",
+            "scheduler": "Programador de Reuniones",
+            "select_users_group": "Seleccionar Grupo de Usuarios",
+            "select_user": "Seleccionar Usuario",
+            "description": "Descripción",
+            "from": "De:",
+            "to": "A:",
+            "date_and_time": "Fecha y Hora",
+            "addition_of_services": "Adición de Servicios",
+            "add_service": "Agregar Servicio",
+            "no_services": "Sin servicios",
+            "warning_title": "Los cambios no están guardados",
+            "warning_annotation": "¿Estás seguro de que deseas cerrar esta ventana? Todos los cambios se perderán.",
+            "close": "Cerrar",
+            "delete": "Eliminar",
+            "count": "Total de Reuniones",
+            "last_visit": "Última Reunión",
+            "completed_count": [
+              "Se realizó {{count}} reunión",
+              "Se realizaron {{count}} reuniones",
+              "Se realizaron {{count}} reuniones"
+            ],
+            "placeholders": {
+              "select_time_period": "Período de tiempo",
+              "title": "Título de la reunión",
+              "entity_name": "Nombre de la entidad",
+              "search_services": "Buscar servicios para agregar",
+              "user": "Usuario",
+              "users_group": "Grupo de Usuarios",
+              "appointment_notes": "Nota de la Reunión"
+            },
+            "repeating_appointments_block": {
+              "header": "Visitas Recurrentes",
+              "hint": "Configure el intervalo y el número de citas repetidas, si es necesario. Las citas se programarán para los días hábiles especificados en la configuración.",
+              "interval": "Intervalo",
+              "count": "Cantidad",
+              "intervals": {
+                "none": "No Repetir",
+                "day": "Diariamente",
+                "week": "Semanalmente",
+                "month": "Mensualmente"
+              },
+              "dates_display": {
+                "one_visit": "La visita recurrente está programada para {{date}} a las {{time}}",
+                "visits_list": "Las visitas recurrentes están programadas para {{dates}} a las {{time}}",
+                "and": " y ",
+                "visits_interval_day": "Las visitas recurrentes están programadas diariamente desde {{from}} hasta {{to}} a las {{time}}",
+                "visits_interval_week": "Las visitas recurrentes están programadas semanalmente desde {{from}} hasta {{to}} a las {{time}}",
+                "visits_interval_month": "Las visitas recurrentes están programadas mensualmente desde {{from}} hasta {{to}} a las {{time}}"
+              },
+              "list": {
+                "title": "Reuniones Recurrentes",
+                "hint": "Seleccione las fechas de las reuniones recurrentes si es necesario.",
+                "dates_select": "Fechas de Reuniones",
+                "add_new_appointment": "Agregar Reunión",
+                "new_appointment": "Nueva Reunión",
+                "placeholders": {
+                  "dates_select": "Seleccione fechas"
+                }
+              }
+            },
+            "batch_cancel": {
+              "cancel_all": "Cancelar todo",
+              "warning_title": "¿Seguro que deseas cancelar todas las citas programadas?",
+              "warning_annotation": [
+                "Se cancelará {{count}} cita.",
+                "Se cancelarán {{count}} citas.",
+                "Se cancelarán {{count}} citas."
+              ],
+              "back": "Atrás",
+              "cancel": "Cancelar"
+            },
+            "duplicate_warning_modal": {
+              "move": "Mover",
+              "same_time_title": "Ya hay una reunión programada a esta hora",
+              "same_day_title": "Ya hay una reunión programada en este día",
+              "same_time_annotation": "En este calendario no se permiten reuniones duplicadas el mismo día. Edita la reunión existente o cambia la fecha de esta.",
+              "same_day_annotation": "En este calendario no se permiten reuniones duplicadas el mismo día. ¿Deseas mover la reunión programada a las {{time}}?"
+            },
+            "intersect_warning_modal": {
+              "title": "Superposición de citas",
+              "annotation": "La cita se superpone con otra ya programada en este calendario. Elige otro horario o cambia el responsable."
+            }
+          },
+          "stats_settings_drawer": {
+            "title": "Configuración de estadísticas",
+            "description": "Valores de estadísticas mostrados",
+            "stats": {
+              "assigned": "Asignado",
+              "confirmed": "Confirmado",
+              "completed": "Completada",
+              "not_took_place": "No realizada",
+              "not_scheduled": "Sin próxima cita",
+              "newbies": "Primera visita",
+              "total": "Total"
+            }
+          },
+          "local_time_warning": {
+            "local_correction": [
+              "Ajuste de hora local: {{hours}} hora",
+              "Ajuste de hora local: {{hours}} horas",
+              "Ajuste de hora local: {{hours}} horas"
+            ],
+            "hint": "No se encuentra en la zona horaria especificada en la configuración del sistema, por lo que el tiempo de trabajo en el calendario y la hora de las reuniones se desplaza al número especificado de horas. Si cree que es un error, cambie la zona horaria en la configuración o póngase en contacto con el soporte."
+          }
+        }
+      }
+    }
+  }
+}

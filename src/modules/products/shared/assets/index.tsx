@@ -1,0 +1,12 @@
+export { ReactComponent as ArrowIcon } from './arrow.svg';
+export { ReactComponent as CreatedAtIcon } from './created_at.svg';
+export { ReactComponent as DecrementIcon } from './decrement.svg';
+export { ReactComponent as DeleteIcon } from './delete.svg';
+export { ReactComponent as HideEmptyResourcesIcon } from './hide_empty_resources.svg';
+export { ReactComponent as IncrementIcon } from './increment.svg';
+export { ReactComponent as ScanBarcodeIcon } from './scan_barcode.svg';
+export { ReactComponent as SettingsIcon } from './settings.svg';
+export { ReactComponent as ShippedAtIcon } from './shipped_at.svg';
+export { ReactComponent as ShowEmptyResourcesIcon } from './show_empty_resources.svg';
+export { ReactComponent as UnfoldIcon } from './unfold.svg';
+export { ReactComponent as WarehouseIcon } from './warehouses.svg';

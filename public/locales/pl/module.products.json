@@ -1,0 +1,502 @@
+{
+  "products": {
+    "components": {
+      "common": {
+        "readonly_stocks": "Nie możesz edytować zapasów na tym statusie",
+        "readonly_delete": "Nie możesz usuwać pozycji z zamówienia na tym statusie",
+        "select_the_warehouse_to_write_off": "Wybierz magazyn do odpisania zapasów",
+        "return_stocks_warning_modal": {
+          "title": "Zwróć zapasy",
+          "annotation": "Czy chcesz zwrócić zapasy do magazynu?",
+          "approve_title": "Zwróć",
+          "cancel_title": "Nie zwracaj"
+        },
+        "delete_order_warning_modal": {
+          "title": "Uwaga",
+          "annotation": "Czy chcesz usunąć zamówienie? Tej akcji nie można cofnąć."
+        },
+        "delete_order_or_clear_items_warning_modal": {
+          "title": "Uwaga",
+          "annotation": "Czy chcesz usunąć całe zamówienie lub usunąć wszystkie pozycje? Tej akcji nie można cofnąć.",
+          "approve_title": "Usuń zamówienie",
+          "cancel_title": "Wyczyść pozycje"
+        },
+        "rental_order_status_select": {
+          "formed": "Utworzone",
+          "accepted_to_warehouse": "Przyjęte do magazynu",
+          "sent_to_warehouse": "Wysłane do magazynu",
+          "delivered": "Dostarczone",
+          "reserved": "Zarezerwowane",
+          "shipped": "Wysłane",
+          "cancelled": "Anulowane",
+          "returned": "Zwrócone",
+          "placeholders": {
+            "select_status": "Wybierz status"
+          }
+        },
+        "order_status_select": {
+          "placeholders": {
+            "select_status": "Wybierz status"
+          },
+          "statuses": {
+            "reserved": "Zarezerwowane",
+            "sent_for_shipment": "Wysłane do wysyłki",
+            "shipped": "Wysłane",
+            "cancelled": "Anulowane",
+            "returned": "Zwrócone"
+          }
+        },
+        "products_tab_selector": {
+          "shipments": "Wysyłki",
+          "timetable": "Kalendarz",
+          "products": "Produkty"
+        },
+        "products_category_select": {
+          "no_categories": "Brak kategorii",
+          "placeholders": {
+            "select_category": "Kategoria"
+          }
+        },
+        "products_warehouse_select": {
+          "no_warehouses": "Brak magazynów",
+          "placeholders": {
+            "select_warehouse": "Magazyn"
+          }
+        },
+        "products_settings_button": {
+          "settings": "Ustawienia",
+          "module_settings": "Ustawienia modułu",
+          "table_settings": "Ustawienia tabeli",
+          "report_settings": "Ustawienia raportu"
+        },
+        "calendar": {
+          "month": "Miesiąc",
+          "week": "Tydzień",
+          "days": {
+            "short": {
+              "mo": "Pn",
+              "tu": "Wt",
+              "we": "Śr",
+              "th": "Cz",
+              "fr": "Pt",
+              "sa": "So",
+              "su": "Nd"
+            },
+            "long": {
+              "mo": "Poniedziałek",
+              "tu": "Wtorek",
+              "we": "Środa",
+              "th": "Czwartek",
+              "fr": "Piątek",
+              "sa": "Sobota",
+              "su": "Niedziela"
+            }
+          },
+          "resources_label": "Produkty",
+          "statuses": {
+            "reserved": "Zarezerwowane",
+            "rented": "Wynajem"
+          },
+          "fields": {
+            "phone": "Telefon",
+            "mail": "Mail",
+            "shifts": "Liczba dni",
+            "status": "Status",
+            "period": "Okres wynajmu"
+          }
+        }
+      }
+    },
+    "pages": {
+      "card_products_orders_page": {
+        "ui": {
+          "empty": "Brak zamówień w tej sekcji"
+        },
+        "hooks": {
+          "use_products_section_orders_columns": {
+            "name": "Nazwa zamówienia",
+            "warehouse": "Magazyn",
+            "status": "Status",
+            "created_at": "Utworzone",
+            "shipped_at": "Wysłane",
+            "creator": "Twórca",
+            "order": "Zamówienie-{{number}}"
+          },
+          "use_rental_products_section_orders_columns": {
+            "name": "Nazwa",
+            "status": "Status",
+            "created_at": "Utworzone",
+            "creator": "Twórca",
+            "order": "Zamówienie-{{number}}",
+            "shipment": "Wysyłka dla zamówienia #{{number}}",
+            "linked_entity": "Powiązana jednostka"
+          }
+        }
+      },
+      "card_products_order_page": {
+        "templates": {
+          "products_order_block_template": {
+            "new_order": "Nowe zamówienie",
+            "save": "Zapisz",
+            "cancel": "Anuluj",
+            "added_to": "Dodane do {{entity_name}}",
+            "empty": "Nie dodałeś jeszcze produktów do zamówienia"
+          },
+          "products_warehouse_block_template": {
+            "product_management_for_sales": "Zarządzanie Zapasami",
+            "product_management_rentals": "Zarządzanie Wynajmem",
+            "products": "Produkty",
+            "warehouse": "Magazyn",
+            "add": "Dodaj",
+            "reset": "Resetuj",
+            "empty": "Magazyn jest pusty",
+            "warehouse_select_hint": "Magazyn wybrany w tej sekcji musi odpowiadać zamówionemu magazynowi w górnej sekcji (zamówienie). Jeśli chcesz wybrać inny magazyn tutaj, musisz najpierw wyczyścić lub zmienić wybrany magazyn w górnej sekcji. Każdy magazyn wybrany tutaj zostanie automatycznie przeniesiony do górnej sekcji."
+          }
+        },
+        "common": {
+          "products_order_price_head_cell": {
+            "price": "Cena,"
+          },
+          "products_order_max_discount_hint": "Maksymalna zniżka wynosi",
+          "products_order_tax_header_cell": {
+            "tax": "Podatek,",
+            "tax_included": "Wliczone",
+            "tax_excluded": "Wyłączone"
+          },
+          "products_order_total_block": {
+            "total": "Łącznie: {{total}}"
+          },
+          "remove_selected_block": {
+            "remove_selected": "Usuń wybrane"
+          }
+        },
+        "hooks": {
+          "use_price_cell_columns": {
+            "name_fallback": "Brak nazwy ceny",
+            "name": "Nazwa",
+            "price": "Cena",
+            "currency": "Waluta"
+          }
+        },
+        "ui": {
+          "card_rental_products_order_component": {
+            "hooks": {
+              "use_rental_card_order_columns": {
+                "name": "Nazwa",
+                "discount": "Zniżka",
+                "availability": "Dostępność",
+                "amount": "Ilość"
+              },
+              "use_rental_warehouse_columns": {
+                "name": "Nazwa",
+                "price": "Cena",
+                "category": "Kategoria",
+                "availability": "Dostępność"
+              }
+            },
+            "ui": {
+              "rental_availability_cell": {
+                "available": "Dostępne",
+                "reserved": "Zarezerwowane",
+                "rent": "Wynajem"
+              },
+              "rental_order_periods_control": {
+                "new_period": "Nowy okres",
+                "periods_selected": "Wybrane okresy: {{count}}",
+                "add_new_period": "Dodaj nowy okres",
+                "hint_text": "Możesz wybrać lub zmodyfikować okresy wyłącznie podczas tworzenia nowych zamówień lub dla zamówień ze statusem 'Utworzone'.",
+                "placeholders": {
+                  "select_periods": "Wybierz okresy"
+                }
+              },
+              "card_rental_products_order_block_header": {
+                "placeholders": {
+                  "select_order_warehouse": "Wybierz magazyn zamówienia"
+                }
+              }
+            }
+          },
+          "card_products_order_component": {
+            "hooks": {
+              "use_available_columns": {
+                "unknown": "Nieznany...",
+                "name": "Nazwa",
+                "stock": "Stan",
+                "reserved": "Zarezerwowane",
+                "available": "Dostępne"
+              },
+              "use_card_order_columns": {
+                "name": "Nazwa",
+                "discount": "Zniżka",
+                "tax": "Podatek,",
+                "quantity": "Ilość",
+                "amount": "Kwota"
+              },
+              "use_reservations_columns": {
+                "warehouse_name": "Nazwa magazynu",
+                "stock": "Stan",
+                "reserved": "Zarezerwowane",
+                "available": "Dostępne",
+                "quantity": "Ilość"
+              },
+              "use_warehouse_columns": {
+                "name": "Nazwa",
+                "price": "Cena",
+                "category": "Kategoria",
+                "available": "Dostępne",
+                "quantity": "Ilość"
+              }
+            },
+            "ui": {
+              "available_head_cell": {
+                "available": "Dostępne",
+                "available_hint": "Najedź na komórkę w tej kolumnie, aby uzyskać szczegółowe informacje o stanie magazynu."
+              },
+              "card_products_order_block_header": {
+                "cancel_after_hint": "Możesz skonfigurować automatyczne anulowanie rezerwacji pozycji w zamówieniach. To pomaga zapobiec nieprawidłowym poziomom zapasów, które mogą wystąpić, gdy pozycje są zarezerwowane w transakcjach, ale te transakcje nie są przetwarzane lub zostały anulowane.",
+                "placeholders": {
+                  "select_order_warehouse": "Wybierz magazyn zamówienia"
+                }
+              },
+              "add_stock_placeholder": {
+                "add_stock": "Dodaj zapas do magazynu"
+              }
+            }
+          }
+        }
+      },
+      "product_categories_page": {
+        "title": "Utwórz kategorię (grupę produktów)",
+        "placeholders": {
+          "category_name": "Nazwa kategorii",
+          "subcategory_name": "Nazwa podkategorii"
+        },
+        "buttons": {
+          "add_category": "Dodaj kategorię",
+          "add_subcategory": "Dodaj podkategorię"
+        },
+        "ui": {
+          "delete_category_warning_modal": {
+            "cannot_be_undone": "Tej akcji nie można cofnąć.",
+            "title": "Czy na pewno chcesz usunąć {{name}}?",
+            "annotation": "Wszystkie podkategorie zostaną usunięte."
+          }
+        }
+      },
+      "product_page": {
+        "product_description": "Opis produktu",
+        "sku_already_exists_warning": "Produkt z SKU \"{{sku}}\" już istnieje",
+        "sku": "SKU",
+        "unit": "Jednostka",
+        "tax": "Podatek",
+        "category": "Kategoria",
+        "warehouse": "Magazyn",
+        "ui": {
+          "add_warehouse_placeholder": {
+            "add_warehouse": "Dodaj magazyn"
+          },
+          "product_actions_dropdown": {
+            "delete_product": "Usuń produkt"
+          },
+          "product_description": {
+            "placeholders": {
+              "add_description": "Dodaj opis"
+            }
+          },
+          "product_feed": {
+            "calendar": "Kalendarz",
+            "prices": "Ceny",
+            "stocks": "Zapas",
+            "images": "Zdjęcia",
+            "add_price": "Dodaj cenę",
+            "add_image": "Dodaj zdjęcie",
+            "delete_image": "Usuń zdjęcie",
+            "delete_images": "Usuń zdjęcia",
+            "placeholders": {
+              "name": "Nazwa ceny",
+              "unit_price": "Cena jednostkowa"
+            },
+            "labels": {
+              "maximum_discount": "Maksymalna zniżka na produkt",
+              "product_cost": "Koszt produktu"
+            }
+          },
+          "product_name_block": {
+            "placeholders": {
+              "product_name": "Nazwa produktu"
+            }
+          }
+        }
+      },
+      "warehouses_page": {
+        "page_title": "Skonfiguruj swoje magazyny",
+        "placeholders": {
+          "name": "Nazwa magazynu",
+          "select_warehouse": "Wybierz magazyn"
+        },
+        "add_warehouse": "Dodaj magazyn",
+        "ui": {
+          "delete_warehouse_modal": {
+            "title": "Czy na pewno chcesz usunąć {{name}}?",
+            "annotation": "Wszystkie zapasy w magazynie zostaną wyczyszczone.",
+            "annotation_move_stocks": "Wszystkie zapasy w magazynie zostaną wyczyszczone. Alternatywnie, masz możliwość przeniesienia wszystkich zapasów do innego magazynu, jeśli jest dostępny.",
+            "placeholders": {
+              "move_stocks_to": "Przenieś zapasy do..."
+            }
+          }
+        }
+      },
+      "products_page": {
+        "no_warehouses_or_categories": "Brak magazynów lub kategorii do wyświetlania filtrów",
+        "title": {
+          "sale": "Sprzedaż",
+          "rental": "Wynajem",
+          "shipments": "Wysyłki",
+          "calendar": "Kalendarz"
+        },
+        "tabs": {
+          "products": "Produkty",
+          "timetable": "Kalendarz",
+          "shipments": "Wysyłki",
+          "reports": "Raporty"
+        },
+        "all_columns_hidden": "Wszystkie kolumny są ukryte w ustawieniach tabeli",
+        "table_settings": "Ustawienia tabeli",
+        "display_columns": "Wyświetl kolumny",
+        "add_product": "Dodaj produkt",
+        "empty": "Nie dodałeś jeszcze żadnych produktów",
+        "show_empty_resources": "Pokaż puste zasoby",
+        "hide_empty_resources": "Ukryj puste zasoby",
+        "hooks": {
+          "use_products_columns": {
+            "name": "Nazwa",
+            "prices": "Ceny",
+            "sku": "SKU",
+            "tax": "Podatek",
+            "stocks": "Zapas",
+            "unit": "Jednostka",
+            "availability": "Dostępność"
+          },
+          "use_product_stocks_columns": {
+            "warehouse": "Magazyn",
+            "reserved": "Zarezerwowane",
+            "available": "Dostępne",
+            "stock": "Stan"
+          },
+          "use_create_stocks_columns": {
+            "warehouse": "Magazyn",
+            "stock": "Stan"
+          }
+        },
+        "ui": {
+          "add_product_modal": {
+            "changes_not_saved_warning_title": "Czy na pewno chcesz zamknąć to okno?",
+            "changes_not_saved_warning_annotation": "Wszystkie zmiany zostaną utracone.",
+            "changes_not_saved_warning_approve_title": "Zamknij mimo to",
+            "barcodes_hint": "Możesz skanować kody kreskowe skanerem lub wprowadzać je ręcznie w tym polu. Każdy kod kreskowy w sekcji musi być unikalny.",
+            "sku_already_exists_warning": "Produkt z SKU \"{{sku}}\" już istnieje",
+            "types": {
+              "product": "Produkt",
+              "service": "Usługa",
+              "kit": "Zestaw"
+            },
+            "add_product": "Dodaj produkt",
+            "name": "Nazwa",
+            "type": "Typ",
+            "add_photo": "Dodaj zdjęcie",
+            "description": "Opis",
+            "sku": "SKU",
+            "unit": "Jednostka",
+            "tax": "Podatek",
+            "category": "Kategoria",
+            "prices": "Ceny",
+            "stocks": "Zapas"
+          },
+          "photo_block_item": {
+            "alt": "Produkt {{name}}"
+          },
+          "product_price_list": {
+            "add_price": "Dodaj cenę"
+          },
+          "product_search_block": {
+            "placeholders": {
+              "search_products": "Szukaj produktów"
+            }
+          },
+          "product_stocks_modal": {
+            "title": "Ustaw zapasy produktów w każdym magazynie"
+          },
+          "create_stocks_modal": {
+            "title": "Określ zapasy produktów"
+          }
+        }
+      },
+      "shipment_page": {
+        "hooks": {
+          "use_shipment_columns": {
+            "name": "Nazwa",
+            "sku": "SKU",
+            "available": "Dostępne",
+            "quantity": "Ilość"
+          },
+          "use_rental_shipment_columns": {
+            "name": "Nazwa",
+            "sku": "SKU",
+            "tax": "Podatek",
+            "discount": "Zniżka",
+            "total": "Łącznie",
+            "quantity": "Ilość"
+          }
+        },
+        "ui": {
+          "shipment_page_secondary_header": {
+            "order": "Zamówienie-{{number}}"
+          },
+          "rental_shipment_page_secondary_header": {
+            "order": "Zamówienie-{{number}}"
+          },
+          "some_products_not_checked_warning_modal": {
+            "title": "Niektóre produkty nie są sprawdzone",
+            "annotation": "Próbujesz zmienić status zamówienia, w którym niektóre produkty nie są sprawdzone. Czy chcesz zmienić status mimo to?",
+            "approve_title": "Zmień mimo to"
+          },
+          "product_barcodes_control": {
+            "barcode": "Kod kreskowy",
+            "modals": {
+              "product_is_not_in_order_warning_modal": {
+                "title": "Produkt nie jest w tym zamówieniu",
+                "approve_title": "Dodaj produkt do zamówienia",
+                "annotation": "Produkt związany z kodem kreskowym \"{{barcode}}\" nie jest uwzględniony w tym zamówieniu. Masz możliwość dodania go ręcznie lub kontynuowania bez niego."
+              },
+              "product_does_not_exist_warning_modal": {
+                "title": "Produkt nie istnieje",
+                "approve_title": "Utwórz produkt",
+                "annotation": "Produkt z kodem kreskowym \"{{barcode}}\" nie istnieje w tej sekcji produktów. Możesz ręcznie utworzyć go na stronie produktów."
+              }
+            }
+          }
+        }
+      },
+      "shipments_page": {
+        "hooks": {
+          "use_shipments_columns": {
+            "unknown": "Nieznany...",
+            "name": "Nazwa",
+            "shipment": "Wysyłka dla zamówienia #{{number}}",
+            "warehouse": "Magazyn",
+            "shipped_at": "Wysłane",
+            "created_at": "Utworzone",
+            "status": "Status",
+            "linked_entity": "Powiązana jednostka"
+          }
+        },
+        "ui": {
+          "shipments_table": {
+            "all_columns_hidden": "Wszystkie kolumny są ukryte w ustawieniach tabeli",
+            "empty": "Brak zaplanowanych wysyłek"
+          }
+        }
+      }
+    }
+  }
+}

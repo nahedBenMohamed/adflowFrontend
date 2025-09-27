@@ -1,0 +1,19 @@
+{
+  "error_page": {
+    "title": "Coś poszło nie tak",
+    "annotation": "Przepraszamy, ale coś poszło nie tak. Zostaliśmy powiadomieni o tym problemie i wkrótce go sprawdzimy. Prosimy przejść na stronę główną lub spróbować ponownie załadować stronę.",
+    "show_error": "Pokaż komunikat o błędzie",
+    "home": "Strona główna",
+    "reload": "Załaduj stronę ponownie"
+  },
+  "forbidden_page": {
+    "title": "Dostęp do tej strony jest zabroniony.",
+    "back": "Wróć",
+    "home": "Strona główna"
+  },
+  "not_found_page": {
+    "title": "Nie można znaleźć tej strony.",
+    "home": "Strona główna",
+    "back": "Wróć"
+  }
+}

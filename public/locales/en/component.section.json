@@ -1,0 +1,191 @@
+{
+  "section": {
+    "section_header_with_boards": {
+      "board": "Board",
+      "list": "List",
+      "dashboard": "Dashboard",
+      "reports": "Reports",
+      "timeline": "Gantt",
+      "automation": "Automation",
+      "bpmn_2_0": "BPMN 2.0",
+      "bpmn_2_0_soon": "BPMN 2.0 (Soon...)",
+      "tooltips": {
+        "reports_denied": "You don't have permission to view reports. Contact account administrator for access.",
+        "dashboard_denied": "You don't have permission to view dashboard. Contact account administrator for access."
+      }
+    },
+    "empty_projects_block": {
+      "annotation": "You don't have any projects yet or nothing has been found with the selected filters."
+    },
+    "common": {
+      "add_card": "Add card",
+      "new_stage": "New Stage",
+      "create_button_tooltip": {
+        "universal": "Add Card",
+        "partner": "Add Partner",
+        "deal": "Add Deal",
+        "contact": "Add Contact",
+        "company": "Add Company",
+        "supplier": "Add Supplier",
+        "contractor": "Add Contractor",
+        "hr": "Add Candidate",
+        "project": "Add Project"
+      },
+      "cards_total": {
+        "universal": ["Cards", "Cards", "Cards"],
+        "partner": ["Partners", "Partners", "Partners"],
+        "customer": ["Customers", "Customers", "Customers"],
+        "deal": ["Cards", "Cards", "Cards"],
+        "contact": ["Contacts", "Contacts", "Contacts"],
+        "company": ["Companies", "Companies", "Companies"],
+        "supplier": ["Suppliers", "Suppliers", "Suppliers"],
+        "contractor": ["Contractors", "Contractors", "Contractors"],
+        "hr": ["Candidates", "Candidates", "Candidates"],
+        "project": ["Projects", "Projects", "Projects"]
+      },
+      "filter_button": {
+        "ui": {
+          "filter_drawer": {
+            "closed_at": "Closing Date",
+            "just_my_cards": "Just my Cards",
+            "sorting": "Sorting",
+            "creation_date": "Creation Date",
+            "owners": "Owners",
+            "stages": "Stages",
+            "tasks": "Tasks",
+            "placeholders": {
+              "selected_options": "Selected options",
+              "search_by_card_name": "Search by card name"
+            },
+            "sorting_options": {
+              "manual": "Manual",
+              "created_asc": "Created: from old to new",
+              "created_desc": "Created: from new to old",
+              "name_asc": "Name: ascending",
+              "name_desc": "Name: descending"
+            },
+            "tasks_options": {
+              "all": "All cards",
+              "with_task": "With tasks",
+              "without_task": "Without tasks",
+              "overdue_task": "With overdue tasks",
+              "today_task": "With today tasks"
+            },
+            "field_filter_string": {
+              "is_empty": "Is empty",
+              "is_not_empty": "Is not empty",
+              "contains": "Contains...",
+              "placeholders": {
+                "value": "Value"
+              }
+            },
+            "field_filter_exists": {
+              "is_empty": "Is empty",
+              "is_not_empty": "Is not empty"
+            }
+          },
+          "date_period_picker": {
+            "date_period_segmented_control": {
+              "period": "Period",
+              "period_hint": "For a selected period",
+              "from": "From",
+              "from_hint": "From selected date",
+              "to": "To",
+              "to_hint": "Before selected date"
+            },
+            "placeholders": {
+              "select_period": "Select period"
+            }
+          },
+          "field_filter_items": {
+            "field_filter_boolean": {
+              "switch_on": "Switch ON",
+              "switch_off": "Switch OFF"
+            },
+            "field_filter_number": {
+              "from": "From",
+              "to": "To"
+            }
+          }
+        }
+      },
+      "settings_button": {
+        "module_settings": "Module settings",
+        "settings": "Settings",
+        "import": "Import",
+        "get_import_template": "Get import template",
+        "board_settings": "Board settings",
+        "table_settings": "Table settings",
+        "upload_file": "Upload file",
+        "sales_pipeline_settings": "Sales pipeline settings",
+        "request_setup": "Request {{company}} setup",
+        "import_entities_modal": {
+          "title": "Import from Excel",
+          "annotation": "To import your database into {{company}}, follow a few simple steps:",
+          "perform_import": "Perform import",
+          "setting_up_file_to_import": {
+            "title": "Setting up a file to import",
+            "step1": "Download an example template file;",
+            "step2": "Enter your data into a table that matches the {{company}} field structure;",
+            "step3": "After completing the column matching settings, you can save the settings as an import template."
+          },
+          "import_file": {
+            "title": "Import file",
+            "step1": "Click \"Upload file\";",
+            "step2": "In the window that opens, select the previously filled template;",
+            "step3": "After downloading, click the \"Perform import\" button."
+          }
+        },
+        "import_in_background_info_modal": {
+          "title": "Import from Excel",
+          "content": "The import process is currently running in the background. You may continue working in {{company}} as usual, and we will notify you once the process has been completed.",
+          "ok": "Ok"
+        }
+      },
+      "search_box": {
+        "nothing_found": "Nothing was found",
+        "placeholder": "Search..."
+      },
+      "section_table_settings_sidebar": {
+        "table_settings": "Table Settings",
+        "display_columns": "Display Columns"
+      }
+    },
+    "section_table": {
+      "hidden": "Hidden",
+      "hidden_hint": "You can not view and access this field because it was hidden in the module field settings by the account administrator.",
+      "empty": "You have not added any cards yet",
+      "all_columns_hidden": "All columns are hidden in table settings",
+      "name": "Name",
+      "owner": "Owner",
+      "stage": "Stage",
+      "date_created": "Date created",
+      "value": "Value",
+      "participants": "Participants",
+      "start_date": "Start date",
+      "end_date": "End date",
+      "description": "Description",
+      "placeholders": {
+        "participants": "Add participants"
+      },
+      "select_all": {
+        "title": "Mass selection",
+        "description": "Apply to all cards ({{count}}) or only for the current page?",
+        "all_elements": "For all cards",
+        "for_page": "Only for the current page"
+      },
+      "batch_actions": {
+        "cards_selected": "Cards selected: {{count}}",
+        "change_responsible": "Change responsible",
+        "change_stage": "Change stage",
+        "delete": "Delete",
+        "change_stage_annotation": "Select a new stage for the selected cards.",
+        "action_cannot_be_undone": "This action can not be undone.",
+        "change_responsible_annotation": "Select a new responsible user for the selected cards.\nThis action can not be undone.",
+        "delete_warning_title": "Delete selected cards",
+        "delete_warning_annotation": "Are you sure you want to delete the selected cards? This action can not be undone.",
+        "select_linked_entities_annotation": "Change the responsible user in the linked cards"
+      }
+    }
+  }
+}

@@ -1,0 +1,135 @@
+{
+  "tasks_page": {
+    "tasks_page_by_deadline": {
+      "unallocated": "Не запланировано",
+      "overdue": "Просрочено",
+      "today": "Сегодня",
+      "tomorrow": "Завтра",
+      "upcoming": "Предстоящее",
+      "resolved": "Выполнено",
+      "board": "Доска",
+      "calendar": "Календарь"
+    },
+    "common": {
+      "tasks_page_template": {
+        "create_new": "Новая задача"
+      },
+      "ui": {
+        "empty_list_block": {
+          "annotation1": "У вас пока нет задач или ничего не было найдено с выбранными фильтрами.",
+          "annotation2": "Используйте кнопку",
+          "annotation3": "для создания новой задачи."
+        },
+        "tasks_page_header": {
+          "timeline": "Гант",
+          "title": "Задачи и активности",
+          "board": "Доска",
+          "list": "Список",
+          "calendar": "Календарь",
+          "user_select_button": "Участники",
+          "settings_button": {
+            "sync": "Синхронизировать",
+            "table_settings": "Настройки таблицы",
+            "settings": "Настройки",
+            "board_settings": "Настройки доски"
+          },
+          "create_button_tooltip": "Добавить задачу"
+        },
+        "tasks_list_settings_drawer": {
+          "table_settings": "Настройки таблицы",
+          "display_columns": "Отображение колонок"
+        },
+        "tasks_filter_drawer": {
+          "just_my_tasks": "Только мои задачи",
+          "sorting": "Сортировка",
+          "done": "Выполнено",
+          "sorting_options": {
+            "manual": "Ручная сортировка",
+            "created_asc": "Создано: от старых к новым",
+            "created_desc": "Создано: от новых к старым"
+          },
+          "created_at": "Дата создания",
+          "start_date": "Дата начала",
+          "end_date": "Дата окончания",
+          "resolve_date": "Дата выполнения",
+          "assignee": "Ответственный",
+          "reporter": "Постановщик",
+          "type": "Тип",
+          "stage": "Этап",
+          "groups": "Группы",
+          "linked_cards": "Привязанные карточки",
+          "placeholders": {
+            "card_name": "Название карточки",
+            "search_by_task_name": "Искать по названию задачи",
+            "search_by_activity_name": "Искать по названию активности"
+          }
+        }
+      }
+    },
+    "tasks_page_calendar": {
+      "new_event": "Новая задача",
+      "no_events": "Нет задач на этот период.",
+      "all_day": "Весь день"
+    },
+    "tasks_page_list": {
+      "all_columns_hidden": "Все колонки скрыты в настройках таблицы"
+    },
+    "activity_item": {
+      "no_card_access": "У вас нет доступа к этой карточке",
+      "drag_disabled": "У вас нет разрешения на перемещение этой карточки. Обратитесь к администратору учетной записи для получения доступа."
+    },
+    "tasks_page_timeline": {
+      "annotation": {
+        "minute": ["минута", "минуты", "минут"],
+        "hour": ["час", "часа", "часов"],
+        "day": ["день", "дня", "дней"]
+      },
+      "today": "Сегодня",
+      "view": {
+        "fifteen_minutes": "15 минут",
+        "hour": "Час",
+        "day": "День",
+        "week": "Неделя",
+        "month": "Месяц",
+        "quarter": "Квартал",
+        "half_year": "Полугодие"
+      },
+      "format": {
+        "major_format": {
+          "fifteen_minutes": "D MMMM YYYY",
+          "hour": "D MMMM YYYY",
+          "day": "MMMM YYYY",
+          "week": "MMMM YYYY",
+          "month": "YYYY",
+          "quarter": "YYYY",
+          "half_year": "YYYY"
+        },
+        "minor_format": {
+          "fifteen_minutes": "HH:mm",
+          "hour": "HH",
+          "day": "D",
+          "week": "wo [week]",
+          "month": "MMMM",
+          "quarter": "[Q]Q",
+          "half_year": "YYYY-"
+        }
+      }
+    },
+    "task_item": {
+      "planned_time": "Планируемое время:",
+      "completed": "Выполнено",
+      "complete": "Выполнить",
+      "delete_task": "Удалить задачу",
+      "copy_link": "Копировать ссылку",
+      "drag_disabled": "У вас нет разрешения на перемещение этой задачи. Обратитесь к администратору учетной записи для получения доступа.",
+      "date": "{{date}} в {{time}}"
+    },
+    "time_allocation_card": {
+      "users": "Пользователи",
+      "planned_time": "Планируемое время",
+      "total": "Всего",
+      "hour": "ч",
+      "minute": "м"
+    }
+  }
+}

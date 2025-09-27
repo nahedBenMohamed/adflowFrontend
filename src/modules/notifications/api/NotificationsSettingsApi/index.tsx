@@ -1,0 +1,1 @@
+export { notificationsSettingsApi } from './NotificationsSettingsApi';

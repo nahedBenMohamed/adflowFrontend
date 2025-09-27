@@ -1,0 +1,140 @@
+# Модели, dto и сериализация данных
+
+<br />
+
+## Получения данных с бэкенда
+
+<br />
+
+**Dto** – `data transfer object`. Данные с бэкенда должны приходить в сериализованном виде, поэтому, например, `UtcDate` не передается объектом, а конвертируется в строку ISO-формата. Однако, на фронтенде гораздо легче оперировать с объектами и классами, которые имеют свою методы, конструкторы и т.д. Поэтому в нашей системе распространена стандартная практика преобразований. Как правило, dto на фронтенде === dto на бэкенде, а модель, в зависимости от ситуации, можем незначительно отличаться, обрастать методами.
+
+Чаще всего обычные `dto` – это интерфейсы, так как они используются только для типизации и не применяются в клиентском коде. `dto` для создания или редактирования – это классы, так как в коде легче и более безопасно создавать их через конструкторы. Почти все модели, которые являются производными от `dto` – это классы.
+
+<br />
+
+### api-service, получение данных по запросу
+
+<br />
+
+Как правило, для получения данных используются методы в api-сервисе в слайсе `/api`:
+
+```ts
+interface UserDto {
+  id: number;
+  name: string;
+  createdAt: string;
+}
+
+class User {
+  id: number;
+  name: string;
+  createdAt: UtcDate;
+}
+
+class UsersApi {
+  getUser = async (id: number): Promise<User> => {
+    const response = await baseApi.get(...)
+
+    return response.data;
+  }
+}
+```
+
+Для каждой логической группы эндпоинтов как правило делается свой сервис. Код, представленный выше, не совсем корректный, так как на выходе baseApi мы получаем **dto** – в нашем случае `UserDto`. Для конвертации из **dto** в моделях как правило используются `static` методы – `fromDto` и `fromDtos`.
+
+<br />
+
+### Конвертация dto в модели
+
+<br />
+
+Для данного примера методы конвертации и сама конвертация в методе сервиса будут выглядеть примерно так:
+
+```ts
+
+class User {
+  id: number;
+  name: string;
+  createdAt: UtcDate;
+
+  constructor({ id, name, createdAt }: UserDto) {
+    this.id = id;
+    this.name = name;
+    this.createdAt = createdAt;
+  }
+
+  static fromDto(dto: UserDto): User {
+    return new User({
+      id: dto.id,
+      name: dto.name,
+      createdAt: UtcDate.parseISO(dto.createdAt),
+    });
+  }
+
+  static fromDtos(dtos: UserDto[]): User[] {
+    return dtos.map(this.fromDto);
+  }
+}
+
+class UsersApi {
+  getUser = async (id: number): Promise<User> => {
+    const response = await baseApi.get(...)
+
+    return User.fromDto(response.data);
+  }
+
+  getUsers = async (): Promise<User[]> => {
+    const response = await baseApi.get(...)
+
+    return User.fromDtos(response.data);
+  }
+}
+```
+
+При выполнении этих действий мы создадим экземпляр или экземпляры класса `User`, будем иметь правильный свойства, сможем вызывать методы модели и т.д.
+
+<br />
+
+### class или interface?
+
+<br />
+
+- Классы (`class`), как правило, используются для моделей, который вероятнее всего будут иметь методы, геттеры или сеттеры, а также которые будут конвертированы в сервисе из **dto**. Также, классы могут быть использованы для CRUD-dto, типа `UpdateUserDto`, `CreateUserDto` и т.д. так как в данном случае просто удобнее и безопаснее использовать конструктор.
+
+- Интерфейсы (`interface`) используются для моделей, которые не имеют методов и которые не конвертируются из **dto**. Как правило, все **dto**, кроме CRUD-dto, создаются с помощью интерфейсов, так как они используются только для типизации и не применяются в клиентском коде.
+
+<br />
+
+## Передача данных с фронтенда
+
+<br />
+
+Данные с фронтенда на бэкенд также должны передаваться в сериализованном виде. Как правило, мы что-то передаем в create или update `POST`, `PUT` или `PATCH` методах. Пример обновления пользователя будет выглядеть следующим образом:
+
+```ts
+const newName = 'New name';
+const newUpdatedAt = UtcDate.now();
+
+class UpdateUserDto {
+  name: string;
+  updatedAt: string;
+
+  constructor({ name, updatedAt }: UpdateUserDto) {
+    this.name = name;
+    this.updatedAt = updatedAt;
+  }
+}
+
+const updateUserDto = new UpdateUserDto({
+  name: user.name,
+  updatedAt: newUpdatedAt.formatISO(),
+});
+
+class UsersApi {
+  updateUser = async ({ id, dto }: { id: number, dto: UpdateUserDto }): Promise<User> => {
+    const response = await baseApi.put(...)
+
+    return User.fromDto(response.data);
+  }
+}
+```

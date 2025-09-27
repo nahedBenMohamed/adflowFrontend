@@ -1,0 +1,79 @@
+{
+  "notifications": {
+    "tags": {
+      "task_new": "New task",
+      "task_overdue": "Task",
+      "task_before_start": "Task",
+      "task_overdue_employee": "Task",
+      "activity_new": "New activity",
+      "activity_overdue": "Activity",
+      "activity_before_start": "Activity",
+      "activity_overdue_employee": "Activity",
+      "task_comment_new": "New task comment",
+      "chat_message_new": "New chat message",
+      "mail_new": "New mail",
+      "entity_note_new": "New note",
+      "entity_new": "New {{entityTypeName}}",
+      "entity_responsible_change": "New responsible {{entityTypeName}}",
+      "entity_import_completed": "Import",
+      "yesterday": "Yesterday at {{time}}",
+      "date": "{{date}} at {{time}}"
+    },
+    "components": {
+      "delay_select": {
+        "no_delay": "No Delay",
+        "5_minutes": "5 minutes",
+        "10_minutes": "10 minutes",
+        "15_minutes": "15 minutes",
+        "30_minutes": "30 minutes",
+        "1_hour": "1 hour"
+      },
+      "notifications_panel": {
+        "mute_notifications": "Mute notifications sound",
+        "unmute_notifications": "Unmute notifications sound",
+        "no_notifications": "You have no notifications yet",
+        "ui": {
+          "block_header_annotation": {
+            "overdue": "Overdue",
+            "overdue_employee": "{{employee}} is overdue",
+            "after_time": "After {{time}}",
+            "from_employee": "from {{employee}}",
+            "system_notice": "System notice",
+            "message": "Message",
+            "yesterday": "Yesterday at {{time}}",
+            "date": "{{date}} at {{time}}"
+          },
+          "notification_settings": {
+            "title": "Notifications"
+          },
+          "notification_settings_modal": {
+            "title": "Notifications Setup",
+            "enable_popup": "Pop-up Notifications",
+            "new": "New",
+            "new_mail": "New Mail",
+            "new_chat_message": "New Chat Message",
+            "new_note": "New Note",
+            "entity_responsible_change": "Entity Responsible Change",
+            "entity_import_complete": "Entity Import Complete",
+            "new_task_comment": "New Task Comment",
+            "unknown": "Unknown",
+            "new_task": "New Task",
+            "overdue_task": "Overdue Task",
+            "before_task_start": "Before the start of a Task",
+            "overdue_task_employee": "Overdue Task for Employee(s)",
+            "new_activity": "New Activity",
+            "overdue_activity": "Overdue Activity",
+            "before_activity_start": "Before the start of an Activity",
+            "overdue_activity_employee": "Overdue Activity for Employee(s)",
+            "placeholders": {
+              "select": "Select"
+            }
+          },
+          "read_all_button": {
+            "read_all": "Read all"
+          }
+        }
+      }
+    }
+  }
+}

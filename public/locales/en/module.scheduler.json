@@ -1,0 +1,219 @@
+{
+  "scheduler": {
+    "pages": {
+      "scheduler_board_view_page": {
+        "create_appointment": "Create Meeting",
+        "stats_footer": {
+          "assigned": {
+            "label": "Assigned",
+            "hint": "Unconfirmed visits"
+          },
+          "confirmed": {
+            "label": "Confirmed",
+            "hint": "Confirmed visits"
+          },
+          "completed": {
+            "label": "Completed",
+            "hint": "Completed visits"
+          },
+          "not_took_place": {
+            "label": "No-Show",
+            "hint": "Past visits not marked as completed"
+          },
+          "not_scheduled": {
+            "label": "No Follow-Up",
+            "hint": "Visits with no follow-up scheduled"
+          },
+          "newbies": {
+            "label": "First-Time Visit",
+            "hint": "First-time visitors"
+          },
+          "total": {
+            "label": "Total",
+            "hint": "Total number of visits"
+          }
+        }
+      },
+      "appointment_card_list_page": {
+        "visit_date": "Visit date"
+      },
+      "scheduler_schedule_view_page": {
+        "sync": "Synchronize",
+        "report_settings": "Report settings",
+        "module_settings": "Module settings",
+        "stats_settings": "Statistics settings",
+        "settings": "Settings",
+        "report": "Report",
+        "overview": "Calendar",
+        "responsible": "Responsible",
+        "stage": "Stage",
+        "not_provided": "Not provided",
+        "statuses": {
+          "scheduled": "Scheduled",
+          "confirmed": "Confirmed",
+          "completed": "Completed",
+          "cancelled": "Cancelled"
+        },
+        "created": "Created",
+        "visit": "Meeting {{number}}",
+        "description": "Description",
+        "email": "Email",
+        "phone": "Phone",
+        "price": "Price",
+        "quantity": "Quantity",
+        "discount": "Discount",
+        "new_event": "New Meeting",
+        "create_appointment": "Create Meeting",
+        "tooltips": {
+          "reports_denied": "You don't have permission to view reports. Contact account administrator for access."
+        },
+        "placeholders": {
+          "search_visits": "Search Meetings"
+        },
+        "hooks": {
+          "use_appointments_history_services_columns": {
+            "name": "Name",
+            "price": "Price",
+            "quantity": "Quantity",
+            "discount": "Discount",
+            "amount": "Amount"
+          },
+          "use_appointments_history_columns": {
+            "date": "Date",
+            "time": "Time",
+            "performer": "Performer",
+            "services": "Services",
+            "total": "Total",
+            "status": "Status"
+          },
+          "use_appointment_service_block_columns": {
+            "discount": "Discount",
+            "quantity": "Quantity",
+            "amount": "Amount"
+          }
+        },
+        "ui": {
+          "add_appointment_modal": {
+            "error": "Unable to create the meeting. This could be due to either an attempt to create a meeting that overlaps with an existing one or end date is earlier than start date.",
+            "visits_history_empty": "Meetings history is empty",
+            "no_planned_visits": "No planned meetings",
+            "save_changes": "Save changes",
+            "planned_visit_title": "{{date}} from {{startTime}} to {{endTime}}",
+            "general_information": "General Information",
+            "planned_visits": "Planned Meetings",
+            "visits_history": "Meetings History",
+            "title": "Title",
+            "visit": "Meeting #{{number}}",
+            "edit_visit": "Edit meeting – {{name}}",
+            "new_visit": "Schedule a Meeting",
+            "visit_parameters": "Meeting Parameters",
+            "status": "Status",
+            "scheduler": "Meeting Scheduler",
+            "select_users_group": "Select Users Group",
+            "select_user": "Select User",
+            "description": "Description",
+            "from": "From:",
+            "to": "To:",
+            "date_and_time": "Date & Time",
+            "addition_of_services": "Addition of Services",
+            "add_service": "Add Service",
+            "no_services": "No services",
+            "warning_title": "Changes are not saved",
+            "warning_annotation": "Are you sure you want to close this window? All changes wll be lost.",
+            "close": "Close",
+            "delete": "Delete",
+            "count": "Total Visits",
+            "last_visit": "Last Visit",
+            "completed_count": [
+              "{{count}} appointment held",
+              "{{count}} appointments held",
+              "{{count}} appointments held"
+            ],
+            "placeholders": {
+              "select_time_period": "Time period",
+              "title": "Meeting title",
+              "entity_name": "Entity name",
+              "search_services": "Search services to add",
+              "user": "User",
+              "users_group": "Users Group",
+              "appointment_notes": "Meeting Note"
+            },
+            "repeating_appointments_block": {
+              "header": "Recurring Visits",
+              "hint": "Set up the interval and the number of repeat appointments, if necessary. Meetings will be scheduled on the business days specified in the settings.",
+              "interval": "Interval",
+              "count": "Count",
+              "intervals": {
+                "none": "No Repeat",
+                "day": "Daily",
+                "week": "Weekly",
+                "month": "Monthly"
+              },
+              "dates_display": {
+                "one_visit": "The recurring visit is scheduled for {{date}} at {{time}}",
+                "visits_list": "Recurring visits are scheduled for {{dates}} at {{time}}",
+                "and": " and ",
+                "visits_interval_day": "Recurring visits are scheduled daily from {{from}} to {{to}} at {{time}}",
+                "visits_interval_week": "Recurring visits are scheduled weekly from {{from}} to {{to}} at {{time}}",
+                "visits_interval_month": "Recurring visits are scheduled monthly from {{from}} to {{to}} at {{time}}"
+              },
+              "list": {
+                "title": "Recurring Meetings",
+                "hint": "Select dates for recurring meetings if needed.",
+                "dates_select": "Meeting Dates",
+                "add_new_appointment": "Add Meeting",
+                "new_appointment": "New Meeting",
+                "placeholders": {
+                  "dates_select": "Select dates"
+                }
+              }
+            },
+            "batch_cancel": {
+              "cancel_all": "Cancel All",
+              "warning_title": "Are you sure you want to cancel all scheduled meetings?",
+              "warning_annotation": [
+                "{{count}} meeting will be canceled.",
+                "{{count}} meetings will be canceled.",
+                "{{count}} meetings will be canceled."
+              ],
+              "back": "Back",
+              "cancel": "Cancel"
+            },
+            "duplicate_warning_modal": {
+              "move": "Move",
+              "same_time_title": "A meeting is already scheduled for this time",
+              "same_day_title": "A meeting is already scheduled for this day",
+              "same_time_annotation": "This calendar doesn’t allow duplicate meetings on the same day. Edit the existing meeting or change the date of this one.",
+              "same_day_annotation": "This calendar doesn’t allow duplicate meetings on the same day. Would you like to move the meeting scheduled for {{time}}?"
+            },
+            "intersect_warning_modal": {
+              "title": "Meeting Overlap",
+              "annotation": "The meeting overlaps with an already scheduled one in this calendar. Choose a different time or change the responsible."
+            }
+          },
+          "stats_settings_drawer": {
+            "title": "Statistics Settings",
+            "description": "Displayed statistic values",
+            "stats": {
+              "assigned": "Assigned",
+              "confirmed": "Confirmed",
+              "completed": "Completed",
+              "not_took_place": "No-Show",
+              "not_scheduled": "No Follow-Up",
+              "newbies": "First-Time Visit",
+              "total": "Total"
+            }
+          },
+          "local_time_warning": {
+            "local_correction": [
+              "Local time adjustment: {{hours}} hour",
+              "Local time adjustment: {{hours}} hours",
+              "Local time adjustment: {{hours}} hours"
+            ],
+            "hint": "You are not in the time zone specified in the system settings, so the working time in the calendar and the meeting time are shifted by the specified number of hours. If you think this is a mistake, change the time zone in the settings or contact support."
+          }
+        }
+      }
+    }
+  }
+}

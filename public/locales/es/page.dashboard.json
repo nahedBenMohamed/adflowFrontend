@@ -1,0 +1,18 @@
+{
+  "dashboard_page": {
+    "top_sellers": {
+      "title": "Calificación",
+      "hint": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    "analytics": {
+      "total_entities": "Total",
+      "won_entities": "Ganados",
+      "lost_entities": "Perdidos",
+      "new_entities": "Nuevos",
+      "total_tasks": "Total de Tareas",
+      "completed_tasks": "Tareas Completadas",
+      "expired_tasks": "Tareas Vencidas",
+      "no_tasks": "Sin Tareas"
+    }
+  }
+}

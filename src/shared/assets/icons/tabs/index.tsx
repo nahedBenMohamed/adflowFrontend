@@ -1,0 +1,9 @@
+export { ReactComponent as BoardTabIcon } from './board_tab.svg';
+export { ReactComponent as CalendarTabIcon } from './calendar_tab.svg';
+export { ReactComponent as DashboardTabIcon } from './dashboard_tab.svg';
+export { ReactComponent as ListTabIcon } from './list_tab.svg';
+export { ReactComponent as OverviewTabIcon } from './overview_tab.svg';
+export { ReactComponent as ProductsTabIcon } from './products_tab.svg';
+export { ReactComponent as ReportsTabIcon } from './reports_tab.svg';
+export { ReactComponent as ShipmentsTabIcon } from './shipments_tab.svg';
+export { ReactComponent as TasksCalendarTabIcon } from './tasks_calendar_tab.svg';

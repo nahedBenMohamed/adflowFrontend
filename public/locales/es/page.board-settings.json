@@ -1,0 +1,33 @@
+{
+  "board_settings": {
+    "ui": {
+      "board_settings_header": {
+        "header": "Configuración del tablero",
+        "delete_board": "Eliminar tablero",
+        "title": "¡Atención!",
+        "annotation": "Eliminar el tablero eliminará permanentemente todas las tarjetas en él. ¿Está seguro de que desea continuar?",
+        "save": "Guardar",
+        "cancel": "Cancelar",
+        "leave": "Salir de la configuración"
+      },
+      "stage_name_hint": "Máximo {{length}} caracteres"
+    },
+    "entity_type_board_settings_page": {
+      "automation_new": "Automatización 2.0",
+      "bpmn_2_0": "BPMN 2.0",
+      "bpmn_2_0_soon": "BPMN 2.0 (Próximamente...)",
+      "warning_title": "No puedes eliminar el último tablero",
+      "warning_annotation": "Si deseas eliminar este tablero, por favor crea uno nuevo primero."
+    },
+    "task_board_settings_page": {
+      "warning_title": "No puedes eliminar el tablero del sistema",
+      "warning_annotation": "Este tablero es del sistema y no se puede eliminar."
+    },
+    "delete_stage_warning_modal": {
+      "warning_title": "¿Estás seguro de que deseas eliminar esta etapa?",
+      "warning_annotation": "Elige una etapa a la que deseas transferir los elementos existentes.",
+      "delete": "Eliminar",
+      "placeholder": "La etapa para transferir"
+    }
+  }
+}

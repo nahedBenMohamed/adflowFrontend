@@ -1,0 +1,806 @@
+import { commitPrefixes } from '../assets/docs-images';
+import { branchesExample } from '../assets/docs-images';
+import { requestExample } from '../assets/docs-images';
+
+# Amwork Styleguide
+
+<br />
+
+## git-style
+
+<br />
+
+### Branches Namings
+
+We have **five types** of branch each representing it's own mutation type:
+
+- `/feature` – some new feature (e.g. new Page, new Module, new Component);
+- `/fix` – bug, functionality or ui fixes;
+- `/refactor` – code or directories refactoring;
+- `/chore` – code maintenance (e.g. update packages, new scripts);
+- `/docs` – documentation changes;
+- `/hotfix` – hot fixes into main.
+
+In our repo we have to environments: **development** and **production**. Each environment has it's own branch: _develop_ and _master_. All the changes are made in the _develop_ branch and then merged into the _master_ branch. Branches names must be in _kebab-case_.
+
+<img width={640} height="auto" src={branchesExample} alt="Branches example" />
+
+<br />
+
+### Commits
+
+<img width={496} height="auto" src={commitPrefixes} alt="Commit prefixes" />
+
+<br />
+
+### Merge requests
+
+All merge request must follow the same _style_:
+
+**Name** – A brief description of the changes made in the merge request.
+**Description** – A detailed (but still brief) description of the changes made in the merge request.
+
+Assignee and reviewer also must be specified. Commits when merging must be squashed to keep the history clean.
+
+- If request is still in progress, then it must be marked as **[WIP]** (work in progress). For example:
+
+```mathematica
+[WIP] Add new component
+```
+
+- If request is pending and needs some comments, then it must be marked as **[RFC]** (request for comments). For example:
+
+```mathematica
+[RFC] Some weird functionality
+```
+
+- Closed requests must be marked as **[CLOSED]**. For example:
+
+```mathematica
+[CLOSED] Add another component
+```
+
+- Hotfix into main:
+
+```mathematica
+[HOTFIX] Critical bug
+```
+
+<img width={640} height="auto" src={requestExample} alt="Requests example" />
+
+<br />
+<br />
+
+## Code style
+
+<br />
+
+### General
+
+- Type **declaration** over type **assertion**. For example:
+
+```tsx
+// bad
+const numbers = [1, 2, 3].map(n => n + 1) as number[];
+
+// good
+const numbers: number[] = [1, 2, 3].map(n => n + 1);
+```
+
+<br />
+
+### TypeScript errors
+
+We are aiming not to use `@ts-ignore` and `@ts-nocheck` comments. If you are getting some errors from _TypeScript_, then you should try to fix them instead of ignoring them. If you are sure that you can not fix them, then you should add a `@ts-expect-error` with a brief comment explaining why you can not fix this error. For example:
+
+```typescript
+// bad
+// @ts-ignore
+const someFunction = () => {
+  // ...
+};
+
+// good
+// @ts-expect-error: We can not fix this error because of some reason
+const someFunction = () => {
+  // ...
+};
+```
+
+Related article – [https://www.totaltypescript.com/concepts/how-to-use-ts-expect-error](https://www.totaltypescript.com/concepts/how-to-use-ts-expect-error).
+
+<br />
+
+### Functions and methods
+
+We are highly recommend to get familiar with this concepts:
+
+1. Input / Output pattern – [https://redd.one/blog/thinking-in-functions](https://redd.one/blog/thinking-in-functions);
+2. Higher order functions – [https://redd.one/blog/thinking-in-functions-higher-order-functions](https://redd.one/blog/thinking-in-functions-higher-order-functions).
+
+- We prefer to use **arrow functions** instead of **function expressions**. All methods in the class must be **arrow functions** to prevent context issues (except for `static` methods and accessors).
+
+- If function has more than one required argument, then it is more preferable to use **object destructuring** instead of passing arguments in the function. For example:
+
+```tsx
+// bad
+const someFunction = (arg1: string, arg2: number, arg3: boolean) => {
+  // ...
+};
+
+// good
+const someFunction = ({ arg1, arg2, arg3 }: { arg1: string; arg2: number; arg3: boolean }) => {
+  // ...
+};
+```
+
+- Handlers inside the components must be named as `handleSomething` or `onSomething`:
+
+```tsx
+// bad
+const someFunction = () => {
+  // ...
+};
+
+// good
+const handleSomething = () => {
+  // ...
+};
+
+const onSomething = () => {
+  // ...
+};
+```
+
+_P.S. A lot of legacy code do not follow this rule, we are still in the process of refactoring it..._
+
+- Return type of all `async` functions and all class methods must be implicitly specified. If function is complex and has a lot of logic, then it's better to specify the return type explicitly as well.
+
+- Arguments of all functions must be explicitly typed.
+
+- We do not implicitly specify `public` in class methods, because it's default access modifier. If method is `private` or `protected`, then it must be explicitly specified.
+
+We are trying to keep this **order** of methods in _classes_ and _models_:
+
+```tsx
+class Model {
+  // attributes
+  id: number;
+  private _key: string;
+
+  // constructor
+  constructor({ id, key }: { id: number; key: string }) {
+    this.id = id;
+    this._key = key;
+  }
+
+  // static methods
+  static fromJSON(json: object): Model {
+    return new Model(json.id, json.key);
+  }
+
+  // accessors
+  get key(): string {
+    return this._key;
+  }
+
+  set key(key: string): void {
+    this._key = key;
+  }
+
+  // methods
+  toJSON = (): object => {
+    return {
+      id: this.id,
+      key: this._key,
+    };
+  };
+
+  private mapKey = (key: string): string => {
+    return key.toUpperCase();
+  };
+
+  // @computed.struct (for MobX stores)
+  @computed.struct
+  computedKey = (): string => {
+    return this.mapKey(this._key);
+  };
+}
+```
+
+❕ Note! If model can potentially have some methods or specific getters it is preferred to use `class` instead of `interface`.
+
+<br />
+
+#### Common types
+
+We have two common and widely used utility types – `Optional` and `Nullable`.
+
+```tsx
+type Optional<T> = T | undefined;
+type Nullable<T> = T | null;
+```
+
+They are located in `shared/lib/types`. It recommended to use them when possible for better readability. For example:
+
+```tsx
+// bad
+const someFunction = (arg1: string | null, arg2: number | null): string | undefined => {
+  // ...
+};
+
+// good
+const someFunction = (arg1: Nullable<string>, arg2: Nullable<number>): Optional<string> => {
+  // ...
+};
+```
+
+<br />
+
+### Helpers and utils
+
+**Helper** classes can have instance variables and also have both instance and _static_ methods. **Utility** classes only have static variables and methods. So, basically, util classes can only have _static_ methods and variables and we can not create an instance of an util class.
+
+_Pure functions_ are also considered as can be used as **helpers**.
+
+<br />
+
+### Enums and union types
+
+Enum files must be called in _PascalCase_ and are preferred to be placed in their own directory. Keys must be in _UPPER_CASE_ and values must be in _snake_case_:
+
+```tsx
+// SomeKeys.ts
+
+export enum SomeKeys {
+  KEY = 'key',
+  ANOTHER_KEY = 'another_key',
+  SOME_PRETTY_LONG_KEY_1 = 'some_pretty_long_key_1',
+}
+```
+
+Union types must be called in _PascalCase_ and are preferred to be placed in their own directory. Values must be in _snake_case_:
+
+```tsx
+// SomeTypes.ts
+
+export type SomeTypes = 'type1' | 'type2' | 'type3';
+```
+
+<br />
+
+### Component template
+
+We are trying to order our components in the following way:
+
+```tsx
+import { Anything } from './Anything';
+import { Something } from './Something';
+
+const StyledComponent1 = styled.div`
+  // ...
+`;
+
+const StyledComponent2 = styled.div`
+  // ...
+`;
+
+interface Props {
+  // ...
+}
+
+const SOME_GLOBAL_VAR = 42;
+
+const someSelectOptions = [];
+
+const Component = (props: Props) => {
+  // props destructuring
+  const { prop1, prop2, prop3 } = props;
+
+  // translation hook
+  const { t } = useTranslation();
+
+  // params, query, etc.
+  const { test } = useTypedParams<{ test: string }>();
+
+  // refs
+  const ref = useRef();
+
+  // state, lifecycle hooks, derived state, etc.
+  const [state, setState] = useState(false);
+
+  useEffect(() => {
+    //...
+
+    return () => {
+      //...
+    };
+  }, [deps]);
+
+  // callbacks and handlers
+  const handleSomething = () => {
+    //...
+  };
+
+  // computed values
+  const options = getOptions();
+  let marker = 1;
+
+  return (
+    <Root>
+      <StyledComponent1>
+        <StyledComponent2>
+          <Something />
+          <Anything />
+        </StyledComponent2>
+      </StyledComponent1>
+    </Root>
+  );
+
+  // prefer name exports over default exports
+  // we use default exports only when it is impossible to use named exports
+  export { Component };
+};
+```
+
+If component is wrapper in `observer` or `memo` and it is shared and widely used, then it is a good idea to set `displayName` for it. For example:
+
+```tsx
+const Component = observer(() => {
+  return <div />;
+});
+
+Component.displayName = 'Component';
+export { Component };
+```
+
+So that debugging tools can show it in the tree with the correct name, and not with `observer` or `memo` wrappers.
+
+<br />
+
+### Common namings
+
+We have a few rules related to _vars_ namings:
+
+- **Constants** must be in _UPPER_CASE_ and words must be separated by an underscore:
+
+```tsx
+const SOME_CONSTANT = 42;
+const HEIGHT = '100px';
+```
+
+- The smaller the variable's **scope**, the **shorter** its name should be.
+
+```tsx
+const list = someList.map(i => i.id);
+
+for (const u of users) {
+  u.id = 42;
+}
+
+const Component = () => {
+  const [state, setState] = useState(false);
+
+  // listOfUsers – used throughout the component –> longer name
+  const listOfUsers = [];
+
+  return (
+    <div>
+      {listOfUsers.map(u => (
+        {/* u – used only in this scope –> shorter name */}
+        <User key={u.id} />
+      ))}
+    </div>
+  );
+};
+```
+
+- Everything related to `index` word must be shortened to `idx`:
+
+```tsx
+new Array(10).map((_, idx, arr) => idx);
+```
+
+<br/ >
+
+### Work with translations, translations namings
+
+We have multiple **prefixes** for out translation files in `/public` directory so that it's easier to identify their purpose:
+
+- `common.json` **– common** translations;
+- `component.something.json` – translations for **component** `Something`;
+- `page.something.json` – translations for **page** `SomethingPage`;
+- `module.something.json` – translations for **module** `/something`;
+- `store.something-store.json` – translations for **store** `SomethingStore`;
+
+Names after prefixes must be in _kebab-case_.
+
+```mathematica
+locales
+├── en
+│   ├── common.json
+│   ├── component.something.json
+│   ├── module.something.json
+│   ├── page.something.json
+│   └── store.something-store.json
+└── ru
+    ├── common.json
+    ├── component.something.json
+    ├── module.something.json
+    ├── page.something.json
+    └── store.something-store.json
+```
+
+<br />
+
+### svg imports
+
+When importing `.svg` files from Figma make sure to check whether it looks normal without `mask`, `defs` and `g` tags (they are needed for complex shapes but not always necessary for simple icons, it's just Figma importing issue). If so – **remove them**. It will make files **lighter** and will prevent some `Firefox` and `Safari` **rendering issues**.
+
+<br />
+
+### svg namings
+
+All **svg** files must be in _snake_case_ and are likely to be placed in `shared/assets/icons` directory, when exporting them in `index.tsx` they must have `Icon` word in the end of their name:
+
+```tsx
+// index.tsx
+export { ReactComponent as AnotherIcon } from './another_icon.svg';
+export { ReactComponent as SomeIcon } from './some_icon.svg';
+```
+
+<br />
+
+### Exports
+
+- Component exports must be organized like this:
+
+```tsx
+const Component = () => {};
+
+export { Component };
+```
+
+- Classes must be exported like this:
+
+```tsx
+export class SomeClass {}
+```
+
+<br />
+
+### Circular dependencies
+
+We trying to get rid of all **circular dependencies** to prevent possible issues. **Circular dependency** – when two or more modules depend on each other. For example:
+
+```tsx
+// Component1.tsx
+
+import { Component2 } from './Component2';
+
+const Component1 = () => {
+  return <Component2 />;
+};
+
+export { Component1 };
+
+// Component2.tsx
+
+import { Component1 } from './Component1';
+
+const Component2 = () => {
+  return <Component1 />;
+};
+
+export { Component2 };
+```
+
+Try running this script to automatically find all **circular dependencies** in your project:
+
+```bash
+npx madge --circular --extensions ts ./
+npx madge --circular --extensions tsx ./
+```
+
+<br />
+
+### Code analysis
+
+You can perform static code analysis to find unused deps, imports and other dead code by running:
+
+```bash
+npm run knip
+```
+
+Learn more about Knip – [https://github.com/webpro/knip](https://github.com/webpro/knip).
+
+<br />
+
+## styled-components
+
+<br />
+
+### CSS properties
+
+- We are trying to use **shorthand** properties when possible. For example:
+
+```tsx
+// bad
+const Component = styled.div`
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+`;
+
+// good
+const Component = styled.div`
+  margin: 10px;
+`;
+```
+
+- We are trying to use **CSS variables** instead of hardcoded values. They're located in `variables.css` file. Consider checking them before adding hardcoded color values or sizes to your component. For example:
+
+```tsx
+const Component = styled.div`
+  color: var(--text-color);
+  background-color: var(--background-color);
+`;
+```
+
+- `line-height` must be specified in **px**, not it percents. This will ensure that the line height is consistent across all browsers. For example:
+
+```tsx
+// bad
+const Component = styled.div`
+  line-height: 1.5;
+  line-height: 150%;
+`;
+
+// good
+const Component = styled.div`
+  line-height: 24px;
+`;
+```
+
+<br />
+
+### Properties ordering
+
+We are trying to order our `styled-components` in the following way:
+
+```tsx
+const Component = styled.div<{ $active: boolean }>`
+  // reset default styles (buttons, lists, etc.)
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  // positioning
+  position: relative;
+  right: 0;
+  top: 0;
+
+  // gabarits
+  width: 100%;
+  height: 100%;
+  min-width: 100px;
+  max-height: 100px;
+
+  // display
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex: 1;
+
+  // typography
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: var(--button-text-graphite-priory-text);
+
+  // miscellaneous
+  padding: 16px;
+  margin: 16px;
+  background-color: var(--primary-statuses-white-0-primary);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  border: 1px solid var(--button-text-graphite-primary-text);
+
+  // transition
+  // if we use shorthand (e.g. transition: all 0.3s ease-in-out), then there is should be no break before the upper group
+  // in this case – it would just after the border property without any break
+  transition-property: background-color, box-shadow;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: ease-in-out;
+
+  // classes, ids and html elements
+  &.active {
+    // ....
+  }
+
+  &.error {
+    // ....
+  }
+
+  #id {
+    // ....
+  }
+
+  button, p {
+    // ....
+  }
+
+  // pseudo-elements
+  &::before {
+    // ....
+  }
+
+  &::after {
+    // ....
+  }
+
+  &::marker {
+    // ....
+  }
+
+  // states
+  &:hover {
+    // ....
+  }
+
+  &:active {
+    // ....
+  }
+
+  &:focus {
+    // ....
+  }
+
+  // optional styles
+
+  ${p =>
+    p.$active &&
+    css`
+      // ....
+    `
+    // if we are not using css helper, then we should use `` instead of '' or "" to lower the visual noise
+    // we should use css helper only when we are using more than one property
+    ${p.danger && `color: red;`}
+    }
+`;
+```
+
+<br />
+
+### Namings
+
+**Root** – main component wrapper, for example:
+
+```jsx
+const Root = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
+const Component = () => {
+  return <Root>{/* Content */}</Root>;
+};
+```
+
+We use **wrappers** when we need to add some styles to the element, for example, when working with **icons**:
+
+```tsx
+import { ReactComponent as Icon } from '../../assets/icons/icon.svg';
+
+const IconWrapper = styled.div`
+  width: 20px;
+  height: 20px;
+`;
+
+const Component = () => {
+  return (
+    <Root>
+      {/* Some elements here... */}
+      <IconWrapper>
+        <Icon />
+      </IconWrapper>
+    </Root>
+  );
+};
+```
+
+**Styled component** – component that inherits its styles from another base component, for example:
+
+```tsx
+const Button = styled.button`
+  color: white;
+  border: 1px solid black;
+  background-color: blue;
+`;
+
+const StyledButton = styled(Button)`
+  //...
+`;
+```
+
+<br />
+
+#### Basic structural styled-components names
+
+<br />
+
+Some of our basic component **namings**:
+
+– `<Header />`, `<Content />`, `<Wrapper>`, `<Block/>` – layout components;
+
+- `<Title>`, `<Annotation/>` – text components;
+- `<Delimiter/>` – horizontal or vertical delimiter;
+
+Some context may be added as well for namings – `<ButtonsWrapper />`, `<BottomBlock />`, `<CardTitle />`, etc.
+
+<br />
+
+#### Props in styled-components
+
+<br />
+
+If a _styled component_ receives some **props**, then we must explicitly specify their types in the interface. If the prop is the only one and is not used in other places than this can be done with an `inline` style, otherwise we must describe the interface as was mentioned earlier.
+
+- One prop, which is not used anywhere else:
+
+```tsx
+const Button = styled.button<{ $color: string }>`
+  color: ${p => p.color};
+`;
+```
+
+- Several props, which are used in other styled components:
+
+```tsx
+interface ButtonProps {
+  $color: string;
+  $bgColor: string;
+  $opacity: number;
+}
+
+const PrimaryButton = styled.button<ButtonProps>`
+  color: ${p => p.$color};
+  background-color: ${p => p.$bgColor};
+  opacity: ${p => p.$opacity};
+`;
+
+const SecondaryButton = styled.button<ButtonProps>`
+  //...
+`;
+```
+
+<br />
+
+## Props order
+
+We are trying to order our _props_ in the following way:
+
+```tsx
+interface Props {
+  // required props
+  props1: number;
+  props2: string;
+
+  // optional props
+  props3?: string;
+  props4?: number;
+
+  // required callbacks
+  fn1: () => {};
+  fn2: () => {};
+
+  // optional callbacks
+  fn3?: () => {};
+  fn4?: () => {};
+}
+```

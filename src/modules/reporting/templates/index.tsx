@@ -1,0 +1,10 @@
+export { CallHistoryReportTemplate } from './Reports/CallHistoryReportTemplate/CallHistoryReportTemplate';
+export { ComparativeReportTemplate } from './Reports/ComparativeReportTemplate/ComparativeReportTemplate';
+export { REPORT_TABLE_DATA_CURRENT } from './Reports/components';
+export { CustomerReportTemplate } from './Reports/CustomerReportTemplate/CustomerReportTemplate';
+export { GeneralReportTemplate } from './Reports/GeneralReportTemplate/GeneralReportTemplate';
+export { ProductsGeneralReportTemplate } from './Reports/ProductsGeneralReportTemplate/ProductsGeneralReportTemplate';
+export { ProjectEntitiesReportTemplate } from './Reports/ProjectEntitiesReportTemplate/ProjectEntitiesReportTemplate';
+export { ProjectTaskUserReportTemplate } from './Reports/ProjectTaskUserReportTemplate/ProjectTaskUserReportTemplate';
+export { ScheduleReportTemplate } from './Reports/ScheduleReportTemplate/ScheduleReportTemplate';
+export { TelephonyReportTemplate } from './Reports/TelephonyReportTemplate/TelephonyReportTemplate';

@@ -1,0 +1,23 @@
+{
+  "entity_board": {
+    "ui": {
+      "project_entity_card_item": {
+        "start_date": "Дата начала",
+        "end_date": "Дата окончания",
+        "titles": {
+          "not_resolved": "Невыполненные задачи",
+          "upcoming": "Предстоящие задачи",
+          "overdue": "Просроченные задачи",
+          "today": "Сегодняшние задачи",
+          "resolved": "Выполненные задачи"
+        }
+      },
+      "common_entity_card": {
+        "no_tasks": "Нет задач",
+        "task_today": "Задача на сегодня",
+        "overdue_task": "Просроченная задача",
+        "upcoming_task": "Предстоящая задача"
+      }
+    }
+  }
+}

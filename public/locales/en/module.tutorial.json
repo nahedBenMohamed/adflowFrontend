@@ -1,0 +1,55 @@
+{
+  "tutorial": {
+    "tutorial_drawer": {
+      "title": "Knowledge Base",
+      "empty": "There is nothing here yet.",
+      "create_tutorial_group_block": {
+        "create_group": "Create a group",
+        "save": "Save",
+        "cancel": "Cancel"
+      },
+      "create_tutorial_item_block": {
+        "create_link": "Create a link",
+        "save": "Save",
+        "cancel": "Cancel"
+      },
+      "tutorial_edit_group_item_form": {
+        "placeholders": {
+          "name": "Name",
+          "link": "Link",
+          "all": "All"
+        }
+      },
+      "tutorial_edit_group_items_forms": {
+        "name": "Name",
+        "link": "Link",
+        "users": "Users",
+        "products": "Products",
+        "products_hint": "Select products where this link will be displayed. For example, if tasks are selected – link will be displayed only in the tasks section."
+      },
+      "tutorial_group_name_block": {
+        "placeholders": {
+          "group_name": "Group name"
+        }
+      },
+      "hooks": {
+        "use_get_tutorial_products_options": {
+          "product_types": {
+            "builder": "Builder",
+            "task": "Tasks",
+            "mail": "Mail",
+            "multi_messenger": "Multi Messenger",
+            "settings": "Settings"
+          }
+        },
+        "use_get_tutorial_products_groups": {
+          "groups": {
+            "entity_type": "Modules",
+            "products_section": "Products",
+            "scheduler": "Schedules"
+          }
+        }
+      }
+    }
+  }
+}
