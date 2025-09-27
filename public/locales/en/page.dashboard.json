@@ -1,0 +1,18 @@
+{
+  "dashboard_page": {
+    "top_sellers": {
+      "title": "Rating",
+      "hint": "Lorem ipsum dolor sim amet, consectetur adipiscing elit."
+    },
+    "analytics": {
+      "total_entities": "Total",
+      "won_entities": "Won",
+      "lost_entities": "Lost",
+      "new_entities": "New",
+      "total_tasks": "Total Tasks",
+      "completed_tasks": "Completed Tasks",
+      "expired_tasks": "Expired Tasks",
+      "no_tasks": "No Tasks"
+    }
+  }
+}

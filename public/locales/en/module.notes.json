@@ -1,0 +1,49 @@
+{
+  "notes": {
+    "notes_page": {
+      "module_name": "Notes",
+      "add_note": "Create Note",
+      "new_note_heading": "New Note"
+    },
+    "toolbar": {
+      "undo": "Undo",
+      "redo": "Redo",
+      "bold": "Semibold",
+      "italic": "Italic",
+      "underline": "Underline",
+      "strike": "Strikethrough",
+      "bullet_list": "Bullet List",
+      "ordered_list": "Ordered List",
+      "text": "Text",
+      "heading": "Title",
+      "subheading": "Heading",
+      "heading_3": "Subheading",
+      "more": "More...",
+      "expand": "Expand",
+      "minimize": "Minimize"
+    },
+    "editor": {
+      "recently_edited": "Just now",
+      "quick_note": "Quick Note",
+      "last_changed": "Last changes: ",
+      "duplicate": "Duplicate",
+      "put_into_folder": "Restore",
+      "delete": "Delete note"
+    },
+    "selector": {
+      "new_note_heading": "New Note",
+      "saved_indicator": "Changes are saved",
+      "pinned": "Pinned",
+      "today": "Today",
+      "yesterday": "Yesterday",
+      "earlier": "Earlier"
+    },
+    "block": {
+      "unnamed_note": "Unnamed Note"
+    },
+    "folders": {
+      "all": "All",
+      "recently_deleted": "Recently Deleted"
+    }
+  }
+}

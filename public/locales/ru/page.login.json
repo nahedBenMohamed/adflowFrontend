@@ -1,0 +1,24 @@
+{
+  "login": {
+    "login_form": {
+      "title": "Вход в аккаунт",
+      "login": "Войти",
+      "invalid": "Неверные учетные данные",
+      "or": "Или",
+      "caption": "Ещё нет аккаунта?",
+      "sign_up": "Зарегистрироваться",
+      "forgot_your_password": "Забыли пароль?",
+      "placeholders": {
+        "login": "E-mail",
+        "password": "Пароль"
+      },
+      "invalid_email_error": "Недопустимый формат электронной почты",
+      "invalid_password_error": "Введите пароль"
+    },
+    "left_block": {
+      "title": "Добро пожаловать в {{company}}",
+      "annotation": "Отличной работы, с удовольствием!",
+      "image_alt": "Войти в личный кабинет {{company}}"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "fields_store": {
+    "errors": {
+      "create_at_least_one_field": "Por favor, crea al menos un campo",
+      "duplicate_name": "Los nombres de campo deben ser únicos: {{fieldName}}"
+    }
+  }
+}

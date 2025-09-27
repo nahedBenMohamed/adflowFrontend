@@ -1,0 +1,135 @@
+{
+  "tasks_page": {
+    "tasks_page_by_deadline": {
+      "unallocated": "Unallocated",
+      "overdue": "Overdue",
+      "today": "Today",
+      "tomorrow": "Tomorrow",
+      "upcoming": "Upcoming",
+      "resolved": "Done",
+      "board": "Board",
+      "calendar": "Calendar"
+    },
+    "common": {
+      "tasks_page_template": {
+        "create_new": "Create new task"
+      },
+      "ui": {
+        "empty_list_block": {
+          "annotation1": "You have no tasks yet or nothing was found with the selected filters.",
+          "annotation2": "Use the",
+          "annotation3": "button to add a task."
+        },
+        "tasks_page_header": {
+          "timeline": "Gantt",
+          "title": "Tasks & Activities",
+          "board": "Board",
+          "list": "List",
+          "calendar": "Calendar",
+          "user_select_button": "Share",
+          "settings_button": {
+            "sync": "Synchronize",
+            "table_settings": "Table settings",
+            "settings": "Settings",
+            "board_settings": "Board settings"
+          },
+          "create_button_tooltip": "Add Task"
+        },
+        "tasks_list_settings_drawer": {
+          "table_settings": "Table Settings",
+          "display_columns": "Display Columns"
+        },
+        "tasks_filter_drawer": {
+          "just_my_tasks": "Just my Tasks",
+          "sorting": "Sorting",
+          "done": "Done",
+          "sorting_options": {
+            "manual": "Manual",
+            "created_asc": "Created: from old to new",
+            "created_desc": "Created: from new to old"
+          },
+          "created_at": "Creation Date",
+          "start_date": "Start Date",
+          "end_date": "End Date",
+          "resolve_date": "Completion Date",
+          "assignee": "Assignee",
+          "reporter": "Reporter",
+          "type": "Type",
+          "stage": "Stage",
+          "groups": "Groups",
+          "linked_cards": "Linked cards",
+          "placeholders": {
+            "card_name": "Card name",
+            "search_by_task_name": "Search by task name",
+            "search_by_activity_name": "Search by activity name"
+          }
+        }
+      }
+    },
+    "tasks_page_calendar": {
+      "new_event": "New task",
+      "no_events": "There are no tasks for this period.",
+      "all_day": "All-day"
+    },
+    "tasks_page_list": {
+      "all_columns_hidden": "All columns are hidden in table settings"
+    },
+    "activity_item": {
+      "no_card_access": "You can't access this card",
+      "drag_disabled": "You don't have permission to move this card. Contact account administrator for access."
+    },
+    "tasks_page_timeline": {
+      "annotation": {
+        "minute": ["minute", "minutes", "minutes"],
+        "hour": ["hour", "hours", "hours"],
+        "day": ["day", "days", "days"]
+      },
+      "today": "Today",
+      "view": {
+        "fifteen_minutes": "15 Minutes",
+        "hour": "Hour",
+        "day": "Day",
+        "week": "Week",
+        "month": "Month",
+        "quarter": "Quarter",
+        "half_year": "Half year"
+      },
+      "format": {
+        "major_format": {
+          "fifteen_minutes": "YYYY, MMMM D",
+          "hour": "YYYY, MMMM D",
+          "day": "YYYY, MMMM",
+          "week": "YYYY, MMMM",
+          "month": "YYYY",
+          "quarter": "YYYY",
+          "half_year": "YYYY"
+        },
+        "minor_format": {
+          "fifteen_minutes": "HH:mm",
+          "hour": "HH",
+          "day": "D",
+          "week": "wo [week]",
+          "month": "MMMM",
+          "quarter": "[Q]Q",
+          "half_year": "YYYY-"
+        }
+      }
+    },
+    "task_item": {
+      "planned_time": "Estimated Time:",
+      "completed": "Completed",
+      "complete": "Complete",
+      "delete_task": "Delete task",
+      "copy_link": "Copy link",
+      "drag_disabled": "You don't have permission to move this task. Contact account administrator for access.",
+      "date": "{{date}} at {{time}}"
+    },
+    "time_allocation_card": {
+      "users": "Users",
+      "planned_time": "Estimated Time",
+      "total": "Total",
+      "hour": "h",
+      "minute": "m"
+    }
+  }
+}

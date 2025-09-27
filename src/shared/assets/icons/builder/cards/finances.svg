@@ -1,0 +1,17 @@
+<svg width="48" height="48" viewBox="-2 -2 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect class="back" width="48" height="48" rx="12" fill="#23E7B2" />
+  <rect class="fore" x="12" y="33.5996" width="6" height="2.4" rx="1.2" fill="white" />
+  <rect class="fore" x="30" y="33.5996" width="6" height="2.4" rx="1.2" fill="white" />
+  <rect class="fore" x="12" y="30" width="6" height="2.4" rx="1.2" fill="white" />
+  <rect class="fore" x="30" y="30" width="6" height="2.4" rx="1.2" fill="white" />
+  <rect class="fore" x="12" y="26.4004" width="6" height="2.4" rx="1.2" fill="white" />
+  <rect class="fore" x="30" y="26.4004" width="6" height="2.4" rx="1.2" fill="white" />
+  <rect class="fore" x="21" y="33.5996" width="6" height="2.4" rx="1.2" fill="white" />
+  <rect class="fore" x="21" y="30" width="6" height="2.4" rx="1.2" fill="white" />
+  <rect class="fore" x="21" y="26.4004" width="6" height="2.4" rx="1.2" fill="white" />
+  <rect class="fore" x="21" y="22.8008" width="6" height="2.4" rx="1.2" fill="white" />
+  <rect class="fore" x="21" y="19.1992" width="6" height="2.4" rx="1.2" fill="white" />
+  <rect class="fore" x="30" y="22.8008" width="6" height="2.4" rx="1.2" fill="white" />
+  <rect class="fore" x="30" y="19.1992" width="6" height="2.4" rx="1.2" fill="white" />
+  <rect class="fore" x="30" y="15.5996" width="6" height="2.4" rx="1.2" fill="white" />
+</svg>

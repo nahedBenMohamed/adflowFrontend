@@ -1,0 +1,8 @@
+{
+  "fields_store": {
+    "errors": {
+      "create_at_least_one_field": "Создайте как минимум одно поле",
+      "duplicate_name": "Имена полей должны различаться: {{fieldName}}"
+    }
+  }
+}

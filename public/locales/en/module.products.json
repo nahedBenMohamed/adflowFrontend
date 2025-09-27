@@ -1,0 +1,502 @@
+{
+  "products": {
+    "components": {
+      "common": {
+        "readonly_stocks": "You can't edit stocks on this status",
+        "readonly_delete": "You can't delete items from order on this status",
+        "select_the_warehouse_to_write_off": "Select the warehouse to draw stock from",
+        "return_stocks_warning_modal": {
+          "title": "Return stocks",
+          "annotation": "Would you like to return the stocks to the warehouse?",
+          "approve_title": "Return",
+          "cancel_title": "Do not return"
+        },
+        "delete_order_warning_modal": {
+          "title": "Attention",
+          "annotation": "Would you like to delete the order? This action cannot be undone."
+        },
+        "delete_order_or_clear_items_warning_modal": {
+          "title": "Attention",
+          "annotation": "Would you like to delete the entire order or remove all items from it? This action cannot be undone.",
+          "approve_title": "Delete order",
+          "cancel_title": "Clear items"
+        },
+        "rental_order_status_select": {
+          "formed": "Formed",
+          "accepted_to_warehouse": "Accepted to warehouse",
+          "sent_to_warehouse": "Sent to warehouse",
+          "delivered": "Delivered",
+          "reserved": "Reserved",
+          "shipped": "Shipped",
+          "cancelled": "Cancelled",
+          "returned": "Returned",
+          "placeholders": {
+            "select_status": "Select status"
+          }
+        },
+        "order_status_select": {
+          "placeholders": {
+            "select_status": "Select status"
+          },
+          "statuses": {
+            "reserved": "Reserved",
+            "sent_for_shipment": "Sent for shipment",
+            "shipped": "Shipped",
+            "cancelled": "Cancelled",
+            "returned": "Returned"
+          }
+        },
+        "products_tab_selector": {
+          "shipments": "Shipments",
+          "timetable": "Calendar",
+          "products": "Products"
+        },
+        "products_category_select": {
+          "no_categories": "No Categories",
+          "placeholders": {
+            "select_category": "Category"
+          }
+        },
+        "products_warehouse_select": {
+          "no_warehouses": "No Warehouses",
+          "placeholders": {
+            "select_warehouse": "Warehouse"
+          }
+        },
+        "products_settings_button": {
+          "settings": "Settings",
+          "module_settings": "Module settings",
+          "table_settings": "Table settings",
+          "report_settings": "Report settings"
+        },
+        "calendar": {
+          "month": "Month",
+          "week": "Week",
+          "days": {
+            "short": {
+              "mo": "Mo",
+              "tu": "Tu",
+              "we": "We",
+              "th": "Th",
+              "fr": "Fr",
+              "sa": "Sa",
+              "su": "Su"
+            },
+            "long": {
+              "mo": "Monday",
+              "tu": "Tuesday",
+              "we": "Wednesday",
+              "th": "Thursday",
+              "fr": "Friday",
+              "sa": "Saturday",
+              "su": "Sunday"
+            }
+          },
+          "resources_label": "Products",
+          "statuses": {
+            "reserved": "Reserved",
+            "rented": "Rent"
+          },
+          "fields": {
+            "phone": "Phone",
+            "mail": "Mail",
+            "shifts": "Number of days",
+            "status": "Status",
+            "period": "Rent period"
+          }
+        }
+      }
+    },
+    "pages": {
+      "card_products_orders_page": {
+        "ui": {
+          "empty": "No orders in this section yet"
+        },
+        "hooks": {
+          "use_products_section_orders_columns": {
+            "name": "Order name",
+            "warehouse": "Warehouse",
+            "status": "Status",
+            "created_at": "Created at",
+            "shipped_at": "Shipped at",
+            "creator": "Creator",
+            "order": "Order-{{number}}"
+          },
+          "use_rental_products_section_orders_columns": {
+            "name": "Name",
+            "status": "Status",
+            "created_at": "Created at",
+            "creator": "Creator",
+            "order": "Order-{{number}}",
+            "shipment": "Shipment for order #{{number}}",
+            "linked_entity": "Linked entity"
+          }
+        }
+      },
+      "card_products_order_page": {
+        "templates": {
+          "products_order_block_template": {
+            "new_order": "New Order",
+            "save": "Save",
+            "cancel": "Cancel",
+            "added_to": "Added to {{entity_name}}",
+            "empty": "You have not yet added products to the order"
+          },
+          "products_warehouse_block_template": {
+            "product_management_for_sales": "Inventory Management",
+            "product_management_rentals": "Lease Management",
+            "products": "Products",
+            "warehouse": "Warehouse",
+            "add": "Add",
+            "reset": "Reset",
+            "empty": "Warehouse is empty",
+            "warehouse_select_hint": "The warehouse selected in this section must match the ordered warehouse in the top (order) section. If you wish to select a different warehouse here, you must first clear or change the chosen warehouse in the top section. Any warehouse selected here will be automatically inferred in the top section."
+          }
+        },
+        "common": {
+          "products_order_price_head_cell": {
+            "price": "Price,"
+          },
+          "products_order_max_discount_hint": "The maximum discount is",
+          "products_order_tax_header_cell": {
+            "tax": "Tax,",
+            "tax_included": "Included",
+            "tax_excluded": "Excluded"
+          },
+          "products_order_total_block": {
+            "total": "Total: {{total}}"
+          },
+          "remove_selected_block": {
+            "remove_selected": "Remove selected"
+          }
+        },
+        "hooks": {
+          "use_price_cell_columns": {
+            "name_fallback": "No price name",
+            "name": "Name",
+            "price": "Price",
+            "currency": "Currency"
+          }
+        },
+        "ui": {
+          "card_rental_products_order_component": {
+            "hooks": {
+              "use_rental_card_order_columns": {
+                "name": "Name",
+                "discount": "Discount",
+                "availability": "Availability",
+                "amount": "Amount"
+              },
+              "use_rental_warehouse_columns": {
+                "name": "Name",
+                "price": "Price",
+                "category": "Category",
+                "availability": "Availability"
+              }
+            },
+            "ui": {
+              "rental_availability_cell": {
+                "available": "Available",
+                "reserved": "Reserved",
+                "rent": "Rent"
+              },
+              "rental_order_periods_control": {
+                "new_period": "New period",
+                "periods_selected": "Periods selected: {{count}}",
+                "add_new_period": "Add new period",
+                "hint_text": "You're able to choose or modify periods exclusively during the creation of new orders or for orders with the 'Formed' status.",
+                "placeholders": {
+                  "select_periods": "Select periods"
+                }
+              },
+              "card_rental_products_order_block_header": {
+                "placeholders": {
+                  "select_order_warehouse": "Select order warehouse"
+                }
+              }
+            }
+          },
+          "card_products_order_component": {
+            "hooks": {
+              "use_available_columns": {
+                "unknown": "Unknown...",
+                "name": "Name",
+                "stock": "Stock",
+                "reserved": "Reserved",
+                "available": "Available"
+              },
+              "use_card_order_columns": {
+                "name": "Name",
+                "discount": "Discount",
+                "tax": "Tax,",
+                "quantity": "Quantity",
+                "amount": "Amount"
+              },
+              "use_reservations_columns": {
+                "warehouse_name": "Warehouse name",
+                "stock": "Stock",
+                "reserved": "Reserved",
+                "available": "Available",
+                "quantity": "Quantity"
+              },
+              "use_warehouse_columns": {
+                "name": "Name",
+                "price": "Price",
+                "category": "Category",
+                "available": "Available",
+                "quantity": "Quantity"
+              }
+            },
+            "ui": {
+              "available_head_cell": {
+                "available": "Available",
+                "available_hint": "Hover over a cell in this column for detailed information on warehouse stock."
+              },
+              "card_products_order_block_header": {
+                "cancel_after_hint": "You can configure the automatic cancellation of item reservations in orders. This helps prevent inaccurate inventory levels, which can occur when items are reserved in deals but these deals are not processed or have been cancelled.",
+                "placeholders": {
+                  "select_order_warehouse": "Select order warehouse"
+                }
+              },
+              "add_stock_placeholder": {
+                "add_stock": "Add stock to warehouse"
+              }
+            }
+          }
+        }
+      },
+      "product_categories_page": {
+        "title": "Create a Category (Product Group)",
+        "placeholders": {
+          "category_name": "Category name",
+          "subcategory_name": "Subcategory name"
+        },
+        "buttons": {
+          "add_category": "Add Category",
+          "add_subcategory": "Add Subcategory"
+        },
+        "ui": {
+          "delete_category_warning_modal": {
+            "cannot_be_undone": "This action cannot be undone.",
+            "title": "Are you sure you want to delete {{name}}?",
+            "annotation": "All subcategories will be deleted."
+          }
+        }
+      },
+      "product_page": {
+        "product_description": "Product Description",
+        "sku_already_exists_warning": "Product with SKU \"{{sku}}\" already exists",
+        "sku": "SKU",
+        "unit": "Unit",
+        "tax": "Tax",
+        "category": "Category",
+        "warehouse": "Warehouse",
+        "ui": {
+          "add_warehouse_placeholder": {
+            "add_warehouse": "Add warehouse"
+          },
+          "product_actions_dropdown": {
+            "delete_product": "Delete product"
+          },
+          "product_description": {
+            "placeholders": {
+              "add_description": "Add description"
+            }
+          },
+          "product_feed": {
+            "calendar": "Calendar",
+            "prices": "Prices",
+            "stocks": "Stocks",
+            "images": "Images",
+            "add_price": "Add price",
+            "add_image": "Add image",
+            "delete_image": "Delete image",
+            "delete_images": "Delete images",
+            "placeholders": {
+              "name": "Price name",
+              "unit_price": "Unit price"
+            },
+            "labels": {
+              "maximum_discount": "Maximum Discount on Product",
+              "product_cost": "Product Cost"
+            }
+          },
+          "product_name_block": {
+            "placeholders": {
+              "product_name": "Product name"
+            }
+          }
+        }
+      },
+      "warehouses_page": {
+        "page_title": "Set Up Your Warehouses",
+        "placeholders": {
+          "name": "Warehouse name",
+          "select_warehouse": "Select Warehouse"
+        },
+        "add_warehouse": "Add warehouse",
+        "ui": {
+          "delete_warehouse_modal": {
+            "title": "Are you sure you want to delete {{name}}?",
+            "annotation": "All stocks within the warehouse will be cleared.",
+            "annotation_move_stocks": "All stocks within the warehouse will be cleared. Alternatively, you have the option to transfer all stocks to another warehouse if available.",
+            "placeholders": {
+              "move_stocks_to": "Move stocks to..."
+            }
+          }
+        }
+      },
+      "products_page": {
+        "no_warehouses_or_categories": "No warehouses or categories to display filters",
+        "title": {
+          "sale": "Sale",
+          "rental": "Rental",
+          "shipments": "Shipments",
+          "calendar": "Calendar"
+        },
+        "tabs": {
+          "products": "Products",
+          "timetable": "Calendar",
+          "shipments": "Shipments",
+          "reports": "Reports"
+        },
+        "all_columns_hidden": "All columns are hidden in table settings",
+        "table_settings": "Table Settings",
+        "display_columns": "Display Columns",
+        "add_product": "Add product",
+        "empty": "You have not added any products yet",
+        "show_empty_resources": "Show empty resources",
+        "hide_empty_resources": "Hide empty resources",
+        "hooks": {
+          "use_products_columns": {
+            "name": "Name",
+            "prices": "Prices",
+            "sku": "SKU",
+            "tax": "Tax",
+            "stocks": "Stocks",
+            "unit": "Unit",
+            "availability": "Availability"
+          },
+          "use_product_stocks_columns": {
+            "warehouse": "Warehouse",
+            "reserved": "Reserved",
+            "available": "Available",
+            "stock": "Stock"
+          },
+          "use_create_stocks_columns": {
+            "warehouse": "Warehouse",
+            "stock": "Stock"
+          }
+        },
+        "ui": {
+          "add_product_modal": {
+            "changes_not_saved_warning_title": "Are you sure you want to close this window?",
+            "changes_not_saved_warning_annotation": "All changes will be lost.",
+            "changes_not_saved_warning_approve_title": "Close anyway",
+            "barcodes_hint": "You can scan barcodes with a scanner or manually enter them in this field. Each barcode in a section must be unique.",
+            "sku_already_exists_warning": "Product with SKU \"{{sku}}\" already exists",
+            "types": {
+              "product": "Product",
+              "service": "Service",
+              "kit": "Kit"
+            },
+            "add_product": "Add Product",
+            "name": "Name",
+            "type": "Type",
+            "add_photo": "Add photo",
+            "description": "Description",
+            "sku": "SKU",
+            "unit": "Unit",
+            "tax": "Tax",
+            "category": "Category",
+            "prices": "Prices",
+            "stocks": "Stocks"
+          },
+          "photo_block_item": {
+            "alt": "Product {{name}}"
+          },
+          "product_price_list": {
+            "add_price": "Add price"
+          },
+          "product_search_block": {
+            "placeholders": {
+              "search_products": "Search Products"
+            }
+          },
+          "product_stocks_modal": {
+            "title": "Set product stocks in each warehouse"
+          },
+          "create_stocks_modal": {
+            "title": "Specify product stocks"
+          }
+        }
+      },
+      "shipment_page": {
+        "hooks": {
+          "use_shipment_columns": {
+            "name": "Name",
+            "sku": "SKU",
+            "available": "Available",
+            "quantity": "Quantity"
+          },
+          "use_rental_shipment_columns": {
+            "name": "Name",
+            "sku": "SKU",
+            "tax": "Tax",
+            "discount": "Discount",
+            "total": "Total",
+            "quantity": "Quantity"
+          }
+        },
+        "ui": {
+          "shipment_page_secondary_header": {
+            "order": "Order-{{number}}"
+          },
+          "rental_shipment_page_secondary_header": {
+            "order": "Order-{{number}}"
+          },
+          "some_products_not_checked_warning_modal": {
+            "title": "Some products are not checked",
+            "annotation": "You're trying to change status of the order some products of which  are not checked. Do you want to change status anyway?",
+            "approve_title": "Change anyway"
+          },
+          "product_barcodes_control": {
+            "barcode": "Barcode",
+            "modals": {
+              "product_is_not_in_order_warning_modal": {
+                "title": "Product is not in this order",
+                "approve_title": "Add product to order",
+                "annotation": "The product associated with the barcode \"{{barcode}}\" is not included in this order. You have the option to add it manually or continue without it."
+              },
+              "product_does_not_exist_warning_modal": {
+                "title": "Product does not exist",
+                "approve_title": "Create product",
+                "annotation": "Product with barcode \"{{barcode}}\" does not exist in this product section. You can manually create it on products page."
+              }
+            }
+          }
+        }
+      },
+      "shipments_page": {
+        "hooks": {
+          "use_shipments_columns": {
+            "unknown": "Unknown...",
+            "name": "Name",
+            "shipment": "Shipment for order #{{number}}",
+            "warehouse": "Warehouse",
+            "shipped_at": "Shipped at",
+            "created_at": "Created at",
+            "status": "Status",
+            "linked_entity": "Linked entity"
+          }
+        },
+        "ui": {
+          "shipments_table": {
+            "all_columns_hidden": "All columns are hidden in table settings",
+            "empty": "No Scheduled Shipments"
+          }
+        }
+      }
+    }
+  }
+}

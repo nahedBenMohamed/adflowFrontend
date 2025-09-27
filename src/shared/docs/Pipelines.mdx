@@ -1,0 +1,32 @@
+import { deployStorybook } from '../assets/docs-images';
+import { vercelPreview } from '../assets/docs-images';
+
+# GitLab Pipelines
+
+<br />
+
+## Introduction
+
+GitLab Pipelines are a powerful feature that automates the process of building, testing, and deploying your code. Understanding how to effectively use pipelines is crucial for maintaining a smooth workflow in our development process. Here are some essential guidelines to follow:
+
+### Key Rules for Using Pipelines
+
+- **Branch Merging**: Every commit to the `master` or `develop` branch will trigger a pipeline. It is important to avoid merging multiple branches at once. Instead, wait for the pipeline of the first branch to finish before merging the next one. This practice helps prevent conflicts and ensures that each change is properly validated.
+
+- **Preview Deployments with Vercel**: We have configured _Vercel_ for generating preview links. Every commit in a merge request will trigger a **preview deployment**. This feature is particularly useful for Quality Assurance (QA) and testing, as it allows team members to review changes in a live environment before they are merged into the main branches. If you need access to the build logs, please reach out to the maintainers to request permission for the _Vercel_ project:
+
+<img src={vercelPreview} alt="Vercel preview" />
+
+- **Storybook Deployment**: We maintain a separate pipeline specifically for **Storybook deployment**. If you have made any changes to the Storybook, you can trigger a pipeline **manually** by clicking on the `deploy_storybook` button in the `CI/CD` section of the merge request. This allows you to deploy and review your UI components in isolation, ensuring that they function as expected:
+
+<img src={deployStorybook} alt="Deploy storybook" />
+
+### Additional Considerations
+
+- **Pipeline Status**: Always check the status of your pipelines in GitLab. A green checkmark indicates that the pipeline has passed successfully, while a red cross indicates a failure. Investigate any failures promptly to maintain the integrity of the codebase.
+
+- **Pipeline Efficiency**: To optimize pipeline performance, consider breaking down large jobs into smaller, more manageable tasks. This can help reduce the overall execution time and make it easier to identify issues.
+
+- **Documentation**: Keep your documentation up to date regarding any changes to the pipeline configuration or usage. This ensures that all team members are aware of the latest practices and can follow them effectively.
+
+By adhering to these guidelines, you can help ensure a smooth and efficient development process using GitLab Pipelines. If you have any questions or need further clarification, feel free to reach out!

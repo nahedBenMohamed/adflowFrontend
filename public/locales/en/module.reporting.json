@@ -1,0 +1,432 @@
+{
+  "reporting": {
+    "templates": {
+      "components": {
+        "report_table": {
+          "empty": "No available data for this period"
+        },
+        "report_settings_drawer": {
+          "table_settings": "Table Settings",
+          "display_columns": "Display Columns"
+        }
+      },
+      "comparative_report_template": {
+        "placeholders": {
+          "users": "Users",
+          "pipeline": "Sales pipelines",
+          "month": "Select month",
+          "year": "Select year"
+        }
+      },
+      "general_report_template": {
+        "apply_filter": "Apply Filter",
+        "reset": "Reset",
+        "stages": {
+          "all": "All Stages",
+          "open": "Open Stages",
+          "lost": "Lost Stages",
+          "won": "Won Stages"
+        },
+        "placeholders": {
+          "users": "Users",
+          "pipeline": "Sales pipelines",
+          "stage": "Stages",
+          "warehouse": "Warehouses",
+          "category": "Categories",
+          "field_or_responsible": "Field or Responsible"
+        }
+      },
+      "calls_report_template": {
+        "directions": {
+          "all": "All Calls",
+          "incoming": "Incoming Calls",
+          "outgoing": "Outgoing Calls"
+        },
+        "placeholders": {
+          "users": "Users",
+          "pipeline": "Sales pipelines",
+          "directions": "Call type",
+          "duration": "Call duration",
+          "only_missed": "Only missed calls"
+        }
+      }
+    },
+    "hooks": {
+      "use_get_products_general_report_columns": {
+        "name": "Name",
+        "sold": "Total Sold",
+        "shipped": "Shipped",
+        "open": "Open Deals",
+        "lost": "Lost Deals",
+        "all": "Total Deals",
+        "average_products": "Average Number of Products per Deal",
+        "average_budget": "Average Value of Successful Deals",
+        "average_term": "Average Deal Duration"
+      },
+      "use_calls_history_report_columns": {
+        "timestamps": "Call Date",
+        "type": "Caller and Recipient",
+        "result": "Call Duration and Playback",
+        "unknown": "Unknown Number",
+        "caller": "Caller",
+        "callee": "Callee"
+      },
+      "use_get_general_report_columns": {
+        "result": "Result",
+        "all": "All",
+        "open": "Open",
+        "expired": "Expired",
+        "completed": "Completed",
+        "won": "Won",
+        "lost": "Lost",
+        "groups": "Groups",
+        "users": "Users",
+        "cards": "Cards (Leads)",
+        "tasks": "Tasks",
+        "activities": "Activities",
+        "average_check": "Average Check",
+        "average_term": "Average Term (Days)",
+        "switch_on": "Switch (On)",
+        "switch_off": "Switch (Off)",
+        "calls": "Calls",
+        "total": "Total Calls",
+        "average": "Average Calls",
+        "incoming": "Incoming Calls",
+        "incoming_average": "Average Incoming Calls",
+        "outgoing": "Outgoing Calls",
+        "outgoing_average": "Average Outgoing Calls",
+        "missed": "Missed Calls",
+        "min": "min",
+        "undefined_client": "Appointment scheduling without a deal"
+      },
+      "use_get_projects_report_columns": {
+        "hours": "h",
+        "min": "min",
+        "users": "Users",
+        "opened": "Open Tasks",
+        "done": "Completed Tasks",
+        "overdue": "Overdue Tasks",
+        "planned": "Planned Time",
+        "completion_percent": "Project Completion Percentage",
+        "project_name": "Project Name",
+        "stage": "Project Status"
+      },
+      "use_get_customer_report_columns": {
+        "name": "Name",
+        "sold": "Total Sold",
+        "products_quantity": "Quantity of Products",
+        "opened": "In Progress (Open Deals)",
+        "lost": "Lost Deals",
+        "all": "Total Deals (Open and Closed)",
+        "average_quantity": "Average Number of Purchases (Deals)",
+        "average_budget": "Average Budget of Successful Deals",
+        "average_duration": "Average Duration of Successful Deals (Days)"
+      },
+      "use_get_schedule_report_columns": {
+        "groups": "Groups",
+        "users": "Users",
+        "sold": "Total Sold",
+        "total": "Total Appointments",
+        "scheduled": "Scheduled",
+        "confirmed": "Confirmed",
+        "completed": "Completed",
+        "cancelled": "Cancelled"
+      },
+      "use_get_comparative_report_columns": {
+        "all": "All",
+        "open": "Open",
+        "won": "Won",
+        "lost": "Lost",
+        "week": "Week {{number}}",
+        "quarter": "Quarter {{number}}",
+        "users": "Users",
+        "days": {
+          "monday": "Monday",
+          "tuesday": "Tuesday",
+          "wednesday": "Wednesday",
+          "thursday": "Thursday",
+          "friday": "Friday",
+          "saturday": "Saturday",
+          "sunday": "Sunday"
+        },
+        "months": {
+          "january": "January",
+          "february": "February",
+          "march": "March",
+          "april": "April",
+          "may": "May",
+          "june": "June",
+          "july": "July",
+          "august": "August",
+          "september": "September",
+          "october": "October",
+          "november": "November",
+          "december": "December"
+        }
+      }
+    },
+    "pages": {
+      "reports_page": {
+        "components": {
+          "row_title_cell": {
+            "total": "Total",
+            "without_group": "Without Group",
+            "empty_user": "Unassigned"
+          },
+          "row_event_cell": {
+            "to": "to"
+          },
+          "reports_navigation_sidebar": {
+            "total": "Total",
+            "export_xlsx": "Export to XLSX",
+            "export_table": "Exported from {{company}} on {{date}}",
+            "unfold_filters_menu": "Unfold filters menu",
+            "fold_filters_menu": "Fold filters menu",
+            "hide_sidebar": "Hide sidebar",
+            "show_sidebar": "Show sidebar",
+            "schedules": "Visits",
+            "title": {
+              "universal": "Reports",
+              "project": "Projects Reports",
+              "deal": "Deals Reports"
+            },
+            "general_report": "General Report",
+            "comparison_of_periods": "Comparison of Periods",
+            "telephony": "Calls",
+            "schedule": "Visits",
+            "projects": "Projects",
+            "users": "By Users",
+            "rating": "By Rating",
+            "groups": "By Groups",
+            "days": "By Days",
+            "weeks": "By Weeks",
+            "months": "By Months",
+            "quarters": "By Quarters",
+            "years": "By Years",
+            "callsUsers": "By Users",
+            "callsGroups": "By Departments",
+            "callHistory": "Call Log Report",
+            "scheduleClient": "By Customers",
+            "scheduleDepartment": "By Groups",
+            "scheduleOwner": "By Schedulers",
+            "schedulePerformer": "By Specialists",
+            "customer_reports": "Contacts and Companies",
+            "customerContact": "By Contacts",
+            "customerCompany": "By Companies",
+            "customerContactCompany": "By Contacts and Companies",
+            "products": "Products",
+            "productsCategories": "By Categories",
+            "productsUsers": "By Users"
+          }
+        }
+      },
+      "dashboard_page": {
+        "filter": {
+          "placeholders": {
+            "select_users": "Users",
+            "select_sales_pipeline": "Sales pipelines",
+            "all": "All",
+            "all_active": "All Active",
+            "open": "Open",
+            "open_active": "Open and Active",
+            "closed": "Closed",
+            "created": "Created"
+          },
+          "dashboard_type_tooltip": {
+            "all": {
+              "text": "Includes all deals that existed during the period, regardless of activity. Covers:",
+              "list_1": "✓ Deals created during the period.",
+              "list_2": "✓ Deals closed (won or lost) during the period.",
+              "list_3": "✓ Deals that existed before and remained open during the period.",
+              "list_4": "✗ Does not exclude inactive deals (no stage changes)."
+            },
+            "all_active": {
+              "text": "Includes only deals where at least one stage change occurred during the period. Covers:",
+              "list_1": "✓ Previously created deals with stage changes in the period.",
+              "list_2": "✓ Deals created during the period, if they moved stages.",
+              "list_3": "✓ Deals closed during the period, if they had at least one stage change before closing.",
+              "list_4": "✗ Excludes inactive deals (no stage movement)."
+            },
+            "open": {
+              "text": "Includes deals that were not closed (not marked as Won or Lost) by the end of the period. Covers:",
+              "list_1": "✓ Previously created deals that remain open.",
+              "list_2": "✓ Deals created during the period and still open at the end.",
+              "list_3": "✗ Does not include closed deals."
+            },
+            "open_active": {
+              "text": "Includes only open deals that had activity (stage changes) during the period. Covers:",
+              "list_1": "✓ Open deals with stage changes in the period.",
+              "list_2": "✓ New deals if they moved stages.",
+              "list_3": "✗ Excludes open deals without stage changes.",
+              "list_4": "✗ Excludes closed deals."
+            },
+            "closed": {
+              "text": "Includes only deals that were closed (marked as Won or Lost) during the period. Covers:",
+              "list_1": "✓ Previously created deals that were closed in the period.",
+              "list_2": "✓ Deals created and closed within the period.",
+              "list_3": "✗ Excludes all open deals."
+            },
+            "created": {
+              "text": "Includes all deals created during the period, regardless of their current status. Covers:",
+              "list_1": "✓ Deals created during the period and still open.",
+              "list_2": "✓ Deals created and closed within the period.",
+              "list_3": "✗ Does not include deals created before the period."
+            }
+          }
+        },
+        "days": {
+          "one_day": "day",
+          "several_days": ["days", "days", "days"]
+        },
+        "auto_update_select": {
+          "auto_update": "Auto-update",
+          "modes": {
+            "never": "Never",
+            "minute": "1 minute",
+            "ten_minutes": "10 minutes",
+            "thirty_minutes": "30 minutes",
+            "hour": "1 hour"
+          }
+        },
+        "sales_goal_chart": {
+          "title_for_sales": "Sales Goal",
+          "title": "Goal",
+          "hint": "Sales Goal",
+          "settings_tip": "Settings",
+          "plug_text_for_sales": "Set Goals",
+          "plug_text": "Set up a goal"
+        },
+        "traffic_light_report": {
+          "title": "Traffic Light Report",
+          "subtitle": "Today's Plan Completion",
+          "hint": {
+            "line1": "The “traffic light” report is a tool that shows how the sales department is tracking against the sales plan for the day.",
+            "line2": "The formula for calculating the fulfillment of the sales plan for today is:",
+            "line3": "Percentage of fulfillment = (Actual sales divided by Plan for the Current Day) × 100%, where:",
+            "list": {
+              "point1": "Actual sales are the amount you have already sold at the current moment.",
+              "point2": "The plan for the current day is part of the overall sales plan for the month, calculated for the current day."
+            },
+            "line4": "Example of calculation:",
+            "line5": "Suppose your sales plan for the month is $10,000. Today is the 10th, which means the month has passed approximately 1/3. Your plan for today is:",
+            "line6": "Plan for the Current Day = ($10,000 divided by 30 days) × 10 days = $3,333.33",
+            "line7": "You have sold goods for $3,000.",
+            "line8": "Your percentage of plan fulfilled is:",
+            "line9": "Percentage of Fulfillment = ($3,000 divided by $3,333.33) × 100% ≈ 90%",
+            "line10": "Thus, your plan is 90% complete, and in the 'traffic light' report you will see the green color, as the fulfillment of the plan is going successfully."
+          },
+          "plug_text": "Set Goals"
+        },
+        "top_sellers": {
+          "title_for_sales": "Top 5 Contributing",
+          "title": "Top 5 Leaders",
+          "subtitle_for_sales": "Sales Leaders",
+          "hint": "Top 5 Contributing Sales Leaders",
+          "others": "Others",
+          "plug_text": "When you start using {{company}}, the statistics for the Top 5 sales leaders will appear here",
+          "plug_text_for_orders": "Once you start using {{company}}, statistics for the Top 5 user leaders will appear here",
+          "plug_text_for_candidates": "Once you start using {{company}}, statistics for the Top 5 user leaders will appear here"
+        },
+        "analytics": {
+          "total_leads": "Total Leads",
+          "total_orders": "Total Orders",
+          "total_candidates": "Total Candidates",
+          "new_leads": "New Leads",
+          "new_orders": "New Orders",
+          "new_candidates": "New Candidates",
+          "won_leads": "Won",
+          "completed_orders": "Completed",
+          "hired_candidates": "Hired Candidates",
+          "lost_leads": "Lost",
+          "failed_orders": "Failed",
+          "rejected_candidates": "Rejected Candidates",
+          "total_tasks": "Total Tasks",
+          "completed_tasks": "Completed Tasks",
+          "expired_tasks": "Expired Tasks",
+          "no_tasks": "Leads: No Tasks",
+          "cards_no_tasks": "Cards: No Tasks",
+          "total_activities": "Total Activities",
+          "completed_activities": "Completed Activities",
+          "expired_activities": "Expired Activities",
+          "no_activities": "Leads: No Activities",
+          "cards_no_activities": "Cards: No Activities"
+        },
+        "rating": {
+          "title": "Rating",
+          "hint": "Rating"
+        },
+        "leads_status_chart": {
+          "title": "Leads Status Overview:",
+          "title_for_orders": "Orders Status indicators:",
+          "title_for_candidates": "Candidates Status Indicators:",
+          "subtitle": "Open, Lost, Won",
+          "subtitle_for_orders": "Open, Failed, Completed",
+          "subtitle_for_candidates": "Open, Rejected Candidates, Hired candidates",
+          "hint": "Leads Status Overview",
+          "won": "Won",
+          "completed": "Completed",
+          "hired_candidates": "Hired candidates",
+          "lost": "Lost",
+          "failed": "Failed",
+          "rejected_candidates": "Rejected Candidates",
+          "opened": "Open"
+        },
+        "sales_pipeline_indicators": {
+          "title": "Conversion Pipeline",
+          "total_sales": "Total Wins",
+          "conversion": "Win Conversion",
+          "average_amount": "Average Amount",
+          "average_term": "Average Duration",
+          "days": ["day", "days", "days"]
+        },
+        "switch": {
+          "deals_count": "Deals Count",
+          "orders_count": "Orders Count",
+          "sales_value": "Sales Value",
+          "orders_value": "Orders Value"
+        }
+      },
+      "goal_settings_page": {
+        "title": "Goal settings",
+        "total": "Total",
+        "back_button": "Dashboard",
+        "users_select": "Users",
+        "period_type": {
+          "month": "Month",
+          "quarter": "Quarter"
+        },
+        "change_period_modal": {
+          "title": "Warning!",
+          "annotation": "Changing the period will result in the loss of goals that you have set up earlier. Are you sure you want to continue?",
+          "approve": "Yes",
+          "cancel": "No"
+        },
+        "periods": {
+          "months": {
+            "january": "January",
+            "february": "February",
+            "march": "March",
+            "april": "April",
+            "may": "May",
+            "june": "June",
+            "july": "July",
+            "august": "August",
+            "september": "September",
+            "october": "October",
+            "november": "November",
+            "december": "December"
+          },
+          "quarters": {
+            "quarter1": "Quarter 1",
+            "quarter2": "Quarter 2",
+            "quarter3": "Quarter 3",
+            "quarter4": "Quarter 4"
+          }
+        },
+        "form_header_amount": "Amount",
+        "form_header_quantity": "Transactions",
+        "button_save": "Save"
+      }
+    }
+  }
+}

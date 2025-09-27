@@ -1,0 +1,9 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path id="Rectangle 6779 (Stroke)" fill-rule="evenodd" clip-rule="evenodd"
+    d="M6 8L6 10L13 10L13 8L6 8ZM5 10C5 10.5523 5.44772 11 6 11L13 11C13.5523 11 14 10.5523 14 10L14 8C14 7.44772 13.5523 7 13 7L6 7C5.44772 7 5 7.44772 5 8L5 10Z"
+    fill="#7D89A1" />
+  <path id="Rectangle 6780 (Stroke)" fill-rule="evenodd" clip-rule="evenodd"
+    d="M3 3L3 5L10 5L10 3L3 3ZM2 5C2 5.55228 2.44772 6 3 6L10 6C10.5523 6 11 5.55228 11 5L11 3C11 2.44772 10.5523 2 10 2L3 2C2.44772 2 2 2.44772 2 3L2 5Z"
+    fill="#7D89A1" />
+  <rect id="Rectangle 6801" x="2" y="13" width="12" height="1" rx="0.5" fill="#7D89A1" />
+</svg>

@@ -1,0 +1,71 @@
+{
+  "multichat": {
+    "amwork_messenger": "{{company}} Мессенджер",
+    "components": {
+      "multichat_control": {
+        "not_found": "Не найдено",
+        "chats": "Чаты",
+        "messages": "Сообщения",
+        "users": "Пользователи",
+        "owner": "Владелец",
+        "supervisor": "Наблюдатель",
+        "no_chats_yet": "Пока нет чатов",
+        "create_card": "Создать карточку",
+        "link_card": "Привязать карточку",
+        "card": "Карточка",
+        "ui": {
+          "deleted_user": "Удаленный пользователь 👻",
+          "multichat_control_header": {
+            "title": "{{company}} Мульти-Мессенджер"
+          },
+          "create_amwork_chat_button": {
+            "label": "Создать чат {{company}}",
+            "modals": {
+              "select_contact_title": "Выберите одного пользователя или группу пользователей",
+              "continue": "Продолжить",
+              "customize_chat": "Настроить чат",
+              "placeholders": {
+                "group_name": "Название группы"
+              }
+            }
+          },
+          "chats_header_providers_tabs": {
+            "all_chats": "Все Чаты"
+          },
+          "chat_message_context_menu": {
+            "reply": "Ответить",
+            "copy": "Копировать текст",
+            "edit": "Редактировать",
+            "delete": "Удалить"
+          },
+          "chat_message_reply_block": {
+            "editing_message": "Редактирование сообщения"
+          },
+          "send_chat_message_block": {
+            "placeholders": {
+              "message": "Сообщение"
+            }
+          },
+          "no_selected_chat_plug": {
+            "title": "Выберите чат, чтобы начать общение"
+          },
+          "chats_panel_block": {
+            "you": "Вы"
+          },
+          "send_chat_message_with_files_modal": {
+            "send_files": "Отправить файлы"
+          },
+          "chat_message_item": {
+            "you": "Вы"
+          },
+          "chat_controls_menu": {
+            "mark_as_read": "Пометить как прочитанное",
+            "delete_chat": "Удалить чат",
+            "delete_warning_title": "Вы уверены, что хотите удалить чат?",
+            "delete_warning_annotation": "Все сообщения будут удалены. Это действие нельзя отменить."
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "notes": {
+    "notes_page": {
+      "module_name": "Заметки",
+      "add_note": "Создать заметку",
+      "new_note_heading": "Новая заметка"
+    },
+    "toolbar": {
+      "undo": "Отменить",
+      "redo": "Повторить",
+      "bold": "Полужирный",
+      "italic": "Курсив",
+      "underline": "Подчеркнутый",
+      "strike": "Зачеркнутый",
+      "bullet_list": "Маркированный список",
+      "ordered_list": "Нумерованный список",
+      "text": "Текст",
+      "heading": "Название",
+      "subheading": "Заголовок",
+      "heading_3": "Подзаголовок",
+      "more": "Действия...",
+      "expand": "На весь экран",
+      "minimize": "В оконный режим"
+    },
+    "editor": {
+      "recently_edited": "только что",
+      "quick_note": "Быстрая заметка",
+      "last_changed": "Последние изменения: ",
+      "duplicate": "Дублировать",
+      "put_into_folder": "Восстановить",
+      "delete": "Удалить заметку"
+    },
+    "selector": {
+      "new_note_heading": "Новая заметка",
+      "saved_indicator": "Изменения сохранены",
+      "pinned": "Закрепленные",
+      "today": "Сегодня",
+      "yesterday": "Вчера",
+      "earlier": "Ранее"
+    },
+    "block": {
+      "unnamed_note": "Заметка без названия"
+    },
+    "folders": {
+      "all": "Все",
+      "recently_deleted": "Недавно удаленные"
+    }
+  }
+}

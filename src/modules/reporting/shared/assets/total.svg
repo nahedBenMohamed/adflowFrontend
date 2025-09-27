@@ -1,0 +1,11 @@
+<svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g id="Group">
+    <circle id="Ellipse 358" cx="8.5" cy="8" r="7" fill="url(#paint0_linear_12374_123840)" />
+  </g>
+  <defs>
+    <linearGradient id="paint0_linear_12374_123840" x1="1.5" y1="1" x2="18" y2="17.5" gradientUnits="userSpaceOnUse">
+      <stop offset="0.328125" stop-color="#3D8FEC" />
+      <stop offset="1" stop-color="#3D8FEC" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+</svg>

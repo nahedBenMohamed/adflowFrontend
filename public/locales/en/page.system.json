@@ -1,0 +1,19 @@
+{
+  "error_page": {
+    "title": "Something went wrong",
+    "annotation": "We are sorry, but something went wrong. We have been notified about this issue and we will take a look at it shortly. Please, go to the home page or try to reload the page.",
+    "show_error": "Show error message",
+    "home": "Home Page",
+    "reload": "Reload the Page"
+  },
+  "forbidden_page": {
+    "title": "Access to this page is forbidden.",
+    "back": "Go Back",
+    "home": "Home Page"
+  },
+  "not_found_page": {
+    "title": "This page could not be found.",
+    "home": "Home Page",
+    "back": "Go Back"
+  }
+}

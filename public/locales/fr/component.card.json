@@ -1,0 +1,344 @@
+{
+  "card": {
+    "status": {
+      "active": "Active",
+      "liquidating": "En liquidation",
+      "liquidated": "Liquidée",
+      "bankrupt": "Faillite",
+      "reorganizing": "En cours de fusion avec une autre entité juridique, suivie d’une liquidation"
+    },
+    "type": {
+      "legal": "Personne morale",
+      "individual": "Entrepreneur individuel"
+    },
+    "branch_type": {
+      "main": "Siège social",
+      "branch": "Filiale"
+    },
+    "opf": {
+      "bank": "Banque",
+      "bank_branch": "Agence bancaire",
+      "nko": "Organisation de crédit non bancaire (NKO)",
+      "nko_branch": "Agence NKO",
+      "rkc": "Centre de règlement et de caisse",
+      "cbr": "Direction de la Banque de Russie (mars 2021)",
+      "treasury": "Direction du Trésor (mars 2021)",
+      "other": "Autre"
+    },
+    "days": ["jour", "jours", "jours"],
+    "creation_date": "Créé",
+    "in_work": "En cours",
+    "shipping_date": "Expédié",
+    "closing_date": "Fermé",
+    "open_chat": "Ouvrir le chat",
+    "analytics": "Analyste",
+    "card_focus": "Centrer (met en surbrillance la carte dans le tableau et la liste)",
+    "field_formula_circular_dependency_warning": {
+      "warning_title": "Impossible d'enregistrer les modifications",
+      "warning_annotation": "Vous essayez de mettre à jour le champ de formule \"{{fieldName}}\" en utilisant une autre formule qui crée une dépendance circulaire (une formule dépend d'une autre formule qui en dépend). Veuillez mettre à jour les paramètres de la formule pour résoudre la dépendance circulaire et réessayer.",
+      "cancel_changes": "Annuler les modifications",
+      "continue": "Continuer"
+    },
+    "field_used_in_formula_warning": {
+      "warning_title": "Impossible d'enregistrer les modifications",
+      "warning_annotation": "Vous essayez de supprimer le champ \"{{fieldName}}\" qui est utilisé dans une formule. Supprimez-le d'abord de la formule et réessayez.",
+      "cancel_changes": "Annuler les modifications",
+      "continue": "Continuer"
+    },
+    "mutation_warning": {
+      "title": {
+        "change_stage": "Impossible de changer l'étape",
+        "save_changes": "Impossible d'enregistrer les modifications"
+      },
+      "annotation": "Certains champs obligatoires ne sont pas remplis. Veuillez les remplir et réessayer.",
+      "continue": "Continuer"
+    },
+    "change_linked_responsibles_modal": {
+      "header": "Changement de responsable",
+      "annotation": "Sélectionnez les cartes liées où vous souhaitez aussi changer de responsable.",
+      "change_responsible_in_chats": "Ajouter le responsable aux discussions des cartes",
+      "chats_hint": "Le nouveau responsable sera ajouté aux discussions des cartes liées où il n'est pas encore présent."
+    },
+    "owner": "Propriétaire",
+    "delete_warning_title": "Voulez-vous vraiment supprimer l'entité?",
+    "delete_warning_caption": "Cette action ne peut pas être annulée.",
+    "files": "Fichiers",
+    "from_card_or_linked_entities": "Depuis la carte ou les entités liées",
+    "recent": "Récent",
+    "change_board": "Changer de tableau",
+    "placeholders": {
+      "name": "Entrez le nom..."
+    },
+    "ui": {
+      "requisites_codes": {
+        "ie_name": "Prénom de l'Entrepreneur Individuel",
+        "ie_surname": "Nom de l'Entrepreneur Individuel",
+        "ie_patronymic": "Deuxième Prénom de l'Entrepreneur Individuel",
+        "org_name": "Nom de l'Entreprise",
+        "org_tin": "NIF de l'Entreprise",
+        "org_trrc": "KPP de l'Entreprise",
+        "org_psrn": "PSRN",
+        "org_type": "Type d'Entreprise",
+        "org_full_name": "Nom Complet de l'Entreprise",
+        "org_short_name": "Nom Abrégé de l'Entreprise",
+        "org_management_name": "Nom du Directeur",
+        "org_management_post": "Poste du Directeur",
+        "org_management_start_date": "Date de Prise de Fonction du Directeur",
+        "org_branch_count": "Nombre de Succursales",
+        "org_branch_type": "Type de Succursale",
+        "org_address": "Adresse de l'Entreprise",
+        "org_reg_date": "Date d'Enregistrement",
+        "org_liquidation_date": "Date de Liquidation",
+        "org_status": "Statut de l'Entreprise",
+        "stat_okato": "OKATO",
+        "stat_oktmo": "OKTMO",
+        "stat_okpo": "OKPO",
+        "stat_okogu": "OKOGU",
+        "stat_okfs": "OKFS",
+        "stat_okved": "OKVED",
+        "org_extra_employee_count": "Nombre Moyen d'Employés",
+        "org_extra_founders": "Fondateurs de l'Entreprise",
+        "org_extra_managers": "Dirigeants de l'Entreprise",
+        "org_extra_capital": "Capital Social",
+        "org_extra_licenses": "Licences",
+        "org_extra_phones": "Numéros de Téléphone",
+        "org_extra_emails": "Adresses Email",
+        "bank_name": "Nom de la Banque",
+        "bank_bic": "BIC de la Banque",
+        "bank_swift": "SWIFT",
+        "bank_tin": "NIF de la Banque",
+        "bank_trrc": "KPP de la Banque",
+        "bank_correspondent_acc": "Compte Correspondant",
+        "bank_payment_city": "Ville pour l'Ordre de Paiement",
+        "bank_opf_type": "Type d'Organisation Bancaire",
+        "bank_checking_account": "Compte de Compte"
+      },
+      "analytics": "Analytics",
+      "requisites": "Requisites",
+      "card_page_header": {
+        "overview": "Aperçu",
+        "products": "Produits",
+        "create_new_order": "Créer une nouvelle commande",
+        "orders": "Commandes",
+        "board": "Tableau",
+        "list": "Liste",
+        "calendar": "Calendrier",
+        "timeline": "Gantt",
+        "relocate_card_button": "Relocaliser la carte",
+        "order_denied": "Vous n'êtes pas autorisé à créer une commande. Contactez l'administrateur du compte pour y accéder."
+      },
+      "actions_dropdown": {
+        "delete_entity": "Supprimer l'entité",
+        "fine_tune": "Ajuster"
+      },
+      "mini_card": {
+        "enter_name": "Entrez le nom de {{name}}",
+        "unpin": "Détacher",
+        "owner": "Propriétaire",
+        "stage": "Étape",
+        "placeholders": {
+          "select_stage": "Sélectionnez l'étape"
+        },
+        "fields": {
+          "value": "Valeur",
+          "participants": "Participants",
+          "start_date": "Date de début",
+          "end_date": "Date de fin",
+          "description": "Description"
+        }
+      },
+      "stages": {
+        "disabled_while_adding": "Le changement de statut sera disponible après la création de la fiche"
+      },
+      "feed": {
+        "unknown": "Inconnu 👤",
+        "readonly": "Vous ne pouvez pas ajouter d'éléments à cette carte",
+        "disabled_while_adding": "L'ajout d’éléments à la fiche sera disponible après sa création",
+        "notes": "Notes",
+        "activities": "Activités",
+        "tasks": "Tâches",
+        "amwork_messenger": "Messagerie de {{company}}",
+        "documents": "Documents",
+        "create_documents_tab": "Créer des documents",
+        "create_chat": "Créer un chat avec l'équipe",
+        "add_visit": "Planifier une réunion",
+        "share_documents": "Partager des documents générés",
+        "empty": "Il n'y a encore rien ici",
+        "add_activity": {
+          "placeholder": "Description de l'activité"
+        },
+        "add_note": {
+          "add_note": "Ajouter une note"
+        },
+        "add_task_modal": {
+          "dates_error": "La date de fin doit être ultérieure à la date de début.",
+          "tab": "Ajouter une tâche",
+          "task_name": "Nom de la tâche *",
+          "planned_time": "Temps estimé",
+          "board_name": "Nom du tableau",
+          "assignee": "Attribué à",
+          "start_date": "Date de début",
+          "end_date": "Date de fin",
+          "description": "Description",
+          "subtasks": "Sous-tâches",
+          "placeholder": "Ajouter un titre...",
+          "add_board": "Ajouter un tableau",
+          "save": "Enregistrer",
+          "new_task": "Nouvelle tâche",
+          "repeating_task": {
+            "title": "Répéter la tâche",
+            "hint": "Définissez le nombre et l’intervalle des tâches répétées, si nécessaire. Les tâches seront créées avec ces paramètres. Si la tâche a une heure de début ou de fin, elles seront planifiées en respectant l’intervalle et les jours ouvrables.",
+            "count": "Quantité",
+            "interval": "Intervalle",
+            "interval_disabled_tooltip": "Définissez l'heure de début ou de fin de la tâche",
+            "intervals": {
+              "none": "Sans intervalle",
+              "day": "Tous les jours",
+              "week": "Chaque semaine",
+              "month": "Chaque mois"
+            }
+          },
+          "placeholders": {
+            "board": "Sélectionnez le tableau",
+            "subtask": "Nouvelle sous-tâche"
+          }
+        },
+        "filter": {
+          "all": "Tout",
+          "tasks": "Tâches",
+          "activities": "Activités",
+          "notes": "Notes",
+          "mail": "Courriel",
+          "files": "Fichiers",
+          "calls": "Appels"
+        },
+        "create_documents": {
+          "order": "Commande-{{number}}",
+          "documents": "Documents",
+          "create_documents": "Créer des documents",
+          "create_new_documents": "Créer de nouveaux documents",
+          "select_all": "Tout sélectionner",
+          "clear_selection": "Effacer la sélection",
+          "send_by_email": "Envoyer par courriel",
+          "add_template": "Ajouter un modèle",
+          "invalid_template_title": "Erreur dans le modèle",
+          "invalid_template_annotation": "Impossible de générer le document en raison d'erreurs de syntaxe dans le modèle. Mettez à jour le modèle ou choisissez-en un autre.",
+          "hints": {
+            "cancel": "Annuler",
+            "generate": "Générer",
+            "generate_anyway": "Générer quand même",
+            "docx_format": "Format DOCX",
+            "pdf_format": "Format PDF",
+            "no_documents_title": "Aucun modèle disponible",
+            "no_documents_annotation": "Aucun modèle de document disponible pour cette entité. Créez-en de nouveaux ou modifiez les existants dans Documents sur la page des paramètres.",
+            "creating_documents_title": "Création de vos documents",
+            "creating_documents_annotation": "Cela peut prendre un certain temps, mais après vous pourrez envoyer ou télécharger les documents.",
+            "select_template_title": "Sélectionnez un modèle",
+            "select_template_annotation": "Pour sélectionner un modèle, ouvrez la liste déroulante et choisissez le fichier souhaité.",
+            "format_title": "Format",
+            "issues_identified": "Plusieurs problèmes ont été identifiés",
+            "invalid_tags_annotation": "Il y a des codes qui semblent invalides ou associés à un champ vide :",
+            "format_annotation": "Sélectionnez le(s) format(s) dans lequel vous souhaitez générer le document."
+          },
+          "placeholders": {
+            "select_order": "Sélectionnez la commande",
+            "select_template": "Sélectionnez le modèle",
+            "invalid_tags_annotation": "Certains codes sont invalides ou associés à un champ vide :"
+          }
+        },
+        "activity_block": {
+          "creator": "Assigné à",
+          "start_date": "Date",
+          "plan_time": "Heure"
+        },
+        "creator_tag": {
+          "task_setter_at_time": "{{taskSetter}} à {{time}}"
+        },
+        "files_block": {
+          "unknown_file": "Fichier inconnu",
+          "downloaded_file": "{{companyName}} – Fichier téléchargé",
+          "attachment": "pièce jointe",
+          "attachments": "pièces jointes",
+          "download_all": "Tout télécharger"
+        },
+        "note_block": {
+          "block_title": "Note",
+          "creation_date": "Date de création",
+          "message": "Message",
+          "to_recipient": "à {{recipient}}"
+        },
+        "task_block": {
+          "creator": "Assigné à",
+          "start_date": "Date de début",
+          "end_date": "Date de fin",
+          "no_due_date": "Pas de date limite"
+        },
+        "mail_block": {
+          "sender": "Expéditeur",
+          "recipient": "Destinataire",
+          "date": "Date",
+          "seen": "Vu"
+        },
+        "document_block": {
+          "creation_date": "Date de création",
+          "docs": "Docs",
+          "annotation": "{{creator}} a créé {{documentName}} le {{date}}"
+        },
+        "call_block": {
+          "start_date": "Date",
+          "who_called": "Appelant",
+          "who_got_call": "Destinataire de l'appel",
+          "did_not_get_through": "N'a pas pu passer",
+          "time": {
+            "d": "j",
+            "h": "h",
+            "m": "m",
+            "s": "s"
+          },
+          "status": {
+            "missed_call": "Appel manqué",
+            "incoming_call": "Appel entrant",
+            "outgoing_call": "Appel sortant"
+          },
+          "comment": "Commentaire"
+        },
+        "common": {
+          "author": "Auteur",
+          "reporter": "Reporter",
+          "created_at": "{{day}} à {{time}}",
+          "result": "Résultat",
+          "functional_options": {
+            "edit": "Éditer",
+            "delete": "Supprimer"
+          },
+          "item_tag": {
+            "tasks": {
+              "resolved": "Tâche terminée",
+              "expired": "Tâche expirée",
+              "future": "Tâche à venir",
+              "today": "Tâche d'aujourd'hui"
+            },
+            "activities": {
+              "resolved": "Activité terminée",
+              "expired": "Activité expirée",
+              "future": "Activité à venir",
+              "today": "Activité d'aujourd'hui"
+            }
+          },
+          "activity_type_picker": {
+            "add_new_type": "Ajouter un nouveau type",
+            "warn_title": "Voulez-vous vraiment supprimer ce type d'activité?",
+            "warn_annotation": "Vous ne pourrez plus créer ce type d'activité.",
+            "placeholders": {
+              "select_activity_type": "Sélectionnez le type d'activité"
+            }
+          },
+          "user_picker": {
+            "add": "Ajouter",
+            "placeholder": "Sélectionnez un utilisateur"
+          }
+        }
+      }
+    }
+  }
+}

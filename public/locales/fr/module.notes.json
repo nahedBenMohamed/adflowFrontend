@@ -1,0 +1,49 @@
+{
+  "notes": {
+    "notes_page": {
+      "module_name": "Notes",
+      "add_note": "Créer une Note",
+      "new_note_heading": "Nouvelle Note"
+    },
+    "toolbar": {
+      "undo": "Annuler",
+      "redo": "Rétablir",
+      "bold": "Gras",
+      "italic": "Italique",
+      "underline": "Souligné",
+      "strike": "Barré",
+      "bullet_list": "Liste à puces",
+      "ordered_list": "Liste numérotée",
+      "text": "Texte",
+      "heading": "Titre",
+      "subheading": "Sous-titre",
+      "heading_3": "Sous-sous-titre",
+      "more": "Plus...",
+      "expand": "Agrandir",
+      "minimize": "Réduire"
+    },
+    "editor": {
+      "recently_edited": "À l'instant",
+      "quick_note": "Note Rapide",
+      "last_changed": "Dernières modifications : ",
+      "duplicate": "Dupliquer",
+      "put_into_folder": "Restaurer",
+      "delete": "Supprimer la note"
+    },
+    "selector": {
+      "new_note_heading": "Nouvelle Note",
+      "saved_indicator": "Les modifications sont enregistrées",
+      "pinned": "Épinglée",
+      "today": "Aujourd'hui",
+      "yesterday": "Hier",
+      "earlier": "Plus tôt"
+    },
+    "block": {
+      "unnamed_note": "Note Sans Nom"
+    },
+    "folders": {
+      "all": "Toutes",
+      "recently_deleted": "Supprimées Récemment"
+    }
+  }
+}

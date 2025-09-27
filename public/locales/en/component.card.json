@@ -1,0 +1,344 @@
+{
+  "card": {
+    "status": {
+      "active": "Active",
+      "liquidating": "Liquidating",
+      "liquidated": "Liquidated",
+      "bankrupt": "Bankrupt",
+      "reorganizing": "Reorganizing"
+    },
+    "type": {
+      "legal": "Legal",
+      "individual": "Individual"
+    },
+    "branch_type": {
+      "main": "Main",
+      "branch": "Branch"
+    },
+    "opf": {
+      "bank": "Bank",
+      "bank_branch": "Bank Branch",
+      "nko": "Non-Banking Credit Organization (NKO)",
+      "nko_branch": "NKO Branch",
+      "rkc": "Settlement and Cash Center",
+      "cbr": "Bank of Russia Department (March 2021)",
+      "treasury": "Treasury Department (March 2021)",
+      "other": "Other"
+    },
+    "days": ["day", "days", "days"],
+    "creation_date": "Created",
+    "in_work": "In Work",
+    "shipping_date": "Shipped",
+    "closing_date": "Closed",
+    "open_chat": "Open chat",
+    "analytics": "Analytics",
+    "card_focus": "Focus (highlights the card on board and list)",
+    "field_formula_circular_dependency_warning": {
+      "warning_title": "Unable to save changes",
+      "warning_annotation": "You are trying to update the formula field \"{{fieldName}}\" with usage of another formula that creates a circular dependency (one formula depends on another formula which depends on it). Please update the formula settings to resolve the circular dependency and try again.",
+      "cancel_changes": "Cancel Changes",
+      "continue": "Continue"
+    },
+    "field_used_in_formula_warning": {
+      "warning_title": "Unable to save changes",
+      "warning_annotation": "You're trying to delete field \"{{fieldName}}\" which is used in formula. Remove it from formula first and try again.",
+      "cancel_changes": "Cancel Changes",
+      "continue": "Continue"
+    },
+    "mutation_warning": {
+      "title": {
+        "change_stage": "Unable to change stage",
+        "save_changes": "Unable to save changes"
+      },
+      "annotation": "Some mandatory fields are not filled in. Please fill them in and try again.",
+      "continue": "Continue"
+    },
+    "change_linked_responsibles_modal": {
+      "header": "Change Responsible User",
+      "annotation": "Select linked cards where you also want to change the responsible user.",
+      "change_responsible_in_chats": "Add responsible user to card chats",
+      "chats_hint": "The new responsible user will be added to chats of linked cards where they are not yet present."
+    },
+    "owner": "Owner",
+    "delete_warning_title": "Do you really want to delete the entity?",
+    "delete_warning_caption": "This action cannot be undone.",
+    "files": "Files",
+    "from_card_or_linked_entities": "From card or linked entities",
+    "recent": "Recent",
+    "change_board": "Change board",
+    "placeholders": {
+      "name": "Enter name..."
+    },
+    "ui": {
+      "requisites_codes": {
+        "ie_name": "Individual Entrepreneur First Name",
+        "ie_surname": "Individual Entrepreneur Last Name",
+        "ie_patronymic": "Individual Entrepreneur Middle Name",
+        "org_name": "Company Name",
+        "org_tin": "Company TIN",
+        "org_trrc": "Company TRRC",
+        "org_psrn": "PSRN",
+        "org_type": "Company Type",
+        "org_full_name": "Full Company Name",
+        "org_short_name": "Short Company Name",
+        "org_management_name": "Director Name",
+        "org_management_post": "Director Position",
+        "org_management_start_date": "Director Start Date",
+        "org_branch_count": "Branch Count",
+        "org_branch_type": "Branch Type",
+        "org_address": "Company Address",
+        "org_reg_date": "Registration Date",
+        "org_liquidation_date": "Liquidation Date",
+        "org_status": "Company Status",
+        "stat_okato": "OKATO",
+        "stat_oktmo": "OKTMO",
+        "stat_okpo": "OKPO",
+        "stat_okogu": "OKOGU",
+        "stat_okfs": "OKFS",
+        "stat_okved": "OKVED",
+        "org_extra_employee_count": "Average Number of Employees",
+        "org_extra_founders": "Company Founders",
+        "org_extra_managers": "Company Managers",
+        "org_extra_capital": "Authorized Capital",
+        "org_extra_licenses": "Licenses",
+        "org_extra_phones": "Phone Numbers",
+        "org_extra_emails": "Email Addresses",
+        "bank_name": "Bank Name",
+        "bank_bic": "Bank BIC",
+        "bank_swift": "SWIFT",
+        "bank_tin": "Bank TIN",
+        "bank_trrc": "Bank TRRC",
+        "bank_correspondent_acc": "Correspondent Account",
+        "bank_payment_city": "Payment Order City",
+        "bank_opf_type": "Credit Organization Type",
+        "bank_checking_account": "Checking Account"
+      },
+      "analytics": "Analytics",
+      "requisites": "Requisites",
+      "card_page_header": {
+        "overview": "Overview",
+        "products": "Products",
+        "create_new_order": "Create new order",
+        "orders": "Orders",
+        "board": "Board",
+        "list": "List",
+        "calendar": "Calendar",
+        "timeline": "Gantt",
+        "relocate_card_button": "Relocate Card",
+        "order_denied": "You don't have permission to create orders. Contact account administrator for access."
+      },
+      "actions_dropdown": {
+        "delete_entity": "Delete entity",
+        "fine_tune": "Fine tune"
+      },
+      "mini_card": {
+        "enter_name": "Enter {{name}} name",
+        "unpin": "Unpin",
+        "owner": "Owner",
+        "stage": "Stage",
+        "placeholders": {
+          "select_stage": "Select stage"
+        },
+        "fields": {
+          "value": "Value",
+          "participants": "Participants",
+          "start_date": "Start Date",
+          "end_date": "End Date",
+          "description": "Description"
+        }
+      },
+      "stages": {
+        "disabled_while_adding": "Status change will be available after the card is created"
+      },
+      "feed": {
+        "unknown": "Unknown 👤",
+        "readonly": "You can not add elements to this card",
+        "disabled_while_adding": "Adding items to the card will be available after it is created",
+        "notes": "Notes",
+        "activities": "Activities",
+        "tasks": "Tasks",
+        "amwork_messenger": "{{company}} Messenger",
+        "documents": "Documents",
+        "create_documents_tab": "Create Documents",
+        "create_chat": "Create a Chat with the Team",
+        "add_visit": "Schedule a Meeting",
+        "share_documents": "Share generated documents",
+        "empty": "There's nothing here yet",
+        "add_activity": {
+          "placeholder": "Activity description"
+        },
+        "add_note": {
+          "add_note": "Add note"
+        },
+        "add_task_modal": {
+          "dates_error": "End date must be later than start date.",
+          "tab": "Add Task",
+          "task_name": "Task Name *",
+          "planned_time": "Estimated Time",
+          "board_name": "Board Name",
+          "assignee": "Assignee",
+          "start_date": "Start Date",
+          "end_date": "End Date",
+          "description": "Description",
+          "subtasks": "Subtasks",
+          "placeholder": "Add title...",
+          "add_board": "Add board",
+          "save": "Save",
+          "new_task": "New task",
+          "repeating_task": {
+            "title": "Repeat Task",
+            "hint": "Set the number and interval for repeat tasks if needed. Repeat tasks will be created with the same settings. If a task has a start or end time, it will be scheduled with the set interval, taking workdays into account.",
+            "count": "Count",
+            "interval": "Interval",
+            "interval_disabled_tooltip": "Set the start or end date of the task",
+            "intervals": {
+              "none": "No interval",
+              "day": "Daily",
+              "week": "Weekly",
+              "month": "Monthly"
+            }
+          },
+          "placeholders": {
+            "board": "Select board",
+            "subtask": "New subtask"
+          }
+        },
+        "filter": {
+          "all": "All",
+          "tasks": "Tasks",
+          "activities": "Activities",
+          "notes": "Notes",
+          "mail": "Mail",
+          "files": "Files",
+          "calls": "Calls"
+        },
+        "create_documents": {
+          "order": "Order-{{number}}",
+          "documents": "Documents",
+          "create_documents": "Create Documents",
+          "create_new_documents": "Create new documents",
+          "select_all": "Select all",
+          "clear_selection": "Clear selection",
+          "send_by_email": "Send by email",
+          "add_template": "Add template",
+          "invalid_template_title": "Template Error",
+          "invalid_template_annotation": "Document cannot be generated due to syntax errors in the template. Update the template or choose another.",
+          "hints": {
+            "cancel": "Cancel",
+            "generate": "Generate",
+            "generate_anyway": "Generate anyway",
+            "docx_format": "DOCX Format",
+            "pdf_format": "PDF Format",
+            "no_documents_title": "No templates available",
+            "no_documents_annotation": "No document templates available for this entity. Create new or modify existing ones in Documents on Settings page.",
+            "creating_documents_title": "Creating your documents",
+            "creating_documents_annotation": "It may take some time, but after that you can mail or download the documents.",
+            "select_template_title": "Select a template",
+            "select_template_annotation": "To select a template, open the dropdown list and choose a desired file.",
+            "format_title": "Format",
+            "issues_identified": "Several issues have been identified",
+            "invalid_tags_annotation": "There are some codes that appear to be invalid or are associated with an empty field:",
+            "format_annotation": "Select the format(s) in which you want to generate the document."
+          },
+          "placeholders": {
+            "select_order": "Select order",
+            "select_template": "Select template",
+            "invalid_tags_annotation": "Some codes are invalid or associated with an empty field:"
+          }
+        },
+        "activity_block": {
+          "creator": "Assignee",
+          "start_date": "Date",
+          "plan_time": "Time"
+        },
+        "creator_tag": {
+          "task_setter_at_time": "{{taskSetter}} at {{time}}"
+        },
+        "files_block": {
+          "unknown_file": "Unknown file",
+          "downloaded_file": "{{companyName}} – Downloaded file",
+          "attachment": "attachment",
+          "attachments": "attachments",
+          "download_all": "Download all"
+        },
+        "note_block": {
+          "block_title": "Note",
+          "creation_date": "Creation date",
+          "message": "Message",
+          "to_recipient": "to {{recipient}}"
+        },
+        "task_block": {
+          "creator": "Assignee",
+          "start_date": "Start Date",
+          "end_date": "End Date",
+          "no_due_date": "No due date"
+        },
+        "mail_block": {
+          "sender": "Sender",
+          "recipient": "Recipient",
+          "date": "Date",
+          "seen": "Seen"
+        },
+        "document_block": {
+          "creation_date": "Creation Date",
+          "docs": "Docs",
+          "annotation": "{{creator}} created {{documentName}} on {{date}}"
+        },
+        "call_block": {
+          "start_date": "Date",
+          "who_called": "Caller",
+          "who_got_call": "Callee",
+          "did_not_get_through": "Failed to get through",
+          "time": {
+            "d": "d",
+            "h": "h",
+            "m": "m",
+            "s": "s"
+          },
+          "status": {
+            "missed_call": "Missed Call",
+            "incoming_call": "Incoming Call",
+            "outgoing_call": "Outgoing Call"
+          },
+          "comment": "Comment"
+        },
+        "common": {
+          "author": "Author",
+          "reporter": "Reporter",
+          "created_at": "{{day}} at {{time}}",
+          "result": "Result",
+          "functional_options": {
+            "edit": "Edit",
+            "delete": "Delete"
+          },
+          "item_tag": {
+            "tasks": {
+              "resolved": "Completed Task",
+              "expired": "Overdue Task",
+              "future": "Upcoming Task",
+              "today": "Today's Task"
+            },
+            "activities": {
+              "resolved": "Completed Activity",
+              "expired": "Overdue Activity",
+              "future": "Upcoming Activity",
+              "today": "Today's Activity"
+            }
+          },
+          "activity_type_picker": {
+            "add_new_type": "Add new type",
+            "warn_title": "Do you really wish to delete this type of activity?",
+            "warn_annotation": "You will no longer be able to create this type of activity.",
+            "placeholders": {
+              "select_activity_type": "Select activity type"
+            }
+          },
+          "user_picker": {
+            "add": "Add",
+            "placeholder": "Select user"
+          }
+        }
+      }
+    }
+  }
+}

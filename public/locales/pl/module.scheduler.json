@@ -1,0 +1,219 @@
+{
+  "scheduler": {
+    "pages": {
+      "scheduler_board_view_page": {
+        "create_appointment": "Utwórz wizytę",
+        "stats_footer": {
+          "assigned": {
+            "label": "Umówione",
+            "hint": "Niepotwierdzone wizyty"
+          },
+          "confirmed": {
+            "label": "Potwierdzone",
+            "hint": "Potwierdzone wizyty"
+          },
+          "completed": {
+            "label": "Zrealizowane",
+            "hint": "Zakończone wizyty"
+          },
+          "not_took_place": {
+            "label": "Nieodbyta",
+            "hint": "Wizyty minione, nieoznaczone jako odbyty"
+          },
+          "not_scheduled": {
+            "label": "Bez kolejnej wizyty",
+            "hint": "Wizyty bez ustalonego terminu kolejnej wizyty"
+          },
+          "newbies": {
+            "label": "Pierwsza wizyta",
+            "hint": "Nowi goście"
+          },
+          "total": {
+            "label": "Razem",
+            "hint": "Łączna liczba wizyt"
+          }
+        }
+      },
+      "appointment_card_list_page": {
+        "visit_date": "Data wizyty"
+      },
+      "scheduler_schedule_view_page": {
+        "sync": "Synchronizuj",
+        "report_settings": "Ustawienia raportu",
+        "module_settings": "Ustawienia modułu",
+        "stats_settings": "Ustawienia statystyk",
+        "settings": "Ustawienia",
+        "report": "Raport",
+        "overview": "Kalendarz",
+        "responsible": "Odpowiedzialny",
+        "stage": "Etap",
+        "not_provided": "Nie podano",
+        "statuses": {
+          "scheduled": "Zaplanowane",
+          "confirmed": "Potwierdzone",
+          "completed": "Zakończone",
+          "cancelled": "Anulowane"
+        },
+        "created": "Utworzono",
+        "visit": "Wizytę {{number}}",
+        "description": "Opis",
+        "email": "E-mail",
+        "phone": "Telefon",
+        "price": "Cena",
+        "quantity": "Ilość",
+        "discount": "Zniżka",
+        "new_event": "Nowe wizytę",
+        "create_appointment": "Utwórz wizytę",
+        "tooltips": {
+          "reports_denied": "Nie masz uprawnień do przeglądania raportów. Skontaktuj się z administratorem konta, aby uzyskać dostęp."
+        },
+        "placeholders": {
+          "search_visits": "Szukaj wizyty"
+        },
+        "hooks": {
+          "use_appointments_history_services_columns": {
+            "name": "Nazwa",
+            "price": "Cena",
+            "quantity": "Ilość",
+            "discount": "Zniżka",
+            "amount": "Kwota"
+          },
+          "use_appointments_history_columns": {
+            "date": "Data",
+            "time": "Czas",
+            "performer": "Wykonawca",
+            "services": "Usługi",
+            "total": "Łącznie",
+            "status": "Status"
+          },
+          "use_appointment_service_block_columns": {
+            "discount": "Zniżka",
+            "quantity": "Ilość",
+            "amount": "Kwota"
+          }
+        },
+        "ui": {
+          "add_appointment_modal": {
+            "error": "Nie można utworzyć wizyty. Może to być spowodowane próbą utworzenia wizyty nakładającego się na istniejące lub wcześniejszą datą zakończenia niż rozpoczęcia.",
+            "visits_history_empty": "Historia wizyty jest pusta",
+            "no_planned_visits": "Brak zaplanowanych wizyty",
+            "save_changes": "Zapisz zmiany",
+            "planned_visit_title": "{{date}} od {{startTime}} do {{endTime}}",
+            "general_information": "Informacje ogólne",
+            "planned_visits": "Zaplanowane wizyty",
+            "visits_history": "Historia wizyty",
+            "title": "Tytuł",
+            "visit": "Wizytę #{{number}}",
+            "edit_visit": "Edytuj wizytę – {{name}}",
+            "new_visit": "Zaplanuj wizytę",
+            "visit_parameters": "Parametry wizyta",
+            "status": "Status",
+            "scheduler": "Harmonogram wizyty",
+            "select_users_group": "Wybierz grupę użytkowników",
+            "select_user": "Wybierz użytkownika",
+            "description": "Opis",
+            "from": "Od:",
+            "to": "Do:",
+            "date_and_time": "Data i czas",
+            "addition_of_services": "Dodanie usług",
+            "add_service": "Dodaj usługę",
+            "no_services": "Brak usług",
+            "warning_title": "Zmiany nie są zapisane",
+            "warning_annotation": "Czy na pewno chcesz zamknąć to okno? Wszystkie zmiany zostaną utracone.",
+            "close": "Zamknij",
+            "delete": "Usuń",
+            "count": "Łącznie wizyty",
+            "last_visit": "Ostatnie wizytę",
+            "completed_count": [
+              "Odbyło się {{count}} spotkanie",
+              "Odbyły się {{count}} spotkania",
+              "Odbyło się {{count}} spotkań"
+            ],
+            "placeholders": {
+              "select_time_period": "Okres czasu",
+              "title": "Tytuł wizyty",
+              "entity_name": "Nazwa jednostki",
+              "search_services": "Szukaj usług do dodania",
+              "user": "Użytkownik",
+              "users_group": "Grupa użytkowników",
+              "appointment_notes": "Notatka do wizyta"
+            },
+            "repeating_appointments_block": {
+              "header": "Powtarzające się wizyty",
+              "hint": "W razie potrzeby dostosuj interwał i liczbę powtarzanych spotkań. Spotkania zostaną zaplanowane na dni robocze określone w Ustawieniach.",
+              "interval": "Interwał",
+              "count": "Liczba",
+              "intervals": {
+                "none": "Nie powtarzać",
+                "day": "Codziennie",
+                "week": "Raz w tygodniu",
+                "month": "Raz w miesiącu"
+              },
+              "dates_display": {
+                "one_visit": "Powtarzająca się wizyta zaplanowana na {{date}} o {{time}}",
+                "visits_list": "Powtarzające się wizyty zaplanowane na {{dates}} o {{time}}",
+                "and": " i ",
+                "visits_interval_day": "Powtarzające się wizyty codziennie od {{from}} do {{to}} o {{time}}",
+                "visits_interval_week": "Powtarzające się wizyty raz w tygodniu od {{from}} do {{to}} o {{time}}",
+                "visits_interval_month": "Powtarzające się wizyty raz w miesiącu od {{from}} do {{to}} o {{time}}"
+              },
+              "list": {
+                "title": "Powtarzające się spotkania",
+                "hint": "Wybierz daty powtarzających się spotkań, jeśli są potrzebne.",
+                "dates_select": "Daty spotkań",
+                "add_new_appointment": "Dodaj spotkanie",
+                "new_appointment": "Nowe spotkanie",
+                "placeholders": {
+                  "dates_select": "Wybierz daty"
+                }
+              }
+            },
+            "batch_cancel": {
+              "cancel_all": "Anuluj wszystkie",
+              "warning_title": "Czy na pewno chcesz anulować wszystkie zaplanowane wizyty?",
+              "warning_annotation": [
+                "Anulowana zostanie {{count}} wizyta.",
+                "Anulowane zostaną {{count}} wizyty.",
+                "Anulowanych zostanie {{count}} wizyt."
+              ],
+              "back": "Powrót",
+              "cancel": "Cofnąć"
+            },
+            "duplicate_warning_modal": {
+              "move": "Przenieś",
+              "same_time_title": "Spotkanie już zaplanowane na tę godzinę",
+              "same_day_title": "Spotkanie już zaplanowane na ten dzień",
+              "same_time_annotation": "W tym kalendarzu nie można tworzyć powtórnych spotkań tego samego dnia. Edytuj istniejące spotkanie lub zmień datę tego spotkania.",
+              "same_day_annotation": "W tym kalendarzu nie można tworzyć powtórnych spotkań tego samego dnia. Czy chcesz przenieść spotkanie zaplanowane na {{time}}?"
+            },
+            "intersect_warning_modal": {
+              "title": "Nakładanie się spotkań",
+              "annotation": "Spotkanie nakłada się czasowo na już zaplanowane w tym kalendarzu. Wybierz inny termin lub zmień osobę odpowiedzialną."
+            }
+          },
+          "stats_settings_drawer": {
+            "title": "Ustawienia statystyk",
+            "description": "Wyświetlane wartości statystyk",
+            "stats": {
+              "assigned": "Przydzielone",
+              "confirmed": "Potwierdzone",
+              "completed": "Zrealizowane",
+              "not_took_place": "Nieodbyta",
+              "not_scheduled": "Bez kolejnej wizyty",
+              "newbies": "Pierwsza wizyta",
+              "total": "Razem"
+            }
+          },
+          "local_time_warning": {
+            "local_correction": [
+              "Korekta czasu lokalnego: {{hours}} godzina",
+              "Korekta czasu lokalnego: {{hours}} godziny",
+              "Korekta czasu lokalnego: {{hours}} godzin"
+            ],
+            "hint": "Nie znajdujesz się w strefie czasowej określonej w ustawieniach systemu, więc godziny pracy w kalendarzu i godziny spotkań są przesunięte o określoną liczbę godzin. Jeśli wydaje ci się, że to błąd, zmień strefę czasową w ustawieniach lub skontaktuj się z działem wsparcia."
+          }
+        }
+      }
+    }
+  }
+}

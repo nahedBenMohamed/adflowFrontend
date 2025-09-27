@@ -1,0 +1,49 @@
+{
+  "notes": {
+    "notes_page": {
+      "module_name": "Notatki",
+      "add_note": "Utwórz notatkę",
+      "new_note_heading": "Nowa notatka"
+    },
+    "toolbar": {
+      "undo": "Cofnij",
+      "redo": "Ponów",
+      "bold": "Pogrubienie",
+      "italic": "Kursywa",
+      "underline": "Podkreślenie",
+      "strike": "Przekreślenie",
+      "bullet_list": "Lista punktowana",
+      "ordered_list": "Lista numerowana",
+      "text": "Tekst",
+      "heading": "Tytuł",
+      "subheading": "Nagłówek",
+      "heading_3": "Podgłówek",
+      "more": "Więcej...",
+      "expand": "Rozwiń",
+      "minimize": "Zwiń"
+    },
+    "editor": {
+      "recently_edited": "Przed chwilą",
+      "quick_note": "Szybka notatka",
+      "last_changed": "Ostatnie zmiany: ",
+      "duplicate": "Duplikuj",
+      "put_into_folder": "Przywróć",
+      "delete": "Usuń notatkę"
+    },
+    "selector": {
+      "new_note_heading": "Nowa notatka",
+      "saved_indicator": "Zmiany zostały zapisane",
+      "pinned": "Przypięte",
+      "today": "Dzisiaj",
+      "yesterday": "Wczoraj",
+      "earlier": "Wcześniej"
+    },
+    "block": {
+      "unnamed_note": "Bez nazwy"
+    },
+    "folders": {
+      "all": "Wszystkie",
+      "recently_deleted": "Ostatnio usunięte"
+    }
+  }
+}

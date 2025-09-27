@@ -1,0 +1,94 @@
+{
+  "name": "Workspace",
+  "uri": "http://example.com/workspace",
+  "prefix": "workspace",
+  "xml": {
+    "tagAlias": "lowerCase"
+  },
+  "types": [
+    {
+      "name": "WorkspaceServiceTask",
+      "extends": ["bpmn:ServiceTask"],
+      "properties": [
+        {
+          "name": "isWorkspaceServiceTask",
+          "isAttr": true,
+          "type": "Boolean"
+        },
+        {
+          "name": "entityTypeActionType",
+          "isAttr": true,
+          "type": "String"
+        }
+      ]
+    },
+    {
+      "name": "WorkspaceDelay",
+      "extends": ["bpmn:IntermediateCatchEvent"],
+      "properties": [
+        {
+          "name": "isWorkspaceDelay",
+          "isAttr": true,
+          "type": "Boolean"
+        },
+        {
+          "name": "delay",
+          "isAttr": true,
+          "type": "Number"
+        }
+      ]
+    },
+    {
+      "name": "WorkspaceSequenceFlow",
+      "extends": ["bpmn:SequenceFlow"],
+      "properties": [
+        {
+          "name": "isWorkspaceSequenceFlow",
+          "isAttr": true,
+          "type": "Boolean"
+        },
+        {
+          "name": "stringifiedConditions",
+          "isAttr": true,
+          "type": "String"
+        },
+        {
+          "name": "stageId",
+          "isAttr": true,
+          "type": "Number"
+        },
+        {
+          "name": "entityTypeId",
+          "isAttr": true,
+          "type": "Number"
+        }
+      ]
+    },
+    {
+      "name": "WorkspaceEvent",
+      "extends": ["bpmn:StartEvent"],
+      "properties": [
+        {
+          "name": "isWorkspaceEvent",
+          "isAttr": true,
+          "type": "Boolean"
+        },
+        {
+          "name": "accountId",
+          "isAttr": true,
+          "type": "Number"
+        },
+        {
+          "name": "entityTypeId",
+          "isAttr": true,
+          "type": "Number"
+        },
+        {
+          "name": "entityTypeTrigger",
+          "isAttr": true,
+          "type": "String"
+        }
+      ]
+    }
+  ]
+}

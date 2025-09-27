@@ -1,0 +1,71 @@
+{
+  "multichat": {
+    "amwork_messenger": "{{company}} Messenger",
+    "components": {
+      "multichat_control": {
+        "not_found": "Nie znaleziono",
+        "chats": "Czaty",
+        "messages": "Wiadomości",
+        "users": "Użytkownicy",
+        "owner": "Odpowiedzialny",
+        "supervisor": "Supervisor",
+        "no_chats_yet": "Brak czatów",
+        "create_card": "Utwórz kartę",
+        "link_card": "Przypnij kartę",
+        "card": "Karta",
+        "ui": {
+          "deleted_user": "Usunięty użytkownik 👻",
+          "multichat_control_header": {
+            "title": "{{company}} Multi Messenger"
+          },
+          "create_amwork_chat_button": {
+            "label": "Nowy czat {{company}}",
+            "modals": {
+              "select_contact_title": "Wybierz jednego użytkownika lub grupę użytkowników",
+              "continue": "Kontynuuj",
+              "customize_chat": "Dostosuj czat",
+              "placeholders": {
+                "group_name": "Nazwa grupy"
+              }
+            }
+          },
+          "chats_header_providers_tabs": {
+            "all_chats": "Wszystkie czaty"
+          },
+          "chat_message_context_menu": {
+            "reply": "Odpowiedzieć",
+            "copy": "Kopiuj tekst",
+            "edit": "Redagować",
+            "delete": "Usunąć"
+          },
+          "chat_message_reply_block": {
+            "editing_message": "Edycja wiadomości"
+          },
+          "send_chat_message_block": {
+            "placeholders": {
+              "message": "Wiadomość"
+            }
+          },
+          "no_selected_chat_plug": {
+            "title": "Wybierz czat, aby rozpocząć rozmowę"
+          },
+          "chats_panel_block": {
+            "you": "Ty"
+          },
+          "send_chat_message_with_files_modal": {
+            "send_files": "Wyślij pliki"
+          },
+          "chat_message_item": {
+            "you": "Ty"
+          },
+          "chat_controls_menu": {
+            "mark_as_read": "Oznacz jako przeczytane",
+            "delete_chat": "Usuń czat",
+            "delete_warning_title": "Czy na pewno chcesz usunąć czat?",
+            "delete_warning_annotation": "Wszystkie wiadomości zostaną usunięte. Tej akcji nie można cofnąć."
+          }
+        }
+      }
+    }
+  }
+}

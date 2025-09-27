@@ -1,0 +1,1 @@
+export { useGetChatsViewInfo } from './useGetChatsViewInfo';

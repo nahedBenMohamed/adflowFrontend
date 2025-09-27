@@ -1,0 +1,344 @@
+{
+  "card": {
+    "status": {
+      "active": "Activa",
+      "liquidating": "En liquidación",
+      "liquidated": "Liquidada",
+      "bankrupt": "Bancarrota",
+      "reorganizing": "En proceso de fusión con otra entidad jurídica, seguida de liquidación"
+    },
+    "type": {
+      "legal": "Persona jurídica",
+      "individual": "Empresario individual"
+    },
+    "branch_type": {
+      "main": "Oficina central",
+      "branch": "Sucursal"
+    },
+    "opf": {
+      "bank": "Banco",
+      "bank_branch": "Sucursal bancaria",
+      "nko": "Organización de crédito no bancario (NKO)",
+      "nko_branch": "Sucursal NKO",
+      "rkc": "Centro de liquidación y caja",
+      "cbr": "Departamento del Banco de Rusia (marzo 2021)",
+      "treasury": "Departamento del Tesoro (marzo 2021)",
+      "other": "Otro"
+    },
+    "days": ["día", "días", "días"],
+    "creation_date": "Creado",
+    "in_work": "En Trabajo",
+    "shipping_date": "Enviado",
+    "closing_date": "Cerrado",
+    "open_chat": "Abrir chat",
+    "analytics": "Analista",
+    "card_focus": "Enfocar (resalta la tarjeta en el tablero y la lista)",
+    "field_formula_circular_dependency_warning": {
+      "warning_title": "No se pueden guardar los cambios",
+      "warning_annotation": "Está intentando actualizar el campo de fórmula \"{{fieldName}}\" utilizando otra fórmula que crea una dependencia circular (una fórmula depende de otra fórmula que depende de ella). Por favor, actualice la configuración de la fórmula para resolver la dependencia circular e intente nuevamente.",
+      "cancel_changes": "Cancelar Cambios",
+      "continue": "Continuar"
+    },
+    "field_used_in_formula_warning": {
+      "warning_title": "No se pueden guardar los cambios",
+      "warning_annotation": "Está intentando eliminar el campo \"{{fieldName}}\" que se usa en una fórmula. Elimínelo de la fórmula primero e intente nuevamente.",
+      "cancel_changes": "Cancelar Cambios",
+      "continue": "Continuar"
+    },
+    "mutation_warning": {
+      "title": {
+        "change_stage": "No se puede cambiar la etapa",
+        "save_changes": "No se pueden guardar los cambios"
+      },
+      "annotation": "Faltan algunos campos obligatorios. Por favor, complétalos e intente nuevamente.",
+      "continue": "Continuar"
+    },
+    "change_linked_responsibles_modal": {
+      "header": "Cambio de responsable",
+      "annotation": "Selecciona las tarjetas vinculadas en las que también deseas cambiar el responsable",
+      "change_responsible_in_chats": "Agregar responsable a los chats de las tarjetas",
+      "chats_hint": "El nuevo responsable será agregado a los chats de las tarjetas vinculadas en las que aún no esté presente."
+    },
+    "owner": "Propietario",
+    "delete_warning_title": "¿Realmente desea eliminar la entidad?",
+    "delete_warning_caption": "Esta acción no se puede deshacer.",
+    "files": "Archivos",
+    "from_card_or_linked_entities": "De la tarjeta o entidades vinculadas",
+    "recent": "Reciente",
+    "change_board": "Cambiar tablero",
+    "placeholders": {
+      "name": "Ingrese nombre..."
+    },
+    "ui": {
+      "requisites_codes": {
+        "ie_name": "Nombre del Empresario Individual",
+        "ie_surname": "Apellido del Empresario Individual",
+        "ie_patronymic": "Segundo Nombre del Empresario Individual",
+        "org_name": "Nombre de la Empresa",
+        "org_tin": "NIF de la Empresa",
+        "org_trrc": "KPP de la Empresa",
+        "org_psrn": "PSRN",
+        "org_type": "Tipo de Empresa",
+        "org_full_name": "Nombre Completo de la Empresa",
+        "org_short_name": "Nombre Corto de la Empresa",
+        "org_management_name": "Nombre del Director",
+        "org_management_post": "Cargo del Director",
+        "org_management_start_date": "Fecha de Inicio del Director",
+        "org_branch_count": "Número de Sucursales",
+        "org_branch_type": "Tipo de Sucursal",
+        "org_address": "Dirección de la Empresa",
+        "org_reg_date": "Fecha de Registro",
+        "org_liquidation_date": "Fecha de Liquidación",
+        "org_status": "Estado de la Empresa",
+        "stat_okato": "OKATO",
+        "stat_oktmo": "OKTMO",
+        "stat_okpo": "OKPO",
+        "stat_okogu": "OKOGU",
+        "stat_okfs": "OKFS",
+        "stat_okved": "OKVED",
+        "org_extra_employee_count": "Número Medio de Empleados",
+        "org_extra_founders": "Fundadores de la Empresa",
+        "org_extra_managers": "Directivos de la Empresa",
+        "org_extra_capital": "Capital Social",
+        "org_extra_licenses": "Licencias",
+        "org_extra_phones": "Números de Teléfono",
+        "org_extra_emails": "Direcciones de Correo Electrónico",
+        "bank_name": "Nombre del Banco",
+        "bank_bic": "BIC del Banco",
+        "bank_swift": "SWIFT",
+        "bank_tin": "NIF del Banco",
+        "bank_trrc": "KPP del Banco",
+        "bank_correspondent_acc": "Cuenta Corresponsal",
+        "bank_payment_city": "Ciudad para la Orden de Pago",
+        "bank_opf_type": "Tipo de Organización Bancaria",
+        "bank_checking_account": "Cuenta de Cheque"
+      },
+      "analytics": "Analítica",
+      "requisites": "Requisitos",
+      "card_page_header": {
+        "overview": "Resumen",
+        "products": "Productos",
+        "create_new_order": "Crear nuevo pedido",
+        "orders": "Pedidos",
+        "board": "Tablero",
+        "list": "Lista",
+        "calendar": "Calendario",
+        "timeline": "Gantt",
+        "relocate_card_button": "Mover Tarjeta",
+        "order_denied": "No tiene permiso para crear un pedido. Póngase en contacto con el administrador de la cuenta para obtener acceso."
+      },
+      "actions_dropdown": {
+        "delete_entity": "Eliminar entidad",
+        "fine_tune": "Ajustar"
+      },
+      "mini_card": {
+        "enter_name": "Ingrese nombre de {{name}}",
+        "unpin": "Desanclar",
+        "owner": "Propietario",
+        "stage": "Etapa",
+        "placeholders": {
+          "select_stage": "Seleccione etapa"
+        },
+        "fields": {
+          "value": "Valor",
+          "participants": "Participantes",
+          "start_date": "Fecha de Inicio",
+          "end_date": "Fecha de Fin",
+          "description": "Descripción"
+        }
+      },
+      "stages": {
+        "disabled_while_adding": "El cambio de estado estará disponible después de crear la tarjeta"
+      },
+      "feed": {
+        "unknown": "Desconocido 👤",
+        "readonly": "No puede agregar elementos a esta tarjeta",
+        "disabled_while_adding": "Agregar elementos a la tarjeta estará disponible después de crearla",
+        "notes": "Notas",
+        "activities": "Actividades",
+        "tasks": "Tareas",
+        "amwork_messenger": "Mensajero de {{company}}",
+        "documents": "Documentos",
+        "create_documents_tab": "Crear Documentos",
+        "create_chat": "Crear un Chat con el Equipo",
+        "add_visit": "Programar una Reunión",
+        "share_documents": "Compartir documentos generados",
+        "empty": "Aquí no hay nada todavía",
+        "add_activity": {
+          "placeholder": "Descripción de la actividad"
+        },
+        "add_note": {
+          "add_note": "Agregar nota"
+        },
+        "add_task_modal": {
+          "dates_error": "La fecha de fin debe ser posterior a la fecha de inicio.",
+          "tab": "Agregar Tarea",
+          "task_name": "Nombre de la Tarea *",
+          "planned_time": "Tiempo Estimado",
+          "board_name": "Nombre del Tablero",
+          "assignee": "Asignado a",
+          "start_date": "Fecha de Inicio",
+          "end_date": "Fecha de Fin",
+          "description": "Descripción",
+          "subtasks": "Subareas",
+          "placeholder": "Agregar título...",
+          "add_board": "Agregar tablero",
+          "save": "Guardar",
+          "new_task": "Nueva tarea",
+          "repeating_task": {
+            "title": "Repetir Tarea",
+            "hint": "Establezca la cantidad y el intervalo de tareas repetitivas, si es necesario. Las tareas se crearán con estas configuraciones. Si la tarea tiene hora de inicio o fin, se programarán respetando el intervalo y días laborales.",
+            "count": "Cantidad",
+            "interval": "Intervalo",
+            "interval_disabled_tooltip": "Establezca la hora de Inicio o la hora de finalización de la tarea",
+            "intervals": {
+              "none": "Sin intervalo",
+              "day": "Diario",
+              "week": "Semanal",
+              "month": "Mensual"
+            }
+          },
+          "placeholders": {
+            "board": "Seleccione tablero",
+            "subtask": "Nueva subarea"
+          }
+        },
+        "filter": {
+          "all": "Todo",
+          "tasks": "Tareas",
+          "activities": "Actividades",
+          "notes": "Notas",
+          "mail": "Correo",
+          "files": "Archivos",
+          "calls": "Llamadas"
+        },
+        "create_documents": {
+          "order": "Pedido-{{number}}",
+          "documents": "Documentos",
+          "create_documents": "Crear Documentos",
+          "create_new_documents": "Crear nuevos documentos",
+          "select_all": "Seleccionar todo",
+          "clear_selection": "Limpiar selección",
+          "send_by_email": "Enviar por correo",
+          "add_template": "Agregar plantilla",
+          "invalid_template_title": "Error en la plantilla",
+          "invalid_template_annotation": "No se puede generar el documento debido a errores de sintaxis en la plantilla. Actualiza la plantilla o elige otra.",
+          "hints": {
+            "cancel": "Cancelar",
+            "generate": "Generar",
+            "generate_anyway": "Generar de todos modos",
+            "docx_format": "Formato DOCX",
+            "pdf_format": "Formato PDF",
+            "no_documents_title": "No hay plantillas disponibles",
+            "no_documents_annotation": "No hay plantillas de documentos disponibles para esta entidad. Cree nuevas o modifique las existentes en Documentos en la página de Configuración.",
+            "creating_documents_title": "Creando sus documentos",
+            "creating_documents_annotation": "Esto puede tardar un poco, pero después podrá enviar o descargar los documentos.",
+            "select_template_title": "Seleccione una plantilla",
+            "select_template_annotation": "Para seleccionar una plantilla, abra la lista desplegable y elija el archivo deseado.",
+            "format_title": "Formato",
+            "issues_identified": "Se han identificado varios problemas",
+            "invalid_tags_annotation": "Hay algunos códigos que parecen ser inválidos o están asociados con un campo vacío:",
+            "format_annotation": "Seleccione el(los) formato(s) en el que desea generar el documento."
+          },
+          "placeholders": {
+            "select_order": "Seleccione pedido",
+            "select_template": "Seleccione plantilla",
+            "invalid_tags_annotation": "Algunos códigos son inválidos o están asociados con un campo vacío:"
+          }
+        },
+        "activity_block": {
+          "creator": "Asignado a",
+          "start_date": "Fecha",
+          "plan_time": "Hora"
+        },
+        "creator_tag": {
+          "task_setter_at_time": "{{taskSetter}} a las {{time}}"
+        },
+        "files_block": {
+          "unknown_file": "Archivo desconocido",
+          "downloaded_file": "{{companyName}} – Archivo descargado",
+          "attachment": "adjunto",
+          "attachments": "adjuntos",
+          "download_all": "Descargar todo"
+        },
+        "note_block": {
+          "block_title": "Nota",
+          "creation_date": "Fecha de creación",
+          "message": "Mensaje",
+          "to_recipient": "a {{recipient}}"
+        },
+        "task_block": {
+          "creator": "Asignado a",
+          "start_date": "Fecha de Inicio",
+          "end_date": "Fecha de Fin",
+          "no_due_date": "Sin fecha límite"
+        },
+        "mail_block": {
+          "sender": "Remitente",
+          "recipient": "Destinatario",
+          "date": "Fecha",
+          "seen": "Visto"
+        },
+        "document_block": {
+          "creation_date": "Fecha de Creación",
+          "docs": "Docs",
+          "annotation": "{{creator}} creó {{documentName}} el {{date}}"
+        },
+        "call_block": {
+          "start_date": "Fecha",
+          "who_called": "L’amante",
+          "who_got_call": "Receptor de la llamada",
+          "did_not_get_through": "No se pudo comunicar",
+          "time": {
+            "d": "d",
+            "h": "h",
+            "m": "m",
+            "s": "s"
+          },
+          "status": {
+            "missed_call": "Llamada Perdida",
+            "incoming_call": "Llamada Entrante",
+            "outgoing_call": "Llamada Saliente"
+          },
+          "comment": "Comentario"
+        },
+        "common": {
+          "author": "Autor",
+          "reporter": "Reportero",
+          "created_at": "{{day}} a las {{time}}",
+          "result": "Resultado",
+          "functional_options": {
+            "edit": "Editar",
+            "delete": "Eliminar"
+          },
+          "item_tag": {
+            "tasks": {
+              "resolved": "Tarea Completada",
+              "expired": "Tarea Vencida",
+              "future": "Tarea Futura",
+              "today": "Tarea de Hoy"
+            },
+            "activities": {
+              "resolved": "Actividad Completada",
+              "expired": "Actividad Vencida",
+              "future": "Actividad Futura",
+              "today": "Actividad de Hoy"
+            }
+          },
+          "activity_type_picker": {
+            "add_new_type": "Agregar nuevo tipo",
+            "warn_title": "¿Realmente desea eliminar este tipo de actividad?",
+            "warn_annotation": "Ya no podrá crear este tipo de actividad.",
+            "placeholders": {
+              "select_activity_type": "Seleccione tipo de actividad"
+            }
+          },
+          "user_picker": {
+            "add": "Agregar",
+            "placeholder": "Seleccione usuario"
+          }
+        }
+      }
+    }
+  }
+}

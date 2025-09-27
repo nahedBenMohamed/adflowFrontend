@@ -1,0 +1,15 @@
+export enum WazzupChannelState {
+  INIT = 'init',
+  QRIDLE = 'qridle',
+  ACTIVE = 'active',
+  BLOCKED = 'blocked',
+  REJECTED = 'rejected',
+  DISABLED = 'disabled',
+  ON_MODERATION = 'onModeration',
+  UNAUTHORIZED = 'unauthorized',
+  FOREIGN_PHONE = 'foreignphone',
+  OPEN_ELSEWHERE = 'openelsewhere',
+  PHONE_UNAVAILABLE = 'phoneUnavailable',
+  NOT_ENOUGH_MONEY = 'notEnoughMoney',
+  WAIT_FOR_PASSWORD = 'waitForPassword',
+}

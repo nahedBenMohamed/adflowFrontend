@@ -1,0 +1,18 @@
+{
+  "dashboard_page": {
+    "top_sellers": {
+      "title": "Рейтинг",
+      "hint": "Lorem ipsum dolor sim amet, consectetur adipiscing elit."
+    },
+    "analytics": {
+      "total_entities": "Всего",
+      "won_entities": "Выиграно",
+      "lost_entities": "Потеряно",
+      "new_entities": "Новые",
+      "total_tasks": "Всего задач",
+      "completed_tasks": "Выполненные задачи",
+      "expired_tasks": "Невыполненные задачи",
+      "no_tasks": "Нет задач"
+    }
+  }
+}

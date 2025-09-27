@@ -1,0 +1,502 @@
+{
+  "products": {
+    "components": {
+      "common": {
+        "readonly_stocks": "No puedes editar existencias en este estado",
+        "readonly_delete": "No puedes eliminar artículos del pedido en este estado",
+        "select_the_warehouse_to_write_off": "Selecciona el almacén del que se descontarán las existencias",
+        "return_stocks_warning_modal": {
+          "title": "Devolver existencias",
+          "annotation": "¿Deseas devolver las existencias al almacén?",
+          "approve_title": "Devolver",
+          "cancel_title": "No devolver"
+        },
+        "delete_order_warning_modal": {
+          "title": "Atención",
+          "annotation": "¿Deseas eliminar el pedido? Esta acción no se puede deshacer."
+        },
+        "delete_order_or_clear_items_warning_modal": {
+          "title": "Atención",
+          "annotation": "¿Deseas eliminar el pedido completo o eliminar todos los artículos? Esta acción no se puede deshacer.",
+          "approve_title": "Eliminar pedido",
+          "cancel_title": "Eliminar artículos"
+        },
+        "rental_order_status_select": {
+          "formed": "Formado",
+          "accepted_to_warehouse": "Aceptado en almacén",
+          "sent_to_warehouse": "Enviado a almacén",
+          "delivered": "Entregado",
+          "reserved": "Reservado",
+          "shipped": "Enviado",
+          "cancelled": "Cancelado",
+          "returned": "Devuelto",
+          "placeholders": {
+            "select_status": "Seleccionar estado"
+          }
+        },
+        "order_status_select": {
+          "placeholders": {
+            "select_status": "Seleccionar estado"
+          },
+          "statuses": {
+            "reserved": "Reservado",
+            "sent_for_shipment": "Enviado para envío",
+            "shipped": "Enviado",
+            "cancelled": "Cancelado",
+            "returned": "Devuelto"
+          }
+        },
+        "products_tab_selector": {
+          "shipments": "Envíos",
+          "timetable": "Calendario",
+          "products": "Productos"
+        },
+        "products_category_select": {
+          "no_categories": "Sin Categorías",
+          "placeholders": {
+            "select_category": "Categoría"
+          }
+        },
+        "products_warehouse_select": {
+          "no_warehouses": "Sin Almacenes",
+          "placeholders": {
+            "select_warehouse": "Almacén"
+          }
+        },
+        "products_settings_button": {
+          "settings": "Configuraciones",
+          "module_settings": "Configuración del módulo",
+          "table_settings": "Configuración de la tabla",
+          "report_settings": "Configuración de informes"
+        },
+        "calendar": {
+          "month": "Mes",
+          "week": "Semana",
+          "days": {
+            "short": {
+              "mo": "Lu",
+              "tu": "Ma",
+              "we": "Mi",
+              "th": "Ju",
+              "fr": "Vi",
+              "sa": "Sa",
+              "su": "Do"
+            },
+            "long": {
+              "mo": "Lunes",
+              "tu": "Martes",
+              "we": "Miércoles",
+              "th": "Jueves",
+              "fr": "Viernes",
+              "sa": "Sábado",
+              "su": "Domingo"
+            }
+          },
+          "resources_label": "Productos",
+          "statuses": {
+            "reserved": "Reservado",
+            "rented": "Alquilado"
+          },
+          "fields": {
+            "phone": "Teléfono",
+            "mail": "Correo",
+            "shifts": "Número de días",
+            "status": "Estado",
+            "period": "Período de alquiler"
+          }
+        }
+      }
+    },
+    "pages": {
+      "card_products_orders_page": {
+        "ui": {
+          "empty": "Aún no hay pedidos en esta sección"
+        },
+        "hooks": {
+          "use_products_section_orders_columns": {
+            "name": "Nombre del pedido",
+            "warehouse": "Almacén",
+            "status": "Estado",
+            "created_at": "Creado el",
+            "shipped_at": "Enviado el",
+            "creator": "Creador",
+            "order": "Pedido-{{number}}"
+          },
+          "use_rental_products_section_orders_columns": {
+            "name": "Nombre",
+            "status": "Estado",
+            "created_at": "Creado el",
+            "creator": "Creador",
+            "order": "Pedido-{{number}}",
+            "shipment": "Envío para pedido #{{number}}",
+            "linked_entity": "Entidad vinculada"
+          }
+        }
+      },
+      "card_products_order_page": {
+        "templates": {
+          "products_order_block_template": {
+            "new_order": "Nuevo Pedido",
+            "save": "Guardar",
+            "cancel": "Cancelar",
+            "added_to": "Agregado a {{entity_name}}",
+            "empty": "Aún no has agregado productos al pedido"
+          },
+          "products_warehouse_block_template": {
+            "product_management_for_sales": "Gestión de Inventario",
+            "product_management_rentals": "Gestión de Alquileres",
+            "products": "Productos",
+            "warehouse": "Almacén",
+            "add": "Agregar",
+            "reset": "Reiniciar",
+            "empty": "El almacén está vacío",
+            "warehouse_select_hint": "El almacén seleccionado en esta sección debe coincidir con el almacén ordenado en la sección superior (pedido). Si deseas seleccionar un almacén diferente aquí, primero debes borrar o cambiar el almacén elegido en la sección superior. Cualquier almacén seleccionado aquí se inferirá automáticamente en la sección superior."
+          }
+        },
+        "common": {
+          "products_order_price_head_cell": {
+            "price": "Precio,"
+          },
+          "products_order_max_discount_hint": "El descuento máximo es",
+          "products_order_tax_header_cell": {
+            "tax": "Impuesto,",
+            "tax_included": "Incluido",
+            "tax_excluded": "Excluido"
+          },
+          "products_order_total_block": {
+            "total": "Total: {{total}}"
+          },
+          "remove_selected_block": {
+            "remove_selected": "Eliminar seleccionados"
+          }
+        },
+        "hooks": {
+          "use_price_cell_columns": {
+            "name_fallback": "Sin nombre de precio",
+            "name": "Nombre",
+            "price": "Precio",
+            "currency": "Moneda"
+          }
+        },
+        "ui": {
+          "card_rental_products_order_component": {
+            "hooks": {
+              "use_rental_card_order_columns": {
+                "name": "Nombre",
+                "discount": "Descuento",
+                "availability": "Disponibilidad",
+                "amount": "Cantidad"
+              },
+              "use_rental_warehouse_columns": {
+                "name": "Nombre",
+                "price": "Precio",
+                "category": "Categoría",
+                "availability": "Disponibilidad"
+              }
+            },
+            "ui": {
+              "rental_availability_cell": {
+                "available": "Disponible",
+                "reserved": "Reservado",
+                "rent": "Alquiler"
+              },
+              "rental_order_periods_control": {
+                "new_period": "Nuevo período",
+                "periods_selected": "Períodos seleccionados: {{count}}",
+                "add_new_period": "Agregar nuevo período",
+                "hint_text": "Puedes elegir o modificar períodos exclusivamente durante la creación de nuevos pedidos o para pedidos con el estado 'Formado'.",
+                "placeholders": {
+                  "select_periods": "Seleccionar períodos"
+                }
+              },
+              "card_rental_products_order_block_header": {
+                "placeholders": {
+                  "select_order_warehouse": "Seleccionar almacén del pedido"
+                }
+              }
+            }
+          },
+          "card_products_order_component": {
+            "hooks": {
+              "use_available_columns": {
+                "unknown": "Desconocido...",
+                "name": "Nombre",
+                "stock": "Existencias",
+                "reserved": "Reservado",
+                "available": "Disponible"
+              },
+              "use_card_order_columns": {
+                "name": "Nombre",
+                "discount": "Descuento",
+                "tax": "Impuesto,",
+                "quantity": "Cantidad",
+                "amount": "Monto"
+              },
+              "use_reservations_columns": {
+                "warehouse_name": "Nombre del almacén",
+                "stock": "Existencias",
+                "reserved": "Reservado",
+                "available": "Disponible",
+                "quantity": "Cantidad"
+              },
+              "use_warehouse_columns": {
+                "name": "Nombre",
+                "price": "Precio",
+                "category": "Categoría",
+                "available": "Disponible",
+                "quantity": "Cantidad"
+              }
+            },
+            "ui": {
+              "available_head_cell": {
+                "available": "Disponible",
+                "available_hint": "Pasa el cursor sobre una celda en esta columna para obtener información detallada sobre las existencias del almacén."
+              },
+              "card_products_order_block_header": {
+                "cancel_after_hint": "Puedes configurar la cancelación automática de las reservas de artículos en pedidos. Esto ayuda a prevenir niveles de inventario inexactos, que pueden ocurrir cuando los artículos están reservados en negocios pero estos no se procesan o han sido cancelados.",
+                "placeholders": {
+                  "select_order_warehouse": "Seleccionar almacén del pedido"
+                }
+              },
+              "add_stock_placeholder": {
+                "add_stock": "Agregar existencias al almacén"
+              }
+            }
+          }
+        }
+      },
+      "product_categories_page": {
+        "title": "Crear una Categoría (Grupo de Productos)",
+        "placeholders": {
+          "category_name": "Nombre de la categoría",
+          "subcategory_name": "Nombre de la subkategoria"
+        },
+        "buttons": {
+          "add_category": "Agregar Categoría",
+          "add_subcategory": "Agregar Subkategoria"
+        },
+        "ui": {
+          "delete_category_warning_modal": {
+            "cannot_be_undone": "Esta acción no se puede deshacer.",
+            "title": "¿Estás seguro de que deseas eliminar {{name}}?",
+            "annotation": "Todas las subcategories serán eliminadas."
+          }
+        }
+      },
+      "product_page": {
+        "product_description": "Descripción del Producto",
+        "sku_already_exists_warning": "El producto con SKU \"{{sku}}\" ya existe",
+        "sku": "SKU",
+        "unit": "Unidad",
+        "tax": "Impuesto",
+        "category": "Categoría",
+        "warehouse": "Almacén",
+        "ui": {
+          "add_warehouse_placeholder": {
+            "add_warehouse": "Agregar almacén"
+          },
+          "product_actions_dropdown": {
+            "delete_product": "Eliminar producto"
+          },
+          "product_description": {
+            "placeholders": {
+              "add_description": "Agregar descripción"
+            }
+          },
+          "product_feed": {
+            "calendar": "Calendario",
+            "prices": "Precios",
+            "stocks": "Existencias",
+            "images": "Imágenes",
+            "add_price": "Agregar precio",
+            "add_image": "Agregar imagen",
+            "delete_image": "Eliminar imagen",
+            "delete_images": "Eliminar imágenes",
+            "placeholders": {
+              "name": "Nombre del precio",
+              "unit_price": "Precio unitario"
+            },
+            "labels": {
+              "maximum_discount": "Descuento máximo en producto",
+              "product_cost": "Costo del Producto"
+            }
+          },
+          "product_name_block": {
+            "placeholders": {
+              "product_name": "Nombre del producto"
+            }
+          }
+        }
+      },
+      "warehouses_page": {
+        "page_title": "Configura tus Almacenes",
+        "placeholders": {
+          "name": "Nombre del almacén",
+          "select_warehouse": "Seleccionar Almacén"
+        },
+        "add_warehouse": "Agregar almacén",
+        "ui": {
+          "delete_warehouse_modal": {
+            "title": "¿Estás seguro de que deseas eliminar {{name}}?",
+            "annotation": "Todas las existencias dentro del almacén serán eliminadas.",
+            "annotation_move_stocks": "Todas las existencias dentro del almacén serán eliminadas. Alternativamente, tienes la opción de transferir todas las existencias a otro almacén si está disponible.",
+            "placeholders": {
+              "move_stocks_to": "Mover existencias a..."
+            }
+          }
+        }
+      },
+      "products_page": {
+        "no_warehouses_or_categories": "No hay almacenes o categorías para mostrar los filtros",
+        "title": {
+          "sale": "Venta",
+          "rental": "Alquiler",
+          "shipments": "Envíos",
+          "calendar": "Calendario"
+        },
+        "tabs": {
+          "products": "Productos",
+          "timetable": "Calendario",
+          "shipments": "Envíos",
+          "reports": "Informes"
+        },
+        "all_columns_hidden": "Todas las columnas están ocultas en la configuración de la tabla",
+        "table_settings": "Configuración de la Tabla",
+        "display_columns": "Mostrar Columnas",
+        "add_product": "Agregar producto",
+        "empty": "Aún no has agregado productos",
+        "show_empty_resources": "Mostrar recursos vacíos",
+        "hide_empty_resources": "Ocultar recursos vacíos",
+        "hooks": {
+          "use_products_columns": {
+            "name": "Nombre",
+            "prices": "Precios",
+            "sku": "SKU",
+            "tax": "Impuesto",
+            "stocks": "Existencias",
+            "unit": "Unidad",
+            "availability": "Disponibilidad"
+          },
+          "use_product_stocks_columns": {
+            "warehouse": "Almacén",
+            "reserved": "Reservado",
+            "available": "Disponible",
+            "stock": "Existencias"
+          },
+          "use_create_stocks_columns": {
+            "warehouse": "Almacén",
+            "stock": "Existencias"
+          }
+        },
+        "ui": {
+          "add_product_modal": {
+            "changes_not_saved_warning_title": "¿Estás seguro de que deseas cerrar esta ventana?",
+            "changes_not_saved_warning_annotation": "Todos los cambios se perderán.",
+            "changes_not_saved_warning_approve_title": "Cerrar de todos modos",
+            "barcodes_hint": "Puedes escanear códigos de barras con un escáner o ingresarlos manualmente en este campo. Cada código de barras en una sección debe ser único.",
+            "sku_already_exists_warning": "El producto con SKU \"{{sku}}\" ya existe",
+            "types": {
+              "product": "Producto",
+              "service": "Servicio",
+              "kit": "Kit"
+            },
+            "add_product": "Agregar Producto",
+            "name": "Nombre",
+            "type": "Tipo",
+            "add_photo": "Agregar foto",
+            "description": "Descripción",
+            "sku": "SKU",
+            "unit": "Unidad",
+            "tax": "Impuesto",
+            "category": "Categoría",
+            "prices": "Precios",
+            "stocks": "Existencias"
+          },
+          "photo_block_item": {
+            "alt": "Producto {{name}}"
+          },
+          "product_price_list": {
+            "add_price": "Agregar precio"
+          },
+          "product_search_block": {
+            "placeholders": {
+              "search_products": "Buscar Productos"
+            }
+          },
+          "product_stocks_modal": {
+            "title": "Establecer existencias del producto en cada almacén"
+          },
+          "create_stocks_modal": {
+            "title": "Especificar existencias del producto"
+          }
+        }
+      },
+      "shipment_page": {
+        "hooks": {
+          "use_shipment_columns": {
+            "name": "Nombre",
+            "sku": "SKU",
+            "available": "Disponible",
+            "quantity": "Cantidad"
+          },
+          "use_rental_shipment_columns": {
+            "name": "Nombre",
+            "sku": "SKU",
+            "tax": "Impuesto",
+            "discount": "Descuento",
+            "total": "Total",
+            "quantity": "Cantidad"
+          }
+        },
+        "ui": {
+          "shipment_page_secondary_header": {
+            "order": "Pedido-{{number}}"
+          },
+          "rental_shipment_page_secondary_header": {
+            "order": "Pedido-{{number}}"
+          },
+          "some_products_not_checked_warning_modal": {
+            "title": "Algunos productos no están verificados",
+            "annotation": "Estás tratando de cambiar el estado del pedido, pero algunos productos no están verificados. ¿Deseas cambiar el estado de todos modos?",
+            "approve_title": "Cambiar de todos modos"
+          },
+          "product_barcodes_control": {
+            "barcode": "Código de barras",
+            "modals": {
+              "product_is_not_in_order_warning_modal": {
+                "title": "El producto no está en este pedido",
+                "approve_title": "Agregar producto al pedido",
+                "annotation": "El producto asociado con el código de barras \"{{barcode}}\" no está incluido en este pedido. Tienes la opción de agregarlo manualmente o continuar sin él."
+              },
+              "product_does_not_exist_warning_modal": {
+                "title": "El producto no existe",
+                "approve_title": "Crear producto",
+                "annotation": "El producto con código de barras \"{{barcode}}\" no existe en esta sección de productos. Puedes crearlo manualmente en la página de productos."
+              }
+            }
+          }
+        }
+      },
+      "shipments_page": {
+        "hooks": {
+          "use_shipments_columns": {
+            "unknown": "Desconocido...",
+            "name": "Nombre",
+            "shipment": "Envío para pedido #{{number}}",
+            "warehouse": "Almacén",
+            "shipped_at": "Enviado el",
+            "created_at": "Creado el",
+            "status": "Estado",
+            "linked_entity": "Entidad vinculada"
+          }
+        },
+        "ui": {
+          "shipments_table": {
+            "all_columns_hidden": "Todas las columnas están ocultas en la configuración de la tabla",
+            "empty": "No hay Envíos Programados"
+          }
+        }
+      }
+    }
+  }
+}

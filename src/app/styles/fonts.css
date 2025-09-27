@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'Geologica';
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  src: url('/fonts/Geologica/SemiBold/GeologicaSemiBold.ttf');
+}
+
+@font-face {
+  font-family: 'Nunito SemiBold';
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  src: url('/fonts/Nunito/SemiBold/NunitoSemiBold.ttf');
+}
+
+@font-face {
+  font-family: 'Nunito';
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url('/fonts/Nunito/Regular/NunitoRegular.ttf');
+}

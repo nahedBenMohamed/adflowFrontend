@@ -1,0 +1,433 @@
+{
+  "reporting": {
+    "templates": {
+      "components": {
+        "report_table": {
+          "empty": "No hay datos disponibles para este período"
+        },
+        "report_settings_drawer": {
+          "table_settings": "Configuración de la Tabla",
+          "display_columns": "Mostrar Columnas"
+        }
+      },
+      "comparative_report_template": {
+        "placeholders": {
+          "users": "Usuarios",
+          "pipeline": "Pipelines de ventas",
+          "month": "Seleccionar mes",
+          "year": "Seleccionar año"
+        }
+      },
+      "general_report_template": {
+        "apply_filter": "Aplicar filtro",
+        "reset": "Reiniciar",
+        "stages": {
+          "all": "Todas las Etapas",
+          "open": "Etapas Abiertas",
+          "lost": "Etapas Perdidas",
+          "won": "Etapas Ganadas"
+        },
+        "placeholders": {
+          "users": "Usuarios",
+          "pipeline": "Pipelines de ventas",
+          "stage": "Etapas",
+          "warehouse": "Almacenes",
+          "category": "Categorías",
+          "field_or_responsible": "Campo o Responsable"
+        }
+      },
+      "calls_report_template": {
+        "directions": {
+          "all": "Todas las Llamadas",
+          "incoming": "Llamadas Entrantes",
+          "outgoing": "Llamadas Salientes"
+        },
+        "placeholders": {
+          "users": "Usuarios",
+          "pipeline": "Pipelines de ventas",
+          "directions": "Tipo de llamada",
+          "duration": "Duración de la llamada",
+          "only_missed": "Solo llamadas perdidas"
+        }
+      }
+    },
+    "hooks": {
+      "use_get_products_general_report_columns": {
+        "name": "Nombre",
+        "sold": "Total Vendido",
+        "shipped": "Enviado",
+        "open": "Negocios Abiertos",
+        "lost": "Negocios Perdidos",
+        "all": "Total de Negocios",
+        "average_products": "Promedio de Productos por Negocio",
+        "average_budget": "Valor Promedio de Negocios Exitosos",
+        "average_term": "Duración Promedio del Negocio"
+      },
+      "use_calls_history_report_columns": {
+        "timestamps": "Fecha de la Llamada",
+        "type": "Llamador y Destinatario",
+        "result": "Duración de la Llamada y Reproducción",
+        "unknown": "Número Desconocido",
+        "caller": "Llamador",
+        "callee": "Destinatario"
+      },
+      "use_get_general_report_columns": {
+        "result": "Resultado",
+        "all": "Todos",
+        "open": "Abiertos",
+        "expired": "Vencidos",
+        "completed": "Completados",
+        "won": "Ganados",
+        "lost": "Perdidos",
+        "groups": "Grupos",
+        "users": "Usuarios",
+        "cards": "Tarjetas (Leads)",
+        "tasks": "Tareas",
+        "activities": "Actividades",
+        "average_check": "Cheque Promedio",
+        "average_term": "Término Promedio (Días)",
+        "switch_on": "Encendido",
+        "switch_off": "Apagado",
+        "calls": "Llamadas",
+        "total": "Total de Llamadas",
+        "average": "Promedio de Llamadas",
+        "incoming": "Llamadas Entrantes",
+        "incoming_average": "Promedio de Llamadas Entrantes",
+        "outgoing": "Llamadas Salientes",
+        "outgoing_average": "Promedio de Llamadas Salientes",
+        "missed": "Llamadas Perdidas",
+        "min": "min",
+        "undefined_client": "Programación de citas sin un negocio"
+      },
+      "use_get_projects_report_columns": {
+        "hours": "h",
+        "min": "min",
+        "users": "Usuarios",
+        "opened": "Tareas Abiertas",
+        "done": "Tareas Completadas",
+        "overdue": "Tareas Vencidas",
+        "planned": "Tiempo Planificado",
+        "completion_percent": "Porcentaje de Completitud del Proyecto",
+        "project_name": "Nombre del Proyecto",
+        "stage": "Estado del Proyecto"
+      },
+      "use_get_customer_report_columns": {
+        "name": "Nombre",
+        "sold": "Total Vendido",
+        "products_quantity": "Cantidad de Productos",
+        "opened": "En Progreso (Negocios Abiertos)",
+        "lost": "Negocios Perdidos",
+        "all": "Total de Negocios (Abiertos y Cerrados)",
+        "average_quantity": "Promedio de Compras (Negocios)",
+        "average_budget": "Presupuesto Promedio de Negocios Exitosos",
+        "average_duration": "Duración Promedio de Negocios Exitosos (Días)"
+      },
+      "use_get_schedule_report_columns": {
+        "groups": "Grupos",
+        "users": "Usuarios",
+        "sold": "Total Vendido",
+        "total": "Total de Citas",
+        "scheduled": "Programadas",
+        "confirmed": "Confirmadas",
+        "completed": "Completadas",
+        "cancelled": "Canceladas"
+      },
+      "use_get_comparative_report_columns": {
+        "all": "Todos",
+        "open": "Abiertos",
+        "won": "Ganados",
+        "lost": "Perdidos",
+        "week": "Semana {{number}}",
+        "quarter": "Trimestre {{number}}",
+        "users": "Usuarios",
+        "days": {
+          "monday": "Lunes",
+          "tuesday": "Martes",
+          "wednesday": "Miércoles",
+          "thursday": "Jueves",
+          "friday": "Viernes",
+          "saturday": "Sábado",
+          "sunday": "Domingo"
+        },
+        "months": {
+          "january": "Enero",
+          "february": "Febrero",
+          "march": "Marzo",
+          "april": "Abril",
+          "may": "Mayo",
+          "june": "Junio",
+          "july": "Julio",
+          "august": "Agosto",
+          "september": "Septiembre",
+          "october": "Octubre",
+          "november": "Noviembre",
+          "december": "Diciembre"
+        }
+      }
+    },
+    "pages": {
+      "reports_page": {
+        "components": {
+          "row_title_cell": {
+            "total": "Total",
+            "without_group": "Sin grupo",
+            "empty_user": "Usuario no asignado"
+          },
+          "row_event_cell": {
+            "to": "a"
+          },
+          "reports_navigation_sidebar": {
+            "total": "Total",
+            "export_xlsx": "Exportar a XLSX",
+            "export_table": "Exportado desde {{company}} en {{date}}",
+            "unfold_filters_menu": "Desplegar menú de filtros",
+            "fold_filters_menu": "Plegar menú de filtros",
+            "hide_sidebar": "Ocultar barra lateral",
+            "show_sidebar": "Mostrar barra lateral",
+            "schedules": "Visitas",
+            "title": {
+              "universal": "Informes",
+              "project": "Informes de Proyectos",
+              "deal": "Informes de Negocios"
+            },
+            "general_report": "Informe General",
+            "comparison_of_periods": "Comparación de Períodos",
+            "telephony": "Llamadas",
+            "schedule": "Visitas",
+            "projects": "Proyectos",
+            "users": "Por Usuarios",
+            "rating": "Por Calificación",
+            "groups": "Por Grupos",
+            "days": "Por Días",
+            "weeks": "Por Semanas",
+            "months": "Por Meses",
+            "quarters": "Por Trimestres",
+            "years": "Por Años",
+            "callsUsers": "Por Usuarios",
+            "callsGroups": "Por Departamentos",
+            "callHistory": "Informe de Registro de Llamadas",
+            "scheduleClient": "Por Clientes",
+            "scheduleDepartment": "Por Grupos",
+            "scheduleOwner": "Por Planificadores",
+            "schedulePerformer": "Por Especialistas",
+            "customer_reports": "Contactos y Empresas",
+            "customerContact": "Por Contactos",
+            "customerCompany": "Por Empresas",
+            "customerContactCompany": "Por Contactos y Empresas",
+            "products": "Productos",
+            "productsCategories": "Por Categorías",
+            "productsUsers": "Por Usuarios"
+          }
+        }
+      },
+      "dashboard_page": {
+        "filter": {
+          "placeholders": {
+            "select_users": "Usuarios",
+            "select_sales_pipeline": "Pipelines de ventas",
+            "all": "Todos",
+            "all_active": "Todos activos",
+            "open": "Abiertos",
+            "open_active": "Abierto y activo",
+            "closed": "Cerrados",
+            "created": "Creado"
+          },
+          "dashboard_type_tooltip": {
+            "all": {
+              "text": "Este informe incluye todas las oportunidades que existieron durante el período del informe, independientemente de su actividad. Incluye:",
+              "list_1": "✓ Oportunidades creadas en el período.",
+              "list_2": "✓ Oportunidades cerradas (ganadas o perdidas) en el período.",
+              "list_3": "✓ Oportunidades que ya existían y permanecieron abiertas en el período.",
+              "list_4": "✗ No excluye oportunidades sin actividad (sin cambios de etapa en el embudo de ventas)."
+            },
+            "all_active": {
+              "text": "Este informe incluye solo las oportunidades en las que al menos una vez se cambió de etapa durante el período. Incluye:",
+              "list_1": "✓ Oportunidades creadas antes del período, pero con cambios de etapa en el período.",
+              "list_2": "✓ Oportunidades creadas en el período si tuvieron movimiento entre etapas.",
+              "list_3": "✓ Oportunidades cerradas en el período si hubo al menos un cambio de etapa antes del cierre.",
+              "list_4": "✗ Excluye oportunidades sin actividad (sin movimiento entre etapas)."
+            },
+            "open": {
+              "text": "Este informe incluye oportunidades que no fueron cerradas (no alcanzaron los estados 'Ganada' o 'Perdida') al final del período. Incluye:",
+              "list_1": "✓ Oportunidades creadas anteriormente que siguen abiertas.",
+              "list_2": "✓ Oportunidades creadas en el período y que permanecen abiertas al final del período.",
+              "list_3": "✗ No incluye oportunidades cerradas."
+            },
+            "open_active": {
+              "text": "Este informe incluye solo oportunidades abiertas con actividad (cambio de etapa) durante el período del informe. Incluye:",
+              "list_1": "✓ Oportunidades abiertas con cambios de etapa en el período.",
+              "list_2": "✓ Oportunidades nuevas si tuvieron movimiento entre etapas.",
+              "list_3": "✗ Excluye oportunidades abiertas sin cambios de etapa.",
+              "list_4": "✗ Excluye oportunidades cerradas."
+            },
+            "closed": {
+              "text": "Este informe incluye solo oportunidades que fueron cerradas (con estado 'Ganada' o 'Perdida') durante el período. Incluye:",
+              "list_1": "✓ Oportunidades creadas antes y cerradas en el período.",
+              "list_2": "✓ Oportunidades creadas y cerradas en el período.",
+              "list_3": "✗ Excluye todas las oportunidades abiertas."
+            },
+            "created": {
+              "text": "Este informe incluye todas las oportunidades creadas en el período del informe, sin importar su estado actual. Incluye:",
+              "list_1": "✓ Oportunidades creadas en el período y aún abiertas.",
+              "list_2": "✓ Oportunidades creadas y cerradas en el período.",
+              "list_3": "✗ No incluye oportunidades creadas antes del período."
+            }
+          }
+
+        },
+        "days": {
+          "one_day": "día",
+          "several_days": ["días", "días", "días"]
+        },
+        "auto_update_select": {
+          "auto_update": "Autoactualizar",
+          "modes": {
+            "never": "Nunca",
+            "minute": "1 minuto",
+            "ten_minutes": "10 minutos",
+            "thirty_minutes": "30 minutos",
+            "hour": "1 hora"
+          }
+        },
+        "sales_goal_chart": {
+          "title_for_sales": "Meta de Ventas",
+          "title": "Meta",
+          "hint": "Meta de Ventas",
+          "settings_tip": "Configuraciones",
+          "plug_text_for_sales": "Establecer Metas",
+          "plug_text": "Configurar una meta"
+        },
+        "traffic_light_report": {
+          "title": "Informe de Semáforo",
+          "subtitle": "Cumplimiento del Plan de Hoy",
+          "hint": {
+            "line1": "El informe de 'semáforo' es una herramienta que muestra cómo el departamento de ventas está siguiendo el plan de ventas del día.",
+            "line2": "La fórmula para calcular el cumplimiento del plan de ventas de hoy es:",
+            "line3": "Porcentaje de cumplimiento = (Ventas reales dividido por Plan para el Día Actual) × 100%, donde:",
+            "list": {
+              "point1": "Las ventas reales son la cantidad que ya has vendido hasta el momento.",
+              "point2": "El plan para el día actual es parte del plan de ventas general del mes, calculado para el día actual."
+            },
+            "line4": "Ejemplo de cálculo:",
+            "line5": "Supongamos que tu plan de ventas para el mes es $10,000. Hoy es el día 10, lo que significa que ha pasado aproximadamente 1/3 del mes. Tu plan para hoy es:",
+            "line6": "Plan para el Día Actual = ($10,000 dividido por 30 días) × 10 días = $3,333.33",
+            "line7": "Has vendido productos por $3,000.",
+            "line8": "Tu porcentaje de cumplimiento del plan es:",
+            "line9": "Porcentaje de Cumplimiento = ($3,000 dividido por $3,333.33) × 100% ≈ 90%",
+            "line10": "Así, tu plan está al 90% completo, y en el informe de 'semáforo' verás el color verde, ya que el cumplimiento del plan va bien."
+          },
+          "plug_text": "Establecer Metas"
+        },
+        "top_sellers": {
+          "title_for_sales": "Top 5 Contribuyentes",
+          "title": "Top 5 Líderes",
+          "subtitle_for_sales": "Líderes en Ventas",
+          "hint": "Top 5 Líderes en Ventas",
+          "others": "Otros",
+          "plug_text": "Cuando comiences a usar {{company}}, las estadísticas para los 5 principales líderes en ventas aparecerán aquí",
+          "plug_text_for_orders": "Una vez que comiences a usar {{company}}, las estadísticas para los 5 principales líderes de usuarios aparecerán aquí",
+          "plug_text_for_candidates": "Una vez que comiences a usar {{company}}, las estadísticas para los 5 principales líderes de usuarios aparecerán aquí"
+        },
+        "analytics": {
+          "total_leads": "Total de Leads",
+          "total_orders": "Total de Pedidos",
+          "total_candidates": "Total de Candidatos",
+          "new_leads": "Nuevos Leads",
+          "new_orders": "Nuevos Pedidos",
+          "new_candidates": "Nuevos Candidatos",
+          "won_leads": "Ganados",
+          "completed_orders": "Completados",
+          "hired_candidates": "Candidatos Contratados",
+          "lost_leads": "Perdidos",
+          "failed_orders": "Fallidos",
+          "rejected_candidates": "Candidatos Rechazados",
+          "total_tasks": "Total de Tareas",
+          "completed_tasks": "Tareas Completadas",
+          "expired_tasks": "Tareas Vencidas",
+          "no_tasks": "Leads: Sin Tareas",
+          "cards_no_tasks": "Tarjetas: Sin Tareas",
+          "total_activities": "Total de Actividades",
+          "completed_activities": "Actividades Completadas",
+          "expired_activities": "Actividades Vencidas",
+          "no_activities": "Leads: Sin Actividades",
+          "cards_no_activities": "Tarjetas: Sin Actividades"
+        },
+        "rating": {
+          "title": "Calificación",
+          "hint": "Calificación"
+        },
+        "leads_status_chart": {
+          "title": "Resumen del Estado de Leads:",
+          "title_for_orders": "Indicadores del Estado de Pedidos:",
+          "title_for_candidates": "Indicadores del Estado de Candidatos:",
+          "subtitle": "Abiertos, Perdidos, Ganados",
+          "subtitle_for_orders": "Abiertos, Fallidos, Completados",
+          "subtitle_for_candidates": "Abiertos, Candidatos Rechazados, Candidatos Contratados",
+          "hint": "Resumen del Estado de Leads",
+          "won": "Ganados",
+          "completed": "Completados",
+          "hired_candidates": "Candidatos Contratados",
+          "lost": "Perdidos",
+          "failed": "Fallidos",
+          "rejected_candidates": "Candidatos Rechazados",
+          "opened": "Abiertos"
+        },
+        "sales_pipeline_indicators": {
+          "title": "Pipeline de Conversión",
+          "total_sales": "Total de Ganancias",
+          "conversion": "Conversión de Ganancias",
+          "average_amount": "Monto Promedio",
+          "average_term": "Duración Promedio",
+          "days": ["día", "días", "días"]
+        },
+        "switch": {
+          "deals_count": "Cantidad de Negocios",
+          "orders_count": "Cantidad de Pedidos",
+          "sales_value": "Valor de Ventas",
+          "orders_value": "Valor de Pedidos"
+        }
+      },
+      "goal_settings_page": {
+        "title": "Configuración de Metas",
+        "total": "Total",
+        "back_button": "Dashboard",
+        "users_select": "Usuarios",
+        "period_type": {
+          "month": "Mes",
+          "quarter": "Trimestre"
+        },
+        "change_period_modal": {
+          "title": "¡Advertencia!",
+          "annotation": "Cambiar el período resultará en la pérdida de metas que hayas configurado anteriormente. ¿Estás seguro de que deseas continuar?",
+          "approve": "Sí",
+          "cancel": "No"
+        },
+        "periods": {
+          "months": {
+            "january": "Enero",
+            "february": "Febrero",
+            "march": "Marzo",
+            "april": "Abril",
+            "may": "Mayo",
+            "june": "Junio",
+            "july": "Julio",
+            "august": "Agosto",
+            "september": "Septiembre",
+            "october": "Octubre",
+            "november": "Noviembre",
+            "december": "Diciembre"
+          },
+          "quarters": {
+            "quarter1": "Trimestre 1",
+            "quarter2": "Trimestre 2",
+            "quarter3": "Trimestre 3",
+            "quarter4": "Trimestre 4"
+          }
+        },
+        "form_header_amount": "Monto",
+        "form_header_quantity": "Transacciones",
+        "button_save": "Guardar"
+      }
+    }
+  }
+}

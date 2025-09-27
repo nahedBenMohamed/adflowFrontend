@@ -1,0 +1,55 @@
+{
+  "tutorial": {
+    "tutorial_drawer": {
+      "title": "Baza Wiedzy",
+      "empty": "Nie ma tu jeszcze nic.",
+      "create_tutorial_group_block": {
+        "create_group": "Utwórz grupę",
+        "save": "Zapisz",
+        "cancel": "Anuluj"
+      },
+      "create_tutorial_item_block": {
+        "create_link": "Utwórz link",
+        "save": "Zapisz",
+        "cancel": "Anuluj"
+      },
+      "tutorial_edit_group_item_form": {
+        "placeholders": {
+          "name": "Nazwa",
+          "link": "Link",
+          "all": "Wszystkie"
+        }
+      },
+      "tutorial_edit_group_items_forms": {
+        "name": "Nazwa",
+        "link": "Link",
+        "users": "Użytkownicy",
+        "products": "Produkty",
+        "products_hint": "Wybierz produkty, w których ten link będzie wyświetlany. Na przykład, jeśli wybrane są zadania – link będzie wyświetlany tylko w sekcji zadań."
+      },
+      "tutorial_group_name_block": {
+        "placeholders": {
+          "group_name": "Nazwa grupy"
+        }
+      },
+      "hooks": {
+        "use_get_tutorial_products_options": {
+          "product_types": {
+            "builder": "Kreator",
+            "task": "Zadania",
+            "mail": "Poczta",
+            "multi_messenger": "Multi Messenger",
+            "settings": "Ustawienia"
+          }
+        },
+        "use_get_tutorial_products_groups": {
+          "groups": {
+            "entity_type": "Moduły",
+            "products_section": "Produkty",
+            "scheduler": "Harmonogramy"
+          }
+        }
+      }
+    }
+  }
+}

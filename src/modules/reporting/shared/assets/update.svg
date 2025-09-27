@@ -1,0 +1,18 @@
+<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="14" height="14" fill="#F5F5F5" />
+
+  <rect width="1366" height="1950" transform="translate(-1331 -119)" fill="#F9FAFB" />
+
+  <path id="Vector"
+    d="M1 7C1 5.4087 1.63214 3.88258 2.75736 2.75736C3.88258 1.63214 5.4087 1 7 1C8.67737 1.00631 10.2874 1.66082 11.4933 2.82667L13 4.33333"
+    stroke="#7D89A1" stroke-linecap="round" stroke-linejoin="round" />
+  <path id="Vector_2" d="M13.0003 1V4.33333H9.66699" stroke="#7D89A1" stroke-linecap="round" stroke-linejoin="round" />
+  <path id="Vector_3"
+    d="M13 7C13 8.5913 12.3679 10.1174 11.2426 11.2426C10.1174 12.3679 8.5913 13 7 13C5.32263 12.9937 3.71265 12.3392 2.50667 11.1733L1 9.66667"
+    stroke="#7D89A1" stroke-linecap="round" stroke-linejoin="round" />
+  <path id="Vector_4" d="M4.33333 9.66675H1V13.0001" stroke="#7D89A1" stroke-linecap="round" stroke-linejoin="round" />
+
+  <path
+    d="M-1620 -772H1144V-796H-1620V-772ZM1134 -782V1952H1158V-782H1134ZM1144 1942H-1620V1966H1144V1942ZM-1610 1952V-782H-1634V1952H-1610ZM-1620 1942C-1614.48 1942 -1610 1946.48 -1610 1952H-1634C-1634 1959.73 -1627.73 1966 -1620 1966V1942ZM1134 1952C1134 1946.48 1138.48 1942 1144 1942V1966C1151.73 1966 1158 1959.73 1158 1952H1134ZM1144 -772C1138.48 -772 1134 -776.477 1134 -782H1158C1158 -789.732 1151.73 -796 1144 -796V-772ZM-1620 -796C-1627.73 -796 -1634 -789.732 -1634 -782H-1610C-1610 -776.477 -1614.48 -772 -1620 -772V-796Z"
+    fill="black" fill-opacity="0.1" />
+</svg>

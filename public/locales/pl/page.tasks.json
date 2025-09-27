@@ -1,0 +1,135 @@
+{
+  "tasks_page": {
+    "tasks_page_by_deadline": {
+      "unallocated": "Nieprzypisane",
+      "overdue": "Zaległe",
+      "today": "Dzisiaj",
+      "tomorrow": "Jutro",
+      "upcoming": "Nadchodzące",
+      "resolved": "Zrobione",
+      "board": "Tablica",
+      "calendar": "Kalendarz"
+    },
+    "common": {
+      "tasks_page_template": {
+        "create_new": "Utwórz nowe zadanie"
+      },
+      "ui": {
+        "empty_list_block": {
+          "annotation1": "Nie masz jeszcze zadań lub nic nie znaleziono przy wybranych filtrach.",
+          "annotation2": "Użyj przycisku",
+          "annotation3": "aby dodać zadanie."
+        },
+        "tasks_page_header": {
+          "title": "Zadania i Aktywności",
+          "timeline": "Gantt",
+          "board": "Tablica",
+          "list": "Lista",
+          "calendar": "Kalendarz",
+          "user_select_button": "Udostępnij",
+          "settings_button": {
+            "sync": "Synchronizuj",
+            "table_settings": "Ustawienia tabeli",
+            "settings": "Ustawienia",
+            "board_settings": "Ustawienia tablicy"
+          },
+          "create_button_tooltip": "Dodaj zadanie"
+        },
+        "tasks_list_settings_drawer": {
+          "table_settings": "Ustawienia tabeli",
+          "display_columns": "Wyświetl kolumny"
+        },
+        "tasks_filter_drawer": {
+          "just_my_tasks": "Tylko moje zadania",
+          "sorting": "Sortowanie",
+          "done": "Zrobione",
+          "sorting_options": {
+            "manual": "Ręczne",
+            "created_asc": "Utworzone: od najstarszych",
+            "created_desc": "Utworzone: od najnowszych"
+          },
+          "created_at": "Data utworzenia",
+          "start_date": "Data rozpoczęcia",
+          "end_date": "Data zakończenia",
+          "resolve_date": "Data ukończenia",
+          "assignee": "Przypisany",
+          "reporter": "Reżyser",
+          "type": "Typ",
+          "stage": "Etap",
+          "groups": "Grupy",
+          "linked_cards": "Powiązane karty",
+          "placeholders": {
+            "card_name": "Nazwa karty",
+            "search_by_task_name": "Szukaj po nazwie zadania",
+            "search_by_activity_name": "Szukaj po nazwie aktywności"
+          }
+        }
+      }
+    },
+    "tasks_page_calendar": {
+      "new_event": "Nowe zadanie",
+      "no_events": "Brak zadań na ten okres.",
+      "all_day": "Całodniowe"
+    },
+    "tasks_page_list": {
+      "all_columns_hidden": "Wszystkie kolumny są ukryte w ustawieniach tabeli"
+    },
+    "activity_item": {
+      "no_card_access": "Nie masz dostępu do tej karty",
+      "drag_disabled": "Nie masz pozwolenia na przeniesienie tej karty. Skontaktuj się z administratorem konta, aby uzyskać dostęp."
+    },
+    "tasks_page_timeline": {
+      "annotation": {
+        "minute": ["minuta", "minuty", "minut"],
+        "hour": ["godzina", "godziny", "godzin"],
+        "day": ["dzień", "dni", "dni"]
+      },
+      "today": "Dzisiaj",
+      "view": {
+        "fifteen_minutes": "15 minut",
+        "hour": "Godzina",
+        "day": "Dzień",
+        "week": "Tydzień",
+        "month": "Miesiąc",
+        "quarter": "Kwartał",
+        "half_year": "Półrocze"
+      },
+      "format": {
+        "major_format": {
+          "fifteen_minutes": "YYYY, MMMM D",
+          "hour": "YYYY, MMMM D",
+          "day": "YYYY, MMMM",
+          "week": "YYYY, MMMM",
+          "month": "YYYY",
+          "quarter": "YYYY",
+          "half_year": "YYYY"
+        },
+        "minor_format": {
+          "fifteen_minutes": "HH:mm",
+          "hour": "HH",
+          "day": "D",
+          "week": "wo [tydzień]",
+          "month": "MMMM",
+          "quarter": "[Q]Q",
+          "half_year": "YYYY-"
+        }
+      }
+    },
+    "task_item": {
+      "planned_time": "Szacowany czas:",
+      "completed": "Ukończone",
+      "complete": "Ukończ",
+      "delete_task": "Usuń zadanie",
+      "copy_link": "Kopiuj link",
+      "drag_disabled": "Nie masz uprawnień do przenoszenia tego zadania. Skontaktuj się z administratorem konta, aby uzyskać dostęp.",
+      "date": "{{date}} o {{time}}"
+    },
+    "time_allocation_card": {
+      "users": "Użytkownicy",
+      "planned_time": "Szacowany czas",
+      "total": "Razem",
+      "hour": "h",
+      "minute": "m"
+    }
+  }
+}

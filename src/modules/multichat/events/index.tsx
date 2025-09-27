@@ -1,0 +1,1 @@
+export { chatEventHandler } from './ChatEventHandler';

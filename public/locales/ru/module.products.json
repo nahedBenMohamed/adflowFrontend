@@ -1,0 +1,502 @@
+{
+  "products": {
+    "components": {
+      "common": {
+        "readonly_stocks": "Вы не можете изменять остатки в этом статусе",
+        "readonly_delete": "Вы не можете удалять товары из заказа в этом статусе",
+        "select_the_warehouse_to_write_off": "Выберите склад для списания",
+        "return_stocks_warning_modal": {
+          "title": "Вернуть остатки",
+          "annotation": "Хотели бы вы вернуть остатки на склад?",
+          "approve_title": "Вернуть",
+          "cancel_title": "Не возвращать"
+        },
+        "delete_order_warning_modal": {
+          "title": "Внимание",
+          "annotation": "Вы уверены, что хотите удалить заказ? Это действие нельзя отменить."
+        },
+        "delete_order_or_clear_items_warning_modal": {
+          "title": "Внимание",
+          "annotation": "Хотите удалить весь заказ или очистить все товары в нем? Это действие нельзя отменить.",
+          "approve_title": "Удалить заказ",
+          "cancel_title": "Очистить товары"
+        },
+        "rental_order_status_select": {
+          "formed": "Сформировано",
+          "accepted_to_warehouse": "Принято на склад",
+          "sent_to_warehouse": "Отправлено на склад",
+          "delivered": "Доставлено",
+          "reserved": "Резерв",
+          "shipped": "Отгружено",
+          "cancelled": "Отменено",
+          "returned": "Возвращено",
+          "placeholders": {
+            "select_status": "Выберите статус"
+          }
+        },
+        "order_status_select": {
+          "placeholders": {
+            "select_status": "Выберите статус"
+          },
+          "statuses": {
+            "reserved": "Резерв",
+            "sent_for_shipment": "Отправлено на отгрузку",
+            "shipped": "Отгружено",
+            "cancelled": "Отменено",
+            "returned": "Возвращено"
+          }
+        },
+        "products_tab_selector": {
+          "shipments": "Отгрузки",
+          "timetable": "Календарь",
+          "products": "Продукты"
+        },
+        "products_category_select": {
+          "no_categories": "Нет категорий",
+          "placeholders": {
+            "select_category": "Категория"
+          }
+        },
+        "products_warehouse_select": {
+          "no_warehouses": "Нет складов",
+          "placeholders": {
+            "select_warehouse": "Склад"
+          }
+        },
+        "products_settings_button": {
+          "settings": "Настройки",
+          "module_settings": "Настройки модуля",
+          "table_settings": "Настройки таблицы",
+          "report_settings": "Настройки отчета"
+        },
+        "calendar": {
+          "month": "Месяц",
+          "week": "Неделя",
+          "days": {
+            "short": {
+              "mo": "Пн",
+              "tu": "Вт",
+              "we": "Ср",
+              "th": "Чт",
+              "fr": "Пт",
+              "sa": "Сб",
+              "su": "Вс"
+            },
+            "long": {
+              "mo": "Понедельник",
+              "tu": "Вторник",
+              "we": "Среда",
+              "th": "Четверг",
+              "fr": "Пятница",
+              "sa": "Суббота",
+              "su": "Воскресенье"
+            }
+          },
+          "resources_label": "Товары",
+          "statuses": {
+            "reserved": "Забронировано",
+            "rented": "Аренда"
+          },
+          "fields": {
+            "phone": "Телефон",
+            "mail": "Mail",
+            "shifts": "Количество дней",
+            "status": "Статус",
+            "period": "Период аренды"
+          }
+        }
+      }
+    },
+    "pages": {
+      "card_products_orders_page": {
+        "ui": {
+          "empty": "Вы еще не создавали заказы в этой секции"
+        },
+        "hooks": {
+          "use_products_section_orders_columns": {
+            "name": "Название",
+            "warehouse": "Склад",
+            "status": "Статус",
+            "created_at": "Создано",
+            "shipped_at": "Отгружено",
+            "creator": "Создатель",
+            "order": "Заказ-{{number}}"
+          },
+          "use_rental_products_section_orders_columns": {
+            "name": "Название",
+            "status": "Статус",
+            "created_at": "Создано",
+            "creator": "Создатель",
+            "order": "Заказ-{{number}}",
+            "shipment": "Отгрузка для заказа #{{number}}",
+            "linked_entity": "Связанная карточка"
+          }
+        }
+      },
+      "card_products_order_page": {
+        "templates": {
+          "products_order_block_template": {
+            "new_order": "Новый заказ",
+            "save": "Сохранить",
+            "cancel": "Отменить",
+            "added_to": "Добавлено в {{entity_name}}",
+            "empty": "Вы еще не добавили товары в заказ"
+          },
+          "products_warehouse_block_template": {
+            "product_management_for_sales": "Товары и услуги",
+            "product_management_rentals": "Управление арендой",
+            "products": "Продукты",
+            "warehouse": "Склад",
+            "add": "Добавить",
+            "reset": "Сбросить",
+            "empty": "Склад пуст",
+            "warehouse_select_hint": "Выбранный склад в этом разделе должен соответствовать выбранному складу заказа в верхнем разделе (блоке заказа). Если вы хотите выбрать другой склад здесь, вы должны сначала очистить или изменить выбранный склад в верхнем разделе. Любой выбранный склад здесь будет автоматически проставляться в верхнем разделе."
+          }
+        },
+        "common": {
+          "products_order_price_head_cell": {
+            "price": "Цена,"
+          },
+          "products_order_max_discount_hint": "Максимальная скидка",
+          "products_order_tax_header_cell": {
+            "tax": "Налог,",
+            "tax_included": "Включен",
+            "tax_excluded": "Исключен"
+          },
+          "products_order_total_block": {
+            "total": "Итого: {{total}}"
+          },
+          "remove_selected_block": {
+            "remove_selected": "Удалить выбранные"
+          }
+        },
+        "hooks": {
+          "use_price_cell_columns": {
+            "name_fallback": "Без названия",
+            "name": "Название",
+            "price": "Цена",
+            "currency": "Валюта"
+          }
+        },
+        "ui": {
+          "card_rental_products_order_component": {
+            "hooks": {
+              "use_rental_card_order_columns": {
+                "name": "Название",
+                "discount": "Скидка",
+                "availability": "Доступность",
+                "amount": "Сумма"
+              },
+              "use_rental_warehouse_columns": {
+                "name": "Название",
+                "price": "Цена",
+                "category": "Категория",
+                "availability": "Доступность"
+              }
+            },
+            "ui": {
+              "rental_availability_cell": {
+                "available": "Доступно",
+                "reserved": "Резерв",
+                "rent": "Аренда"
+              },
+              "rental_order_periods_control": {
+                "new_period": "Новый период",
+                "periods_selected": "Выбранные периоды: {{count}}",
+                "add_new_period": "Добавить новый период",
+                "hint_text": "Вы можете выбирать или изменять периоды только при создании новых заказов или для заказов со статусом 'Сформирован'.",
+                "placeholders": {
+                  "select_periods": "Выбрать периоды"
+                }
+              },
+              "card_rental_products_order_block_header": {
+                "placeholders": {
+                  "select_order_warehouse": "Выберите склад заказа"
+                }
+              }
+            }
+          },
+          "card_products_order_component": {
+            "hooks": {
+              "use_available_columns": {
+                "unknown": "Неизвестный...",
+                "name": "Название",
+                "stock": "Остаток",
+                "reserved": "Резерв",
+                "available": "Доступно"
+              },
+              "use_card_order_columns": {
+                "name": "Название",
+                "discount": "Скидка",
+                "tax": "Налог,",
+                "quantity": "Количество",
+                "amount": "Сумма"
+              },
+              "use_reservations_columns": {
+                "warehouse_name": "Название склада",
+                "stock": "Остаток",
+                "reserved": "Резерв",
+                "available": "Доступно",
+                "quantity": "Количество"
+              },
+              "use_warehouse_columns": {
+                "name": "Название",
+                "price": "Цена",
+                "category": "Категория",
+                "available": "Доступно",
+                "quantity": "Количество"
+              }
+            },
+            "ui": {
+              "available_head_cell": {
+                "available": "Доступно",
+                "available_hint": "Наведите курсор на ячейку этой колонки для получения подробной информации об остатках на складе."
+              },
+              "card_products_order_block_header": {
+                "cancel_after_hint": "Вы можете настроить автоматическую отмену резервирования товаров в заказах. Это позволяет предотвратить возникновение некорректных остатков на складе, которые могут происходить, когда товары зарезервированы в сделках, но эти сделки не обрабатываются или были отменены.",
+                "placeholders": {
+                  "select_order_warehouse": "Выберите склад заказа"
+                }
+              },
+              "add_stock_placeholder": {
+                "add_stock": "Добавить остатки на склад"
+              }
+            }
+          }
+        }
+      },
+      "product_categories_page": {
+        "title": "Создать категорию (группу продуктов)",
+        "placeholders": {
+          "category_name": "Название категории",
+          "subcategory_name": "Название подкатегории"
+        },
+        "buttons": {
+          "add_category": "Добавить категорию",
+          "add_subcategory": "Добавить подкатегорию"
+        },
+        "ui": {
+          "delete_category_warning_modal": {
+            "cannot_be_undone": "Это действие не может быть отменено.",
+            "title": "Вы уверены, что хотите удалить {{name}}?",
+            "annotation": "Все подкатегории будут удалены."
+          }
+        }
+      },
+      "product_page": {
+        "product_description": "Описание продукта",
+        "sku_already_exists_warning": "Продукт с артикулом \"{{sku}}\" уже существует",
+        "sku": "Артикул (SKU)",
+        "unit": "Единица",
+        "tax": "Налог",
+        "category": "Категория",
+        "warehouse": "Склад",
+        "ui": {
+          "add_warehouse_placeholder": {
+            "add_warehouse": "Добавить склад"
+          },
+          "product_actions_dropdown": {
+            "delete_product": "Удалить продукт"
+          },
+          "product_description": {
+            "placeholders": {
+              "add_description": "Добавить описание"
+            }
+          },
+          "product_feed": {
+            "calendar": "Календарь",
+            "prices": "Цены",
+            "stocks": "Остатки",
+            "images": "Изображения",
+            "add_price": "Добавить цену",
+            "add_image": "Добавить изображение",
+            "delete_image": "Удалить изображение",
+            "delete_images": "Удалить изображения",
+            "placeholders": {
+              "name": "Название цены",
+              "unit_price": "Цена за единицу"
+            },
+            "labels": {
+              "maximum_discount": "Максимальная скидка на товар",
+              "product_cost": "Стоимость товара"
+            }
+          },
+          "product_name_block": {
+            "placeholders": {
+              "product_name": "Название продукта"
+            }
+          }
+        }
+      },
+      "warehouses_page": {
+        "page_title": "Настройте ваши склады",
+        "placeholders": {
+          "name": "Название склада",
+          "select_warehouse": "Выберите склад"
+        },
+        "add_warehouse": "Добавить склад",
+        "ui": {
+          "delete_warehouse_modal": {
+            "title": "Вы уверены, что хотите удалить {{name}}?",
+            "annotation": "Все остатки на складе будут удалены.",
+            "annotation_move_stocks": "Все остатки на складе будут удалены. У вас есть возможность переместить все запасы на другой склад (если в системе созданы другие склады).",
+            "placeholders": {
+              "move_stocks_to": "Переместить остатки..."
+            }
+          }
+        }
+      },
+      "products_page": {
+        "no_warehouses_or_categories": "Нет складов или категорий товаров для отображения фильтров",
+        "title": {
+          "sale": "Продажа",
+          "rental": "Аренда",
+          "shipments": "Отгрузки",
+          "calendar": "Календарь"
+        },
+        "tabs": {
+          "products": "Продукты",
+          "timetable": "Календарь",
+          "shipments": "Отгрузки",
+          "reports": "Отчеты"
+        },
+        "all_columns_hidden": "Все колонки скрыты в настройках таблицы",
+        "table_settings": "Настройки таблицы",
+        "display_columns": "Отображение колонок",
+        "add_product": "Добавить продукт",
+        "empty": "Вы пока не добавили ни одного продукта",
+        "show_empty_resources": "Показать пустые строки",
+        "hide_empty_resources": "Скрыть пустые строки",
+        "hooks": {
+          "use_products_columns": {
+            "name": "Название",
+            "prices": "Цены",
+            "sku": "Артикул (SKU)",
+            "tax": "Налог",
+            "stocks": "Остаток",
+            "unit": "Единица",
+            "availability": "Доступность"
+          },
+          "use_product_stocks_columns": {
+            "warehouse": "Склад",
+            "reserved": "Резерв",
+            "available": "Доступно",
+            "stock": "Остаток"
+          },
+          "use_create_stocks_columns": {
+            "warehouse": "Склад",
+            "stock": "Остаток"
+          }
+        },
+        "ui": {
+          "add_product_modal": {
+            "changes_not_saved_warning_title": "Вы уверены, что хотите закрыть это окно?",
+            "changes_not_saved_warning_annotation": "Все изменения будут потеряны.",
+            "changes_not_saved_warning_approve_title": "Всё равно закрыть",
+            "barcodes_hint": "Вы можете сканировать штрих-коды с помощью сканера или вводить их вручную в это поле. Каждый штрих-код в разделе должен быть уникальным.",
+            "sku_already_exists_warning": "Продукт с артикулом \"{{sku}}\" уже существует",
+            "types": {
+              "product": "Продукт",
+              "service": "Услуга",
+              "kit": "Комплект"
+            },
+            "add_product": "Добавить продукт",
+            "name": "Название",
+            "type": "Тип",
+            "add_photo": "Добавить фото",
+            "description": "Описание",
+            "sku": "Артикул (SKU)",
+            "unit": "Единица",
+            "tax": "Налог",
+            "category": "Категория",
+            "prices": "Цены",
+            "stocks": "Остатки"
+          },
+          "photo_block_item": {
+            "alt": "Продукт {{name}}"
+          },
+          "product_price_list": {
+            "add_price": "Добавить цену"
+          },
+          "product_search_block": {
+            "placeholders": {
+              "search_products": "Поиск продуктов"
+            }
+          },
+          "product_stocks_modal": {
+            "title": "Установить остаток продукта в каждом складе"
+          },
+          "create_stocks_modal": {
+            "title": "Укажите остаток продукта"
+          }
+        }
+      },
+      "shipment_page": {
+        "hooks": {
+          "use_shipment_columns": {
+            "name": "Название",
+            "sku": "Артикул (SKU)",
+            "available": "Доступно",
+            "quantity": "Количество"
+          },
+          "use_rental_shipment_columns": {
+            "name": "Наименование",
+            "sku": "Артикул (SKU)",
+            "tax": "Налог",
+            "discount": "Скидка",
+            "total": "Итого",
+            "quantity": "Количество"
+          }
+        },
+        "ui": {
+          "shipment_page_secondary_header": {
+            "order": "Заказ-{{number}}"
+          },
+          "rental_shipment_page_secondary_header": {
+            "order": "Заказ-{{number}}"
+          },
+          "some_products_not_checked_warning_modal": {
+            "title": "Некоторые продукты не отмечены",
+            "annotation": "Вы пытаетесь изменить статус заказа, но некоторые продукты не отмечены. Вы все равно хотите изменить статус?",
+            "approve_title": "Все равно изменить"
+          },
+          "product_barcodes_control": {
+            "barcode": "Штрих-код",
+            "modals": {
+              "product_is_not_in_order_warning_modal": {
+                "title": "Продукт не входит в этот заказ",
+                "approve_title": "Добавить в заказ",
+                "annotation": "Продукт со штрих-кодом \"{{barcode}}\" не включен в этот заказ. У вас есть возможность добавить его вручную или продолжить без него."
+              },
+              "product_does_not_exist_warning_modal": {
+                "title": "Продукт не существует",
+                "approve_title": "Создать продукт",
+                "annotation": "Продукт с штрих-кодом \"{{barcode}}\" отсутствует в этом разделе продуктов. Вы можете создать его вручную на странице продуктов."
+              }
+            }
+          }
+        }
+      },
+      "shipments_page": {
+        "hooks": {
+          "use_shipments_columns": {
+            "unknown": "Неизвестный...",
+            "name": "Название",
+            "shipment": "Отгрузка для заказа #{{number}}",
+            "warehouse": "Склад",
+            "shipped_at": "Отгружено",
+            "created_at": "Создано",
+            "status": "Статус",
+            "linked_entity": "Связанная карточка"
+          }
+        },
+        "ui": {
+          "shipments_table": {
+            "all_columns_hidden": "Все колонки скрыты в настройках таблицы",
+            "empty": "Нет запланированных отгрузок"
+          }
+        }
+      }
+    }
+  }
+}

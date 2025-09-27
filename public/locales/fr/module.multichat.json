@@ -1,0 +1,71 @@
+{
+  "multichat": {
+    "amwork_messenger": "Messagerie de {{company}}",
+    "components": {
+      "multichat_control": {
+        "not_found": "Non trouvé",
+        "chats": "Chats",
+        "messages": "Messages",
+        "users": "Utilisateurs",
+        "owner": "Propriétaire",
+        "supervisor": "Superviseur",
+        "no_chats_yet": "Pas encore de chats",
+        "create_card": "Créer une Fiche",
+        "link_card": "Lier une Fiche",
+        "card": "Fiche",
+        "ui": {
+          "deleted_user": "Utilisateur supprimé 👻",
+          "multichat_control_header": {
+            "title": "Multi Messagerie de {{company}}"
+          },
+          "create_amwork_chat_button": {
+            "label": "Nouveau chat de {{company}}",
+            "modals": {
+              "select_contact_title": "Sélectionnez un utilisateur ou un groupe d'utilisateurs",
+              "continue": "Continuer",
+              "customize_chat": "Personnaliser le chat",
+              "placeholders": {
+                "group_name": "Nom du groupe"
+              }
+            }
+          },
+          "chats_header_providers_tabs": {
+            "all_chats": "Tous les Chats"
+          },
+          "chat_message_context_menu": {
+            "reply": "Répondre",
+            "copy": "Copier le texte",
+            "edit": "Éditer",
+            "delete": "Supprimer"
+          },
+          "chat_message_reply_block": {
+            "editing_message": "Modification d’un message"
+          },
+          "send_chat_message_block": {
+            "placeholders": {
+              "message": "Message"
+            }
+          },
+          "no_selected_chat_plug": {
+            "title": "Sélectionnez un chat pour commencer à envoyer des messages"
+          },
+          "chats_panel_block": {
+            "you": "Vous"
+          },
+          "send_chat_message_with_files_modal": {
+            "send_files": "Envoyer des fichiers"
+          },
+          "chat_message_item": {
+            "you": "Vous"
+          },
+          "chat_controls_menu": {
+            "mark_as_read": "Marquer comme lu",
+            "delete_chat": "Supprimer le chat",
+            "delete_warning_title": "Êtes-vous sûr de vouloir supprimer le chat?",
+            "delete_warning_annotation": "Tous les messages seront supprimés. Cette action est irréversible."
+          }
+        }
+      }
+    }
+  }
+}

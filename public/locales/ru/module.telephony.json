@@ -1,0 +1,242 @@
+{
+  "telephony": {
+    "pages": {
+      "calls_configuring_scenarios_page": {
+        "title": "Настройка работы АТС в модуле CRM",
+        "failed_to_reach": "Не дозвонились",
+        "creates_manually": "Пользователь самостоятельно создает карточку контакта и сделки при входящем звонке",
+        "creates_manually_hint": "При входящем звонке с неизвестного номера, у пользователя появляется окно входящего звонка. Пользователь может ответить на звонок и если квалифицирует этот звонок как потенциального партнера, двумя кликами может создать во время разговора карточку контакта или сразу карточки контакта и сделки. Этот вариант предпочтительнее чем автоматически создавать карточки, так как звонить вам могут не только потенциальные клиенты, но и множество других компаний. Этот способ поможет избежать создания ненужных карточек контактов и сделок.",
+        "components": {
+          "configuring_scenarios_header_controls": {
+            "cancel": "Отмена",
+            "save_scenarios": "Сохранить сценарии",
+            "failed_to_reach": "Не дозвонились"
+          },
+          "entity_scenario_radio_group": {
+            "automatically_create": "Автоматически создавать",
+            "contact_or_company": "Контакт или компанию",
+            "deal": "Сделку",
+            "select_contact_or_company_first": "Сначала выберите контакт или компанию",
+            "deal_pipeline": "Воронка продаж",
+            "select_deal_first": "Сначала выберите сделку",
+            "placeholders": {
+              "select_deal": "Выберите сделку",
+              "select_pipeline": "Выберите воронку"
+            }
+          },
+          "incoming_calls_block": {
+            "incoming_calls": "Входящие звонки"
+          },
+          "incoming_known_missing_scenario_block": {
+            "missed_from_known_number": "С известного номера"
+          },
+          "incoming_unknown_missing_scenario_block": {
+            "missed_call_from_unknown_number": "Пропущенный с неизвестного номера",
+            "auto_create": "Автоматически создавать",
+            "contact_or_company": "Контакт или компанию",
+            "responsible": "Ответственный",
+            "select_contact_or_company_first": "Сначала выберите контакт или компанию",
+            "deal_pipeline": "Воронка продаж",
+            "select_deal_first": "Сначала выберите сделку",
+            "placeholders": {
+              "select_responsible": "Выберите ответственного",
+              "select_deal": "Выберите сделку",
+              "select_pipeline": "Выберите воронку"
+            }
+          },
+          "incoming_unknown_scenario_block": {
+            "call_from_unknown_number": "С неизвестного номера"
+          },
+          "task_and_activities_scenario_group": {
+            "task": "Задача",
+            "select_contact_or_company_first": "Сначала выберите контакт или компанию",
+            "title": "Автоматически создавать задачу или активность",
+            "do_not_create": "Не создавать",
+            "activity": "Активность",
+            "activity_type": "Тип активности",
+            "complete": "Выполнить через",
+            "description": "Описание",
+            "task_title": "Название задачи",
+            "minutes": "минут",
+            "placeholders": {
+              "activity_description": "Описание активности",
+              "task_description": "Описание задачи",
+              "title": "Название"
+            }
+          },
+          "outgoing_calls_block": {
+            "outgoing_calls": "Исходящие звонки",
+            "failed_to_reach": "Не дозвонились"
+          },
+          "outgoing_unanswered_scenario_block": {
+            "unanswered_outgoing_calls": "Неотвеченные исходящие звонки",
+            "failed_to_reach": "Не дозвонились",
+            "create_note": "Создавать заметку в истории карточки контакта/сделки",
+            "placeholders": {
+              "note_content": "Описание заметки"
+            }
+          },
+          "outgoing_unknown_scenario_block": {
+            "call_to_unknown_number": "На неизвестный номер",
+            "creates_manually": "Пользователь самостоятельно создает карточку контакта и сделки при исходящем звонке"
+          }
+        }
+      },
+      "calls_sip_registrations_page": {
+        "provider": "Провайдер",
+        "removed_or_detached": "Удалено или не прикреплено",
+        "removed_or_detached_hint": "Эта SIP регистрация больше недоступна, так как была удалена или отсоединена на платформе Voximplant. Чтобы продолжить использование этой SIP регистрации, вам нужно снова прикрепить её к вашему приложению или удалить и создать новую. Свяжитесь с поддержкой {{mail}} для получения дополнительной информации.",
+        "users": "Пользователи",
+        "users_hint": "Выберите пользователей, которые будут иметь доступ к этой регистрации SIP",
+        "default_name": "SIP регистрация #{{number}}",
+        "name": "Название регистрации *",
+        "title_annotation": "Инструкцию по подключению SIP регистрации вы можете найти в разделе «Интеграции», нажав на кнопку «Установить» в группе «Телефония и АТС».",
+        "link_to_vx_portal": "Ссылка на портал Voximplant",
+        "providers": {
+          "uis": "UIS",
+          "zadarma": "Zadarma",
+          "mango_office": "Mango Office",
+          "beeline": "билайн",
+          "mts": "МТС",
+          "mgts": "МГТС",
+          "tele2": "Tele2",
+          "megafon": "Мегафон",
+          "rostelecom": "Ростелеком",
+          "unknown": "Неизвестный"
+        },
+        "annotation": "При создании SIP регистрации с вашего аккаунта Voximplant будет сразу же списана месячная оплата за нее. Размер уточняйте на портале Voximplant. Создание может занять несколько минут.",
+        "last_updated": "Последнее обновление: {{lastUpdated}}",
+        "delete_warning": {
+          "title": "Вы уверены, что хотите удалить эту SIP регистрацию?",
+          "annotation": "Это действие нельзя отменить. Вы сможете восстановить SIP регистрацию только создав новую."
+        },
+        "registration_successful": "Регистрация прошла успешно",
+        "error_annotation": "Убедитесь, что вы ввели правильные учетные данные, или проверьте свой аккаунт Voximplant для получения более подробной информации.",
+        "empty": "Вы еще не создали ни одной SIP регистрации",
+        "save_error": "Не удалось сохранить регистрацию. Пожалуйста, убедитесь, что все введенные данные верны.",
+        "add": "Добавить",
+        "title": "SIP Регистрации",
+        "edit_sip_registration": "Редактировать SIP регистрацию",
+        "add_sip_registration": "Добавить SIP регистрацию",
+        "proxy": "Прокси *",
+        "sip_user_name": "Имя SIP пользователя *",
+        "password": "Пароль",
+        "outbound_proxy": "Исходящий прокси",
+        "auth_user": "Пользователь аутентификации",
+        "auth_user_hint": "Обычно совпадает именем SIP пользователя",
+        "placeholders": {
+          "all_users": "Все пользователи",
+          "name": "Новая SIP регистрация",
+          "proxy": "sip.provider.org",
+          "sip_user_name": "user_name",
+          "password": "********",
+          "outbound_proxy": "outbound.provider.org",
+          "auth_user": "auth_user_name"
+        }
+      },
+      "calls_settings_users_page": {
+        "empty": "Вы еще не добавили пользователей",
+        "users": "Пользователи",
+        "add_user": "Добавить пользователя",
+        "remove_user": "Удалить пользователя",
+        "active": "Активен",
+        "create": "Создать",
+        "open_sip_settings": "Открыть настройки SIP",
+        "continue": "Продолжить",
+        "sip_settings_title": "Настройки SIP – {{userName}}",
+        "sensitive_warning": "Это чувствительная информация, убедитесь, что не передаёте её третьим лицам. Наведите курсор на пароль, чтобы увидеть его.",
+        "user_name": "Имя пользователя",
+        "domain": "Домен",
+        "password": "Пароль",
+        "remove_warning_title": "Удалить {{userName}}?",
+        "remove_warning_annotation": "Это действие нельзя отменить. Вы сможете восстановить пользователя только создав нового.",
+        "remove": "Удалить"
+      },
+      "calls_settings_account_page": {
+        "synchronise_with_vx": "Синхронизировать с Voximplant",
+        "delete_warning_modal": {
+          "title": "Вы уверены, что хотите удалить номер {{phoneNumber}}?",
+          "annotation": "Это действие нельзя отменить."
+        },
+        "unknown": "Неизвестно",
+        "region": "Регион",
+        "phone_number": "Номер телефона",
+        "users": "Пользователи",
+        "state": "Статус активности",
+        "connect_phone_number": "Подключить",
+        "disconnect_phone_number": "Отключить",
+        "delete_phone_number": "Удалить",
+        "phone_numbers": "Номера телефонов",
+        "phone_numbers_annotation1": "Подключите все доступные номера телефонов Voximplant к своему аккаунту.",
+        "phone_numbers_annotation2": "Вы можете добавить активных операторов в колонке пользователей, чтобы они могли получить доступ к подключенному номеру.",
+        "phone_numbers_annotation3": "ℹ️ При удалении или отсоединении номера непосредственно в приложении Voximplant, не забудьте удалить его из списка номеров ниже или нажмите кнопку синхронизации, которая появится в этом случае.",
+        "connect_all_available_phone_numbers": "Подключить все доступные номера",
+        "empty_phone_numbers": "Нет доступных или подключенных номеров телефонов",
+        "placeholders": {
+          "all_users": "Все пользователи"
+        },
+        "connect_telephony_title": "Подключите телефонию и получите больше возможностей с {{company}}",
+        "connect_telephony_warning": "Обратите внимание, нажатие на кнопку автоматически создаст учетную запись Voximplant, связанную с {{company}}. Не регистрируйтесь на портале Voximplant самостоятельно, так как такая учетная запись не будет связана с {{company}}.",
+        "connect": "Подключить телефонию",
+        "account": "Аккаунт",
+        "voximplant_balance": "Баланс Voximplant <i>(Скоро...)</i>",
+        "recharge": "Пополнить",
+        "subscription_fee": "Абонентская плата <i>(Скоро...)</i>",
+        "available_numbers": "Доступных номеров: {{amount}}",
+        "account_is_not_approved": "Аккаунт не подтвержден",
+        "not_approved_annotation": "Без подтверждения аккаунта вы не сможете пользоваться подключенными номерами.",
+        "approve": "Подтвердить"
+      }
+    },
+    "components": {
+      "telephony_button": {
+        "telephony": "Телефония",
+        "not_connected": "Подключитесь к телефонии, чтобы активировать функцию вызова."
+      },
+      "telephony_modal": {
+        "connect_to_transfer": "Вы должны сначала подключиться к вызову, чтобы перенаправить его",
+        "no_operators_to_transfer_call_to": "Нет доступных операторов для перенаправления вызова",
+        "coming_soon": "Скоро появится...",
+        "unknown_number": "Неизвестный номер",
+        "amwork_calls": "Звонки {{company}}",
+        "active_call_control": {
+          "cancel": "Отменить",
+          "transfer": "Перенаправить",
+          "add_to_call": "Добавить к вызову",
+          "end_call": "Завершить вызов",
+          "calling": "вызов",
+          "mute": "Отключить микрофон",
+          "unmute": "Включить микрофон"
+        },
+        "incoming_call_control": {
+          "transfer": "Перенаправить",
+          "add_to_call": "Добавить",
+          "accept": "Принять",
+          "incoming_call": "входящий вызов",
+          "mute": "Отключить микрофон",
+          "unmute": "Включить микрофон",
+          "end_call": "Завершить вызов",
+          "decline": "Отклонить"
+        },
+        "outgoing_call_initializer": {
+          "outgoing_number": "Ваш исходящий номер",
+          "no_available_phone_numbers": "Нет доступных номеров",
+          "keys": "Клавиши",
+          "recent": "Недавние",
+          "outgoing": "Исходящий вызов",
+          "incoming": "Входящий вызов",
+          "yesterday": "Вчера",
+          "today": "Сегодня",
+          "no_calls": "Нет звонков"
+        },
+        "call_control_template": {
+          "call_from": "Вызов с номера: {{number}}",
+          "create": "Создать",
+          "placeholders": {
+            "select_card": "Выберите карточку"
+          }
+        }
+      }
+    }
+  }
+}

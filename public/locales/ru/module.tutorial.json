@@ -1,0 +1,55 @@
+{
+  "tutorial": {
+    "tutorial_drawer": {
+      "title": "База знаний",
+      "empty": "Здесь еще ничего нет.",
+      "create_tutorial_group_block": {
+        "create_group": "Создать группу",
+        "save": "Сохранить",
+        "cancel": "Отмена"
+      },
+      "create_tutorial_item_block": {
+        "create_link": "Создать ссылку",
+        "save": "Сохранить",
+        "cancel": "Отмена"
+      },
+      "tutorial_edit_group_item_form": {
+        "placeholders": {
+          "name": "Имя",
+          "link": "Ссылка",
+          "all": "Все"
+        }
+      },
+      "tutorial_edit_group_items_forms": {
+        "name": "Имя",
+        "link": "Ссылка",
+        "users": "Пользователи",
+        "products": "Продукты",
+        "products_hint": "Выберите продукты, в которых будет отображаться ссылка. Например, если выбраны задачи – ссылка будет видна только в секции задач."
+      },
+      "tutorial_group_name_block": {
+        "placeholders": {
+          "group_name": "Название группы"
+        }
+      },
+      "hooks": {
+        "use_get_tutorial_products_options": {
+          "product_types": {
+            "builder": "Конструктор",
+            "task": "Задачи",
+            "mail": "Почта",
+            "multi_messenger": "Мульти-Мессенджер",
+            "settings": "Настройки"
+          }
+        },
+        "use_get_tutorial_products_groups": {
+          "groups": {
+            "entity_type": "Модули",
+            "products_section": "Продукты",
+            "scheduler": "Планировщики"
+          }
+        }
+      }
+    }
+  }
+}

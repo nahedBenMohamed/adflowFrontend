@@ -1,0 +1,242 @@
+{
+  "telephony": {
+    "pages": {
+      "calls_configuring_scenarios_page": {
+        "title": "Configuration du fonctionnement de l'IVR dans le module CRM",
+        "failed_to_reach": "Inaccessible",
+        "creates_manually": "L'utilisateur crée manuellement une fiche de contact et d'affaire lors de la réception d'un appel entrant",
+        "creates_manually_hint": "Lorsqu'un appel provient d'un numéro inconnu, une fenêtre d'appel entrant apparaît pour l'utilisateur. L'utilisateur peut répondre à l'appel et, s'il juge que cet appel représente une opportunité commerciale, il peut créer une fiche de contact ou une fiche de contact et d'affaire en deux clics pendant la conversation. Cette méthode est préférable à la génération automatique de fiches car vous pourriez recevoir des appels non seulement de clients potentiels, mais aussi de diverses autres entreprises. Cette approche aide à éviter la création de fiches de contact et d'affaire inutiles.",
+        "components": {
+          "configuring_scenarios_header_controls": {
+            "cancel": "Annuler",
+            "save_scenarios": "Enregistrer les scénarios",
+            "failed_to_reach": "Inaccessible"
+          },
+          "entity_scenario_radio_group": {
+            "automatically_create": "Créer automatiquement",
+            "contact_or_company": "Contact ou Entreprise",
+            "deal": "Affaire",
+            "select_contact_or_company_first": "Sélectionner d'abord le contact ou l'entreprise",
+            "deal_pipeline": "Pipeline de vente",
+            "select_deal_first": "Sélectionner d'abord l'affaire",
+            "placeholders": {
+              "select_deal": "Sélectionner l'affaire",
+              "select_pipeline": "Sélectionner le pipeline"
+            }
+          },
+          "incoming_calls_block": {
+            "incoming_calls": "Appels entrants"
+          },
+          "incoming_known_missing_scenario_block": {
+            "missed_from_known_number": "Appel manqué d'un numéro connu"
+          },
+          "incoming_unknown_missing_scenario_block": {
+            "missed_call_from_unknown_number": "Appel manqué d'un numéro inconnu",
+            "auto_create": "Créer automatiquement",
+            "contact_or_company": "Contact ou Entreprise",
+            "responsible": "Responsable",
+            "select_contact_or_company_first": "Sélectionner d'abord le contact ou l'entreprise",
+            "deal_pipeline": "Pipeline de vente",
+            "select_deal_first": "Sélectionner d'abord l'affaire",
+            "placeholders": {
+              "select_responsible": "Sélectionner le responsable",
+              "select_deal": "Sélectionner l'affaire",
+              "select_pipeline": "Sélectionner le pipeline"
+            }
+          },
+          "incoming_unknown_scenario_block": {
+            "call_from_unknown_number": "D'un numéro inconnu"
+          },
+          "task_and_activities_scenario_group": {
+            "task": "Tâche",
+            "select_contact_or_company_first": "Sélectionner d'abord le contact ou l'entreprise",
+            "title": "Créer automatiquement une tâche ou une activité",
+            "do_not_create": "Ne pas créer",
+            "activity": "Activité",
+            "activity_type": "Type d'activité",
+            "complete": "Compléter dans",
+            "description": "Description",
+            "task_title": "Titre de la tâche",
+            "minutes": "minutes",
+            "placeholders": {
+              "activity_description": "Description de l'activité",
+              "task_description": "Description de la tâche",
+              "title": "Titre"
+            }
+          },
+          "outgoing_calls_block": {
+            "outgoing_calls": "Appels sortants",
+            "failed_to_reach": "Inaccessible"
+          },
+          "outgoing_unanswered_scenario_block": {
+            "failed_to_reach": "Inaccessible",
+            "unanswered_outgoing_calls": "Appels sortants sans réponse",
+            "create_note": "Créer une note dans l'historique du contact/affaire",
+            "placeholders": {
+              "note_content": "Contenu de la note"
+            }
+          },
+          "outgoing_unknown_scenario_block": {
+            "call_to_unknown_number": "Vers un numéro inconnu",
+            "creates_manually": "L'utilisateur crée manuellement une fiche de contact et d'affaire lors de l'émission d'un appel sortant"
+          }
+        }
+      },
+      "calls_sip_registrations_page": {
+        "provider": "Fournisseur",
+        "removed_or_detached": "Supprimé ou détaché",
+        "removed_or_detached_hint": "Cette inscription SIP n'est plus disponible car elle a été supprimée ou détachée sur la plateforme Voximplant. Pour continuer à utiliser cette inscription SIP, vous devez la rattacher à votre application ou la supprimer et en créer une nouvelle. Contactez le support {{mail}} pour plus d'informations.",
+        "users": "Utilisateurs",
+        "users_hint": "Sélectionnez les utilisateurs qui auront accès à cet enregistrement SIP",
+        "default_name": "Enregistrement SIP #{{number}}",
+        "name": "Nom de l'enregistrement *",
+        "title_annotation": "Vous trouverez les instructions d'enregistrement SIP dans la section \"Intégrations\" en cliquant sur le bouton \"Installer\" dans le groupe \"Téléphonie et PBX\".",
+        "link_to_vx_portal": "Lien vers le Portail Voximplant",
+        "providers": {
+          "uis": "UIS",
+          "zadarma": "Zadarma",
+          "mango_office": "Mango Office",
+          "beeline": "Beeline",
+          "mts": "MTS",
+          "mgts": "MGTS",
+          "tele2": "Tele2",
+          "megafon": "Megafon",
+          "rostelecom": "Rostelecom",
+          "unknown": "Inconnu"
+        },
+        "annotation": "Lors de la création d'une inscription SIP depuis votre compte Voximplant, les frais mensuels seront immédiatement facturés. Vérifiez le montant sur le portail Voximplant. La création peut prendre quelques minutes.",
+        "last_updated": "Dernière mise à jour : {{lastUpdated}}",
+        "delete_warning": {
+          "title": "Êtes-vous sûr de vouloir supprimer cette inscription SIP ?",
+          "annotation": "Cette action est irréversible. Vous pourrez restaurer l'inscription SIP uniquement en en créant une nouvelle."
+        },
+        "registration_successful": "Inscription réussie",
+        "error_annotation": "Assurez-vous d'avoir saisi les identifiants corrects ou vérifiez votre compte Voximplant pour plus de détails.",
+        "empty": "Il n'y a pas encore d'enregistrements SIP",
+        "save_error": "L'inscription n'a pas pu être sauvegardée. Veuillez vous assurer que toutes les données saisies sont correctes.",
+        "add": "Ajouter",
+        "title": "Enregistrements SIP",
+        "edit_sip_registration": "Modifier l'enregistrement SIP",
+        "add_sip_registration": "Ajouter un enregistrement SIP",
+        "proxy": "Proxy *",
+        "sip_user_name": "Nom d'utilisateur SIP *",
+        "password": "Mot de passe",
+        "outbound_proxy": "Proxy sortant",
+        "auth_user": "Utilisateur authentifié",
+        "auth_user_hint": "Généralement, il s'agit du même nom d'utilisateur.",
+        "placeholders": {
+          "all_users": "Tous les utilisateurs",
+          "name": "Nouvel enregistrement SIP",
+          "proxy": "sip.provider.org",
+          "sip_user_name": "user_name",
+          "password": "********",
+          "outbound_proxy": "outbound.provider.org",
+          "auth_user": "auth_user_name"
+        }
+      },
+      "calls_settings_users_page": {
+        "empty": "Vous n'avez pas encore ajouté d'utilisateur",
+        "users": "Utilisateurs",
+        "add_user": "Ajouter un utilisateur",
+        "remove_user": "Supprimer l'utilisateur",
+        "active": "Actif",
+        "create": "Créer",
+        "open_sip_settings": "Ouvrir les paramètres SIP",
+        "continue": "Continuer",
+        "sip_settings_title": "Paramètres SIP – {{userName}}",
+        "sensitive_warning": "Il s'agit d'informations sensibles, veillez à ne pas les partager avec des tiers. Survolez le mot de passe pour le révéler.",
+        "user_name": "Nom de l'utilisateur",
+        "domain": "Domaine",
+        "password": "Mot de passe",
+        "remove_warning_title": "Supprimer {{userName}} ?",
+        "remove_warning_annotation": "Cette action est irréversible. Vous pourrez restaurer l'utilisateur uniquement en en créant un nouveau.",
+        "remove": "Supprimer"
+      },
+      "calls_settings_account_page": {
+        "synchronise_with_vx": "Synchroniser avec Voximplant",
+        "delete_warning_modal": {
+          "title": "Êtes-vous sûr de vouloir supprimer le numéro de téléphone {{phoneNumber}} ?",
+          "annotation": "Cette action est irréversible."
+        },
+        "unknown": "Inconnu",
+        "region": "Région",
+        "phone_number": "Numéro de téléphone",
+        "users": "Utilisateurs",
+        "state": "État",
+        "connect_phone_number": "Connecter",
+        "disconnect_phone_number": "Déconnecter",
+        "delete_phone_number": "Supprimer",
+        "phone_numbers": "Numéros de téléphone",
+        "phone_numbers_annotation1": "Connectez tous les numéros de téléphone Voximplant disponibles à votre compte.",
+        "phone_numbers_annotation2": "Vous pouvez ajouter des opérateurs actifs dans la colonne des utilisateurs afin qu'ils puissent accéder aux numéros connectés.",
+        "phone_numbers_annotation3": "ℹ️ Lors de la suppression ou du détachement d'un numéro directement dans l'application Voximplant, n'oubliez pas de le retirer de la liste des numéros ou d'appuyer sur le bouton de synchronisation qui apparaîtra dans ce cas.",
+        "connect_all_available_phone_numbers": "Connecter tous les numéros disponibles",
+        "empty_phone_numbers": "Aucun numéro de téléphone disponible ou connecté",
+        "placeholders": {
+          "all_users": "Tous les utilisateurs"
+        },
+        "connect_telephony_title": "Connectez la téléphonie et obtenez plus d'opportunités avec {{company}}",
+        "connect_telephony_warning": "Veuillez noter : En cliquant sur le bouton, un compte Voximplant lié à {{company}} sera automatiquement créé. Ne vous inscrivez pas manuellement, car ce compte ne sera pas associé à {{company}}.",
+        "connect": "Connecter la téléphonie",
+        "account": "Compte",
+        "voximplant_balance": "Solde Voximplant <i>(Bientôt...)</i>",
+        "recharge": "Recharger",
+        "subscription_fee": "Frais d'abonnement <i>(Bientôt...)</i>",
+        "available_numbers": "Numéros disponibles: {{amount}}",
+        "account_is_not_approved": "Le compte n'est pas approuvé",
+        "not_approved_annotation": "Sans confirmation de votre compte, vous ne pourrez pas utiliser les numéros de téléphone connectés.",
+        "approve": "Approuver"
+      }
+    },
+    "components": {
+      "telephony_button": {
+        "telephony": "Téléphonie",
+        "not_connected": "Connectez-vous à la téléphonie pour activer la fonctionnalité d'appel."
+      },
+      "telephony_modal": {
+        "connect_to_transfer": "Vous devez d'abord vous connecter à l'appel pour le transférer",
+        "no_operators_to_transfer_call_to": "Il n'y a aucun opérateur vers qui transférer l'appel",
+        "coming_soon": "Bientôt disponible...",
+        "unknown_number": "Numéro inconnu",
+        "amwork_calls": "Appels {{company}}",
+        "active_call_control": {
+          "cancel": "Annuler",
+          "transfer": "Transférer",
+          "add_to_call": "Ajouter à l'appel",
+          "end_call": "Terminer l'appel",
+          "calling": "appel en cours",
+          "mute": "Muet",
+          "unmute": "Réactiver le son"
+        },
+        "incoming_call_control": {
+          "transfer": "Transférer",
+          "add_to_call": "Ajouter à l'appel",
+          "accept": "Accepter",
+          "incoming_call": "appel entrant",
+          "mute": "Muet",
+          "unmute": "Réactiver le son",
+          "end_call": "Terminer l'appel",
+          "decline": "Décliner"
+        },
+        "outgoing_call_initializer": {
+          "outgoing_number": "Votre numéro sortant",
+          "no_available_phone_numbers": "Aucun numéro de téléphone disponible",
+          "keys": "Touches",
+          "recent": "Récents",
+          "outgoing": "Appel sortant",
+          "incoming": "Appel entrant",
+          "yesterday": "Hier",
+          "today": "Aujourd'hui",
+          "no_calls": "Aucun appel"
+        },
+        "call_control_template": {
+          "call_from": "Appel de : {{number}}",
+          "create": "Créer",
+          "placeholders": {
+            "select_card": "Sélectionner la fiche"
+          }
+        }
+      }
+    }
+  }
+}

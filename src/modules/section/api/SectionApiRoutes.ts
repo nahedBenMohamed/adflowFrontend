@@ -1,0 +1,25 @@
+export enum SectionApiRoutes {
+  // import entities
+  GET_ENTITIES_IMPORT_TEMPLATE = '/api/crm/entities/:entityTypeId/import/template',
+  ADD_IMPORT_ENTITIES = '/api/crm/entities/:entityTypeId/import',
+  // entities
+  GET_ENTITY = '/api/crm/entities/:id',
+  GET_ENTITY_INFO = '/api/crm/entities/:entityId/info',
+  GET_ENTITIES_BOARD_CARDS = '/api/crm/entities/:entityTypeId/board/:boardId/cards',
+  GET_ENTITIES_BOARD_CARD = '/api/crm/entities/:entityTypeId/board/:boardId/cards/:entityId',
+  GET_ENTITIES_BOARD_META = '/api/crm/entities/:entityTypeId/board/:boardId/meta',
+  GET_ENTITY_LIST_ITEMS = '/api/crm/entities/:entityTypeId/list',
+  GET_ENTITY_LIST_ITEM = '/api/crm/entities/:entityTypeId/list/:entityId',
+  GET_ENTITY_LIST_META = '/api/crm/entities/:entityTypeId/list/meta',
+  GET_ENTITY_FILES = '/api/crm/entities/:id/files',
+  ADD_ENTITY_FILES = '/api/crm/entities/:id/files',
+  CREATE_SIMPLE_ENTITY = '/api/crm/entities/simple',
+  UPDATE_ENTITY = '/api/crm/entities/:id',
+  DELETE_ENTITY = '/api/crm/entities/:id',
+  SEARCH_ENTITIES = '/api/crm/entities/search',
+  SEARCH_ENTITIES_FULL = '/api/crm/entities/search/full',
+  FIND_ONE_ENTITY_FOR_CALL = '/api/crm/entities/search/for-call',
+  SAVE_ENTITY_FIELD_VALUE = '/api/crm/entities/:id/field-values/:fieldId',
+  BATCH_UPDATE_ENTITIES = '/api/crm/entities/:entityTypeId/list/update',
+  BATCH_DELETE_ENTITIES = '/api/crm/entities/:entityTypeId/list/delete',
+}

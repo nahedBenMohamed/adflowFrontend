@@ -1,0 +1,23 @@
+{
+  "entity_board": {
+    "ui": {
+      "project_entity_card_item": {
+        "start_date": "Start Date",
+        "end_date": "End Date",
+        "titles": {
+          "not_resolved": "Not resolved tasks",
+          "upcoming": "Upcoming tasks",
+          "overdue": "Overdue tasks",
+          "today": "Today tasks",
+          "resolved": "Resolved tasks"
+        }
+      },
+      "common_entity_card": {
+        "no_tasks": "No tasks",
+        "task_today": "Task today",
+        "overdue_task": "Overdue task",
+        "upcoming_task": "Upcoming task"
+      }
+    }
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "fields": {
+    "formula_warning": "Changing the formula will recalculate the value in this field. To preserve current data, consider creating a new field.",
+    "project_fields_block": {
+      "owner": "Owner",
+      "value": "Value",
+      "participants": "Participants",
+      "start_date": "Start Date",
+      "end_date": "End Date",
+      "description": "Description",
+      "placeholders": {
+        "participants": "Add participants"
+      }
+    },
+    "field_value": {
+      "ogrn": "OGRN",
+      "tin": "TIN",
+      "trrc": "TRRC",
+      "already_have_an_active_call": "You already have an active call",
+      "recent": "Recent",
+      "no_available_phone_numbers": "No available phone numbers",
+      "value_field_formula_calculation": "This field is currently calculated by a formula, it cannot be edited manually. Value: {{value}}.",
+      "readonly": "This field is readonly",
+      "important_field": "Important Field",
+      "mandatory_field": "Mandatory Field",
+      "important_field_completed": "Important Field Completed",
+      "mandatory_field_completed": "Mandatory Field Completed",
+      "local_time": "Approximate local time of the phone number country capital",
+      "connect_telephony": "Connect to telephony to enable call functionality.",
+      "chat_unavailable": "It looks like you don't have access to this chat. Contact your administrator to connect."
+    },
+    "components": {
+      "field_formula_settings_button": {
+        "no_available_fields_for_formula": "No available budget, number or formula fields",
+        "save_first": "This formula can be configured in the card",
+        "customize": "Customizing Formula: {{fieldName}}",
+        "formula_hint": "This field is intended for entering a formula. The formula may include the values provided below, as well as other numeric fields and formulas, including fields from other functional modules. Click on the desired value or select the field.",
+        "field": "Field",
+        "close": "Close"
+      },
+      "field_settings_modal": {
+        "number": "Number",
+        "currency": "Currency",
+        "format_title": "Select display format for this field",
+        "ordinary_field": "Ordinary Field",
+        "save_first": "This field can be configured only after saving in the card",
+        "important_field": "Important Field",
+        "important_field_hint": "You can make a field important, and then it will have a yellow light bulb icon as a reminder that it needs to be filled in. Once filled, it will display a green check mark. If you need a field to be mandatory and prevent moving the deal to the next stage without filling it out, then select the \"mandatory field\" function.",
+        "select_pipeline_and_statuses": "Select Pipeline and Statuses",
+        "mandatory_field": "Mandatory Field",
+        "mandatory_field_hint": "You can set up a mandatory field for completion. In this case, users won't be able to move to the next status in the pipeline. Select the required pipeline and the status from which the field must be filled.",
+        "user_exclusion": "User Exclusion",
+        "user_exclusion_hint": "You can exclude certain users who will be allowed not to fill in this field. This might be necessary for administrators.",
+        "editing_restriction": "Editing Restriction",
+        "editing_restriction_hint": "You can prohibit selected users from editing this field. They will be able to see it, but will not be able to edit it.",
+        "select_users": "Select Users",
+        "hide_field": "Hide Field for Users",
+        "hide_field_hint": "You can hide this field from selected users; it will be inaccessible to them.",
+        "field_visibility_in_pipeline": "Hide Field in Pipeline",
+        "field_visibility_in_pipeline_hint": "You can customize the field visibility for each pipeline and stage. Below you can select in which stages and pipelines the field will be hidden.",
+        "customize": "Customizing Field: {{fieldName}}"
+      },
+      "edit_fields": {
+        "add_bank_requisites": "Add bank details",
+        "add_org_requisites": "Add organization and entrepreneur details",
+        "add_org_stat_codes": "Add organization and entrepreneur statistical codes",
+        "add_additional_org_requisites": "Add additional organization and entrepreneur fields",
+        "add_field": "Add field",
+        "add_utm_fields": "Add UTM Fields",
+        "add_ga_fields": "Add Google Analytics Fields",
+        "add_ym_fields": "Add Yandex.Metrica Fields",
+        "add_fb_fields": "Add Facebook Analytics Fields",
+        "select_options": {
+          "max_length": "Maximum {{length}} characters",
+          "add_option": "Add option",
+          "cancel": "Cancel",
+          "add": "Add",
+          "no_options": "No options",
+          "placeholders": {
+            "search": "Search...",
+            "option": "Option"
+          }
+        }
+      },
+      "field_form_group": {
+        "max_length": "Maximum {{length}} characters",
+        "text": "Text",
+        "number": "Number",
+        "multitext": "Multitext",
+        "select": "Select",
+        "multiselect": "Multiselect",
+        "switch": "Switch",
+        "formula": "Formula",
+        "phone": "Phone",
+        "email": "E-mail",
+        "value": "Value",
+        "date": "Date",
+        "link": "Link",
+        "file": "File",
+        "richtext": "Formatted text",
+        "participant": "Participant",
+        "participants": "Participants",
+        "colored_select": "Colored select",
+        "colored_multiselect": "Colored multiselect",
+        "checked_multiselect": "Checklist",
+        "checklist": "Multitext with checkboxes",
+        "field_name": "Field name",
+        "analytics_field": "Analytics field"
+      },
+      "show_fields": {
+        "no_fields": "No fields"
+      },
+      "show_files": {
+        "empty": "There are no files yet",
+        "attach": "Attach files"
+      },
+      "file_field_value_comp": {
+        "attach_files": "Attach files"
+      }
+    }
+  }
+}

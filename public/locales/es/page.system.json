@@ -1,0 +1,19 @@
+{
+  "error_page": {
+    "title": "Algo salió mal",
+    "annotation": "Lo sentimos, pero algo salió mal. Hemos sido notificados sobre este problema y lo revisaremos en breve. Por favor, ve a la página principal o intenta recargar la página.",
+    "show_error": "Mostrar mensaje de error",
+    "home": "Página principal",
+    "reload": "Recargar la página"
+  },
+  "forbidden_page": {
+    "title": "El acceso a esta página está prohibido.",
+    "back": "Regresar",
+    "home": "Página principal"
+  },
+  "not_found_page": {
+    "title": "No se pudo encontrar esta página.",
+    "home": "Página principal",
+    "back": "Regresar"
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "multichat": {
+    "amwork_messenger": "Mensajero de {{company}}",
+    "components": {
+      "multichat_control": {
+        "not_found": "No encontrado",
+        "chats": "Chats",
+        "messages": "Mensajes",
+        "users": "Usuarios",
+        "owner": "Propietario",
+        "supervisor": "Supervisor",
+        "no_chats_yet": "Aún no hay chats",
+        "create_card": "Crear una Tarjeta",
+        "link_card": "Ajustar una Tarjeta",
+        "card": "Tarjeta",
+        "ui": {
+          "deleted_user": "Usuario eliminado 👻",
+          "multichat_control_header": {
+            "title": "Multi Mensajero de {{company}}"
+          },
+          "create_amwork_chat_button": {
+            "label": "Nuevo chat de {{company}}",
+            "modals": {
+              "select_contact_title": "Seleccione un usuario o un grupo de usuarios",
+              "continue": "Continuar",
+              "customize_chat": "Personalizar chat",
+              "placeholders": {
+                "group_name": "Nombre del grupo"
+              }
+            }
+          },
+          "chats_header_providers_tabs": {
+            "all_chats": "Todos los Chats"
+          },
+          "chat_message_context_menu": {
+            "reply": "Responder",
+            "copy": "Copiar texto",
+            "edit": "Corregir",
+            "delete": "Eliminar"
+          },
+          "chat_message_reply_block": {
+            "editing_message": "Edición del mensaje"
+          },
+          "send_chat_message_block": {
+            "placeholders": {
+              "message": "Mensaje"
+            }
+          },
+          "no_selected_chat_plug": {
+            "title": "Seleccione un chat para comenzar a enviar mensajes"
+          },
+          "chats_panel_block": {
+            "you": "Tú"
+          },
+          "send_chat_message_with_files_modal": {
+            "send_files": "Enviar archivos"
+          },
+          "chat_message_item": {
+            "you": "Tú"
+          },
+          "chat_controls_menu": {
+            "mark_as_read": "Marcar como leído",
+            "delete_chat": "Eliminar chat",
+            "delete_warning_title": "¿Está seguro de que desea eliminar el chat?",
+            "delete_warning_annotation": "Todos los mensajes se eliminarán. Esta acción no se puede deshacer."
+          }
+        }
+      }
+    }
+  }
+}

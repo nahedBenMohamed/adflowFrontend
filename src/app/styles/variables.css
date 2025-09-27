@@ -1,0 +1,189 @@
+:root {
+  /* Fonts */
+  --system-font-families:
+    -apple-system, 'system-ui', 'BlinkMacSystemFont', 'Segoe UI', 'Noto Sans', Helvetica, Arial,
+    sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  --font-family-mono: ui-monospace, monospace;
+
+  /* Colors */
+  /* Button (Text) */
+  --primary-blue: #5293f4;
+  --button-text-blue-default: var(--primary-blue);
+  --button-text-blue-hover: #79abf6;
+  --button-text-blue-active: #2c7bf2;
+  --button-text-green-default: #69d222;
+  --button-text-green-hover: #7fe03e;
+  --button-text-green-active: #58af1d;
+  --button-text-red-default: #f8654f;
+  --button-text-red-hover: #f98776;
+  --button-text-red-active: #f64328;
+  --button-text-graphite-primary-text: #7d89a1;
+  --button-text-graphite-primary-text-rgb: 123, 138, 171;
+  --button-text-graphite-secondary-text: #acb4c3;
+  --button-text-graphite-priory-text: #454f5e;
+  --button-text-graphite-priory-text-rgb: 85, 85, 85;
+
+  /* Graphite */
+  --graphite-graphite-840: #23282f;
+  --graphite-graphite-680: var(--button-text-graphite-priory-text);
+  --graphite-graphite-520: #67778e;
+  --graphite-graphite-440: #7d8ba1;
+  --graphite-graphite-360: #94a0b2;
+  --graphite-graphite-280: #acb5c3;
+  --graphite-graphite-200: #c4cad4;
+  --graphite-graphite-120: #dbdfe5;
+  --graphite-graphite-80: #e8eaee;
+  --graphite-graphite-40: #f3f4f6;
+  --graphite-graphite-20: #f9fafb;
+
+  /* Background */
+  --background-red-20: #fff6f5;
+  --background-orange-20: #fffaf5;
+  --background-yellow-20: #fffdf5;
+  --background-salad-20: #fcfef6;
+  --background-green-20: #f9fef6;
+  --background-malachite-20: #f6fef9;
+  --background-aquamarine-20: #f6fefc;
+  --background-turquoise-20: #f6fefe;
+  --background-noun-20: #f5fcfe;
+  --background-blue-20: #f6f9fe;
+  --background-blue-40: #edf3fd;
+  --background-purple-20: #f7f6fe;
+  --background-amethyst-20: #faf7fd;
+  --background-fuchsia-20: #fcf7fd;
+  --background-crimson-20: #fef6fb;
+  --background-pink-20: #fef5f8;
+
+  /* Primary (statuses) */
+  --primary-statuses-red-360: #f8654f;
+  --primary-statuses-orange-440: #f68828;
+  --primary-statuses-yellow-400: #fbd437;
+  --primary-statuses-salad-480: #b0e228;
+  --primary-statuses-green-520: #69d222;
+  --primary-statuses-malachite-480: #23e664;
+  --primary-statuses-aquamarine-480: #23e7b2;
+  --primary-statuses-turquoise-520: #1dd7d7;
+  --primary-statuses-noun-440: #2cbdf2;
+  --primary-statuses-blue-360: #5293f4;
+  --primary-statuses-purple-360: #7e70d7;
+  --primary-statuses-amethyst-360: #a770d7;
+  --primary-statuses-fuchsia-400: #cb60d2;
+  --primary-statuses-crimson-360: #e561b9;
+  --primary-statuses-pink-360: #f45288;
+  --primary-statuses-white-0: #ffffff;
+  --primary-statuses-white-0-rgb: 255, 255, 255;
+
+  /* Secondary */
+  --secondary-red-240: #fa9989;
+  --secondary-orange-240: #fabe89;
+  --secondary-yellow-240: #fde587;
+  --secondary-salad-280: #d1ee81;
+  --secondary-green-280: #adee81;
+  --secondary-malachite-240: #91f3b1;
+  --secondary-aquamarine-240: #91f3d9;
+  --secondary-turquoise-240: #93f0f0;
+  --secondary-noun-240: #8cdbf8;
+  --secondary-blue-240: #8cb7f8;
+  --secondary-purple-200: #b1a7f1;
+  --secondary-amethyst-200: #ceafe9;
+  --secondary-fuchsia-200: #e3b1e7;
+  --secondary-crimson-200: #f3a5d9;
+  --secondary-pink-200: #f99fbd;
+
+  /* Neutral */
+  --neutral-red-100: #fdd4ce;
+  --neutral-orange-80: #fde9d8;
+  --neutral-yellow-80: #fef6d7;
+  --neutral-salad-120: #ebf8c9;
+  --neutral-green-120: #dcf8c9;
+  --neutral-malachite-80: #dafbe5;
+  --neutral-aquamarine-80: #dafbf2;
+  --neutral-turquoise-80: #dbfafa;
+  --neutral-noun-80: #d9f3fd;
+  --neutral-blue-80: #d9e7fd;
+  --neutral-purple-60: #e8e5fb;
+  --neutral-amethyst-80: #ecdff6;
+  --neutral-fuchsia-80: #f4e0f5;
+  --neutral-crimson-80: #fadbf0;
+  --neutral-pink-80: #fdd9e5;
+  --neutral-black-primary: #555555;
+
+  /* Avatars gradients */
+  --avatar-orange-grad: linear-gradient(135deg, #fb7f5c 0%, #da5949 100%);
+  --avatar-orange-light-grad: linear-gradient(135deg, #fdb457 0%, #f7873a 100%);
+  --avatar-gray-grad: linear-gradient(135deg, #56c5e1 0%, #3aa1d6 100%);
+  --avatar-blue-grad: linear-gradient(135deg, #ad8ef6 0%, #7366e2 100%);
+  --avatar-green-grad: linear-gradient(135deg, #92cf61 0%, #4fbc46 100%);
+  --avatar-red-grad: linear-gradient(135deg, #fa84a5 0%, #dd5a79 100%);
+
+  /* Transitions */
+  --transition-duration: 200ms;
+  --transition-timing-function: ease;
+  --transition-200: var(--transition-duration) var(--transition-timing-function);
+
+  /* Borders */
+  --border-radius-element: 4px;
+  --border-radius-block: 8px;
+  --border-radius-modal: 8px;
+
+  /* Gabarits */
+  --header-height: 56px;
+  --subheader-height: 40px;
+  --header-with-subheader-height: calc(var(--header-height) + var(--subheader-height));
+  --sidebar-width: 56px;
+  --settings-sidebar-width: 240px;
+  --reports-navigation-sidebar-width: 264px;
+  --scheduler-statistics-height: 56px;
+
+  --base-page-min-width: 1200px;
+
+  --telephony-header-height: 49px;
+  --telephony-call-initializer-header-height: 38px;
+
+  --mailing-settings-sidebar-width: 335px;
+  --mailing-sidebar-width-opened: 248px;
+  --mailing-sidebar-width-closed: 53px;
+  --mailing-message-panel-width: 340px;
+
+  --card-root-gap: 16px;
+  --card-stages-height: 32px;
+  --card-stages-margin-top: 16px;
+  --card-stages-total-height: calc(var(--card-stages-height) + var(--card-stages-margin-top));
+
+  --chats-header-search-block-height: 62px;
+  --chats-header-providers-tabs-height: 36px;
+  --chats-sidebar-header-height: calc(
+    var(--chats-header-search-block-height) + var(--chats-header-providers-tabs-height)
+  );
+  --chats-panel-block-min-height: 78px;
+
+  --toast-width: 328px;
+
+  --builder-nav-width: 232px;
+
+  --board-offset: 16px;
+
+  --field-component-height: 32px;
+
+  --field-dropdown-max-width: 256px;
+  --field-dropdown-min-width: 176px;
+
+  --report-filter-select-width: 180px;
+
+  --tutorial-item-column-width: 152px;
+
+  --fixed-builder-step-controls-height: 56px;
+
+  --bpmn-automations-djs-palette-width: 110px;
+  --bpmn-automation-process-save-controls-height: 56px;
+  --bpmn-toggle-minimap-toggle-button-height: 36px;
+
+  /* Z-indexes */
+  --modal-z-index: 1050;
+  --dropdown-z-index: 1100;
+  --header-z-index: 50;
+  --subheader-z-index: 49;
+
+  /* Box-shadows */
+  --dropdown-box-shadow: 0 0 1.5px 0 #eef4fe, 0 0 1.5px 0 #d0daeb;
+}

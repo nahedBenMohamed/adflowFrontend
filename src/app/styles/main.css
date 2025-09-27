@@ -1,0 +1,46 @@
+@import 'normalize.css/normalize.css';
+@import './variables.css';
+@import './reset.css';
+@import './fonts.css';
+@import './emoji-picker.css';
+@import './toastify.css';
+@import '@react-pdf-viewer/core/lib/styles/index.css';
+@import '@react-pdf-viewer/default-layout/lib/styles/index.css';
+@import './react-pdf.css';
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  /* font display strategy */
+  font-variant: normal;
+  font-feature-settings: normal;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: initial;
+  -moz-osx-font-smoothing: auto;
+  font-family: var(--system-font-families);
+
+  /* global background */
+  background-color: var(--graphite-graphite-20);
+}
+
+/* we add this class to body when resizing tables or panels for consistent cursor view */
+body.resize-col {
+  cursor: col-resize;
+}
+
+body.no-selection {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+/* disable mac-scrollbar on mobile to prevent scrollbar conflicts */
+@media (max-width: 480px) {
+  .ms-track-global {
+    display: none;
+  }
+}

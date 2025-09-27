@@ -1,0 +1,23 @@
+// binded with translations, change carefully
+export enum FieldType {
+  TEXT = 'text',
+  DATE = 'date',
+  LINK = 'link',
+  FILE = 'file',
+  PHONE = 'phone',
+  EMAIL = 'email',
+  VALUE = 'value',
+  SELECT = 'select',
+  SWITCH = 'switch',
+  NUMBER = 'number',
+  FORMULA = 'formula',
+  RICHTEXT = 'richtext',
+  MULTITEXT = 'multitext',
+  CHECKLIST = 'checklist',
+  MULTISELECT = 'multiselect',
+  PARTICIPANT = 'participant',
+  PARTICIPANTS = 'participants',
+  COLORED_SELECT = 'colored_select',
+  COLORED_MULTISELECT = 'colored_multiselect',
+  CHECKED_MULTISELECT = 'checked_multiselect',
+}

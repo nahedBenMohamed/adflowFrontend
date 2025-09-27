@@ -1,0 +1,234 @@
+{
+  "mailing": {
+    "unknown_file": "Nieznany plik",
+    "modals": {
+      "send_email_modal": {
+        "to": "Do:",
+        "copy": "Kopia:",
+        "hidden_copy": "Ukryta kopia:",
+        "from": "Od:",
+        "subject": "Temat:",
+        "attachment": "załącznik",
+        "attachments": "załączniki",
+        "delete_all": "Usuń wszystko",
+        "send": "Wyślij",
+        "error": "Nie udało się wysłać wiadomości! Proszę spróbować ponownie później.",
+        "send_with_html": "Wyślij e-mail z HTML",
+        "send_with_html_hint": "Wybierz tę opcję, jeśli chcesz wysłać e-mail z HTML. Jest to przydatne, jeśli chcesz zrezygnować z domyślnych funkcji formatowania {{company}}.",
+        "components": {
+          "changes_not_saved_modal": {
+            "title": "Zmiany nie zostały zapisane",
+            "annotation": "Kontynuować edytowanie?",
+            "approve": "Usuń szkic"
+          },
+          "invalid_email_address_modal": {
+            "title": "E-mail \"{{email}}\" nie wydaje się być prawidłowym adresem",
+            "annotation": "Sprawdź adres i spróbuj ponownie.",
+            "approve": "Wyślij mimo to"
+          },
+          "send_email_settings_dropdown": {
+            "show_copy": "Pokaż pole adresu kopii",
+            "show_hidden_copy": "Pokaż pole ukrytej kopii"
+          },
+          "editors": {
+            "email_signature_editor": {
+              "placeholder": "Dodaj podpis",
+              "no_signature": "Brak podpisu"
+            },
+            "email_text_editor": {
+              "placeholders": {
+                "new_message": "Nowa wiadomość",
+                "enter_html_markup": "Wprowadź HTML"
+              }
+            }
+          }
+        }
+      }
+    },
+    "pages": {
+      "mailing_settings_page": {
+        "soon": "Wkrótce...",
+        "add_button": "Dodaj skrzynkę pocztową",
+        "mail_templates": "Szablony e-mail",
+        "templates_caption": "Możesz tworzyć szablony e-mail, które mogą być używane do wysyłania klientom. Po dodaniu szablonu będziesz miał dostęp do wysyłania e-maili.",
+        "setup_signature": "Ustaw podpis",
+        "add_template": "Dodaj szablon",
+        "components": {
+          "mailbox_item": {
+            "draft_text": "Szkic",
+            "draft_hint": "Połączenie skrzynki pocztowej nie jest zakończone. Proszę wprowadzić brakujące ustawienia.",
+            "inactive_text": "Nieaktywna",
+            "inactive_hint": "Skrzynka pocztowa jest nieaktywna. {{error}}.",
+            "sync_text": "Synchronizacja",
+            "sync_hint": "Skrzynka pocztowa jest synchronizowana. Proszę czekać.",
+            "active_text": "Aktywna"
+          }
+        },
+        "modals": {
+          "delete_mailbox_modal": {
+            "delete": "Usuń",
+            "title": "Czy na pewno chcesz usunąć tę skrzynkę pocztową?",
+            "save_correspondence_annotation": "Zapisać historię korespondencji dla tego e-maila?",
+            "save_correspondence": "Zapisz historię korespondencji dla tego e-maila"
+          },
+          "mailbox_address_modal": {
+            "continue": "Kontynuuj",
+            "title": "Podłącz skrzynkę pocztową",
+            "placeholder": "Twój e-mail",
+            "caption1": "Podłącz korporacyjną skrzynkę pocztową z dostępem współdzielonym, która otrzymuje zapytania od klientów, lub osobistą skrzynkę pocztową jednego z Twoich pracowników.",
+            "caption2": "E-maile wysyłane na tę skrzynkę będą automatycznie dołączane do kontaktów. Możesz utworzyć transakcję bezpośrednio z listy e-maili.",
+            "caption3": "Jeśli masz problemy z podłączeniem, spróbuj włączyć dostęp dla swojego klienta e-mail.",
+            "cancel": "Anuluj",
+            "google_caption1": "{{company}} użycie i transfer informacji otrzymanych z Google API do jakiejkolwiek innej aplikacji będzie zgodne z",
+            "google_policy_link": "Polityką użytkowania danych Google API Services",
+            "google_caption2": ", w tym wymaganiami ograniczonego użytkowania."
+          },
+          "mailbox_provider_modal": {
+            "title": "Wybierz dostawcę",
+            "caption": "Wybierz swojego dostawcę e-mail z poniższej listy. Jeśli nie widzisz swojej usługi e-mail na liście, naciśnij Ręcznie i ręcznie skonfiguruj skrzynkę pocztową.",
+            "manual": "Ręcznie"
+          },
+          "update_mailbox_modal": {
+            "max_number_of_emails_per_day": "Maksymalna liczba e-mailów dziennie",
+            "emails_per_day": "e-maile dziennie",
+            "emails_per_day_hint": "Parametr limitu e-maili jest konieczny, aby uniknąć zablokowania przez dostawcę usługi e-mail. Każda usługa e-mail ustala swoje limity na wysyłanie wiadomości. Na przykład podstawowa wersja Google Workspace pozwala na wysyłanie 500 wiadomości dziennie z jednej skrzynki pocztowej.",
+            "email_readonly_title": "Nie możesz edytować adresu już utworzonej skrzynki pocztowej",
+            "title_connect": "Podłącz skrzynkę pocztową",
+            "title_edit": "Edytuj ustawienia skrzynki pocztowej",
+            "encryption": "Szyfrowanie",
+            "owner": "Wybierz odpowiedzialny poczty",
+            "for_whom_available": "Wybierz dla kogo poczta jest dostępna",
+            "synchronize": "Synchronizuj e-maile z ostatnich 7 dni",
+            "create_entities_annotation": "Skonfiguruj opcje poniżej, aby automatycznie tworzyć kartę przy odbiorze e-maila od nowego kontaktu.",
+            "create_entities_label": "Twórz kartę przy odbiorze e-maila",
+            "delete": "Usuń skrzynkę pocztową",
+            "reconnect": "Ponownie podłącz skrzynkę pocztową",
+            "placeholders": {
+              "password": "Hasło",
+              "imap": "Serwer IMAP",
+              "port": "Port",
+              "smtp": "Serwer SMTP",
+              "owner": "Wybierz Odpowiedzialny"
+            }
+          },
+          "mailbox_signature_modal": {
+            "title": "Podpisy",
+            "mailbox_signature_editor": {
+              "available_in_mailboxes": "Dostępne w skrzynkach pocztowych:",
+              "delete": "Usuń",
+              "save": "Zapisz",
+              "warning_title": "Usuń podpis",
+              "warning_annotation": "Czy na pewno chcesz usunąć ten podpis?",
+              "save_as_html": "Zapisz jako HTML",
+              "save_as_html_hint": "Wybierz tę opcję, jeśli chcesz zapisać podpis jako HTML. Jest to przydatne, jeśli chcesz zrezygnować z domyślnych funkcji formatowania {{company}}.",
+              "placeholders": {
+                "signature_name": "Nazwa podpisu",
+                "your_signature": "Twój podpis",
+                "select_mailboxes": "Wybierz skrzynki pocztowe"
+              }
+            }
+          }
+        }
+      },
+      "mailing_page": {
+        "title": "E-mail i Messenger",
+        "no_email": "Brak e-maili",
+        "components": {
+          "section": {
+            "inbox": "Odebrane",
+            "sent": "Wysłane",
+            "spam": "Spam",
+            "trash": "Kosz",
+            "draft": "Szkic",
+            "flagged": "Oznaczone",
+            "archive": "Archiwum",
+            "all": "Cała poczta",
+            "mailbox": "Skrzynka {{number}}"
+          },
+          "message_panel": {
+            "no_messages": "Brak wiadomości",
+            "demo_message_subject": "✉️ {{company}}: Korporacyjne rozwiązanie e-mail",
+            "demo_message_snippet": "Drogi Kliencie, Przedstawiamy rewolucyjne korporacyjne rozwiązanie e-mail, które na pewno przyciągnie Twoją uwagę."
+          },
+          "attachments_block": {
+            "attachment": "załącznik",
+            "attachments": "załączniki",
+            "download_all": "Pobierz wszystko"
+          },
+          "reply_controls": {
+            "reply": "Odpowiedz",
+            "reply_all": "Odpowiedz wszystkim",
+            "forward": "Przekaż dalej"
+          },
+          "create_message_button": {
+            "title": "Nowa wiadomość"
+          },
+          "no_mailboxes_panel_block": {
+            "title": "Kliknij przycisk poniżej, aby dodać swoją skrzynkę pocztową."
+          },
+          "thread": {
+            "unknown": "Nieznany 👤",
+            "no_selected_message": "Nie wybrano wiadomości",
+            "from": "Od",
+            "subject": "Temat",
+            "reply": "Odpowiedz",
+            "reply_all": "Odpowiedz wszystkim",
+            "forward": "Przekaż dalej",
+            "add_task": "Dodaj zadanie",
+            "add_contact": "Dodaj kontakt",
+            "spam": "Spam",
+            "unspam": "Nie spam",
+            "move_to_inbox": "Przenieś do odebranych",
+            "trash": "Kosz",
+            "close": "Zamknij",
+            "unseen": "Niewidoczne",
+            "user": "Użytkownik",
+            "date": "{{day}} o {{time}}",
+            "amwork_workspace": "{{company}} Workspace",
+            "demo_message_title": "✉️ {{company}}: Korporacyjne rozwiązanie e-mail",
+            "demo_message_snippet": "Drogi Kliencie, przedstawiamy rewolucyjne korporacyjne rozwiązanie e-mail, które na pewno przyciągnie Twoją uwagę. Odkryj nowe możliwości i podnieś swoją komunikację korporacyjną na nowy poziom dzięki integracji e-mail z przestrzenią roboczą {{company}}!",
+            "dear_customer": "Drogi Kliencie,",
+            "demo_message_intro": "Przedstawiamy rewolucyjne korporacyjne rozwiązanie e-mail, które na pewno przyciągnie Twoją uwagę. Odkryj nowe możliwości i podnieś swoją komunikację korporacyjną na nowy poziom dzięki integracji e-mail z przestrzenią roboczą {{company}}! Podłącz dowolną korporacyjną lub osobistą skrzynkę pocztową i ciesz się nie tylko znanymi funkcjami e-mail, ale także wieloma dodatkowymi narzędziami. Twórz zadania, leady, projekty i inne bezpośrednio z e-maila, utrzymując pełną kontrolę nad wszystkimi interakcjami z klientami, partnerami i projektami. Bez wysiłku wysyłaj wiadomości z kart leadów, transakcji, partnerów lub projektów, a będą one automatycznie zapisywane w odpowiedniej karcie. W ten sposób możesz łatwo przeczytać i przeanalizować historię korespondencji dla konkretnej transakcji lub projektu. Pracuj bardziej efektywnie jako zespół, udzielając dostępu do wspólnej skrzynki pocztowej i zarządzając komunikacją razem ze swoimi kolegami. Otwórz nowe horyzonty z {{company}} i zwiększ swoją produktywność biznesową!",
+            "email_functionality": "📬 Funkcjonalność e-mail:",
+            "email_functionality_ul": "<ul style=\"margin-bottom: 8px;\"><li>Integracja API z Gmail</li><li>Integracja IMAP</li><li>Integracja e-maili z ostatnich 7 dni dla nowo dodanych skrzynek pocztowych</li><li>Przychodzące i wychodzące e-maile</li><li>Grupowanie e-maili w wątki/łańcuchy według nadawcy</li><li>Możliwość tworzenia zadania z e-maila</li><li>Możliwość tworzenia kontaktu z e-maila</li><li>Automatyczne tworzenie leadów z e-maili</li><li>Dołączanie przychodzących i wychodzących e-maili do historii/feed karty</li><li>Możliwość pisania e-maila z karty</li><li>Tworzenie niestandardowych folderów</li><li>Użycie wielu skrzynek pocztowych</li><li>Wspólne zarządzanie skrzynką pocztową</li><li>Wyświetlanie e-maili w formacie HTML</li><li>Wspólne zarządzanie skrzynką pocztową</li><li>Wyszukiwanie e-maili</li><li>Spam</li><li>Usunięte pozycje</li><li>Szkice</li><li>Tworzenie podpisów</li><li>Adresaci kopii</li><li>Adresaci ukrytej kopii</li><li>Załączniki plików</li></ul>",
+            "reach_out": "Jeśli masz jakieś pytania, skontaktuj się z nami –",
+            "sincerely_amwork": "Z poważaniem, zespół {{company}}."
+          },
+          "modals": {
+            "create_contact_modal": {
+              "create": "Utwórz",
+              "title": "Utwórz karty z wiadomości e-mail",
+              "create_contact": "Utwórz kontakt dla e-maila",
+              "create_lead": "Utwórz lead dla e-maila",
+              "open_entity": "Otwórz nowo utworzoną jednostkę",
+              "placeholders": {
+                "where_contact": "Wybierz, gdzie utworzyć nowy kontakt",
+                "where_lead": "Wybierz, gdzie utworzyć nowy lead",
+                "board_for_lead": "Wybierz tablicę dla nowego leada"
+              }
+            },
+            "link_contact_modal": {
+              "link": "Połącz",
+              "title": "Połącz kartę",
+              "select_module": "Wybierz moduł",
+              "search_card": "Wybierz kartę",
+              "open_entity": "Otwórz połączoną kartę",
+              "placeholders": {
+                "module": "Moduł...",
+                "search_card": "Wpisz nazwę, aby wyszukać..."
+              }
+            }
+          }
+        },
+        "hooks": {
+          "use_message_controls": {
+            "unknown": "Nieznany 👤",
+            "reply_to": "Odpowiedz do",
+            "reply_all": "Odpowiedz wszystkim",
+            "forward": "Przekaż dalej"
+          }
+        }
+      }
+    }
+  }
+}

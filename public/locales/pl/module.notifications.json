@@ -1,0 +1,79 @@
+{
+  "notifications": {
+    "tags": {
+      "task_new": "Nowe zadanie",
+      "task_overdue": "Zadanie",
+      "task_before_start": "Zadanie",
+      "task_overdue_employee": "Zadanie",
+      "activity_new": "Nowa aktywność",
+      "activity_overdue": "Aktywność",
+      "activity_before_start": "Aktywność",
+      "activity_overdue_employee": "Aktywność",
+      "task_comment_new": "Nowy komentarz",
+      "chat_message_new": "Nowa wiadomość",
+      "mail_new": "Nowa poczta",
+      "entity_note_new": "Nowa notatka",
+      "entity_new": "Nowy {{entityTypeName}}",
+      "entity_responsible_change": "Nowy odpowiedzialny {{entityTypeName}}",
+      "entity_import_completed": "Import",
+      "yesterday": "Wczoraj o {{time}}",
+      "date": "{{date}} o {{time}}"
+    },
+    "components": {
+      "delay_select": {
+        "no_delay": "Bez opóźnienia",
+        "5_minutes": "5 minut",
+        "10_minutes": "10 minut",
+        "15_minutes": "15 minut",
+        "30_minutes": "30 minut",
+        "1_hour": "1 godzina"
+      },
+      "notifications_panel": {
+        "mute_notifications": "Wycisz dźwięk powiadomień",
+        "unmute_notifications": "Włącz dźwięk powiadomień",
+        "no_notifications": "Nie masz jeszcze żadnych powiadomień",
+        "ui": {
+          "block_header_annotation": {
+            "overdue": "Przeterminowane",
+            "overdue_employee": "{{employee}} jest przeterminowany",
+            "after_time": "Po {{time}}",
+            "from_employee": "od {{employee}}",
+            "system_notice": "Powiadomienie systemowe",
+            "message": "Wiadomość",
+            "yesterday": "Wczoraj o {{time}}",
+            "date": "{{date}} o {{time}}"
+          },
+          "notification_settings": {
+            "title": "Powiadomienia"
+          },
+          "notification_settings_modal": {
+            "title": "Ustawienia powiadomień",
+            "enable_popup": "Powiadomienia pop-up",
+            "new": "Nowe",
+            "new_mail": "Nowa poczta",
+            "new_chat_message": "Nowa wiadomość na czacie",
+            "new_note": "Nowa notatka",
+            "entity_responsible_change": "Zmiana odpowiedzialności za jednostkę",
+            "entity_import_complete": "Import jednostki zakończony",
+            "new_task_comment": "Nowy komentarz do zadania",
+            "unknown": "Nieznane",
+            "new_task": "Nowe zadanie",
+            "overdue_task": "Przeterminowane zadanie",
+            "before_task_start": "Przed rozpoczęciem zadania",
+            "overdue_task_employee": "Przeterminowane zadanie dla pracownika(ów)",
+            "new_activity": "Nowa aktywność",
+            "overdue_activity": "Przeterminowana aktywność",
+            "before_activity_start": "Przed rozpoczęciem aktywności",
+            "overdue_activity_employee": "Przeterminowana aktywność dla pracownika(ów)",
+            "placeholders": {
+              "select": "Wybierz"
+            }
+          },
+          "read_all_button": {
+            "read_all": "Przeczytaj wszystko"
+          }
+        }
+      }
+    }
+  }
+}

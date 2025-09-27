@@ -1,0 +1,368 @@
+{
+  "automation": {
+    "modals": {
+      "add_activity_automation_modal": {
+        "current_responsible_user": "Current responsible user",
+        "activity_default_name": "Activity #{{id}}",
+        "title_add": "Add Create Activity Automation",
+        "title_update": "Update Create Activity Automation",
+        "create_activity": "Create Activity *",
+        "responsible_user": "Responsible User *",
+        "due_date": "Due Date",
+        "defer_start": "Start Date",
+        "activity_type": "Activity Type *",
+        "description": "Description",
+        "current_responsible_user_hint": "Select the user responsible for the activity. The current responsible user is the one assigned to the card where the activity will be created.",
+        "placeholders": {
+          "select_activity_type": "Select activity type"
+        }
+      },
+      "add_task_automation_modal": {
+        "task_default_name": "Task #{{id}}",
+        "title_add": "Add Create Task Automation",
+        "title_update": "Update Create Task Automation",
+        "create_task": "Create Task *",
+        "due_date": "Due Date",
+        "defer_start": "Start Date",
+        "responsible_user": "Responsible User *",
+        "name_and_description": "Name * and Description",
+        "current_responsible_user": "Current responsible user",
+        "current_responsible_user_hint": "Select the user responsible for the task. The current responsible user is the one assigned to the card where the task will be created.",
+        "placeholders": {
+          "task_name": "Task name",
+          "select_user": "Select user"
+        }
+      },
+      "change_responsible_automation_modal": {
+        "change_responsible_default_name": "Responsible #{{id}}",
+        "title_add": "Add Change Responsible Automation",
+        "title_update": "Update Change Responsible Automation",
+        "responsible_user": "Change Responsible User To *",
+        "placeholders": {
+          "select_responsible_user": "Select new responsible"
+        }
+      },
+      "change_stage_automation_modal": {
+        "change_stage_default_name": "Stage #{{id}}",
+        "title_add": "Add Change Stage Automation",
+        "title_update": "Update Change Stage Automation",
+        "change_stage": "Change Stage *",
+        "cards_copies": "Cards Copies",
+        "stage": "Sales Pipeline and Stage *",
+        "automation_copy": {
+          "move_label": "Do not create a copy of the deal when changing its status",
+          "copy_original_label": "Create a copy of the deal and move the original deal to the new status when changing its status",
+          "copy_new_label": "Create a copy of the deal when changing its status, but leave the original deal at its current status.",
+          "hint": "When this option is enabled, the system will automatically create a copy of the card at its current status with each automatic status change. This is essential for accurate reporting and sales planning metrics, particularly when the status change is associated with final system statuses such as 'Successfully Completed' or 'Unsuccessfully Completed'."
+        },
+        "placeholders": {
+          "select_stage": "Select stage"
+        }
+      },
+      "change_linked_stage_automation_modal": {
+        "change_stage_default_name": "Linked Stage #{{id}}",
+        "title_add": "Add Change Linked Stage Automation",
+        "title_update": "Update Change Linked Stage Automation",
+        "change_stage": "Change Stage *",
+        "cards_copies": "Cards Copies",
+        "entity_type": "Module *",
+        "stage": "Sales Pipeline and Stage *",
+        "no_stages": "The selected module has no statuses. Select another module to create automation.",
+        "automation_copy": {
+          "move_label": "Do not create a copy of the deal when changing its status",
+          "copy_original_label": "Create a copy of the deal and move the original deal to the new status when changing its status",
+          "copy_new_label": "Create a copy of the deal when changing its status, but leave the original deal at its current status.",
+          "hint": "When this option is enabled, the system will automatically create a copy of the card at its current status with each automatic status change. This is essential for accurate reporting and sales planning metrics, particularly when the status change is associated with final system statuses such as 'Successfully Completed' or 'Unsuccessfully Completed'."
+        },
+        "placeholders": {
+          "select_stage": "Select stage"
+        }
+      },
+      "send_email_automation_modal": {
+        "configure_mailbox_limits": "Configure mailbox limits",
+        "max_number_of_emails_per_day": "Maximum number of emails per day",
+        "send_email_default_name": "Email #{{id}}",
+        "title_add": "Add Email Automation",
+        "title_update": "Update Email Automation",
+        "title_hint": "Email messages will only be sent to contact cards that have a filled Email field.",
+        "email_text": "Email text *",
+        "recipient_name": "- Recipient name",
+        "recipient_name_hint": "You can set the placeholder {{contact_name}} in the email text, and it will be replaced with the contact's name from the card.",
+        "user_name": "- User name",
+        "user_phone": "- User phone",
+        "send_with_html": "Send email with HTML markup",
+        "sender_email": "Sender's Mail *",
+        "sender_name": "Sender's Name *",
+        "send": "Send",
+        "emails_per_day": "emails per day",
+        "emails_per_day_hint": "The email limit parameter is necessary to avoid being banned by the email service provider. Each email service sets its own limits on sending messages. For example, the basic version of Google Workspace allows sending 500 messages per day from one mailbox.",
+        "mailing_parameters": "Mailing Parameters *",
+        "options": {
+          "addresses": "Shipping Addresses *",
+          "all_addresses": "Send to all cards and email addresses",
+          "fine_tune_addresses": "Customize...",
+          "main_entity": "Send to main card",
+          "main_entity_hint": "Choose whether to send to all addresses in the main card or just the first one.",
+          "main_entity_all": "to all addresses",
+          "main_entity_only_first": "only to the first address",
+          "contact": "Send to contact card",
+          "contact_hint": "Choose whether to send to all related contact cards or just the first one, and whether to send to all addresses in the card or only the first.",
+          "contact_all_entities_all_values": "to all addresses in all contact cards",
+          "contact_all_entities_first_value": "only to the first address in all contact cards",
+          "contact_first_entity_all_values": "to all addresses in the first contact card only",
+          "contact_first_entity_first_value": "only to the first address in the first contact card",
+          "company": "Send to company card",
+          "company_hint": "Choose whether to send to all related company cards or just the first one, and whether to send to all addresses in the card or only the first.",
+          "company_all_entities_all_values": "to all addresses in all company cards",
+          "company_all_entities_first_value": "only to the first address in all company cards",
+          "company_first_entity_all_values": "to all addresses in the first company card only",
+          "company_first_entity_first_value": "only to the first address in the first company card"
+        },
+        "placeholders": {
+          "title": "Enter title",
+          "email_text": "Enter email text",
+          "email_markup": "Enter HTML markup",
+          "select_email_address": "Select email address",
+          "select_user": "Select user"
+        }
+      },
+      "create_entity_automation_modal": {
+        "create_entity_default_name": "Card #{{id}}",
+        "title_add": "Create Linked Card Automation",
+        "title_update": "Update Linked Card Automation",
+        "create_card": "Create Linked Card *",
+        "select_entity_type": "Module",
+        "select_entity_type_hint": "Select the module where the card will be created. To avoid cycles, the card cannot be created in the current module.",
+        "select_stage": "Board or Sales Funnel & Status",
+        "responsible_user": "Assigned User",
+        "responsible_user_hint": "Select the user responsible for the task. The current responsible user manages the card where the task will be created.",
+        "current_responsible_user": "Current Responsible User",
+        "entity_name": "Card Name",
+        "placeholders": {
+          "select_entity_type": "Select Module",
+          "entity_name": "Enter Card Name"
+        }
+      },
+      "send_internal_chat_automation_modal": {
+        "send_internal_chat_default_name": "Chat #{{id}}",
+        "title_add": "Create Chat Message Automation",
+        "title_update": "Update Chat Message Automation",
+        "sender": "Sender",
+        "responsible_user_hint": "Select the sender of the message. The current responsible user is the one responsible for the card from which the automation was created.",
+        "current_responsible_user": "Current Responsible User",
+        "recipients": "Recipients",
+        "message": "Message Text",
+        "placeholders": {
+          "recipients": "Select users",
+          "message": "Enter message"
+        }
+      },
+      "send_external_chat_automation_modal": {
+        "send_external_chat_default_name": "External chat #{{id}}",
+        "title_add": "Create external chat automation",
+        "title_update": "Update external chat automation",
+        "sender": "Sender *",
+        "responsible_user_hint": "Select the message sender. The current responsible user is the one assigned to the card from which this automation was created.",
+        "current_responsible_user": "Current responsible user",
+        "provider": "Chat provider *",
+        "message": "Message text *",
+        "send_to_chats": "Send to card chats",
+        "send_to_phone_numbers": "Send to phone numbers",
+        "add_phone_number": "Add number",
+        "hint_chats": "The message will be sent to all external card chats in this module based on the selected settings",
+        "hint_phone_numbers": "The message will be sent to the selected phone numbers",
+        "phone_numbers_disabled": "Sending by phone numbers is only available for Whatsapp and Telegram providers",
+        "placeholders": {
+          "message": "Enter a message"
+        },
+        "errors": {
+          "phone": "Phone number is missing"
+        },
+        "options": {
+          "addresses": "Target chats *",
+          "all_addresses": "Send to all cards and all external chats",
+          "fine_tune_addresses": "Configure...",
+          "main_entity": "Send to main card",
+          "main_entity_hint": "Choose whether to send the message to all chats in the main card or only to the first.",
+          "main_entity_all": "to all chats",
+          "main_entity_only_first": "to the first chat only",
+          "contact": "Send to contact card",
+          "contact_hint": "Choose whether to send the message to all linked contact cards or only to the first, and whether to send to all chats in the card or only to the first.",
+          "contact_all_entities_all_values": "to all chats in all contact cards",
+          "contact_all_entities_first_value": "to the first chat in all contact cards only",
+          "contact_first_entity_all_values": "to all chats in the first contact card",
+          "contact_first_entity_first_value": "to the first chat in the first contact card",
+          "company": "Send to company card",
+          "company_hint": "Choose whether to send the message to all linked company cards or only to the first, and whether to send to all chats in the card or only to the first.",
+          "company_all_entities_all_values": "to all chats in all company cards",
+          "company_all_entities_first_value": "to the first chat in all company cards only",
+          "company_first_entity_all_values": "to all chats in the first company card",
+          "company_first_entity_first_value": "to the first chat in the first company card"
+        }
+      },
+      "request_http_automation_modal": {
+        "http_request_default_name": "HTTP Request #{{id}}",
+        "title_add": "Create HTTP Request Automation",
+        "title_update": "Update HTTP Request Automation",
+        "http_request": "HTTP Request Parameters",
+        "url": "URL *",
+        "method": "Method *",
+        "headers": "Headers",
+        "params": "Query Parameters"
+      },
+      "automation_modal_template": {
+        "apply_trigger_hint": "When this option is selected, the automation will be applied to all existing cards in this status. Otherwise, it will only apply to new cards entering this status. This action can be performed each time the automation is saved.",
+        "apply_trigger_hint_list": "When this option is selected, the automation will be applied to all existing cards. Otherwise, it will only apply to new cards. This action can be performed each time the automation is saved.",
+        "automation_name": "Automation Name *",
+        "trigger": "Trigger *",
+        "conditions": "Conditions",
+        "delay": "Delay",
+        "delay_one_stage_title": "Delay only while in status",
+        "delay_one_stage_hint": "The automation will run only if the card stays in this status until the delay ends. If the card moves, it won’t trigger.",
+        "delay_all_stages_title": "Delay regardless of status",
+        "delay_all_stages_hint": "The automation will run after the delay, even if the card moves to a different status.",
+        "enable": "Enable Automation",
+        "enable_annotation": "You can enable and disable automation",
+        "apply_trigger": "Apply the trigger to the current objects in the stage",
+        "apply_trigger_list": "Apply the trigger to the current objects",
+        "delete_automation": "Delete automation",
+        "on": "ON",
+        "placeholders": {
+          "name": "Name"
+        }
+      },
+      "delete_automation_modal": {
+        "title": "Do you really want to delete this automation?",
+        "annotation": "This action cannot be undone"
+      },
+      "common": {
+        "use_get_chats_template_options": {
+          "recipient_name": "- Recipient name",
+          "recipient_name_hint": "You can set the placeholder {{contact_name}} in the chat message text, and it will be replaced with the contact's name from the card."
+        },
+        "trigger_select": {
+          "exact_time_of_automation": "Exact Time of Automation",
+          "exact_time": "Exact time: {{day}} at {{time}}",
+          "when_transitioning": "When transitioning or creating",
+          "at_the_transition": "At the transition to the stage",
+          "when_creating": "When creating in the stage",
+          "when_creating_list": "When creating",
+          "when_responsible_changes": "When responsible user changes",
+          "placeholder": "Select trigger"
+        },
+        "conditions_block": {
+          "field": "Field *",
+          "condition": "Condition *",
+          "entity_type_field_filter_string": {
+            "is_empty": "Is empty",
+            "is_not_empty": "Is not empty",
+            "contains": "Contains...",
+            "placeholders": {
+              "value": "Value"
+            }
+          },
+          "entity_type_field_filter_number": {
+            "placeholders": {
+              "from": "From",
+              "to": "To"
+            }
+          },
+          "entity_type_field_filter_boolean": {
+            "switch_on": "Switch ON",
+            "switch_off": "Switch OFF"
+          },
+          "fields_conditions": "Fields Conditions",
+          "add_field_condition": "Add field condition",
+          "responsible_users": "Responsible Users",
+          "responsible": "Responsible",
+          "budget": "Budget",
+          "value": "Value",
+          "from": "from",
+          "to": "to",
+          "placeholders": {
+            "selected_participants": "Selected participants",
+            "selected_options": "Selected options",
+            "add_condition": "Add condition",
+            "select_responsible": "Select responsible"
+          }
+        },
+        "description_block": {
+          "placeholders": {
+            "description": "Description"
+          }
+        },
+        "due_date_select": {
+          "due_date": "Due date",
+          "options": {
+            "during_this_week": "During this week",
+            "in_3_days": "In 3 days",
+            "in_a_day": "In a day",
+            "end_of_the_day": "End of the day",
+            "at_the_time_of_creation": "At the time of creation"
+          }
+        },
+        "defer_start_select": {
+          "defer_start": "Start date",
+          "options": {
+            "in_an_hour": "In an hour",
+            "in_a_day": "In a day",
+            "in_3_days": "In 3 days"
+          }
+        },
+        "delay_select": {
+          "no_delay": "No Delay",
+          "5_minutes": "5 minutes",
+          "10_minutes": "10 minutes",
+          "15_minutes": "15 minutes",
+          "30_minutes": "30 minutes",
+          "1_hour": "1 hour"
+        },
+        "template_list": {
+          "name": "Name",
+          "owner": "Owner",
+          "tooltip": "Field codes will be replaced with corresponding card field values",
+          "show_templates": "Show field codes",
+          "hide_templates": "Hide field codes"
+        }
+      }
+    },
+    "external_providers_select": {
+      "add_new_provider": "Add provider",
+      "no_available_providers": "No available providers"
+    },
+    "sidebar": {
+      "title": "Automation",
+      "create_task": "Task",
+      "task_create": "Task",
+      "create_activity": "Activity",
+      "activity_create": "Activity",
+      "change_stage": "Change Stage",
+      "entity_stage_change": "Change Stage",
+      "entity_linked_stage_change": "Change Stage in Linked Card",
+      "entity_responsible_change": "Change Responsible",
+      "send_email": "Email",
+      "email_send": "Email",
+      "chat_send_amwork": "Message in Chat",
+      "chat_send_external": "Message in External Chat",
+      "entity_create": "Linked Card",
+      "http_call": "HTTP Request",
+      "automation": "Automation"
+    },
+    "block": {
+      "create_task": "Task",
+      "task_create": "Task",
+      "create_activity": "Activity",
+      "activity_create": "Activity",
+      "change_stage": "Change Stage",
+      "entity_stage_change": "Change Stage",
+      "entity_linked_stage_change": "Change Linked Stage",
+      "entity_responsible_change": "Responsible",
+      "send_email": "Email",
+      "email_send": "Email",
+      "entity_create": "Card",
+      "chat_send_amwork": "Chat",
+      "chat_send_external": "External Chat",
+      "http_call": "HTTP Request"
+    }
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "fields": {
+    "formula_warning": "Cambiar la fórmula recalculera el valor en este campo. Para conservar los datos actuales, considere crear un nuevo campo.",
+    "project_fields_block": {
+      "owner": "Propietario",
+      "value": "Valor",
+      "participants": "Participantes",
+      "start_date": "Fecha de Inicio",
+      "end_date": "Fecha de Fin",
+      "description": "Descripción",
+      "placeholders": {
+        "participants": "Agregar participantes"
+      }
+    },
+    "field_value": {
+      "ogrn": "OGRN",
+      "tin": "TIN",
+      "trrc": "TRRC",
+      "already_have_an_active_call": "Ya tienes una llamada activa",
+      "recent": "Reciente",
+      "no_available_phone_numbers": "No hay números disponibles",
+      "value_field_formula_calculation": "Este campo está actualmente calculado por una fórmula, no puede ser editado manualmente. Valor: {{value}}.",
+      "readonly": "Este campo es solo de lectura",
+      "important_field": "Campo Importante",
+      "mandatory_field": "Campo Obligatorio",
+      "important_field_completed": "Campo Importante Completado",
+      "mandatory_field_completed": "Campo Obligatorio Completado",
+      "local_time": "Hora local aproximada de la capital del país del número de teléfono",
+      "connect_telephony": "Conectes a la telefonía para habilitar la funcionalidad de llamadas.",
+      "chat_unavailable": "Parece que no tienes acceso a este chat. Póngase en contacto con el administrador para conectarse."
+    },
+    "components": {
+      "field_formula_settings_button": {
+        "no_available_fields_for_formula": "No hay campos de presupuesto, números o fórmulas disponibles",
+        "save_first": "Esta fórmula puede configurarse en la tarjeta",
+        "customize": "Personalizar Fórmula: {{fieldName}}",
+        "formula_hint": "Este campo está destinado a ingresar una fórmula. La fórmula puede incluir los valores proporcionados a continuación, así como otros campos numéricos y fórmulas, incluidos campos de otros módulos funcionales. Haga clic en el valor deseado o seleccione el campo.",
+        "field": "Campo",
+        "close": "Cerrar"
+      },
+      "field_settings_modal": {
+        "number": "Número",
+        "currency": "Moneda",
+        "format_title": "Seleccione el formato de visualización para este campo",
+        "ordinary_field": "Campo Ordinario",
+        "save_first": "Este campo solo puede configurarse después de guardarlo en la tarjeta",
+        "important_field": "Campo Importante",
+        "important_field_hint": "Puede hacer que un campo sea importante, y entonces tendrá un icono de bombilla amarilla como recordatorio de que debe ser completado. Una vez completado, mostrará una marca de verificación verde. Si necesita que un campo sea obligatorio y evitar mover el negocio a la siguiente etapa sin completarlo, entonces seleccione la función de \"campo obligatorio\".",
+        "select_pipeline_and_statuses": "Seleccione Pipeline y Estados",
+        "mandatory_field": "Campo Obligatorio",
+        "mandatory_field_hint": "Puede configurar un campo obligatorio para su finalización. En este caso, los usuarios no podrán pasar al siguiente estado en el pipeline. Seleccione el pipeline requerido y el estado desde el cual debe completarse el campo.",
+        "user_exclusion": "Exclusión de Usuarios",
+        "user_exclusion_hint": "Puede excluir a ciertos usuarios que podrán no completar este campo. Esto puede ser necesario para los administradores.",
+        "editing_restriction": "Restricción de Edición",
+        "editing_restriction_hint": "Puede prohibir que los usuarios seleccionados editen este campo. Podrán verlo, pero no podrán editarlo.",
+        "select_users": "Seleccionar Usuarios",
+        "hide_field": "Ocultar Campo para Usuarios",
+        "hide_field_hint": "Puede ocultar este campo a usuarios seleccionados; será inaccesible para ellos.",
+        "field_visibility_in_pipeline": "Ocultar Campo en el Pipeline",
+        "field_visibility_in_pipeline_hint": "Puede personalizar la visibilidad del campo para cada pipeline y etapa. A continuación, puede seleccionar en qué etapas y pipelines se ocultará el campo.",
+        "customize": "Personalizar Campo: {{fieldName}}"
+      },
+      "edit_fields": {
+        "add_bank_requisites": "Añadir datos bancarios",
+        "add_org_requisites": "Añadir datos de organizaciones y empresarios",
+        "add_org_stat_codes": "Añadir códigos estadísticos de organizaciones y empresarios",
+        "add_additional_org_requisites": "Añadir campos adicionales para organizaciones y empresarios",
+        "add_field": "Agregar campo",
+        "add_utm_fields": "Agregar campos UTM",
+        "add_ga_fields": "Agregar campos de Google Analytics",
+        "add_ym_fields": "Agregar campos de Yandex.Metrica",
+        "add_fb_fields": "Agregar campos de Facebook Analytics",
+        "select_options": {
+          "max_length": "Máximo {{length}} caracteres",
+          "add_option": "Agregar opción",
+          "cancel": "Cancelar",
+          "add": "Agregar",
+          "no_options": "Sin opciones",
+          "placeholders": {
+            "search": "Buscar...",
+            "option": "Opción"
+          }
+        }
+      },
+      "field_form_group": {
+        "max_length": "Máximo {{length}} caracteres",
+        "text": "Texto",
+        "number": "Número",
+        "multitext": "Texto múltiple",
+        "select": "Seleccionar",
+        "multiselect": "Selección múltiple",
+        "switch": "Interruptor",
+        "formula": "Fórmula",
+        "phone": "Teléfono",
+        "email": "Correo electrónico",
+        "value": "Valor",
+        "date": "Fecha",
+        "link": "Enlace",
+        "file": "Fichero",
+        "richtext": "Texto con formato",
+        "participant": "Participante",
+        "participants": "Participantes",
+        "colored_select": "Selección de color",
+        "colored_multiselect": "Selección múltiple de color",
+        "checked_multiselect": "Lista de verificación",
+        "checklist": "Texto multilínea con casillas",
+        "field_name": "Nombre del campo",
+        "analytics_field": "Campo de análisis"
+      },
+      "show_fields": {
+        "no_fields": "No hay campos"
+      },
+      "show_files": {
+        "empty": "Aún no hay archivos",
+        "attach": "Adjuntar archivos"
+      },
+      "file_field_value_comp": {
+        "attach_files": "Adjuntar archivos"
+      }
+    }
+  }
+}

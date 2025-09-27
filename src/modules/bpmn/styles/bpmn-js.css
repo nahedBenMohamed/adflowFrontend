@@ -1,0 +1,483 @@
+@import 'bpmn-js/dist/assets/diagram-js.css';
+@import 'bpmn-js/dist/assets/bpmn-font/css/bpmn.css';
+@import 'bpmn-js/dist/assets/bpmn-font/css/bpmn-embedded.css';
+@import 'bpmn-js/dist/assets/bpmn-font/css/bpmn-codes.css';
+@import 'diagram-js-minimap/assets/diagram-js-minimap.css';
+
+/* bpmn-js powered by logo */
+.bjs-powered-by {
+  display: none;
+}
+
+.djs-parent {
+  --canvas-fill-color: var(--primary-statuses-white-0);
+
+  --color-grey-225-10-15: var(--button-text-graphite-priory-text);
+  --color-grey-225-10-35: var(--button-text-graphite-priory-text);
+  --color-blue-205-100-45: var(--primary-statuses-green-520);
+  --color-blue-205-100-50: var(--primary-statuses-green-520);
+  --color-blue-205-100-50-opacity-15: color-mix(
+    in srgb,
+    var(--primary-statuses-green-520) 20%,
+    transparent
+  );
+  --color-white: var(--primary-statuses-white-0);
+  --color-black: var(--button-text-graphite-priory-text);
+  --color-grey-225-10-55: var(--button-text-graphite-primary-text);
+  --color-grey-225-10-75: var(--button-text-graphite-secondary-text);
+  --color-grey-225-10-80: var(--button-text-graphite-secondary-text);
+  --color-grey-225-10-85: var(--button-text-graphite-secondary-text);
+  --color-grey-225-10-90: var(--graphite-graphite-120);
+  --color-grey-225-10-95: var(--graphite-graphite-80);
+  --color-grey-225-10-97: var(--graphite-graphite-40);
+  --color-red-360-100-40: var(--primary-statuses-red-360);
+  --color-red-360-100-45: var(--primary-statuses-red-360);
+  --color-red-360-100-92: color-mix(in srgb, var(--primary-statuses-red-360) 90%, transparent);
+  --color-red-360-100-97: color-mix(in srgb, var(--primary-statuses-red-360) 95%, transparent);
+
+  --color-black-opacity-10: color-mix(in srgb, var(--color-black) 10%, transparent);
+  --color-black-opacity-30: color-mix(in srgb, var(--color-black) 30%, transparent);
+
+  /* Popups */
+  --popup-font-family: var(--system-font-families);
+  --popup-font-size: 14px;
+  --popup-background-color: var(--primary-statuses-white-0);
+  --popup-shadow-color: var(--dropdown-box-shadow);
+
+  --palette-background-color: var(--primary-statuses-white-0);
+  --palette-border-color: var(--graphite-graphite-120);
+
+  --palette-entry-color: var(--button-text-graphite-priory-text);
+  --palette-entry-hover-color: var(--button-text-green-hover);
+  --palette-entry-selected-color: var(--button-text-green-active);
+
+  --palette-separator-color: var(--graphite-graphite-120);
+
+  --popup-header-entry-selected-color: var(--button-text-green-active);
+
+  --resizer-fill-color: var(--primary-statuses-green-520);
+
+  /* Elements on diagram */
+  --element-hover-outline-fill-color: var(--primary-statuses-green-520);
+  --element-selected-outline-stroke-color: var(--primary-statuses-green-520);
+  --element-selected-outline-secondary-stroke-color: var(--primary-statuses-green-520);
+  --element-dragger-color: color-mix(
+    in srgb,
+    var(--button-text-graphite-secondary-text) 35%,
+    transparent
+  );
+
+  --lasso-fill-color: color-mix(in srgb, var(--neutral-green-120) 5%, transparent);
+
+  --popup-header-group-divider-color: var(--graphite-graphite-120);
+  --bendpoint-fill-color: var(--primary-statuses-green-520);
+
+  --context-pad-entry-hover-background-color: var(--graphite-graphite-40);
+
+  /* Helper lines when dragging elements */
+  --color-blue-205-100-45-opacity-30: color-mix(
+    in srgb,
+    var(--primary-statuses-green-520) 25%,
+    transparent
+  );
+}
+
+.djs-popup {
+  border-radius: var(--border-radius-block);
+  border: 1px solid var(--graphite-graphite-80);
+}
+
+.djs-popup-title {
+  font-weight: 600;
+  color: var(--button-text-graphite-priory-text);
+}
+
+.djs-popup-entry-content {
+  color: var(--button-text-graphite-priory-text);
+}
+
+.djs-popup-label {
+  color: var(--button-text-graphite-priory-text);
+}
+
+.djs-popup-group .entry {
+  transition: var(--transition-200);
+}
+
+.djs-popup-group .entry.selected {
+  background-color: #e6fbda;
+}
+
+.djs-popup-group .entry:hover {
+  cursor: pointer;
+  background-color: #f3fded;
+}
+
+/* Color picker (bpmn-js-color-picker) START */
+.djs-popup.color-picker {
+  min-width: 0;
+}
+
+.djs-popup.color-picker .entry:hover {
+  cursor: pointer;
+
+  background-color: #f3fded;
+  background-color: transparent;
+}
+
+.djs-popup.color-picker .entry.selected {
+  background-color: transparent;
+}
+
+.djs-popup.color-picker .djs-popup-results {
+  margin: 0;
+  padding: 8px !important;
+}
+
+.djs-popup.color-picker .entry {
+  margin: 0;
+  margin-bottom: 2px;
+}
+
+.djs-popup.color-picker .djs-popup-group {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.djs-popup.color-picker .djs-popup-results {
+  width: 118px;
+}
+/* Color picker (bpmn-js-color-picker) END */
+
+/* Left pallette where user can choose item to add to bpmn diagram */
+.djs-palette {
+  top: 16px;
+  left: 16px;
+
+  padding: 8px;
+
+  /* so that elements will be displayed in two columns */
+  width: var(--bpmn-automations-djs-palette-width) !important;
+
+  box-shadow: var(--dropdown-box-shadow);
+  border-radius: var(--border-radius-block);
+}
+
+.djs-palette .entry {
+  transition: var(--transition-200);
+}
+
+/* Every entry in the palette should have move cursor since they are draggable into the canvas */
+.djs-palette .entry:hover {
+  cursor: move;
+}
+
+/* Top actions elements in the palette should have pointer cursor since they are not draggable into the canvas  */
+.djs-palette .entry.bpmn-icon-hand-tool:hover,
+.djs-palette .entry.bpmn-icon-lasso-tool:hover,
+.djs-palette .entry.bpmn-icon-space-tool:hover,
+.djs-palette .entry.bpmn-icon-connection-multi:hover {
+  cursor: pointer !important;
+}
+
+/* Workspace elements in the palette should have pointer cursor since they are not draggable into the canvas ... */
+.djs-palette .entry.workspace {
+  cursor: pointer;
+}
+
+/* ... besides delay event */
+.djs-palette .entry.bpmn-icon-intermediate-event-catch-timer.workspace:hover {
+  cursor: move !important;
+}
+
+.djs-palette .entry.bpmn-icon-service-task.workspace {
+  color: var(--primary-statuses-purple-360);
+}
+
+.djs-palette .entry.bpmn-icon-start-event-message.workspace {
+  color: var(--primary-statuses-red-360);
+}
+
+.djs-palette .entry.bpmn-icon-intermediate-event-catch-timer.workspace {
+  color: var(--primary-statuses-salad-480);
+}
+
+.djs-palette .entry.bpmn-icon-service-task.workspace:hover,
+.djs-palette .entry.bpmn-icon-start-event-message.workspace:hover,
+.djs-palette .entry.bpmn-icon-intermediate-event-catch-timer.workspace:hover {
+  color: var(--button-text-green-hover);
+}
+
+.djs-minimap {
+  top: 16px;
+  right: unset;
+  left: calc(var(--bpmn-automations-djs-palette-width) + 16px * 2);
+
+  z-index: calc(var(--modal-z-index) + 1);
+
+  color: var(--button-text-graphite-primary-text);
+
+  box-shadow: var(--dropdown-box-shadow);
+  border-radius: var(--border-radius-block);
+  border: 1px solid var(--graphite-graphite-120);
+  background-color: var(--primary-statuses-white-0);
+}
+
+.djs-minimap .toggle {
+  height: var(--bpmn-toggle-minimap-toggle-button-height);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: var(--button-text-graphite-primary-text);
+
+  padding: 0;
+}
+
+.djs-minimap .toggle:hover {
+  cursor: pointer;
+}
+
+.djs-element .djs-shape {
+  stroke: var(--button-text-graphite-priory-text);
+}
+
+.djs-palette .separator {
+  margin: 6px 0;
+}
+
+/* Context pad with quick actions which opens when user clicks on bpmn element */
+.djs-context-pad {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.djs-context-pad .entry {
+  box-shadow: none;
+
+  width: 28px;
+  height: 28px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 4px;
+  border: 1px solid var(--graphite-graphite-40);
+}
+
+.djs-context-pad .entry:hover {
+  cursor: pointer;
+
+  transition: var(--transition-200);
+}
+
+.djs-context-pad {
+  width: calc(28px * 3 + 4px * 2);
+}
+
+/* Element label on canvas */
+.djs-label {
+  fill: var(--button-text-graphite-priory-text) !important;
+}
+
+/* Element label on canvas in direct editing state */
+.djs-direct-editing-content {
+  color: var(--button-text-graphite-priory-text) !important;
+}
+
+/* Element label on canvas in direct editing state – wrapper box */
+.djs-direct-editing-parent {
+  border-radius: var(--border-radius-block);
+  border-color: var(--graphite-graphite-200) !important;
+}
+
+/* Workspace events START */
+.workspace__WorkspaceRenderer--Event.workspace__Create circle {
+  stroke: var(--primary-statuses-red-360) !important;
+  fill: color-mix(in srgb, var(--primary-statuses-red-360) 15%, transparent) !important;
+}
+
+.workspace__WorkspaceRenderer--Event.workspace__ChangeOwner circle {
+  stroke: var(--primary-statuses-orange-440) !important;
+  fill: color-mix(in srgb, var(--primary-statuses-orange-440) 15%, transparent) !important;
+}
+
+.workspace__WorkspaceRenderer--Event.workspace__ChangeStage circle {
+  stroke: var(--primary-statuses-yellow-400) !important;
+  fill: color-mix(in srgb, var(--primary-statuses-yellow-400) 15%, transparent) !important;
+}
+/* Workspace events END */
+
+/* Workspace sequence flow START */
+/* When condition can be added to a sequence flow */
+.workspace__WorkspaceRenderer--SequenceFlow__PossibleCondition path {
+  stroke: var(--primary-statuses-crimson-360) !important;
+}
+
+/* Tip of sequence flow arrow */
+.workspace__WorkspaceRenderer--SequenceFlow__PossibleCondition marker path {
+  fill: var(--primary-statuses-crimson-360) !important;
+}
+
+/* When condition is already added to a sequence flow */
+.workspace__WorkspaceRenderer--SequenceFlow__WithCondition path {
+  stroke: var(--primary-statuses-green-520) !important;
+}
+
+.workspace__WorkspaceRenderer--SequenceFlow__WithCondition marker path {
+  fill: var(--primary-statuses-green-520) !important;
+}
+/* Workspace sequence flow END */
+
+/* Specific delay styles */
+.workspace__WorkspaceRenderer--Delay circle {
+  stroke: var(--primary-statuses-salad-480) !important;
+  fill: color-mix(in srgb, var(--primary-statuses-salad-480) 10%, transparent) !important;
+}
+.workspace__WorkspaceRenderer--Delay.workspace__CreateDelay.context-pad-entry::before {
+  color: var(--primary-statuses-salad-480) !important;
+}
+
+/* Workspace service tasks START */
+.workspace__WorkspaceRenderer--ServiceTask {
+  /* Common styles for all rect elements */
+  &.workspace__CreateTask rect,
+  &.workspace__CreateActivity rect,
+  &.workspace__ChatSendAmwork rect,
+  &.workspace__ChatSendExternal rect,
+  &.workspace__HttpCall rect,
+  &.workspace__SendEmail rect,
+  &.workspace__EntityStageChange rect,
+  &.workspace__EntityCreate rect,
+  &.workspace__EntityResponsibleChange rect {
+    fill: color-mix(in srgb, currentColor 10%, transparent) !important;
+  }
+
+  /* Specific task styles */
+  &.workspace__CreateTask rect,
+  &.workspace__CreateTask path {
+    stroke: var(--primary-statuses-malachite-480) !important;
+    color: var(--primary-statuses-malachite-480);
+  }
+  &.workspace__CreateTask.workspace__WorkspaceRenderer--ServiceTask.context-pad-entry::before {
+    color: var(--primary-statuses-malachite-480) !important;
+  }
+
+  &.workspace__CreateActivity rect,
+  &.workspace__CreateActivity path {
+    stroke: var(--primary-statuses-aquamarine-480) !important;
+    color: var(--primary-statuses-aquamarine-480);
+  }
+  &.workspace__CreateActivity.workspace__WorkspaceRenderer--ServiceTask.context-pad-entry::before {
+    color: var(--primary-statuses-aquamarine-480) !important;
+  }
+
+  &.workspace__ChatSendAmwork rect,
+  &.workspace__ChatSendAmwork path {
+    stroke: var(--primary-statuses-purple-360) !important;
+    color: var(--primary-statuses-purple-360);
+  }
+  &.workspace__ChatSendAmwork.workspace__WorkspaceRenderer--ServiceTask.context-pad-entry::before {
+    color: var(--primary-statuses-purple-360) !important;
+  }
+
+  &.workspace__ChatSendExternal rect,
+  &.workspace__ChatSendExternal path {
+    stroke: var(--secondary-orange-240) !important;
+    color: var(--secondary-orange-240);
+  }
+  &.workspace__ChatSendExternal.workspace__WorkspaceRenderer--ServiceTask.context-pad-entry::before {
+    color: var(--secondary-orange-240) !important;
+  }
+
+  &.workspace__HttpCall rect,
+  &.workspace__HttpCall path {
+    stroke: var(--secondary-red-240) !important;
+    color: var(--secondary-red-240);
+  }
+  &.workspace__HttpCall.workspace__WorkspaceRenderer--ServiceTask.context-pad-entry::before {
+    color: var(--secondary-red-240) !important;
+  }
+
+  &.workspace__SendEmail rect,
+  &.workspace__SendEmail path {
+    stroke: var(--primary-statuses-noun-440) !important;
+    color: var(--primary-statuses-noun-440);
+  }
+  &.workspace__SendEmail.workspace__WorkspaceRenderer--ServiceTask.context-pad-entry::before {
+    color: var(--primary-statuses-noun-440) !important;
+  }
+
+  &.workspace__EntityStageChange rect,
+  &.workspace__EntityStageChange path {
+    stroke: var(--primary-statuses-turquoise-520) !important;
+    color: var(--primary-statuses-turquoise-520);
+  }
+  &.workspace__EntityStageChange.workspace__WorkspaceRenderer--ServiceTask.context-pad-entry::before {
+    color: var(--primary-statuses-turquoise-520) !important;
+  }
+
+  &.workspace__EntityResponsibleChange rect,
+  &.workspace__EntityResponsibleChange path {
+    stroke: var(--primary-statuses-fuchsia-400) !important;
+    color: var(--primary-statuses-fuchsia-400);
+  }
+  &.workspace__EntityResponsibleChange.workspace__WorkspaceRenderer--ServiceTask.context-pad-entry::before {
+    color: var(--primary-statuses-fuchsia-400) !important;
+  }
+
+  &.workspace__EntityCreate rect,
+  &.workspace__EntityCreate path {
+    stroke: var(--primary-statuses-blue-360) !important;
+    color: var(--primary-statuses-blue-360);
+  }
+  &.workspace__EntityCreate.workspace__WorkspaceRenderer--ServiceTask.context-pad-entry::before {
+    color: var(--primary-statuses-blue-360) !important;
+  }
+}
+/* Workspace service tasks END */
+
+.entry {
+  border-radius: var(--border-radius-block);
+}
+
+.entry.bpmn-icon-start-event-message.workspace.active,
+.entry.bpmn-icon-service-task.workspace.active,
+.entry.bpmn-icon-hand-tool.highlighted-entry,
+.entry.bpmn-icon-lasso-tool.highlighted-entry,
+.entry.bpmn-icon-space-tool.highlighted-entry,
+.entry.bpmn-icon-connection-multi.highlighted-entry {
+  background-color: #e6fbda;
+}
+
+/* Hide expanded subprocess, participant, intermediate event and task since they are not yet supported in workspace, not all gateways are supported as well */
+.entry.bpmn-icon-subprocess-expanded,
+.entry.bpmn-icon-task,
+.entry.bpmn-icon-intermediate-event-none,
+.entry.bpmn-icon-participant,
+.entry.bpmn-icon-gateway-none {
+  display: none;
+}
+
+.djs-context-pad.open {
+  display: flex;
+}
+
+/* Delete action in context pad */
+.entry.bpmn-icon-trash {
+  color: var(--button-text-red-default);
+  transition: var(--transition-200);
+}
+
+.entry.bpmn-icon-trash:hover {
+  color: var(--button-text-red-hover);
+}
+
+.entry.bpmn-icon-trash:active {
+  color: var(--button-text-red-active);
+}
